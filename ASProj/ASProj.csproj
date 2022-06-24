@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <Folder Include="Old\Classes\" />
   </ItemGroup>
 
   <ItemGroup>
