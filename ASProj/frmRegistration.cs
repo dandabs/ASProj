@@ -19,7 +19,27 @@ namespace ASProj
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
-            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
+        }
+
+        private void ovalPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmRegistration_BackColorChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void largeTextBox1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

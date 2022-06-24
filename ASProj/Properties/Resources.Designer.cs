@@ -63,9 +63,99 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5082445c736781115816c8a0c7f6f461__tove_jansson_moomin {
+            get {
+                object obj = ResourceManager.GetObject("5082445c736781115816c8a0c7f6f461--tove-jansson-moomin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blur_blurred_dark_gradient {
             get {
                 object obj = ResourceManager.GetObject("blur-blurred-dark-gradient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_1_6924211824 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_1_6924211824", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_2_3131043951 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_2_3131043951", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_2_31310439511 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_2_31310439511", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_3_3894007498 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_3_3894007498", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_4_9884017893 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_4_9884017893", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_8_7025415654 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_8_7025415654", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ww0_bizydale_nets {
+            get {
+                object obj = ResourceManager.GetObject("ww0_bizydale_nets", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
