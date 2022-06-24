@@ -1,6 +1,6 @@
 ﻿namespace ASProj
 {
-    partial class Form1
+    partial class frmRegistration
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmRegistration
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImage = global::ASProj.Properties.Resources.blur_blurred_dark_gradient;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1221, 780);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmRegistration";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

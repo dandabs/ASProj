@@ -1,0 +1,20 @@
+potential color schemes
+https://colorhunt.co/palette/1b262c0f4c753282b8bbe1fa
+https://colorhunt.co/palette/222831393e4600adb500fff5
+https://colorhunt.co/palette/1a2f4b28475c2f888684c69b
+https://colorhunt.co/palette/14285027496d0c7b9300a8cc
+
+custom control tutorial
+https://www.codeproject.com/Articles/2016/Writing-Your-Custom-Control-Step-by-Step-2
+https://stackoverflow.com/questions/6405458/how-do-i-make-custom-controls-in-c
+
+control inspo
+https://www.telerik.com/products/winforms/buttons.aspx
+
+form inspo
+https://dribbble.com/tags/game_login
+
+login page inspo
+https://dribbble.com/shots/16753965-Login-Sign-up-Dark-Mode-AW-Universal-Page
+https://dribbble.com/shots/6011104-Registration-form
+https://dribbble.com/shots/15233141-Defiant-Authorize
