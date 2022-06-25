@@ -19,5 +19,15 @@ https://dribbble.com/shots/16753965-Login-Sign-up-Dark-Mode-AW-Universal-Page
 https://dribbble.com/shots/6011104-Registration-form
 https://dribbble.com/shots/15233141-Defiant-Authorize
 
+dashboard inspo
+https://i0.wp.com/cdn.dribbble.com/users/5623/screenshots/14554999/media/ac3a7382d5009d8a060e873eab863d21.png?w=1200&ssl=1
+https://dribbble.com/shots/15935347-Valolyze-Valorant-Stats-Dashboard/attachments/7767646?mode=media
+
 fontawesome icons
 https://fontawesome.com/search?q=down&m=free
+
+gradient bg color tutorial
+https://www.daveoncsharp.com/2009/09/how-to-paint-a-gradient-background-for-your-forms/
+
+progress bar color tutorial
+https://stackoverflow.com/questions/778678/how-to-change-the-color-of-progressbar-in-c-sharp-net-3-5

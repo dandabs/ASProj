@@ -11,7 +11,14 @@ namespace ASProj
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmLogin());
+
+            bool isDebug = false;
+            Utils.updateDebug(ref isDebug);
+
+            if (isDebug)
+            {
+                Application.Run(new frmDashboard());
+            } else Application.Run(new frmLogin());
         }
     }
 }
