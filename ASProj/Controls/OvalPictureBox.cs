@@ -12,6 +12,11 @@ namespace ASProj.Controls
         public OvalPictureBox()
         {
             this.BackColor = Color.DarkGray;
+            using (var gp = new GraphicsPath())
+            {
+                gp.AddEllipse(new Rectangle(0, 0, this.Width - 1, this.Height - 1));
+                this.Region = new Region(gp);
+            }
         }
         protected override void OnResize(EventArgs e)
         {
