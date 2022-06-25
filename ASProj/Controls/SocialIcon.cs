@@ -28,6 +28,8 @@ namespace ASProj.Controls
                 ForeColor = Color.White,
                 BackColor = Color.Transparent
             });
+            ((Label)Controls.Find("check", true)[0]).Font = Font;
+            centerText();
         }
         private void centerText()
         {

@@ -20,6 +20,7 @@ namespace ASProj.Controls
                 Width = Width - 15,
                 BackColor = this.BackColor,
                 BorderStyle = BorderStyle.None,
+                ForeColor = Color.DarkGray
             });
             Controls.Find("value", true)[0].Top = (Height - Controls.Find("value", true)[0].Height) / 2;
             Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
@@ -49,6 +50,7 @@ namespace ASProj.Controls
             base.OnResize(e);
             Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             Controls.Find("value", true)[0].Top = (Height - Controls.Find("value", true)[0].Height) / 2;
+            Controls.Find("value", true)[0].Width = Width - 15;
         }
     }
 }

@@ -31,9 +31,9 @@ namespace ASProj
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblRegisterTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblLoginTitle = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.squareTextBox1 = new ASProj.Controls.SquareTextBox();
             this.squareTextBox2 = new ASProj.Controls.SquareTextBox();
@@ -57,7 +57,23 @@ namespace ASProj
             this.socialIcon3 = new ASProj.Controls.SocialIcon();
             this.socialIcon4 = new ASProj.Controls.SocialIcon();
             this.socialIcon5 = new ASProj.Controls.SocialIcon();
+            this.pnlRegister = new System.Windows.Forms.Panel();
+            this.pnlLogin = new System.Windows.Forms.Panel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.socialIcon6 = new ASProj.Controls.SocialIcon();
+            this.socialIcon7 = new ASProj.Controls.SocialIcon();
+            this.label1 = new System.Windows.Forms.Label();
+            this.socialIcon8 = new ASProj.Controls.SocialIcon();
+            this.squareTextBox3 = new ASProj.Controls.SquareTextBox();
+            this.socialIcon9 = new ASProj.Controls.SocialIcon();
+            this.label3 = new System.Windows.Forms.Label();
+            this.socialIcon10 = new ASProj.Controls.SocialIcon();
+            this.squareTextBox4 = new ASProj.Controls.SquareTextBox();
+            this.squareButton1 = new ASProj.Controls.SquareButton();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlRegister.SuspendLayout();
+            this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -69,17 +85,19 @@ namespace ASProj
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // lblRegisterTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Manrope ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(651, 152);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "REGISTER";
+            this.lblRegisterTitle.AutoSize = true;
+            this.lblRegisterTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblRegisterTitle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblRegisterTitle.Font = new System.Drawing.Font("Manrope ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRegisterTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(73)))), ((int)(((byte)(82)))));
+            this.lblRegisterTitle.Location = new System.Drawing.Point(651, 152);
+            this.lblRegisterTitle.Name = "lblRegisterTitle";
+            this.lblRegisterTitle.Size = new System.Drawing.Size(112, 28);
+            this.lblRegisterTitle.TabIndex = 1;
+            this.lblRegisterTitle.Text = "REGISTER";
+            this.lblRegisterTitle.Click += new System.EventHandler(this.lblRegisterTitle_Click);
             // 
             // label2
             // 
@@ -93,18 +111,18 @@ namespace ASProj
             this.label2.TabIndex = 2;
             this.label2.Text = "/";
             // 
-            // label3
+            // lblLoginTitle
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Manrope ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(73)))), ((int)(((byte)(82)))));
-            this.label3.Location = new System.Drawing.Point(779, 152);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 28);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "LOGIN";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lblLoginTitle.AutoSize = true;
+            this.lblLoginTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblLoginTitle.Font = new System.Drawing.Font("Manrope ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLoginTitle.ForeColor = System.Drawing.Color.White;
+            this.lblLoginTitle.Location = new System.Drawing.Point(779, 152);
+            this.lblLoginTitle.Name = "lblLoginTitle";
+            this.lblLoginTitle.Size = new System.Drawing.Size(76, 28);
+            this.lblLoginTitle.TabIndex = 3;
+            this.lblLoginTitle.Text = "LOGIN";
+            this.lblLoginTitle.Click += new System.EventHandler(this.lblLoginTitle_Click);
             // 
             // label4
             // 
@@ -112,7 +130,7 @@ namespace ASProj
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Manrope", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.DarkGray;
-            this.label4.Location = new System.Drawing.Point(651, 212);
+            this.label4.Location = new System.Drawing.Point(36, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 21);
             this.label4.TabIndex = 4;
@@ -123,7 +141,7 @@ namespace ASProj
             this.squareTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.squareTextBox1.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.squareTextBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.squareTextBox1.Location = new System.Drawing.Point(653, 236);
+            this.squareTextBox1.Location = new System.Drawing.Point(38, 56);
             this.squareTextBox1.Name = "squareTextBox1";
             this.squareTextBox1.PasswordChar = '\0';
             this.squareTextBox1.PlaceholderText = "Enter your email";
@@ -135,7 +153,7 @@ namespace ASProj
             this.squareTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.squareTextBox2.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.squareTextBox2.ForeColor = System.Drawing.Color.DarkGray;
-            this.squareTextBox2.Location = new System.Drawing.Point(653, 335);
+            this.squareTextBox2.Location = new System.Drawing.Point(38, 155);
             this.squareTextBox2.Name = "squareTextBox2";
             this.squareTextBox2.PasswordChar = '\0';
             this.squareTextBox2.PlaceholderText = "Enter your password";
@@ -148,7 +166,7 @@ namespace ASProj
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Manrope", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(651, 310);
+            this.label5.Location = new System.Drawing.Point(36, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 21);
             this.label5.TabIndex = 6;
@@ -157,7 +175,7 @@ namespace ASProj
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(991, 323);
+            this.panel1.Location = new System.Drawing.Point(376, 143);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(20, 6);
             this.panel1.TabIndex = 8;
@@ -165,7 +183,7 @@ namespace ASProj
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.panel2.Location = new System.Drawing.Point(969, 323);
+            this.panel2.Location = new System.Drawing.Point(354, 143);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(20, 6);
             this.panel2.TabIndex = 9;
@@ -173,7 +191,7 @@ namespace ASProj
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.panel3.Location = new System.Drawing.Point(925, 323);
+            this.panel3.Location = new System.Drawing.Point(310, 143);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(20, 6);
             this.panel3.TabIndex = 11;
@@ -181,7 +199,7 @@ namespace ASProj
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.panel4.Location = new System.Drawing.Point(947, 323);
+            this.panel4.Location = new System.Drawing.Point(332, 143);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(20, 6);
             this.panel4.TabIndex = 10;
@@ -189,7 +207,7 @@ namespace ASProj
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.panel5.Location = new System.Drawing.Point(903, 323);
+            this.panel5.Location = new System.Drawing.Point(288, 143);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(20, 6);
             this.panel5.TabIndex = 12;
@@ -208,6 +226,7 @@ namespace ASProj
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(73)))), ((int)(((byte)(82)))));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // button1
             // 
@@ -215,7 +234,7 @@ namespace ASProj
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Manrope ExtraBold", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(653, 465);
+            this.button1.Location = new System.Drawing.Point(38, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(358, 41);
             this.button1.TabIndex = 14;
@@ -228,7 +247,7 @@ namespace ASProj
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Manrope Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.DarkGray;
-            this.label6.Location = new System.Drawing.Point(757, 535);
+            this.label6.Location = new System.Drawing.Point(142, 355);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 21);
             this.label6.TabIndex = 15;
@@ -239,7 +258,7 @@ namespace ASProj
             this.flatCheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.flatCheckBox1.Checked = false;
             this.flatCheckBox1.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.flatCheckBox1.Location = new System.Drawing.Point(653, 401);
+            this.flatCheckBox1.Location = new System.Drawing.Point(38, 221);
             this.flatCheckBox1.Name = "flatCheckBox1";
             this.flatCheckBox1.Size = new System.Drawing.Size(23, 23);
             this.flatCheckBox1.TabIndex = 16;
@@ -251,7 +270,7 @@ namespace ASProj
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Manrope Medium", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(682, 397);
+            this.label7.Location = new System.Drawing.Point(67, 217);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(315, 18);
             this.label7.TabIndex = 17;
@@ -263,7 +282,7 @@ namespace ASProj
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Manrope Medium", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.DarkGray;
-            this.label8.Location = new System.Drawing.Point(822, 415);
+            this.label8.Location = new System.Drawing.Point(207, 235);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 18);
             this.label8.TabIndex = 18;
@@ -276,7 +295,7 @@ namespace ASProj
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel2.Font = new System.Drawing.Font("Manrope Medium", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.linkLabel2.Location = new System.Drawing.Point(683, 415);
+            this.linkLabel2.Location = new System.Drawing.Point(68, 235);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(142, 18);
             this.linkLabel2.TabIndex = 19;
@@ -291,7 +310,7 @@ namespace ASProj
             this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel3.Font = new System.Drawing.Font("Manrope Medium", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.linkLabel3.Location = new System.Drawing.Point(850, 415);
+            this.linkLabel3.Location = new System.Drawing.Point(235, 235);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(91, 18);
             this.linkLabel3.TabIndex = 20;
@@ -305,7 +324,7 @@ namespace ASProj
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Manrope Medium", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(936, 416);
+            this.label9.Location = new System.Drawing.Point(321, 236);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(12, 18);
             this.label9.TabIndex = 21;
@@ -316,7 +335,7 @@ namespace ASProj
             this.socialIcon1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.socialIcon1.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.socialIcon1.IconText = "";
-            this.socialIcon1.Location = new System.Drawing.Point(654, 569);
+            this.socialIcon1.Location = new System.Drawing.Point(39, 389);
             this.socialIcon1.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.socialIcon1.Name = "socialIcon1";
             this.socialIcon1.Size = new System.Drawing.Size(60, 60);
@@ -328,7 +347,7 @@ namespace ASProj
             this.socialIcon2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.socialIcon2.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.socialIcon2.IconText = "";
-            this.socialIcon2.Location = new System.Drawing.Point(729, 569);
+            this.socialIcon2.Location = new System.Drawing.Point(114, 389);
             this.socialIcon2.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.socialIcon2.Name = "socialIcon2";
             this.socialIcon2.Size = new System.Drawing.Size(60, 60);
@@ -339,7 +358,7 @@ namespace ASProj
             this.socialIcon3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.socialIcon3.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.socialIcon3.IconText = "";
-            this.socialIcon3.Location = new System.Drawing.Point(804, 569);
+            this.socialIcon3.Location = new System.Drawing.Point(189, 389);
             this.socialIcon3.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.socialIcon3.Name = "socialIcon3";
             this.socialIcon3.Size = new System.Drawing.Size(60, 60);
@@ -350,7 +369,7 @@ namespace ASProj
             this.socialIcon4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.socialIcon4.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.socialIcon4.IconText = "";
-            this.socialIcon4.Location = new System.Drawing.Point(879, 569);
+            this.socialIcon4.Location = new System.Drawing.Point(264, 389);
             this.socialIcon4.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.socialIcon4.Name = "socialIcon4";
             this.socialIcon4.Size = new System.Drawing.Size(60, 60);
@@ -361,11 +380,203 @@ namespace ASProj
             this.socialIcon5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.socialIcon5.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.socialIcon5.IconText = "";
-            this.socialIcon5.Location = new System.Drawing.Point(954, 569);
+            this.socialIcon5.Location = new System.Drawing.Point(339, 389);
             this.socialIcon5.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.socialIcon5.Name = "socialIcon5";
             this.socialIcon5.Size = new System.Drawing.Size(60, 60);
             this.socialIcon5.TabIndex = 26;
+            // 
+            // pnlRegister
+            // 
+            this.pnlRegister.Controls.Add(this.pnlLogin);
+            this.pnlRegister.Controls.Add(this.socialIcon1);
+            this.pnlRegister.Controls.Add(this.socialIcon5);
+            this.pnlRegister.Controls.Add(this.label4);
+            this.pnlRegister.Controls.Add(this.socialIcon4);
+            this.pnlRegister.Controls.Add(this.squareTextBox1);
+            this.pnlRegister.Controls.Add(this.socialIcon3);
+            this.pnlRegister.Controls.Add(this.label5);
+            this.pnlRegister.Controls.Add(this.socialIcon2);
+            this.pnlRegister.Controls.Add(this.squareTextBox2);
+            this.pnlRegister.Controls.Add(this.panel1);
+            this.pnlRegister.Controls.Add(this.label9);
+            this.pnlRegister.Controls.Add(this.panel2);
+            this.pnlRegister.Controls.Add(this.linkLabel3);
+            this.pnlRegister.Controls.Add(this.panel4);
+            this.pnlRegister.Controls.Add(this.linkLabel2);
+            this.pnlRegister.Controls.Add(this.panel3);
+            this.pnlRegister.Controls.Add(this.label8);
+            this.pnlRegister.Controls.Add(this.panel5);
+            this.pnlRegister.Controls.Add(this.label7);
+            this.pnlRegister.Controls.Add(this.button1);
+            this.pnlRegister.Controls.Add(this.flatCheckBox1);
+            this.pnlRegister.Controls.Add(this.label6);
+            this.pnlRegister.Location = new System.Drawing.Point(619, 201);
+            this.pnlRegister.Name = "pnlRegister";
+            this.pnlRegister.Size = new System.Drawing.Size(442, 497);
+            this.pnlRegister.TabIndex = 27;
+            this.pnlRegister.Visible = false;
+            // 
+            // pnlLogin
+            // 
+            this.pnlLogin.Controls.Add(this.linkLabel4);
+            this.pnlLogin.Controls.Add(this.socialIcon6);
+            this.pnlLogin.Controls.Add(this.socialIcon7);
+            this.pnlLogin.Controls.Add(this.label1);
+            this.pnlLogin.Controls.Add(this.socialIcon8);
+            this.pnlLogin.Controls.Add(this.squareTextBox3);
+            this.pnlLogin.Controls.Add(this.socialIcon9);
+            this.pnlLogin.Controls.Add(this.label3);
+            this.pnlLogin.Controls.Add(this.socialIcon10);
+            this.pnlLogin.Controls.Add(this.squareTextBox4);
+            this.pnlLogin.Controls.Add(this.squareButton1);
+            this.pnlLogin.Controls.Add(this.label13);
+            this.pnlLogin.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogin.Name = "pnlLogin";
+            this.pnlLogin.Size = new System.Drawing.Size(442, 497);
+            this.pnlLogin.TabIndex = 28;
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel4.ForeColor = System.Drawing.Color.DarkGray;
+            this.linkLabel4.LinkColor = System.Drawing.Color.DarkGray;
+            this.linkLabel4.Location = new System.Drawing.Point(142, 253);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(156, 19);
+            this.linkLabel4.TabIndex = 27;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Forgotten password?";
+            // 
+            // socialIcon6
+            // 
+            this.socialIcon6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.socialIcon6.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.socialIcon6.IconText = "";
+            this.socialIcon6.Location = new System.Drawing.Point(39, 389);
+            this.socialIcon6.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            this.socialIcon6.Name = "socialIcon6";
+            this.socialIcon6.Size = new System.Drawing.Size(60, 60);
+            this.socialIcon6.TabIndex = 22;
+            // 
+            // socialIcon7
+            // 
+            this.socialIcon7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.socialIcon7.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.socialIcon7.IconText = "";
+            this.socialIcon7.Location = new System.Drawing.Point(339, 389);
+            this.socialIcon7.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            this.socialIcon7.Name = "socialIcon7";
+            this.socialIcon7.Size = new System.Drawing.Size(60, 60);
+            this.socialIcon7.TabIndex = 26;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Manrope", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DarkGray;
+            this.label1.Location = new System.Drawing.Point(36, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 21);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Email";
+            // 
+            // socialIcon8
+            // 
+            this.socialIcon8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.socialIcon8.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.socialIcon8.IconText = "";
+            this.socialIcon8.Location = new System.Drawing.Point(264, 389);
+            this.socialIcon8.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            this.socialIcon8.Name = "socialIcon8";
+            this.socialIcon8.Size = new System.Drawing.Size(60, 60);
+            this.socialIcon8.TabIndex = 25;
+            // 
+            // squareTextBox3
+            // 
+            this.squareTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.squareTextBox3.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.squareTextBox3.ForeColor = System.Drawing.Color.DarkGray;
+            this.squareTextBox3.Location = new System.Drawing.Point(38, 56);
+            this.squareTextBox3.Name = "squareTextBox3";
+            this.squareTextBox3.PasswordChar = '\0';
+            this.squareTextBox3.PlaceholderText = "Enter your email";
+            this.squareTextBox3.Size = new System.Drawing.Size(358, 42);
+            this.squareTextBox3.TabIndex = 5;
+            // 
+            // socialIcon9
+            // 
+            this.socialIcon9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.socialIcon9.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.socialIcon9.IconText = "";
+            this.socialIcon9.Location = new System.Drawing.Point(189, 389);
+            this.socialIcon9.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            this.socialIcon9.Name = "socialIcon9";
+            this.socialIcon9.Size = new System.Drawing.Size(60, 60);
+            this.socialIcon9.TabIndex = 24;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Manrope", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(36, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 21);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Password";
+            // 
+            // socialIcon10
+            // 
+            this.socialIcon10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.socialIcon10.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.socialIcon10.IconText = "";
+            this.socialIcon10.Location = new System.Drawing.Point(114, 389);
+            this.socialIcon10.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            this.socialIcon10.Name = "socialIcon10";
+            this.socialIcon10.Size = new System.Drawing.Size(60, 60);
+            this.socialIcon10.TabIndex = 23;
+            // 
+            // squareTextBox4
+            // 
+            this.squareTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.squareTextBox4.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.squareTextBox4.ForeColor = System.Drawing.Color.DarkGray;
+            this.squareTextBox4.Location = new System.Drawing.Point(38, 155);
+            this.squareTextBox4.Name = "squareTextBox4";
+            this.squareTextBox4.PasswordChar = '\0';
+            this.squareTextBox4.PlaceholderText = "Enter your password";
+            this.squareTextBox4.Size = new System.Drawing.Size(358, 42);
+            this.squareTextBox4.TabIndex = 7;
+            // 
+            // squareButton1
+            // 
+            this.squareButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.squareButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.squareButton1.Font = new System.Drawing.Font("Manrope ExtraBold", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.squareButton1.ForeColor = System.Drawing.Color.White;
+            this.squareButton1.Location = new System.Drawing.Point(38, 285);
+            this.squareButton1.Name = "squareButton1";
+            this.squareButton1.Size = new System.Drawing.Size(358, 41);
+            this.squareButton1.TabIndex = 14;
+            this.squareButton1.Text = "REGISTER";
+            this.squareButton1.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Manrope Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.Color.DarkGray;
+            this.label13.Location = new System.Drawing.Point(142, 355);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(154, 21);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "or via social network";
             // 
             // frmLogin
             // 
@@ -373,37 +584,20 @@ namespace ASProj
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1080, 710);
-            this.Controls.Add(this.socialIcon5);
-            this.Controls.Add(this.socialIcon4);
-            this.Controls.Add(this.socialIcon3);
-            this.Controls.Add(this.socialIcon2);
-            this.Controls.Add(this.socialIcon1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.flatCheckBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pnlRegister);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.squareTextBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.squareTextBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblLoginTitle);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblRegisterTitle);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlRegister.ResumeLayout(false);
+            this.pnlRegister.PerformLayout();
+            this.pnlLogin.ResumeLayout(false);
+            this.pnlLogin.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,9 +606,9 @@ namespace ASProj
         #endregion
 
         private PictureBox pictureBox1;
-        private Label label1;
+        private Label lblRegisterTitle;
         private Label label2;
-        private Label label3;
+        private Label lblLoginTitle;
         private Label label4;
         private Controls.SquareTextBox squareTextBox1;
         private Controls.SquareTextBox squareTextBox2;
@@ -438,5 +632,19 @@ namespace ASProj
         private SocialIcon socialIcon3;
         private SocialIcon socialIcon4;
         private SocialIcon socialIcon5;
+        private Panel pnlRegister;
+        private Panel pnlLogin;
+        private SocialIcon socialIcon6;
+        private SocialIcon socialIcon7;
+        private Label label1;
+        private SocialIcon socialIcon8;
+        private SquareTextBox squareTextBox3;
+        private SocialIcon socialIcon9;
+        private Label label3;
+        private SocialIcon socialIcon10;
+        private SquareTextBox squareTextBox4;
+        private SquareButton squareButton1;
+        private Label label13;
+        private LinkLabel linkLabel4;
     }
 }
