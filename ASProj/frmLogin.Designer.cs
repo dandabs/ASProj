@@ -30,7 +30,6 @@ namespace ASProj
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblRegisterTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblLoginTitle = new System.Windows.Forms.Label();
@@ -71,19 +70,13 @@ namespace ASProj
             this.squareTextBox4 = new ASProj.Controls.SquareTextBox();
             this.squareButton1 = new ASProj.Controls.SquareButton();
             this.label13 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.pnlRegister.SuspendLayout();
             this.pnlLogin.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ASProj.Properties.Resources.HD_wallpaper_anime_bird_anime_bird_cartoon_nature;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(598, 786);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // lblRegisterTitle
             // 
@@ -548,7 +541,7 @@ namespace ASProj
             this.squareTextBox4.ForeColor = System.Drawing.Color.DarkGray;
             this.squareTextBox4.Location = new System.Drawing.Point(38, 155);
             this.squareTextBox4.Name = "squareTextBox4";
-            this.squareTextBox4.PasswordChar = '\0';
+            this.squareTextBox4.PasswordChar = '•';
             this.squareTextBox4.PlaceholderText = "Enter your password";
             this.squareTextBox4.Size = new System.Drawing.Size(358, 42);
             this.squareTextBox4.TabIndex = 7;
@@ -578,34 +571,68 @@ namespace ASProj
             this.label13.TabIndex = 15;
             this.label13.Text = "or via social network";
             // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::ASProj.Properties.Resources.HD_wallpaper_anime_bird_anime_bird_cartoon_nature;
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Location = new System.Drawing.Point(-1, -1);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(598, 718);
+            this.panel6.TabIndex = 28;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Manrope ExtraBold", 20.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
+            this.label11.Location = new System.Drawing.Point(348, 57);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(244, 38);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "LAST SCORE 549";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Manrope ExtraBold", 25.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
+            this.label10.Location = new System.Drawing.Point(292, 17);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(303, 48);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "HIGH SCORE 732";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1080, 710);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.pnlRegister);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblLoginTitle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRegisterTitle);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.Text = "frmLogin";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmLogin_MouseDown);
             this.pnlRegister.ResumeLayout(false);
             this.pnlRegister.PerformLayout();
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label lblRegisterTitle;
         private Label label2;
         private Label lblLoginTitle;
@@ -646,5 +673,8 @@ namespace ASProj
         private SquareButton squareButton1;
         private Label label13;
         private LinkLabel linkLabel4;
+        private Panel panel6;
+        private Label label11;
+        private Label label10;
     }
 }

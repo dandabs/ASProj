@@ -24,6 +24,7 @@ namespace ASProj.Controls
             });
             Controls.Find("value", true)[0].Top = (Height - Controls.Find("value", true)[0].Height) / 2;
             Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            ((TextBox)Controls.Find("value", true)[0]).PasswordChar = PasswordChar;
         }
         public string PlaceholderText
         {
