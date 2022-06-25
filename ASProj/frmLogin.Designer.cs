@@ -620,6 +620,7 @@ namespace ASProj
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmLogin_MouseDown);
             this.pnlRegister.ResumeLayout(false);
             this.pnlRegister.PerformLayout();

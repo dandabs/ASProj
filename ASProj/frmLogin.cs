@@ -15,6 +15,7 @@ namespace ASProj
         public frmLogin()
         {
             InitializeComponent();
+            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
         }
 
         private void socialIcon1_Load(object sender, EventArgs e)
@@ -75,6 +76,11 @@ namespace ASProj
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

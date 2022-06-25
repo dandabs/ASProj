@@ -16,6 +16,7 @@ namespace ASProj.Controls
         {
             InitializeComponent();
             Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Cursor = Cursors.Hand;
         }
 
         protected override void OnResize(EventArgs e)
