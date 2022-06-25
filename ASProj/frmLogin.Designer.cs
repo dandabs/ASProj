@@ -148,7 +148,7 @@ namespace ASProj
             this.squareTextBox2.ForeColor = System.Drawing.Color.DarkGray;
             this.squareTextBox2.Location = new System.Drawing.Point(38, 155);
             this.squareTextBox2.Name = "squareTextBox2";
-            this.squareTextBox2.PasswordChar = '\0';
+            this.squareTextBox2.PasswordChar = '•';
             this.squareTextBox2.PlaceholderText = "Enter your password";
             this.squareTextBox2.Size = new System.Drawing.Size(358, 42);
             this.squareTextBox2.TabIndex = 7;
@@ -381,7 +381,6 @@ namespace ASProj
             // 
             // pnlRegister
             // 
-            this.pnlRegister.Controls.Add(this.pnlLogin);
             this.pnlRegister.Controls.Add(this.socialIcon1);
             this.pnlRegister.Controls.Add(this.socialIcon5);
             this.pnlRegister.Controls.Add(this.label4);
@@ -409,6 +408,7 @@ namespace ASProj
             this.pnlRegister.Size = new System.Drawing.Size(442, 497);
             this.pnlRegister.TabIndex = 27;
             this.pnlRegister.Visible = false;
+            this.pnlRegister.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRegister_Paint);
             // 
             // pnlLogin
             // 
@@ -424,7 +424,7 @@ namespace ASProj
             this.pnlLogin.Controls.Add(this.squareTextBox4);
             this.pnlLogin.Controls.Add(this.squareButton1);
             this.pnlLogin.Controls.Add(this.label13);
-            this.pnlLogin.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogin.Location = new System.Drawing.Point(619, 201);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(442, 497);
             this.pnlLogin.TabIndex = 28;
@@ -549,14 +549,15 @@ namespace ASProj
             // squareButton1
             // 
             this.squareButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.squareButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.squareButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.squareButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.squareButton1.Font = new System.Drawing.Font("Manrope ExtraBold", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.squareButton1.ForeColor = System.Drawing.Color.White;
             this.squareButton1.Location = new System.Drawing.Point(38, 285);
             this.squareButton1.Name = "squareButton1";
             this.squareButton1.Size = new System.Drawing.Size(358, 41);
             this.squareButton1.TabIndex = 14;
-            this.squareButton1.Text = "REGISTER";
+            this.squareButton1.Text = "LOG IN";
             this.squareButton1.UseVisualStyleBackColor = false;
             // 
             // label13
@@ -611,12 +612,13 @@ namespace ASProj
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1080, 710);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.pnlRegister);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblLoginTitle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRegisterTitle);
+            this.Controls.Add(this.pnlRegister);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.Text = "frmLogin";

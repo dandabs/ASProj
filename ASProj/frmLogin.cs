@@ -82,5 +82,10 @@ namespace ASProj
         {
 
         }
+
+        private void pnlRegister_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

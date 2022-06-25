@@ -13,10 +13,11 @@ namespace ASProj.Controls
 {
     public partial class SocialIcon : UserControl
     {
+        public string textStorage = "";
         public string IconText
         {
             get { return ((Label)Controls.Find("check", true)[0]).Text; }
-            set { ((Label)Controls.Find("check", true)[0]).Text = value; centerText(); }
+            set { ((Label)Controls.Find("check", true)[0]).Text = value; textStorage = value; centerText(); }
         }
         public SocialIcon()
         {
@@ -26,7 +27,8 @@ namespace ASProj.Controls
                 Name = "check",
                 Font = new Font("Font Awesome 6 Brands", 12),
                 ForeColor = Color.White,
-                BackColor = Color.Transparent
+                BackColor = Color.Transparent,
+                Text = textStorage
             });
             ((Label)Controls.Find("check", true)[0]).Font = Font;
             ((Label)Controls.Find("check", true)[0]).Text = IconText;
