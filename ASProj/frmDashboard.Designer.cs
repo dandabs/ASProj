@@ -302,7 +302,7 @@
             this.squareButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.squareButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.squareButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton1.Font = new System.Drawing.Font("Manrope SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.squareButton1.Font = new System.Drawing.Font("Manrope", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.squareButton1.ForeColor = System.Drawing.Color.White;
             this.squareButton1.Location = new System.Drawing.Point(25, 203);
             this.squareButton1.Name = "squareButton1";
