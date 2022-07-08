@@ -20,5 +20,13 @@ namespace ASProj
                 Application.Run(new frmDashboard());
             } else Application.Run(new frmLogin());
         }
+
+        // DA 8/7/22 TODO update these values once the file saving system has been implemented
+        public static Guid DefaultUserAvatar = Guid.Empty;
+        public static Guid DefaultUserBanner = Guid.Empty;
+
+        public static Guid DefaultUserCharacter = Guid.Empty;
+
+        public static Guid DefaultUserTheme = Guid.Empty;
     }
 }
