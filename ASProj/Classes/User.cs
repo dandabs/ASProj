@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace ASProj.Classes
     public class User
     {
         // DA 8/7/22 Constructor
-        public User(string username)
+        public User(string username, string password)
         {
             Username = username.Trim();
 
@@ -22,6 +23,18 @@ namespace ASProj.Classes
             Discriminator = rnd.Next(1000, 9999); // DA 8/7/22 Only generates 4 digit number
 
             CreatedAt = DateTime.Now;
+
+            // DA 9/7/22 Hash and store password with SHA256
+            using (SHA256 hash = SHA256.Create())
+            {
+                byte[] data = hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < data.Length; i++)
+                {
+                    sb.Append(data[i].ToString("x2")); // DA 9/7/22 Hexadecimal string
+                }
+                Password = sb.ToString();
+            }
         }
 
         // DA 8/7/22 Base Properties (things that define who the user is)
@@ -31,6 +44,7 @@ namespace ASProj.Classes
         public DateTime CreatedAt { get; }
 
         // DA 8/7/22 Avatar Properties (things that the user can customize)
+        public string Password { get; set; } // DA 9/7/22 Should be hashed with SHA256 - DO NOT STORE AS PLAINTEXT
         public Guid? Avatar { get; set; }
         public Guid? Banner { get; set; }
         public Guid? Character { get; set; }

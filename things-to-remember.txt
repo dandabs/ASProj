@@ -37,3 +37,6 @@ https://convertingcolors.com/
 
 user class property inspiration
 https://discord.js.org/#/docs/discord.js/main/class/User
+
+sha256 insecurity warnings
+https://stackoverflow.com/questions/11624372/best-practice-for-hashing-passwords-sha256-or-sha512
