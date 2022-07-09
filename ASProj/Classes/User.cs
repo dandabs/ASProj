@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -76,6 +77,20 @@ namespace ASProj.Classes
                 return Status;
             }
             else return "";
+        }
+
+        // DA 9/7/22 Serialization (static - must be accessed by the class directly i.e. User.Serialize())
+        public static string Serialize(User obj)
+        {
+            return JsonConvert.SerializeObject(obj);
+        }
+        public static string Serialize(List<User> objs)
+        {
+            return JsonConvert.SerializeObject(objs);
+        }
+        public static List<User> Deserialize(string json)
+        {
+            return JsonConvert.DeserializeObject<List<User>>(json);
         }
     }
 }

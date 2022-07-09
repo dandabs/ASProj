@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ASProj.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,16 @@ namespace ASProj
 
         private void frmDashboard_Load(object sender, EventArgs e)
         {
+            // DA 9/7/22 Testing that serialization + deserialization work
+            /*List<User> usrs = new List<User>();
+            usrs.Add(new User("dandabs"));
+            usrs.Add(new User("frithiof07"));
 
+            string str = User.Serialize(usrs);
+            MessageBox.Show(str);
+
+            List<User> str2 = User.Deserialize(str);
+            MessageBox.Show(str2.Count + "");*/
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)

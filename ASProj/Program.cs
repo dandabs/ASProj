@@ -1,3 +1,5 @@
+using ASProj.Classes;
+
 namespace ASProj
 {
     internal static class Program
@@ -19,7 +21,7 @@ namespace ASProj
             {
                 Application.Run(new frmDashboard());
             } else Application.Run(new frmLogin());
-        }
+    }
 
         // DA 8/7/22 TODO update these values once the file saving system has been implemented
         public static Guid DefaultUserAvatar = Guid.Empty;
