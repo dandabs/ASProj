@@ -1,10 +1,12 @@
-﻿using System;
+﻿using ASProj.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -84,6 +86,44 @@ namespace ASProj
         }
 
         private void pnlRegister_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (!Regex.Match(tbxUsername.Text, "^(?=.{4,16}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$").Success)
+                // DA 9/7/22 Between 4-16 characters, no _ or . at start or end, allowed a-z, 0-9, . and _
+            {
+                MessageBox.Show("Invalid username! Please check it complies with the username requirements and try again.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return; // DA 9/7/22 Do not continue forward
+            }
+            if (!Regex.Match(tbxPassword.Text, "^\\w{6,}$").Success)
+                // DA 9/7/22 Minimum 6 characters
+            {
+                MessageBox.Show("Invalid password! Please check it complies with the password requirements and try again.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return; // DA 9/7/22 Do not continue forward
+            }
+
+            // DA 9/7/22 If entered username and password are valid
+            User newUser = new User(tbxUsername.Text, tbxPassword.Text);
+            newUser.Save();
+
+            Program.CurrentSession = newUser;
+
+            Hide();
+            Form frmDashboard = new frmDashboard();// DA 9/7/22 Can use Form as the object here instead of frmDashboard (as advised by CCEA), permitting the object conforms with the Liskov substitution principle
+            frmDashboard.Show();
+            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
 
         }

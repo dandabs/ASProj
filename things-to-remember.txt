@@ -40,3 +40,7 @@ https://discord.js.org/#/docs/discord.js/main/class/User
 
 sha256 insecurity warnings
 https://stackoverflow.com/questions/11624372/best-practice-for-hashing-passwords-sha256-or-sha512
+
+regex templates
+https://stackoverflow.com/questions/12018245/regular-expression-to-validate-username
+https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a

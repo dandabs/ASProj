@@ -36,6 +36,11 @@ namespace ASProj.Controls
             get { return ((TextBox)Controls.Find("value", true)[0]).PasswordChar; }
             set { ((TextBox)Controls.Find("value", true)[0]).PasswordChar = value; }
         }
+        public override string Text
+        {
+            get { return ((TextBox)Controls.Find("value", true)[0]).Text; }
+            set { ((TextBox)Controls.Find("value", true)[0]).Text = value;  }
+        }
         protected override void OnBackColorChanged(EventArgs e)
         {
             base.OnBackColorChanged(e);

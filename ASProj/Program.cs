@@ -19,9 +19,11 @@ namespace ASProj
 
             if (isDebug)
             {
-                Application.Run(new frmDashboard());
+                Application.Run(new frmLogin());
             } else Application.Run(new frmLogin());
-    }
+        }
+
+        public static User? CurrentSession = null;
 
         // DA 8/7/22 TODO update these values once the file saving system has been implemented
         public static Guid DefaultUserAvatar = Guid.Empty;

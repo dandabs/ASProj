@@ -93,6 +93,12 @@ namespace ASProj.Classes
             else return "";
         }
 
+        // DA 9/7/22 Saving Method
+        public void Save()
+        {
+            FileHandler.Update<User>("users.json", Id.ToString(), User.Serialize(this));
+        }
+
         // DA 9/7/22 Serialization (static - must be accessed by the class directly i.e. User.Serialize())
         public static string Serialize(User obj)
         {

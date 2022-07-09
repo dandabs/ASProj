@@ -34,8 +34,8 @@ namespace ASProj
             this.label2 = new System.Windows.Forms.Label();
             this.lblLoginTitle = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.squareTextBox1 = new ASProj.Controls.SquareTextBox();
-            this.squareTextBox2 = new ASProj.Controls.SquareTextBox();
+            this.tbxUsername = new ASProj.Controls.SquareTextBox();
+            this.tbxPassword = new ASProj.Controls.SquareTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,9 +43,9 @@ namespace ASProj
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button1 = new ASProj.Controls.SquareButton();
+            this.btnRegister = new ASProj.Controls.SquareButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.flatCheckBox1 = new ASProj.Controls.FlatCheckBox();
+            this.cbxAge = new ASProj.Controls.FlatCheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -63,16 +63,18 @@ namespace ASProj
             this.socialIcon7 = new ASProj.Controls.SocialIcon();
             this.label1 = new System.Windows.Forms.Label();
             this.socialIcon8 = new ASProj.Controls.SocialIcon();
-            this.squareTextBox3 = new ASProj.Controls.SquareTextBox();
+            this.tbxUsernameLogin = new ASProj.Controls.SquareTextBox();
             this.socialIcon9 = new ASProj.Controls.SocialIcon();
             this.label3 = new System.Windows.Forms.Label();
             this.socialIcon10 = new ASProj.Controls.SocialIcon();
-            this.squareTextBox4 = new ASProj.Controls.SquareTextBox();
-            this.squareButton1 = new ASProj.Controls.SquareButton();
+            this.tbxPasswordLogin = new ASProj.Controls.SquareTextBox();
+            this.btnLogin = new ASProj.Controls.SquareButton();
             this.label13 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.tbxDiscriminatorLogin = new ASProj.Controls.SquareTextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.pnlRegister.SuspendLayout();
             this.pnlLogin.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -125,33 +127,33 @@ namespace ASProj
             this.label4.ForeColor = System.Drawing.Color.DarkGray;
             this.label4.Location = new System.Drawing.Point(36, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 21);
+            this.label4.Size = new System.Drawing.Size(84, 21);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Email";
+            this.label4.Text = "Username";
             // 
-            // squareTextBox1
+            // tbxUsername
             // 
-            this.squareTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
-            this.squareTextBox1.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareTextBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.squareTextBox1.Location = new System.Drawing.Point(38, 56);
-            this.squareTextBox1.Name = "squareTextBox1";
-            this.squareTextBox1.PasswordChar = '\0';
-            this.squareTextBox1.PlaceholderText = "Enter your email";
-            this.squareTextBox1.Size = new System.Drawing.Size(358, 42);
-            this.squareTextBox1.TabIndex = 5;
+            this.tbxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.tbxUsername.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbxUsername.ForeColor = System.Drawing.Color.DarkGray;
+            this.tbxUsername.Location = new System.Drawing.Point(38, 56);
+            this.tbxUsername.Name = "tbxUsername";
+            this.tbxUsername.PasswordChar = '\0';
+            this.tbxUsername.PlaceholderText = "Enter your username";
+            this.tbxUsername.Size = new System.Drawing.Size(358, 42);
+            this.tbxUsername.TabIndex = 5;
             // 
-            // squareTextBox2
+            // tbxPassword
             // 
-            this.squareTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
-            this.squareTextBox2.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareTextBox2.ForeColor = System.Drawing.Color.DarkGray;
-            this.squareTextBox2.Location = new System.Drawing.Point(38, 155);
-            this.squareTextBox2.Name = "squareTextBox2";
-            this.squareTextBox2.PasswordChar = '•';
-            this.squareTextBox2.PlaceholderText = "Enter your password";
-            this.squareTextBox2.Size = new System.Drawing.Size(358, 42);
-            this.squareTextBox2.TabIndex = 7;
+            this.tbxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.tbxPassword.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbxPassword.ForeColor = System.Drawing.Color.DarkGray;
+            this.tbxPassword.Location = new System.Drawing.Point(38, 155);
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '•';
+            this.tbxPassword.PlaceholderText = "Enter your password";
+            this.tbxPassword.Size = new System.Drawing.Size(358, 42);
+            this.tbxPassword.TabIndex = 7;
             // 
             // label5
             // 
@@ -221,18 +223,20 @@ namespace ASProj
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(73)))), ((int)(((byte)(82)))));
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // button1
+            // btnRegister
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Manrope ExtraBold", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(38, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(358, 41);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "REGISTER";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegister.Font = new System.Drawing.Font("Manrope ExtraBold", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(38, 285);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(358, 41);
+            this.btnRegister.TabIndex = 14;
+            this.btnRegister.Text = "REGISTER";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label6
             // 
@@ -246,16 +250,16 @@ namespace ASProj
             this.label6.TabIndex = 15;
             this.label6.Text = "or via social network";
             // 
-            // flatCheckBox1
+            // cbxAge
             // 
-            this.flatCheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
-            this.flatCheckBox1.Checked = false;
-            this.flatCheckBox1.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.flatCheckBox1.Location = new System.Drawing.Point(38, 221);
-            this.flatCheckBox1.Name = "flatCheckBox1";
-            this.flatCheckBox1.Size = new System.Drawing.Size(23, 23);
-            this.flatCheckBox1.TabIndex = 16;
-            this.flatCheckBox1.UncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.cbxAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.cbxAge.Checked = false;
+            this.cbxAge.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.cbxAge.Location = new System.Drawing.Point(38, 221);
+            this.cbxAge.Name = "cbxAge";
+            this.cbxAge.Size = new System.Drawing.Size(23, 23);
+            this.cbxAge.TabIndex = 16;
+            this.cbxAge.UncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             // 
             // label7
             // 
@@ -385,11 +389,11 @@ namespace ASProj
             this.pnlRegister.Controls.Add(this.socialIcon5);
             this.pnlRegister.Controls.Add(this.label4);
             this.pnlRegister.Controls.Add(this.socialIcon4);
-            this.pnlRegister.Controls.Add(this.squareTextBox1);
+            this.pnlRegister.Controls.Add(this.tbxUsername);
             this.pnlRegister.Controls.Add(this.socialIcon3);
             this.pnlRegister.Controls.Add(this.label5);
             this.pnlRegister.Controls.Add(this.socialIcon2);
-            this.pnlRegister.Controls.Add(this.squareTextBox2);
+            this.pnlRegister.Controls.Add(this.tbxPassword);
             this.pnlRegister.Controls.Add(this.panel1);
             this.pnlRegister.Controls.Add(this.label9);
             this.pnlRegister.Controls.Add(this.panel2);
@@ -400,8 +404,8 @@ namespace ASProj
             this.pnlRegister.Controls.Add(this.label8);
             this.pnlRegister.Controls.Add(this.panel5);
             this.pnlRegister.Controls.Add(this.label7);
-            this.pnlRegister.Controls.Add(this.button1);
-            this.pnlRegister.Controls.Add(this.flatCheckBox1);
+            this.pnlRegister.Controls.Add(this.btnRegister);
+            this.pnlRegister.Controls.Add(this.cbxAge);
             this.pnlRegister.Controls.Add(this.label6);
             this.pnlRegister.Location = new System.Drawing.Point(619, 201);
             this.pnlRegister.Name = "pnlRegister";
@@ -412,17 +416,19 @@ namespace ASProj
             // 
             // pnlLogin
             // 
+            this.pnlLogin.Controls.Add(this.label12);
+            this.pnlLogin.Controls.Add(this.tbxDiscriminatorLogin);
             this.pnlLogin.Controls.Add(this.linkLabel4);
             this.pnlLogin.Controls.Add(this.socialIcon6);
             this.pnlLogin.Controls.Add(this.socialIcon7);
             this.pnlLogin.Controls.Add(this.label1);
             this.pnlLogin.Controls.Add(this.socialIcon8);
-            this.pnlLogin.Controls.Add(this.squareTextBox3);
+            this.pnlLogin.Controls.Add(this.tbxUsernameLogin);
             this.pnlLogin.Controls.Add(this.socialIcon9);
             this.pnlLogin.Controls.Add(this.label3);
             this.pnlLogin.Controls.Add(this.socialIcon10);
-            this.pnlLogin.Controls.Add(this.squareTextBox4);
-            this.pnlLogin.Controls.Add(this.squareButton1);
+            this.pnlLogin.Controls.Add(this.tbxPasswordLogin);
+            this.pnlLogin.Controls.Add(this.btnLogin);
             this.pnlLogin.Controls.Add(this.label13);
             this.pnlLogin.Location = new System.Drawing.Point(619, 201);
             this.pnlLogin.Name = "pnlLogin";
@@ -473,9 +479,9 @@ namespace ASProj
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
             this.label1.Location = new System.Drawing.Point(36, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 21);
+            this.label1.Size = new System.Drawing.Size(84, 21);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Email";
+            this.label1.Text = "Username";
             // 
             // socialIcon8
             // 
@@ -488,17 +494,17 @@ namespace ASProj
             this.socialIcon8.Size = new System.Drawing.Size(60, 60);
             this.socialIcon8.TabIndex = 25;
             // 
-            // squareTextBox3
+            // tbxUsernameLogin
             // 
-            this.squareTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
-            this.squareTextBox3.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareTextBox3.ForeColor = System.Drawing.Color.DarkGray;
-            this.squareTextBox3.Location = new System.Drawing.Point(38, 56);
-            this.squareTextBox3.Name = "squareTextBox3";
-            this.squareTextBox3.PasswordChar = '\0';
-            this.squareTextBox3.PlaceholderText = "Enter your email";
-            this.squareTextBox3.Size = new System.Drawing.Size(358, 42);
-            this.squareTextBox3.TabIndex = 5;
+            this.tbxUsernameLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.tbxUsernameLogin.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbxUsernameLogin.ForeColor = System.Drawing.Color.DarkGray;
+            this.tbxUsernameLogin.Location = new System.Drawing.Point(38, 56);
+            this.tbxUsernameLogin.Name = "tbxUsernameLogin";
+            this.tbxUsernameLogin.PasswordChar = '\0';
+            this.tbxUsernameLogin.PlaceholderText = "Enter your username";
+            this.tbxUsernameLogin.Size = new System.Drawing.Size(245, 42);
+            this.tbxUsernameLogin.TabIndex = 5;
             // 
             // socialIcon9
             // 
@@ -534,31 +540,32 @@ namespace ASProj
             this.socialIcon10.Size = new System.Drawing.Size(60, 60);
             this.socialIcon10.TabIndex = 23;
             // 
-            // squareTextBox4
+            // tbxPasswordLogin
             // 
-            this.squareTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
-            this.squareTextBox4.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareTextBox4.ForeColor = System.Drawing.Color.DarkGray;
-            this.squareTextBox4.Location = new System.Drawing.Point(38, 155);
-            this.squareTextBox4.Name = "squareTextBox4";
-            this.squareTextBox4.PasswordChar = '•';
-            this.squareTextBox4.PlaceholderText = "Enter your password";
-            this.squareTextBox4.Size = new System.Drawing.Size(358, 42);
-            this.squareTextBox4.TabIndex = 7;
+            this.tbxPasswordLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.tbxPasswordLogin.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbxPasswordLogin.ForeColor = System.Drawing.Color.DarkGray;
+            this.tbxPasswordLogin.Location = new System.Drawing.Point(38, 155);
+            this.tbxPasswordLogin.Name = "tbxPasswordLogin";
+            this.tbxPasswordLogin.PasswordChar = '•';
+            this.tbxPasswordLogin.PlaceholderText = "Enter your password";
+            this.tbxPasswordLogin.Size = new System.Drawing.Size(358, 42);
+            this.tbxPasswordLogin.TabIndex = 7;
             // 
-            // squareButton1
+            // btnLogin
             // 
-            this.squareButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.squareButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.squareButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton1.Font = new System.Drawing.Font("Manrope ExtraBold", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareButton1.ForeColor = System.Drawing.Color.White;
-            this.squareButton1.Location = new System.Drawing.Point(38, 285);
-            this.squareButton1.Name = "squareButton1";
-            this.squareButton1.Size = new System.Drawing.Size(358, 41);
-            this.squareButton1.TabIndex = 14;
-            this.squareButton1.Text = "LOG IN";
-            this.squareButton1.UseVisualStyleBackColor = false;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Manrope ExtraBold", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(38, 285);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(358, 41);
+            this.btnLogin.TabIndex = 14;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label13
             // 
@@ -606,6 +613,30 @@ namespace ASProj
             this.label10.TabIndex = 29;
             this.label10.Text = "HIGH SCORE 732";
             // 
+            // tbxDiscriminatorLogin
+            // 
+            this.tbxDiscriminatorLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
+            this.tbxDiscriminatorLogin.Font = new System.Drawing.Font("Manrope Medium", 10.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbxDiscriminatorLogin.ForeColor = System.Drawing.Color.DarkGray;
+            this.tbxDiscriminatorLogin.Location = new System.Drawing.Point(310, 56);
+            this.tbxDiscriminatorLogin.Name = "tbxDiscriminatorLogin";
+            this.tbxDiscriminatorLogin.PasswordChar = '\0';
+            this.tbxDiscriminatorLogin.PlaceholderText = "0000";
+            this.tbxDiscriminatorLogin.Size = new System.Drawing.Size(86, 42);
+            this.tbxDiscriminatorLogin.TabIndex = 28;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Manrope", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.DarkGray;
+            this.label12.Location = new System.Drawing.Point(285, 67);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(24, 21);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "#";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -613,12 +644,12 @@ namespace ASProj
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1080, 710);
             this.Controls.Add(this.pnlLogin);
+            this.Controls.Add(this.pnlRegister);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblLoginTitle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRegisterTitle);
-            this.Controls.Add(this.pnlRegister);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.Text = "frmLogin";
@@ -640,8 +671,8 @@ namespace ASProj
         private Label label2;
         private Label lblLoginTitle;
         private Label label4;
-        private Controls.SquareTextBox squareTextBox1;
-        private Controls.SquareTextBox squareTextBox2;
+        private Controls.SquareTextBox tbxUsername;
+        private Controls.SquareTextBox tbxPassword;
         private Label label5;
         private Panel panel1;
         private Panel panel2;
@@ -649,9 +680,9 @@ namespace ASProj
         private Panel panel4;
         private Panel panel5;
         private LinkLabel linkLabel1;
-        private SquareButton button1;
+        private SquareButton btnRegister;
         private Label label6;
-        private Controls.FlatCheckBox flatCheckBox1;
+        private Controls.FlatCheckBox cbxAge;
         private Label label7;
         private Label label8;
         private LinkLabel linkLabel2;
@@ -668,16 +699,18 @@ namespace ASProj
         private SocialIcon socialIcon7;
         private Label label1;
         private SocialIcon socialIcon8;
-        private SquareTextBox squareTextBox3;
+        private SquareTextBox tbxUsernameLogin;
         private SocialIcon socialIcon9;
         private Label label3;
         private SocialIcon socialIcon10;
-        private SquareTextBox squareTextBox4;
-        private SquareButton squareButton1;
+        private SquareTextBox tbxPasswordLogin;
+        private SquareButton btnLogin;
         private Label label13;
         private LinkLabel linkLabel4;
         private Panel panel6;
         private Label label11;
         private Label label10;
+        private Label label12;
+        private SquareTextBox tbxDiscriminatorLogin;
     }
 }
