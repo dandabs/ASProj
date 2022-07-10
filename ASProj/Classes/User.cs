@@ -11,6 +11,21 @@ namespace ASProj.Classes
     public class User
     {
         // DA 8/7/22 Constructor
+        [JsonConstructor]
+        public User(Guid Id, string Username, int Discriminator, DateTime CreatedAt, string Password,
+            Guid? Avatar, Guid? Banner, Guid? Character, Guid? Theme, String? status)
+        {
+            this.Id = Id;
+            this.Username = Username;
+            this.Discriminator = Discriminator;
+            this.CreatedAt = CreatedAt;
+            this.Password = Password;
+            this.Avatar = Avatar;
+            this.Banner = Banner;
+            this.Character = Character;
+            this.Theme = Theme;
+            this.Status = Status;
+        }
         public User(string username, string password)
         {
             Username = username.Trim();

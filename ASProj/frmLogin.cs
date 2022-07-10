@@ -1,10 +1,13 @@
 ﻿using ASProj.Classes;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -118,14 +121,72 @@ namespace ASProj
             Program.CurrentSession = newUser;
 
             Hide();
-            Form frmDashboard = new frmDashboard();// DA 9/7/22 Can use Form as the object here instead of frmDashboard (as advised by CCEA), permitting the object conforms with the Liskov substitution principle
+            Form frmDashboard = new frmDashboard(); // DA 9/7/22 Can use Form as the object here instead of frmDashboard (as advised by CCEA), permitting the object conforms with the Liskov substitution principle
             frmDashboard.Show();
             frmDashboard.SetDesktopLocation(Location.X, Location.Y);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if (!Regex.Match(tbxDiscriminatorLogin.Text, "[0-9]{4}").Success)
+            {
+                MessageBox.Show("Invalid discriminator! Please check it is 4 numeric digits and try again.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return; // DA 9/7/22 Do not continue forward
+            }
+            int disc = Convert.ToInt32(tbxDiscriminatorLogin.Text);
 
+            List<User>? users = null;
+            users = JsonConvert.DeserializeObject<List<User>>(FileHandler.Select("users.json"));
+            if (users == null) users = new List<User>();
+
+            foreach (User user in users)
+            {
+                PropertyInfo UsernameProp = user.GetType().GetProperty("Username");
+                PropertyInfo PasswordProp = user.GetType().GetProperty("Password");
+                PropertyInfo DiscriminatorProp = user.GetType().GetProperty("Discriminator");
+
+                if ((string)UsernameProp.GetValue(user) == tbxUsername.Text.Trim() ||
+                    (int)DiscriminatorProp.GetValue(user) == disc)
+                {
+
+                    using (SHA256 hash = SHA256.Create())
+                    {
+                        byte[] data = hash.ComputeHash(Encoding.UTF8.GetBytes(tbxPasswordLogin.Text));
+                        StringBuilder sb = new StringBuilder();
+                        for (int i = 0; i < data.Length; i++)
+                        {
+                            sb.Append(data[i].ToString("x2")); // DA 9/7/22 Hexadecimal string
+                        }
+                        if (sb.ToString() == (string)PasswordProp.GetValue(user))
+                        {
+                            // DA 9/7/22 User has successfully logged in here
+                            Program.CurrentSession = user;
+
+                            Hide();
+                            Form frmDashboard = new frmDashboard(); // DA 9/7/22 Can use Form as the object here instead of frmDashboard (as advised by CCEA), permitting the object conforms with the Liskov substitution principle
+                            frmDashboard.Show();
+                            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+                            return;
+                        } else
+                        {
+                            MessageBox.Show("Your password is incorrect. Check it's correct and try again.",
+                                    "Error",
+                                    MessageBoxButtons.OK,
+                                     MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+
+                }
+            }
+
+            MessageBox.Show("Sorry, but we can't find that username. Check it's spelled correctly and try again.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
         }
     }
 }

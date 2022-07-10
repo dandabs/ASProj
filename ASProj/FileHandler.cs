@@ -53,8 +53,8 @@ namespace ASProj
                     foreach (T obj in array)
                     {
                         PropertyInfo IdProperty = obj.GetType().GetProperty("Id");
-                        string Id2 = (string)IdProperty.GetValue(obj);
-                        if (Id2 != Id)
+                        Guid Id2 = (Guid)IdProperty.GetValue(obj);
+                        if (Id2.ToString() != Id)
                         {
                             arrayCopy.Add(obj);
                         }
