@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace ASProj.Classes
 {
-    public class Image
+    public class UserImage
     {
         // DA 10/7/22 Constructor
         [JsonConstructor]
-        public Image(Guid Id, byte[] Blob, DateTime CreatedAt)
+        public UserImage(Guid Id, byte[] Blob, DateTime CreatedAt)
         {
             this.Id = Id;
             this.Blob = Blob;
             this.CreatedAt = CreatedAt;
         }
-        public Image(byte[] blob) // DA 10/7/22 Construct from byte array
+        public UserImage(byte[] blob) // DA 10/7/22 Construct from byte array
         {
             Id = Guid.NewGuid();
             Blob = blob;
             CreatedAt = DateTime.Now;
         }
-        public Image(Bitmap bm) // DA 10/7/22 Construct from bitmap (directly from PictureBox)
+        public UserImage(Bitmap bm) // DA 10/7/22 Construct from bitmap (directly from PictureBox)
         {
             using (var stream = new MemoryStream())
             {
@@ -35,7 +35,7 @@ namespace ASProj.Classes
                 CreatedAt = DateTime.Now;
             }
         }
-        public Image(string filepath) // DA 10/7/22 Construct from a file
+        public UserImage(string filepath) // DA 10/7/22 Construct from a file
         {
             FileStream fs = File.OpenRead(filepath);
             byte[] blob = new byte[fs.Length];
@@ -58,7 +58,7 @@ namespace ASProj.Classes
         // DA 10/7/22 Saving Method
         public void Save()
         {
-            FileHandler.Update<Image>("images.json", Id.ToString(), Image.Serialize(this));
+            FileHandler.Update<UserImage>("images.json", Id.ToString(), UserImage.Serialize(this));
         }
 
         // DA 10/7/22 Conversion methods
@@ -73,26 +73,26 @@ namespace ASProj.Classes
         }
 
         // DA 10/7/22 Serialization (static - must be accessed by the class directly i.e. Image.Serialize())
-        public static string Serialize(Image obj)
+        public static string Serialize(UserImage obj)
         {
             return JsonConvert.SerializeObject(obj);
         }
-        public static string Serialize(List<Image> obj)
+        public static string Serialize(List<UserImage> obj)
         {
             return JsonConvert.SerializeObject(obj);
         }
-        public static List<Image> Deserialize(string json)
+        public static List<UserImage> Deserialize(string json)
         {
-            return JsonConvert.DeserializeObject<List<Image>>(json);
+            return JsonConvert.DeserializeObject<List<UserImage>>(json);
         }
 
         // DA 10/7/22 "Database" searching methods
-        public static Image Search(Guid Id)
+        public static UserImage Search(Guid Id)
         {
             string file = FileHandler.Select("images.json");
-            List<Image> images = Deserialize(file);
-            if (images == null) images = new List<Image>();
-            foreach (Image im in images) {
+            List<UserImage> images = Deserialize(file);
+            if (images == null) images = new List<UserImage>();
+            foreach (UserImage im in images) {
                 if (im.Id == Id) return im;
             }
             throw new Exception("That image cannot be found in the database.");

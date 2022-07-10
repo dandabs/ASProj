@@ -35,7 +35,7 @@
             this.menuListIconButton4 = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton3 = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton2 = new ASProj.Controls.MenuListIconButton();
-            this.ovalPictureBox1 = new ASProj.Controls.OvalPictureBox();
+            this.pbxAvatar = new ASProj.Controls.OvalPictureBox();
             this.lblDiscriminator = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.roundedPanel1 = new ASProj.Controls.RoundedPanel();
@@ -129,7 +129,7 @@
             this.squareButton3 = new ASProj.Controls.SquareButton();
             this.squareButton2 = new ASProj.Controls.SquareButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).BeginInit();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel2.SuspendLayout();
@@ -246,16 +246,16 @@
             this.menuListIconButton2.TabIndex = 2;
             this.menuListIconButton2.Load += new System.EventHandler(this.menuListIconButton2_Load);
             // 
-            // ovalPictureBox1
+            // pbxAvatar
             // 
-            this.ovalPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.ovalPictureBox1.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
-            this.ovalPictureBox1.Location = new System.Drawing.Point(983, 30);
-            this.ovalPictureBox1.Name = "ovalPictureBox1";
-            this.ovalPictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.ovalPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox1.TabIndex = 2;
-            this.ovalPictureBox1.TabStop = false;
+            this.pbxAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.pbxAvatar.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
+            this.pbxAvatar.Location = new System.Drawing.Point(983, 30);
+            this.pbxAvatar.Name = "pbxAvatar";
+            this.pbxAvatar.Size = new System.Drawing.Size(40, 40);
+            this.pbxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxAvatar.TabIndex = 2;
+            this.pbxAvatar.TabStop = false;
             // 
             // lblDiscriminator
             // 
@@ -1527,7 +1527,7 @@
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblDiscriminator);
-            this.Controls.Add(this.ovalPictureBox1);
+            this.Controls.Add(this.pbxAvatar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDashboard";
@@ -1536,7 +1536,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmDashboard_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).EndInit();
             this.roundedPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel2.ResumeLayout(false);
@@ -1572,7 +1572,7 @@
         private Controls.MenuListIconButton menuListIconButton6;
         private Controls.MenuListIconButton menuListIconButton5;
         private Controls.MenuListIconButton menuListIconButton4;
-        private Controls.OvalPictureBox ovalPictureBox1;
+        private Controls.OvalPictureBox pbxAvatar;
         private Label lblDiscriminator;
         private Label lblUsername;
         private Controls.RoundedPanel roundedPanel1;

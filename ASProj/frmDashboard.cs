@@ -40,6 +40,8 @@ namespace ASProj
 
             lblUsername.Text = Program.CurrentSession.Username;
             lblDiscriminator.Text = "#" + Program.CurrentSession.Discriminator;
+
+            pbxAvatar.Image = UserImage.Search(Program.CurrentSession.GetAvatar()).ToBitmap();
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
