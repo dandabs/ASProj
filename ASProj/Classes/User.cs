@@ -127,5 +127,18 @@ namespace ASProj.Classes
         {
             return JsonConvert.DeserializeObject<List<User>>(json);
         }
+
+        // DA 10/7/22 "Database" searching methods
+        public static User Search(Guid Id)
+        {
+            string file = FileHandler.Select("users.json");
+            List<User> users = Deserialize(file);
+            if (users == null) users = new List<User>();
+            foreach (User u in users)
+            {
+                if (u.Id == Id) return u;
+            }
+            throw new Exception("That user cannot be found in the database.");
+        }
     }
 }

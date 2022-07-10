@@ -124,6 +124,9 @@ namespace ASProj
             Form frmDashboard = new frmDashboard(); // DA 9/7/22 Can use Form as the object here instead of frmDashboard (as advised by CCEA), permitting the object conforms with the Liskov substitution principle
             frmDashboard.Show();
             frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+
+            // DA 10/7/22 Saves the username and password for autologin next time the application is launched
+            File.WriteAllText(Path.Combine(FileHandler.dir, ".session"), Program.CurrentSession.Id.ToString() + ":" + Program.CurrentSession.Password);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -169,6 +172,10 @@ namespace ASProj
                             Form frmDashboard = new frmDashboard(); // DA 9/7/22 Can use Form as the object here instead of frmDashboard (as advised by CCEA), permitting the object conforms with the Liskov substitution principle
                             frmDashboard.Show();
                             frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+
+                            // DA 10/7/22 Saves the username and password for autologin next time the application is launched
+                            File.WriteAllText(Path.Combine(FileHandler.dir, ".session"), Program.CurrentSession.Id.ToString() + ":" + Program.CurrentSession.Password);
+
                             return;
                         } else
                         {
