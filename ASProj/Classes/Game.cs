@@ -11,9 +11,10 @@ namespace ASProj.Classes
     {
         // DA 10/7/22 Constructor
         [JsonConstructor]
-        public Game(string Id, char Icon, string Author, string Genre, string Goal, Question[] Questions)
+        public Game(string Id, string Name, char Icon, string Author, string Genre, string Goal, Question[] Questions)
         {
             this.Id = Id;
+            this.Name = Name;
             this.Icon = Icon;
             this.Author = Author;
             this.Genre = Genre;
@@ -22,6 +23,7 @@ namespace ASProj.Classes
         }
         // DA 10/7/22 Properties
         public string Id { get; }     // DA 10/7/22 Users wont be bothered to create a valid GUID/UUID, so we'll make this a string for ease of use
+        public string Name { get; }
         public char Icon { get; }     // DA 10/7/22 Font-awesome icon glyph (or letter)
         public string Author { get; } // DA 10/7/22 For example, "Daniel Adams"
         public string Genre { get; }  // DA 10/7/22 For example, "Space"

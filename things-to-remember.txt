@@ -54,3 +54,6 @@ https://stackoverflow.com/questions/20840256/create-uuid-with-zeros
 https://docs.microsoft.com/en-us/dotnet/api/system.guid.empty?view=net-6.0
 https://stackoverflow.com/questions/6122984/load-a-bitmap-image-into-windows-forms-using-open-file-dialog
 https://social.msdn.microsoft.com/Forums/en-US/fb67aede-d454-4be1-bae4-29f669f14014/trigger-click-event-from-a-usercontrol?forum=csharpgeneral
+https://stackoverflow.com/questions/463642/how-can-i-convert-seconds-into-hourminutessecondsmilliseconds-time
+https://stackoverflow.com/questions/3143657/truncate-two-decimal-places-without-rounding
+https://stackoverflow.com/questions/13153616/how-to-round-a-integer-to-the-close-hundred

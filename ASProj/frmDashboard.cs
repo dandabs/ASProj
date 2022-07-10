@@ -1,4 +1,5 @@
 ﻿using ASProj.Classes;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -95,6 +96,24 @@ namespace ASProj
 
             TimeSpan ts = TimeSpan.FromSeconds(timeplayed);
             lblTimePlayed.Text = ts.ToString(@"hh\:mm\:ss");
+
+            Game[] games = JsonConvert.DeserializeObject<Game[]>(FileHandler.Select("games.json"));
+            for (int i = 0; i < games.Length; i++)
+            {
+                Game game = games[i];
+                if (i <= 6)
+                {
+                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGameIcon" + (i + 1), false)[0].Text   = game.Icon.ToString();
+                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGameName" + (i + 1), false)[0].Text = game.Name;
+                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGameGenre" + (i + 1), false)[0].Text = game.Genre;
+                    int points = 0;
+                    foreach (Question q in game.Questions)
+                    {
+                        points += q.Points;
+                    }
+                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGamePoints" + (i + 1), false)[0].Text = Convert.ToString(points);
+                }
+            }
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)

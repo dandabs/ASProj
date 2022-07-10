@@ -63,7 +63,7 @@
             this.lblToGoPercent = new System.Windows.Forms.Label();
             this.pbToGo = new ASProj.Controls.RoundedProgressBar();
             this.label31 = new System.Windows.Forms.Label();
-            this.roundedPanel5 = new ASProj.Controls.RoundedPanel();
+            this.pnlGames = new ASProj.Controls.RoundedPanel();
             this.label51 = new System.Windows.Forms.Label();
             this.lblGameGenre6 = new System.Windows.Forms.Label();
             this.lblGamePoints6 = new System.Windows.Forms.Label();
@@ -135,7 +135,7 @@
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
-            this.roundedPanel5.SuspendLayout();
+            this.pnlGames.SuspendLayout();
             this.roundedPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).BeginInit();
@@ -622,44 +622,44 @@
             this.label31.Text = "Your Level";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // roundedPanel5
+            // pnlGames
             // 
-            this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.roundedPanel5.Controls.Add(this.label51);
-            this.roundedPanel5.Controls.Add(this.lblGameGenre6);
-            this.roundedPanel5.Controls.Add(this.lblGamePoints6);
-            this.roundedPanel5.Controls.Add(this.lblGameName6);
-            this.roundedPanel5.Controls.Add(this.lblGameIcon6);
-            this.roundedPanel5.Controls.Add(this.label56);
-            this.roundedPanel5.Controls.Add(this.lblGameGenre5);
-            this.roundedPanel5.Controls.Add(this.lblGamePoints5);
-            this.roundedPanel5.Controls.Add(this.lblGameName5);
-            this.roundedPanel5.Controls.Add(this.lblGameIcon5);
-            this.roundedPanel5.Controls.Add(this.label61);
-            this.roundedPanel5.Controls.Add(this.lblGameGenre4);
-            this.roundedPanel5.Controls.Add(this.lblGamePoints4);
-            this.roundedPanel5.Controls.Add(this.lblGameName4);
-            this.roundedPanel5.Controls.Add(this.lblGameIcon4);
-            this.roundedPanel5.Controls.Add(this.label46);
-            this.roundedPanel5.Controls.Add(this.lblGameGenre3);
-            this.roundedPanel5.Controls.Add(this.lblGamePoints3);
-            this.roundedPanel5.Controls.Add(this.lblGameName3);
-            this.roundedPanel5.Controls.Add(this.lblGameIcon3);
-            this.roundedPanel5.Controls.Add(this.label41);
-            this.roundedPanel5.Controls.Add(this.lblGameGenre2);
-            this.roundedPanel5.Controls.Add(this.lblGamePoints2);
-            this.roundedPanel5.Controls.Add(this.lblGameName2);
-            this.roundedPanel5.Controls.Add(this.lblGameIcon2);
-            this.roundedPanel5.Controls.Add(this.label39);
-            this.roundedPanel5.Controls.Add(this.lblGameGenre1);
-            this.roundedPanel5.Controls.Add(this.lblGamePoints1);
-            this.roundedPanel5.Controls.Add(this.lblGameName1);
-            this.roundedPanel5.Controls.Add(this.lblGameIcon1);
-            this.roundedPanel5.Controls.Add(this.label35);
-            this.roundedPanel5.Location = new System.Drawing.Point(369, 350);
-            this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(425, 318);
-            this.roundedPanel5.TabIndex = 8;
+            this.pnlGames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.pnlGames.Controls.Add(this.label51);
+            this.pnlGames.Controls.Add(this.lblGameGenre6);
+            this.pnlGames.Controls.Add(this.lblGamePoints6);
+            this.pnlGames.Controls.Add(this.lblGameName6);
+            this.pnlGames.Controls.Add(this.lblGameIcon6);
+            this.pnlGames.Controls.Add(this.label56);
+            this.pnlGames.Controls.Add(this.lblGameGenre5);
+            this.pnlGames.Controls.Add(this.lblGamePoints5);
+            this.pnlGames.Controls.Add(this.lblGameName5);
+            this.pnlGames.Controls.Add(this.lblGameIcon5);
+            this.pnlGames.Controls.Add(this.label61);
+            this.pnlGames.Controls.Add(this.lblGameGenre4);
+            this.pnlGames.Controls.Add(this.lblGamePoints4);
+            this.pnlGames.Controls.Add(this.lblGameName4);
+            this.pnlGames.Controls.Add(this.lblGameIcon4);
+            this.pnlGames.Controls.Add(this.label46);
+            this.pnlGames.Controls.Add(this.lblGameGenre3);
+            this.pnlGames.Controls.Add(this.lblGamePoints3);
+            this.pnlGames.Controls.Add(this.lblGameName3);
+            this.pnlGames.Controls.Add(this.lblGameIcon3);
+            this.pnlGames.Controls.Add(this.label41);
+            this.pnlGames.Controls.Add(this.lblGameGenre2);
+            this.pnlGames.Controls.Add(this.lblGamePoints2);
+            this.pnlGames.Controls.Add(this.lblGameName2);
+            this.pnlGames.Controls.Add(this.lblGameIcon2);
+            this.pnlGames.Controls.Add(this.label39);
+            this.pnlGames.Controls.Add(this.lblGameGenre1);
+            this.pnlGames.Controls.Add(this.lblGamePoints1);
+            this.pnlGames.Controls.Add(this.lblGameName1);
+            this.pnlGames.Controls.Add(this.lblGameIcon1);
+            this.pnlGames.Controls.Add(this.label35);
+            this.pnlGames.Location = new System.Drawing.Point(369, 350);
+            this.pnlGames.Name = "pnlGames";
+            this.pnlGames.Size = new System.Drawing.Size(425, 318);
+            this.pnlGames.TabIndex = 8;
             // 
             // label51
             // 
@@ -1515,7 +1515,7 @@
             this.Controls.Add(this.roundedPanel8);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.roundedPanel6);
-            this.Controls.Add(this.roundedPanel5);
+            this.Controls.Add(this.pnlGames);
             this.Controls.Add(this.roundedPanel4);
             this.Controls.Add(this.roundedPanel3);
             this.Controls.Add(this.roundedPanel2);
@@ -1540,8 +1540,8 @@
             this.roundedPanel3.PerformLayout();
             this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel4.PerformLayout();
-            this.roundedPanel5.ResumeLayout(false);
-            this.roundedPanel5.PerformLayout();
+            this.pnlGames.ResumeLayout(false);
+            this.pnlGames.PerformLayout();
             this.roundedPanel6.ResumeLayout(false);
             this.roundedPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).EndInit();
@@ -1574,7 +1574,7 @@
         private Controls.RoundedPanel roundedPanel2;
         private Controls.RoundedPanel roundedPanel3;
         private Controls.RoundedPanel roundedPanel4;
-        private Controls.RoundedPanel roundedPanel5;
+        private Controls.RoundedPanel pnlGames;
         private Controls.RoundedPanel roundedPanel6;
         private Label label11;
         private Label lblTransPoints2;
