@@ -236,7 +236,7 @@
             // 
             // menuListIconButton2
             // 
-            this.menuListIconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.menuListIconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(67)))), ((int)(((byte)(88)))));
             this.menuListIconButton2.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuListIconButton2.ForeColor = System.Drawing.Color.DarkGray;
             this.menuListIconButton2.Icon = '';
