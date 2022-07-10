@@ -36,8 +36,8 @@
             this.menuListIconButton3 = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton2 = new ASProj.Controls.MenuListIconButton();
             this.ovalPictureBox1 = new ASProj.Controls.OvalPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDiscriminator = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.roundedPanel1 = new ASProj.Controls.RoundedPanel();
             this.squareButton1 = new ASProj.Controls.SquareButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -257,32 +257,32 @@
             this.ovalPictureBox1.TabIndex = 2;
             this.ovalPictureBox1.TabStop = false;
             // 
-            // label1
+            // lblDiscriminator
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(922, 41);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(53, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "#1234";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDiscriminator.AutoSize = true;
+            this.lblDiscriminator.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDiscriminator.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblDiscriminator.Location = new System.Drawing.Point(922, 41);
+            this.lblDiscriminator.Name = "lblDiscriminator";
+            this.lblDiscriminator.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDiscriminator.Size = new System.Drawing.Size(53, 19);
+            this.lblDiscriminator.TabIndex = 3;
+            this.lblDiscriminator.Text = "#1234";
+            this.lblDiscriminator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // lblUsername
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(849, 41);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(78, 19);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "username";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(849, 41);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblUsername.Size = new System.Drawing.Size(78, 19);
+            this.lblUsername.TabIndex = 4;
+            this.lblUsername.Text = "username";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundedPanel1
             // 
@@ -1525,8 +1525,8 @@
             this.Controls.Add(this.roundedPanel3);
             this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblDiscriminator);
             this.Controls.Add(this.ovalPictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1573,8 +1573,8 @@
         private Controls.MenuListIconButton menuListIconButton5;
         private Controls.MenuListIconButton menuListIconButton4;
         private Controls.OvalPictureBox ovalPictureBox1;
-        private Label label1;
-        private Label label2;
+        private Label lblDiscriminator;
+        private Label lblUsername;
         private Controls.RoundedPanel roundedPanel1;
         private Controls.RoundedPanel roundedPanel2;
         private Controls.RoundedPanel roundedPanel3;

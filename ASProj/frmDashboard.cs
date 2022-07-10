@@ -37,6 +37,9 @@ namespace ASProj
 
             List<User> str2 = User.Deserialize(str);
             MessageBox.Show(str2.Count + "");*/
+
+            lblUsername.Text = Program.CurrentSession.Username;
+            lblDiscriminator.Text = "#" + Program.CurrentSession.Discriminator;
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
