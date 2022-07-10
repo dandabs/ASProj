@@ -27,6 +27,7 @@ namespace ASProj.Controls
                 BackColor = Color.Transparent
             });
             Cursor = Cursors.Hand;
+            ((Label)Controls.Find("check", true)[0]).Click += new EventHandler(Control_Click);
         }
         private void centerText()
         {
@@ -41,6 +42,10 @@ namespace ASProj.Controls
             base.OnResize(e);
             Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             centerText();
+        }
+        private void Control_Click(object? sender, EventArgs e)
+        {
+            this.OnClick(e);
         }
         protected override void OnClick(EventArgs e)
         {
