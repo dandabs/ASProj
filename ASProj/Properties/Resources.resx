@@ -145,8 +145,8 @@
   <data name="HD-wallpaper-anime-bird-anime-bird-cartoon-nature" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HD-wallpaper-anime-bird-anime-bird-cartoon-nature.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dark-blue-gradient-background-9562-1024x616" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark-blue-gradient-background-9562-1024x616.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imageedit_2_31310439511" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_2_31310439511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,16 +157,22 @@
   <data name="ww0_bizydale_nets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ww0_bizydale_nets.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imageedit_4_9884017893" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageedit_4_9884017893.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imageedit_8_7025415654" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_8_7025415654.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imageedit_4_9884017893" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imageedit_4_9884017893.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="t4ovzMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\t4ovzMA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark-blue-gradient-background-9562-1024x616" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dark-blue-gradient-background-9562-1024x616.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="91895290_3152419521475609_8245228045900709888_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\91895290_3152419521475609_8245228045900709888_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="740ecb78aa4c10cb0a2170ea2350c337" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\740ecb78aa4c10cb0a2170ea2350c337.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

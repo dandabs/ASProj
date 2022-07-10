@@ -11,15 +11,13 @@ namespace ASProj.Classes
     {
         // DA 10/7/22 Constructor
         [JsonConstructor]
-        public GivenAnswer(Game Game, Question Question, string ChosenAnswer)
+        public GivenAnswer( Question Question, string ChosenAnswer)
         {
-            this.Game = Game;
             this.Question = Question;
             this.ChosenAnswer = ChosenAnswer;
         }
 
         // DA 10/7/22 Properties
-        public Game Game { get; }
         public Question Question { get; }
         public string ChosenAnswer { get; }
         public string CorrectAnswer { get { return Question.CorrectAnswer; } }

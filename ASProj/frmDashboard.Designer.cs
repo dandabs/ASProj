@@ -95,26 +95,26 @@
             this.lblGameName1 = new System.Windows.Forms.Label();
             this.lblGameIcon1 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.roundedPanel6 = new ASProj.Controls.RoundedPanel();
+            this.pnlScores = new ASProj.Controls.RoundedPanel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.ovalPictureBox6 = new ASProj.Controls.OvalPictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.ovalPictureBox7 = new ASProj.Controls.OvalPictureBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.ovalPictureBox4 = new ASProj.Controls.OvalPictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.ovalPictureBox5 = new ASProj.Controls.OvalPictureBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.ovalPictureBox3 = new ASProj.Controls.OvalPictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.ovalPictureBox2 = new ASProj.Controls.OvalPictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblTopScoreDesc6 = new System.Windows.Forms.Label();
+            this.pbxTopScore6 = new ASProj.Controls.OvalPictureBox();
+            this.lblTopScoreName6 = new System.Windows.Forms.Label();
+            this.lblTopScoreDesc5 = new System.Windows.Forms.Label();
+            this.pbxTopScore5 = new ASProj.Controls.OvalPictureBox();
+            this.lblTopScoreName5 = new System.Windows.Forms.Label();
+            this.lblTopScoreDesc4 = new System.Windows.Forms.Label();
+            this.pbxTopScore4 = new ASProj.Controls.OvalPictureBox();
+            this.lblTopScoreName4 = new System.Windows.Forms.Label();
+            this.lblTopScoreDesc3 = new System.Windows.Forms.Label();
+            this.pbxTopScore3 = new ASProj.Controls.OvalPictureBox();
+            this.lblTopScoreName3 = new System.Windows.Forms.Label();
+            this.lblTopScoreDesc2 = new System.Windows.Forms.Label();
+            this.pbxTopScore2 = new ASProj.Controls.OvalPictureBox();
+            this.lblTopScoreName2 = new System.Windows.Forms.Label();
+            this.lblTopScoreDesc1 = new System.Windows.Forms.Label();
+            this.pbxTopScore1 = new ASProj.Controls.OvalPictureBox();
+            this.lblTopScoreName1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.roundedPanel8 = new ASProj.Controls.RoundedPanel();
@@ -136,13 +136,13 @@
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
             this.pnlGames.SuspendLayout();
-            this.roundedPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).BeginInit();
+            this.pnlScores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore1)).BeginInit();
             this.roundedPanel8.SuspendLayout();
             this.roundedPanel7.SuspendLayout();
             this.SuspendLayout();
@@ -252,7 +252,7 @@
             // 
             this.pbxAvatar.BackColor = System.Drawing.Color.Transparent;
             this.pbxAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxAvatar.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
+            this.pbxAvatar.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
             this.pbxAvatar.Location = new System.Drawing.Point(983, 30);
             this.pbxAvatar.Name = "pbxAvatar";
             this.pbxAvatar.Size = new System.Drawing.Size(40, 40);
@@ -683,9 +683,9 @@
             this.lblGameGenre6.Location = new System.Drawing.Point(215, 271);
             this.lblGameGenre6.Name = "lblGameGenre6";
             this.lblGameGenre6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameGenre6.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre6.Size = new System.Drawing.Size(15, 19);
             this.lblGameGenre6.TabIndex = 50;
-            this.lblGameGenre6.Text = "Gamegenre";
+            this.lblGameGenre6.Text = "-";
             this.lblGameGenre6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGamePoints6
@@ -696,9 +696,9 @@
             this.lblGamePoints6.Location = new System.Drawing.Point(380, 271);
             this.lblGamePoints6.Name = "lblGamePoints6";
             this.lblGamePoints6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGamePoints6.Size = new System.Drawing.Size(25, 19);
+            this.lblGamePoints6.Size = new System.Drawing.Size(15, 19);
             this.lblGamePoints6.TabIndex = 46;
-            this.lblGamePoints6.Text = "78";
+            this.lblGamePoints6.Text = "-";
             this.lblGamePoints6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameName6
@@ -709,9 +709,9 @@
             this.lblGameName6.Location = new System.Drawing.Point(60, 272);
             this.lblGameName6.Name = "lblGameName6";
             this.lblGameName6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameName6.Size = new System.Drawing.Size(110, 19);
+            this.lblGameName6.Size = new System.Drawing.Size(15, 19);
             this.lblGameName6.TabIndex = 49;
-            this.lblGameName6.Text = "Gamename Six";
+            this.lblGameName6.Text = "-";
             this.lblGameName6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameIcon6
@@ -750,9 +750,9 @@
             this.lblGameGenre5.Location = new System.Drawing.Point(215, 229);
             this.lblGameGenre5.Name = "lblGameGenre5";
             this.lblGameGenre5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameGenre5.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre5.Size = new System.Drawing.Size(15, 19);
             this.lblGameGenre5.TabIndex = 45;
-            this.lblGameGenre5.Text = "Gamegenre";
+            this.lblGameGenre5.Text = "-";
             this.lblGameGenre5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGamePoints5
@@ -763,9 +763,9 @@
             this.lblGamePoints5.Location = new System.Drawing.Point(380, 229);
             this.lblGamePoints5.Name = "lblGamePoints5";
             this.lblGamePoints5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGamePoints5.Size = new System.Drawing.Size(26, 19);
+            this.lblGamePoints5.Size = new System.Drawing.Size(15, 19);
             this.lblGamePoints5.TabIndex = 41;
-            this.lblGamePoints5.Text = "45";
+            this.lblGamePoints5.Text = "-";
             this.lblGamePoints5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameName5
@@ -776,9 +776,9 @@
             this.lblGameName5.Location = new System.Drawing.Point(60, 230);
             this.lblGameName5.Name = "lblGameName5";
             this.lblGameName5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameName5.Size = new System.Drawing.Size(116, 19);
+            this.lblGameName5.Size = new System.Drawing.Size(15, 19);
             this.lblGameName5.TabIndex = 44;
-            this.lblGameName5.Text = "Gamename Five";
+            this.lblGameName5.Text = "-";
             this.lblGameName5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameIcon5
@@ -817,9 +817,9 @@
             this.lblGameGenre4.Location = new System.Drawing.Point(215, 188);
             this.lblGameGenre4.Name = "lblGameGenre4";
             this.lblGameGenre4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameGenre4.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre4.Size = new System.Drawing.Size(15, 19);
             this.lblGameGenre4.TabIndex = 40;
-            this.lblGameGenre4.Text = "Gamegenre";
+            this.lblGameGenre4.Text = "-";
             this.lblGameGenre4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGamePoints4
@@ -830,9 +830,9 @@
             this.lblGamePoints4.Location = new System.Drawing.Point(380, 188);
             this.lblGamePoints4.Name = "lblGamePoints4";
             this.lblGamePoints4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGamePoints4.Size = new System.Drawing.Size(26, 19);
+            this.lblGamePoints4.Size = new System.Drawing.Size(15, 19);
             this.lblGamePoints4.TabIndex = 36;
-            this.lblGamePoints4.Text = "34";
+            this.lblGamePoints4.Text = "-";
             this.lblGamePoints4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameName4
@@ -843,9 +843,9 @@
             this.lblGameName4.Location = new System.Drawing.Point(60, 189);
             this.lblGameName4.Name = "lblGameName4";
             this.lblGameName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameName4.Size = new System.Drawing.Size(120, 19);
+            this.lblGameName4.Size = new System.Drawing.Size(15, 19);
             this.lblGameName4.TabIndex = 39;
-            this.lblGameName4.Text = "Gamename Four";
+            this.lblGameName4.Text = "-";
             this.lblGameName4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameIcon4
@@ -884,9 +884,9 @@
             this.lblGameGenre3.Location = new System.Drawing.Point(215, 149);
             this.lblGameGenre3.Name = "lblGameGenre3";
             this.lblGameGenre3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameGenre3.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre3.Size = new System.Drawing.Size(15, 19);
             this.lblGameGenre3.TabIndex = 35;
-            this.lblGameGenre3.Text = "Gamegenre";
+            this.lblGameGenre3.Text = "-";
             this.lblGameGenre3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGamePoints3
@@ -897,9 +897,9 @@
             this.lblGamePoints3.Location = new System.Drawing.Point(380, 149);
             this.lblGamePoints3.Name = "lblGamePoints3";
             this.lblGamePoints3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGamePoints3.Size = new System.Drawing.Size(26, 19);
+            this.lblGamePoints3.Size = new System.Drawing.Size(15, 19);
             this.lblGamePoints3.TabIndex = 31;
-            this.lblGamePoints3.Text = "92";
+            this.lblGamePoints3.Text = "-";
             this.lblGamePoints3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameName3
@@ -910,9 +910,9 @@
             this.lblGameName3.Location = new System.Drawing.Point(60, 150);
             this.lblGameName3.Name = "lblGameName3";
             this.lblGameName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameName3.Size = new System.Drawing.Size(128, 19);
+            this.lblGameName3.Size = new System.Drawing.Size(15, 19);
             this.lblGameName3.TabIndex = 34;
-            this.lblGameName3.Text = "Gamename Three";
+            this.lblGameName3.Text = "-";
             this.lblGameName3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameIcon3
@@ -951,9 +951,9 @@
             this.lblGameGenre2.Location = new System.Drawing.Point(215, 107);
             this.lblGameGenre2.Name = "lblGameGenre2";
             this.lblGameGenre2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameGenre2.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre2.Size = new System.Drawing.Size(15, 19);
             this.lblGameGenre2.TabIndex = 30;
-            this.lblGameGenre2.Text = "Gamegenre";
+            this.lblGameGenre2.Text = "-";
             this.lblGameGenre2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGamePoints2
@@ -964,9 +964,9 @@
             this.lblGamePoints2.Location = new System.Drawing.Point(380, 107);
             this.lblGamePoints2.Name = "lblGamePoints2";
             this.lblGamePoints2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGamePoints2.Size = new System.Drawing.Size(27, 19);
+            this.lblGamePoints2.Size = new System.Drawing.Size(15, 19);
             this.lblGamePoints2.TabIndex = 26;
-            this.lblGamePoints2.Text = "89";
+            this.lblGamePoints2.Text = "-";
             this.lblGamePoints2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameName2
@@ -977,9 +977,9 @@
             this.lblGameName2.Location = new System.Drawing.Point(60, 108);
             this.lblGameName2.Name = "lblGameName2";
             this.lblGameName2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameName2.Size = new System.Drawing.Size(116, 19);
+            this.lblGameName2.Size = new System.Drawing.Size(15, 19);
             this.lblGameName2.TabIndex = 29;
-            this.lblGameName2.Text = "Gamename Two";
+            this.lblGameName2.Text = "-";
             this.lblGameName2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameIcon2
@@ -1018,9 +1018,9 @@
             this.lblGameGenre1.Location = new System.Drawing.Point(215, 66);
             this.lblGameGenre1.Name = "lblGameGenre1";
             this.lblGameGenre1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameGenre1.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre1.Size = new System.Drawing.Size(15, 19);
             this.lblGameGenre1.TabIndex = 25;
-            this.lblGameGenre1.Text = "Gamegenre";
+            this.lblGameGenre1.Text = "-";
             this.lblGameGenre1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGamePoints1
@@ -1031,9 +1031,9 @@
             this.lblGamePoints1.Location = new System.Drawing.Point(380, 66);
             this.lblGamePoints1.Name = "lblGamePoints1";
             this.lblGamePoints1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGamePoints1.Size = new System.Drawing.Size(25, 19);
+            this.lblGamePoints1.Size = new System.Drawing.Size(15, 19);
             this.lblGamePoints1.TabIndex = 19;
-            this.lblGamePoints1.Text = "67";
+            this.lblGamePoints1.Text = "-";
             this.lblGamePoints1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameName1
@@ -1044,9 +1044,9 @@
             this.lblGameName1.Location = new System.Drawing.Point(60, 67);
             this.lblGameName1.Name = "lblGameName1";
             this.lblGameName1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblGameName1.Size = new System.Drawing.Size(116, 19);
+            this.lblGameName1.Size = new System.Drawing.Size(15, 19);
             this.lblGameName1.TabIndex = 24;
-            this.lblGameName1.Text = "Gamename One";
+            this.lblGameName1.Text = "-";
             this.lblGameName1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGameIcon1
@@ -1076,33 +1076,33 @@
             this.label35.Text = "Your games";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // roundedPanel6
+            // pnlScores
             // 
-            this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.roundedPanel6.Controls.Add(this.linkLabel1);
-            this.roundedPanel6.Controls.Add(this.label22);
-            this.roundedPanel6.Controls.Add(this.ovalPictureBox6);
-            this.roundedPanel6.Controls.Add(this.label23);
-            this.roundedPanel6.Controls.Add(this.label24);
-            this.roundedPanel6.Controls.Add(this.ovalPictureBox7);
-            this.roundedPanel6.Controls.Add(this.label25);
-            this.roundedPanel6.Controls.Add(this.label18);
-            this.roundedPanel6.Controls.Add(this.ovalPictureBox4);
-            this.roundedPanel6.Controls.Add(this.label19);
-            this.roundedPanel6.Controls.Add(this.label20);
-            this.roundedPanel6.Controls.Add(this.ovalPictureBox5);
-            this.roundedPanel6.Controls.Add(this.label21);
-            this.roundedPanel6.Controls.Add(this.label16);
-            this.roundedPanel6.Controls.Add(this.ovalPictureBox3);
-            this.roundedPanel6.Controls.Add(this.label17);
-            this.roundedPanel6.Controls.Add(this.label15);
-            this.roundedPanel6.Controls.Add(this.ovalPictureBox2);
-            this.roundedPanel6.Controls.Add(this.label14);
-            this.roundedPanel6.Controls.Add(this.label13);
-            this.roundedPanel6.Location = new System.Drawing.Point(818, 300);
-            this.roundedPanel6.Name = "roundedPanel6";
-            this.roundedPanel6.Size = new System.Drawing.Size(205, 368);
-            this.roundedPanel6.TabIndex = 8;
+            this.pnlScores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.pnlScores.Controls.Add(this.linkLabel1);
+            this.pnlScores.Controls.Add(this.lblTopScoreDesc6);
+            this.pnlScores.Controls.Add(this.pbxTopScore6);
+            this.pnlScores.Controls.Add(this.lblTopScoreName6);
+            this.pnlScores.Controls.Add(this.lblTopScoreDesc5);
+            this.pnlScores.Controls.Add(this.pbxTopScore5);
+            this.pnlScores.Controls.Add(this.lblTopScoreName5);
+            this.pnlScores.Controls.Add(this.lblTopScoreDesc4);
+            this.pnlScores.Controls.Add(this.pbxTopScore4);
+            this.pnlScores.Controls.Add(this.lblTopScoreName4);
+            this.pnlScores.Controls.Add(this.lblTopScoreDesc3);
+            this.pnlScores.Controls.Add(this.pbxTopScore3);
+            this.pnlScores.Controls.Add(this.lblTopScoreName3);
+            this.pnlScores.Controls.Add(this.lblTopScoreDesc2);
+            this.pnlScores.Controls.Add(this.pbxTopScore2);
+            this.pnlScores.Controls.Add(this.lblTopScoreName2);
+            this.pnlScores.Controls.Add(this.lblTopScoreDesc1);
+            this.pnlScores.Controls.Add(this.pbxTopScore1);
+            this.pnlScores.Controls.Add(this.lblTopScoreName1);
+            this.pnlScores.Controls.Add(this.label13);
+            this.pnlScores.Location = new System.Drawing.Point(818, 300);
+            this.pnlScores.Name = "pnlScores";
+            this.pnlScores.Size = new System.Drawing.Size(205, 368);
+            this.pnlScores.TabIndex = 8;
             // 
             // linkLabel1
             // 
@@ -1118,227 +1118,227 @@
             this.linkLabel1.Text = "See all";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
             // 
-            // label22
+            // lblTopScoreDesc6
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.Color.Silver;
-            this.label22.Location = new System.Drawing.Point(37, 304);
-            this.label22.Name = "label22";
-            this.label22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label22.Size = new System.Drawing.Size(104, 18);
-            this.label22.TabIndex = 36;
-            this.label22.Text = "321 on 25/06/22";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreDesc6.AutoSize = true;
+            this.lblTopScoreDesc6.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc6.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreDesc6.Location = new System.Drawing.Point(37, 304);
+            this.lblTopScoreDesc6.Name = "lblTopScoreDesc6";
+            this.lblTopScoreDesc6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreDesc6.Size = new System.Drawing.Size(13, 18);
+            this.lblTopScoreDesc6.TabIndex = 36;
+            this.lblTopScoreDesc6.Text = "-";
+            this.lblTopScoreDesc6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ovalPictureBox6
+            // pbxTopScore6
             // 
-            this.ovalPictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.ovalPictureBox6.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
-            this.ovalPictureBox6.Location = new System.Drawing.Point(13, 285);
-            this.ovalPictureBox6.Name = "ovalPictureBox6";
-            this.ovalPictureBox6.Size = new System.Drawing.Size(20, 20);
-            this.ovalPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox6.TabIndex = 34;
-            this.ovalPictureBox6.TabStop = false;
+            this.pbxTopScore6.BackColor = System.Drawing.Color.Transparent;
+            this.pbxTopScore6.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
+            this.pbxTopScore6.Location = new System.Drawing.Point(13, 285);
+            this.pbxTopScore6.Name = "pbxTopScore6";
+            this.pbxTopScore6.Size = new System.Drawing.Size(20, 20);
+            this.pbxTopScore6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxTopScore6.TabIndex = 34;
+            this.pbxTopScore6.TabStop = false;
             // 
-            // label23
+            // lblTopScoreName6
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.ForeColor = System.Drawing.Color.Silver;
-            this.label23.Location = new System.Drawing.Point(35, 285);
-            this.label23.Name = "label23";
-            this.label23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label23.Size = new System.Drawing.Size(122, 19);
-            this.label23.TabIndex = 35;
-            this.label23.Text = "username#1234";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreName6.AutoSize = true;
+            this.lblTopScoreName6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName6.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreName6.Location = new System.Drawing.Point(35, 285);
+            this.lblTopScoreName6.Name = "lblTopScoreName6";
+            this.lblTopScoreName6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreName6.Size = new System.Drawing.Size(15, 19);
+            this.lblTopScoreName6.TabIndex = 35;
+            this.lblTopScoreName6.Text = "-";
+            this.lblTopScoreName6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label24
+            // lblTopScoreDesc5
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.Color.Silver;
-            this.label24.Location = new System.Drawing.Point(37, 255);
-            this.label24.Name = "label24";
-            this.label24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label24.Size = new System.Drawing.Size(104, 18);
-            this.label24.TabIndex = 33;
-            this.label24.Text = "321 on 25/06/22";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreDesc5.AutoSize = true;
+            this.lblTopScoreDesc5.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc5.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreDesc5.Location = new System.Drawing.Point(37, 255);
+            this.lblTopScoreDesc5.Name = "lblTopScoreDesc5";
+            this.lblTopScoreDesc5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreDesc5.Size = new System.Drawing.Size(13, 18);
+            this.lblTopScoreDesc5.TabIndex = 33;
+            this.lblTopScoreDesc5.Text = "-";
+            this.lblTopScoreDesc5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ovalPictureBox7
+            // pbxTopScore5
             // 
-            this.ovalPictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.ovalPictureBox7.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
-            this.ovalPictureBox7.Location = new System.Drawing.Point(13, 236);
-            this.ovalPictureBox7.Name = "ovalPictureBox7";
-            this.ovalPictureBox7.Size = new System.Drawing.Size(20, 20);
-            this.ovalPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox7.TabIndex = 31;
-            this.ovalPictureBox7.TabStop = false;
+            this.pbxTopScore5.BackColor = System.Drawing.Color.Transparent;
+            this.pbxTopScore5.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
+            this.pbxTopScore5.Location = new System.Drawing.Point(13, 236);
+            this.pbxTopScore5.Name = "pbxTopScore5";
+            this.pbxTopScore5.Size = new System.Drawing.Size(20, 20);
+            this.pbxTopScore5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxTopScore5.TabIndex = 31;
+            this.pbxTopScore5.TabStop = false;
             // 
-            // label25
+            // lblTopScoreName5
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.Color.Silver;
-            this.label25.Location = new System.Drawing.Point(35, 236);
-            this.label25.Name = "label25";
-            this.label25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label25.Size = new System.Drawing.Size(122, 19);
-            this.label25.TabIndex = 32;
-            this.label25.Text = "username#1234";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreName5.AutoSize = true;
+            this.lblTopScoreName5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName5.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreName5.Location = new System.Drawing.Point(35, 236);
+            this.lblTopScoreName5.Name = "lblTopScoreName5";
+            this.lblTopScoreName5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreName5.Size = new System.Drawing.Size(15, 19);
+            this.lblTopScoreName5.TabIndex = 32;
+            this.lblTopScoreName5.Text = "-";
+            this.lblTopScoreName5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label18
+            // lblTopScoreDesc4
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.Silver;
-            this.label18.Location = new System.Drawing.Point(39, 209);
-            this.label18.Name = "label18";
-            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label18.Size = new System.Drawing.Size(104, 18);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "321 on 25/06/22";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreDesc4.AutoSize = true;
+            this.lblTopScoreDesc4.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc4.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreDesc4.Location = new System.Drawing.Point(39, 209);
+            this.lblTopScoreDesc4.Name = "lblTopScoreDesc4";
+            this.lblTopScoreDesc4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreDesc4.Size = new System.Drawing.Size(13, 18);
+            this.lblTopScoreDesc4.TabIndex = 30;
+            this.lblTopScoreDesc4.Text = "-";
+            this.lblTopScoreDesc4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ovalPictureBox4
+            // pbxTopScore4
             // 
-            this.ovalPictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.ovalPictureBox4.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
-            this.ovalPictureBox4.Location = new System.Drawing.Point(15, 190);
-            this.ovalPictureBox4.Name = "ovalPictureBox4";
-            this.ovalPictureBox4.Size = new System.Drawing.Size(20, 20);
-            this.ovalPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox4.TabIndex = 28;
-            this.ovalPictureBox4.TabStop = false;
+            this.pbxTopScore4.BackColor = System.Drawing.Color.Transparent;
+            this.pbxTopScore4.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
+            this.pbxTopScore4.Location = new System.Drawing.Point(15, 190);
+            this.pbxTopScore4.Name = "pbxTopScore4";
+            this.pbxTopScore4.Size = new System.Drawing.Size(20, 20);
+            this.pbxTopScore4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxTopScore4.TabIndex = 28;
+            this.pbxTopScore4.TabStop = false;
             // 
-            // label19
+            // lblTopScoreName4
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.Silver;
-            this.label19.Location = new System.Drawing.Point(37, 190);
-            this.label19.Name = "label19";
-            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label19.Size = new System.Drawing.Size(122, 19);
-            this.label19.TabIndex = 29;
-            this.label19.Text = "username#1234";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreName4.AutoSize = true;
+            this.lblTopScoreName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName4.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreName4.Location = new System.Drawing.Point(37, 190);
+            this.lblTopScoreName4.Name = "lblTopScoreName4";
+            this.lblTopScoreName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreName4.Size = new System.Drawing.Size(15, 19);
+            this.lblTopScoreName4.TabIndex = 29;
+            this.lblTopScoreName4.Text = "-";
+            this.lblTopScoreName4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label20
+            // lblTopScoreDesc3
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.Color.Silver;
-            this.label20.Location = new System.Drawing.Point(39, 160);
-            this.label20.Name = "label20";
-            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label20.Size = new System.Drawing.Size(104, 18);
-            this.label20.TabIndex = 27;
-            this.label20.Text = "321 on 25/06/22";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreDesc3.AutoSize = true;
+            this.lblTopScoreDesc3.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc3.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreDesc3.Location = new System.Drawing.Point(39, 160);
+            this.lblTopScoreDesc3.Name = "lblTopScoreDesc3";
+            this.lblTopScoreDesc3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreDesc3.Size = new System.Drawing.Size(13, 18);
+            this.lblTopScoreDesc3.TabIndex = 27;
+            this.lblTopScoreDesc3.Text = "-";
+            this.lblTopScoreDesc3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ovalPictureBox5
+            // pbxTopScore3
             // 
-            this.ovalPictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.ovalPictureBox5.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
-            this.ovalPictureBox5.Location = new System.Drawing.Point(15, 141);
-            this.ovalPictureBox5.Name = "ovalPictureBox5";
-            this.ovalPictureBox5.Size = new System.Drawing.Size(20, 20);
-            this.ovalPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox5.TabIndex = 25;
-            this.ovalPictureBox5.TabStop = false;
+            this.pbxTopScore3.BackColor = System.Drawing.Color.Transparent;
+            this.pbxTopScore3.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
+            this.pbxTopScore3.Location = new System.Drawing.Point(15, 141);
+            this.pbxTopScore3.Name = "pbxTopScore3";
+            this.pbxTopScore3.Size = new System.Drawing.Size(20, 20);
+            this.pbxTopScore3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxTopScore3.TabIndex = 25;
+            this.pbxTopScore3.TabStop = false;
             // 
-            // label21
+            // lblTopScoreName3
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.Color.Silver;
-            this.label21.Location = new System.Drawing.Point(37, 141);
-            this.label21.Name = "label21";
-            this.label21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label21.Size = new System.Drawing.Size(122, 19);
-            this.label21.TabIndex = 26;
-            this.label21.Text = "username#1234";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreName3.AutoSize = true;
+            this.lblTopScoreName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName3.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreName3.Location = new System.Drawing.Point(37, 141);
+            this.lblTopScoreName3.Name = "lblTopScoreName3";
+            this.lblTopScoreName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreName3.Size = new System.Drawing.Size(15, 19);
+            this.lblTopScoreName3.TabIndex = 26;
+            this.lblTopScoreName3.Text = "-";
+            this.lblTopScoreName3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label16
+            // lblTopScoreDesc2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(37, 114);
-            this.label16.Name = "label16";
-            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label16.Size = new System.Drawing.Size(104, 18);
-            this.label16.TabIndex = 24;
-            this.label16.Text = "321 on 25/06/22";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreDesc2.AutoSize = true;
+            this.lblTopScoreDesc2.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc2.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreDesc2.Location = new System.Drawing.Point(37, 114);
+            this.lblTopScoreDesc2.Name = "lblTopScoreDesc2";
+            this.lblTopScoreDesc2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreDesc2.Size = new System.Drawing.Size(13, 18);
+            this.lblTopScoreDesc2.TabIndex = 24;
+            this.lblTopScoreDesc2.Text = "-";
+            this.lblTopScoreDesc2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ovalPictureBox3
+            // pbxTopScore2
             // 
-            this.ovalPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.ovalPictureBox3.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
-            this.ovalPictureBox3.Location = new System.Drawing.Point(13, 95);
-            this.ovalPictureBox3.Name = "ovalPictureBox3";
-            this.ovalPictureBox3.Size = new System.Drawing.Size(20, 20);
-            this.ovalPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox3.TabIndex = 22;
-            this.ovalPictureBox3.TabStop = false;
+            this.pbxTopScore2.BackColor = System.Drawing.Color.Transparent;
+            this.pbxTopScore2.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
+            this.pbxTopScore2.Location = new System.Drawing.Point(13, 95);
+            this.pbxTopScore2.Name = "pbxTopScore2";
+            this.pbxTopScore2.Size = new System.Drawing.Size(20, 20);
+            this.pbxTopScore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxTopScore2.TabIndex = 22;
+            this.pbxTopScore2.TabStop = false;
             // 
-            // label17
+            // lblTopScoreName2
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.Silver;
-            this.label17.Location = new System.Drawing.Point(35, 95);
-            this.label17.Name = "label17";
-            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label17.Size = new System.Drawing.Size(122, 19);
-            this.label17.TabIndex = 23;
-            this.label17.Text = "username#1234";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreName2.AutoSize = true;
+            this.lblTopScoreName2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName2.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreName2.Location = new System.Drawing.Point(35, 95);
+            this.lblTopScoreName2.Name = "lblTopScoreName2";
+            this.lblTopScoreName2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreName2.Size = new System.Drawing.Size(15, 19);
+            this.lblTopScoreName2.TabIndex = 23;
+            this.lblTopScoreName2.Text = "-";
+            this.lblTopScoreName2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label15
+            // lblTopScoreDesc1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(37, 65);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label15.Size = new System.Drawing.Size(104, 18);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "321 on 25/06/22";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreDesc1.AutoSize = true;
+            this.lblTopScoreDesc1.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc1.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreDesc1.Location = new System.Drawing.Point(37, 65);
+            this.lblTopScoreDesc1.Name = "lblTopScoreDesc1";
+            this.lblTopScoreDesc1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreDesc1.Size = new System.Drawing.Size(13, 18);
+            this.lblTopScoreDesc1.TabIndex = 21;
+            this.lblTopScoreDesc1.Text = "-";
+            this.lblTopScoreDesc1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ovalPictureBox2
+            // pbxTopScore1
             // 
-            this.ovalPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.ovalPictureBox2.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
-            this.ovalPictureBox2.Location = new System.Drawing.Point(13, 46);
-            this.ovalPictureBox2.Name = "ovalPictureBox2";
-            this.ovalPictureBox2.Size = new System.Drawing.Size(20, 20);
-            this.ovalPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox2.TabIndex = 9;
-            this.ovalPictureBox2.TabStop = false;
+            this.pbxTopScore1.BackColor = System.Drawing.Color.Transparent;
+            this.pbxTopScore1.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
+            this.pbxTopScore1.Location = new System.Drawing.Point(13, 46);
+            this.pbxTopScore1.Name = "pbxTopScore1";
+            this.pbxTopScore1.Size = new System.Drawing.Size(20, 20);
+            this.pbxTopScore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxTopScore1.TabIndex = 9;
+            this.pbxTopScore1.TabStop = false;
             // 
-            // label14
+            // lblTopScoreName1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.Silver;
-            this.label14.Location = new System.Drawing.Point(35, 46);
-            this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label14.Size = new System.Drawing.Size(122, 19);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "username#1234";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTopScoreName1.AutoSize = true;
+            this.lblTopScoreName1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName1.ForeColor = System.Drawing.Color.Silver;
+            this.lblTopScoreName1.Location = new System.Drawing.Point(35, 46);
+            this.lblTopScoreName1.Name = "lblTopScoreName1";
+            this.lblTopScoreName1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTopScoreName1.Size = new System.Drawing.Size(15, 19);
+            this.lblTopScoreName1.TabIndex = 20;
+            this.lblTopScoreName1.Text = "-";
+            this.lblTopScoreName1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
             // 
@@ -1514,7 +1514,7 @@
             this.Controls.Add(this.roundedPanel7);
             this.Controls.Add(this.roundedPanel8);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.roundedPanel6);
+            this.Controls.Add(this.pnlScores);
             this.Controls.Add(this.pnlGames);
             this.Controls.Add(this.roundedPanel4);
             this.Controls.Add(this.roundedPanel3);
@@ -1542,14 +1542,14 @@
             this.roundedPanel4.PerformLayout();
             this.pnlGames.ResumeLayout(false);
             this.pnlGames.PerformLayout();
-            this.roundedPanel6.ResumeLayout(false);
-            this.roundedPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).EndInit();
+            this.pnlScores.ResumeLayout(false);
+            this.pnlScores.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore1)).EndInit();
             this.roundedPanel8.ResumeLayout(false);
             this.roundedPanel8.PerformLayout();
             this.roundedPanel7.ResumeLayout(false);
@@ -1575,7 +1575,7 @@
         private Controls.RoundedPanel roundedPanel3;
         private Controls.RoundedPanel roundedPanel4;
         private Controls.RoundedPanel pnlGames;
-        private Controls.RoundedPanel roundedPanel6;
+        private Controls.RoundedPanel pnlScores;
         private Label label11;
         private Label lblTransPoints2;
         private Label label10;
@@ -1587,24 +1587,24 @@
         private Label label4;
         private Label label3;
         private LinkLabel linkLabel1;
-        private Label label22;
-        private Controls.OvalPictureBox ovalPictureBox6;
-        private Label label23;
-        private Label label24;
-        private Controls.OvalPictureBox ovalPictureBox7;
-        private Label label25;
-        private Label label18;
-        private Controls.OvalPictureBox ovalPictureBox4;
-        private Label label19;
-        private Label label20;
-        private Controls.OvalPictureBox ovalPictureBox5;
-        private Label label21;
-        private Label label16;
-        private Controls.OvalPictureBox ovalPictureBox3;
-        private Label label17;
-        private Label label15;
-        private Controls.OvalPictureBox ovalPictureBox2;
-        private Label label14;
+        private Label lblTopScoreDesc6;
+        private Controls.OvalPictureBox pbxTopScore6;
+        private Label lblTopScoreName6;
+        private Label lblTopScoreDesc5;
+        private Controls.OvalPictureBox pbxTopScore5;
+        private Label lblTopScoreName5;
+        private Label lblTopScoreDesc4;
+        private Controls.OvalPictureBox pbxTopScore4;
+        private Label lblTopScoreName4;
+        private Label lblTopScoreDesc3;
+        private Controls.OvalPictureBox pbxTopScore3;
+        private Label lblTopScoreName3;
+        private Label lblTopScoreDesc2;
+        private Controls.OvalPictureBox pbxTopScore2;
+        private Label lblTopScoreName2;
+        private Label lblTopScoreDesc1;
+        private Controls.OvalPictureBox pbxTopScore1;
+        private Label lblTopScoreName1;
         private Label label13;
         private Controls.SquareButton squareButton1;
         private PictureBox pictureBox1;

@@ -83,6 +83,26 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _740ecb78aa4c10cb0a2170ea2350c337 {
+            get {
+                object obj = ResourceManager.GetObject("740ecb78aa4c10cb0a2170ea2350c337", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _91895290_3152419521475609_8245228045900709888_n {
+            get {
+                object obj = ResourceManager.GetObject("91895290_3152419521475609_8245228045900709888_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap animesher_com_bird_fantasy_anime_nature_1145927 {
             get {
                 object obj = ResourceManager.GetObject("animesher.com_bird-fantasy-anime-nature-1145927", resourceCulture);

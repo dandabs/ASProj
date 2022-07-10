@@ -114,6 +114,34 @@ namespace ASProj
                     this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGamePoints" + (i + 1), false)[0].Text = Convert.ToString(points);
                 }
             }
+
+            User[] users = JsonConvert.DeserializeObject<User[]>(FileHandler.Select("users.json"));
+            List<GameRecord> records = new List<GameRecord>();
+            foreach (User u in users)
+            {
+                if (u.Records != null)
+                {
+                    foreach (GameRecord gr in u.Records)
+                    {
+                        records.Add(gr);
+                    }
+                }
+            }
+            List<GameRecord> sortedRecords = records.OrderByDescending(gr=>gr.Points).ToList();
+            if (sortedRecords.Count != 0)
+            {
+                for (int i = 0; i <= 6; i++)
+                {
+                    if (sortedRecords.Count >= i + 1)
+                    {
+                        GameRecord gr = sortedRecords[i];
+                        User u = User.Search(gr.User);
+                        this.Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreName" + (i + 1), false)[0].Text = u.Username + "#" + u.Discriminator;
+                        this.Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreDesc" + (i + 1), false)[0].Text = gr.Points + " on " + gr.Date.Day + "/" + gr.Date.Month + "/" + gr.Date.Year;
+                        ((PictureBox)this.Controls.Find("pnlScores", false)[0].Controls.Find("pbxTopScore" + (i + 1), false)[0]).Image = UserImage.Search(u.GetAvatar()).ToBitmap();
+                    }
+                }
+            }
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)

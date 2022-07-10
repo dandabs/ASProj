@@ -11,8 +11,15 @@ namespace ASProj.Classes
     {
         // DA 10/7/22 Constructor
         [JsonConstructor]
-        public GameRecord()
+        public GameRecord(Guid Id, Game Game, Guid User, DateTime Date, int? CompletionTime, List<GivenAnswer> Answers, int? Points)
         {
+            this.Id = Id;
+            this.Game = Game;
+            this.User = User;
+            this.Date = Date;
+            this.CompletionTime = CompletionTime;
+            this.Answers = Answers;
+            this.Points = Points;
         }
         public GameRecord(Game Game, Guid User)
         {
