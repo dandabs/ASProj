@@ -48,21 +48,20 @@
             this.label27 = new System.Windows.Forms.Label();
             this.roundedPanel3 = new ASProj.Controls.RoundedPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblTransPoints2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblTransPoints1 = new System.Windows.Forms.Label();
+            this.lblTransDesc2 = new System.Windows.Forms.Label();
+            this.lblTransDesc1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTotalPoints = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.roundedPanel4 = new ASProj.Controls.RoundedPanel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.roundedProgressBar1 = new ASProj.Controls.RoundedProgressBar();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.lblToGo = new System.Windows.Forms.Label();
+            this.lblToGoPercent = new System.Windows.Forms.Label();
+            this.pbToGo = new ASProj.Controls.RoundedProgressBar();
             this.label31 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new ASProj.Controls.RoundedPanel();
             this.label51 = new System.Windows.Forms.Label();
@@ -236,7 +235,7 @@
             // 
             // menuListIconButton2
             // 
-            this.menuListIconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(67)))), ((int)(((byte)(88)))));
+            this.menuListIconButton2.BackColor = System.Drawing.Color.Transparent;
             this.menuListIconButton2.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuListIconButton2.ForeColor = System.Drawing.Color.DarkGray;
             this.menuListIconButton2.Icon = '';
@@ -394,13 +393,13 @@
             // 
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.roundedPanel3.Controls.Add(this.label11);
-            this.roundedPanel3.Controls.Add(this.label12);
+            this.roundedPanel3.Controls.Add(this.lblTransPoints2);
             this.roundedPanel3.Controls.Add(this.label10);
-            this.roundedPanel3.Controls.Add(this.label9);
-            this.roundedPanel3.Controls.Add(this.label8);
-            this.roundedPanel3.Controls.Add(this.label7);
+            this.roundedPanel3.Controls.Add(this.lblTransPoints1);
+            this.roundedPanel3.Controls.Add(this.lblTransDesc2);
+            this.roundedPanel3.Controls.Add(this.lblTransDesc1);
             this.roundedPanel3.Controls.Add(this.label6);
-            this.roundedPanel3.Controls.Add(this.label5);
+            this.roundedPanel3.Controls.Add(this.lblTotalPoints);
             this.roundedPanel3.Controls.Add(this.label4);
             this.roundedPanel3.Controls.Add(this.label3);
             this.roundedPanel3.Location = new System.Drawing.Point(369, 109);
@@ -422,18 +421,18 @@
             this.label11.Text = "";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label12
+            // lblTransPoints2
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(380, 182);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label12.Size = new System.Drawing.Size(26, 19);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "20";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTransPoints2.AutoSize = true;
+            this.lblTransPoints2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransPoints2.ForeColor = System.Drawing.Color.Gray;
+            this.lblTransPoints2.Location = new System.Drawing.Point(380, 182);
+            this.lblTransPoints2.Name = "lblTransPoints2";
+            this.lblTransPoints2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTransPoints2.Size = new System.Drawing.Size(26, 19);
+            this.lblTransPoints2.TabIndex = 17;
+            this.lblTransPoints2.Text = "20";
+            this.lblTransPoints2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
@@ -449,44 +448,44 @@
             this.label10.Text = "";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // lblTransPoints1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(380, 158);
-            this.label9.Name = "label9";
-            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label9.Size = new System.Drawing.Size(26, 19);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "20";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTransPoints1.AutoSize = true;
+            this.lblTransPoints1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransPoints1.ForeColor = System.Drawing.Color.Gray;
+            this.lblTransPoints1.Location = new System.Drawing.Point(380, 158);
+            this.lblTransPoints1.Name = "lblTransPoints1";
+            this.lblTransPoints1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTransPoints1.Size = new System.Drawing.Size(26, 19);
+            this.lblTransPoints1.TabIndex = 15;
+            this.lblTransPoints1.Text = "20";
+            this.lblTransPoints1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lblTransDesc2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(22, 183);
-            this.label8.Name = "label8";
-            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label8.Size = new System.Drawing.Size(265, 19);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Completed a game \"Gamename Four\"";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTransDesc2.AutoSize = true;
+            this.lblTransDesc2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransDesc2.ForeColor = System.Drawing.Color.Silver;
+            this.lblTransDesc2.Location = new System.Drawing.Point(22, 183);
+            this.lblTransDesc2.Name = "lblTransDesc2";
+            this.lblTransDesc2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTransDesc2.Size = new System.Drawing.Size(265, 19);
+            this.lblTransDesc2.TabIndex = 14;
+            this.lblTransDesc2.Text = "Completed a game \"Gamename Four\"";
+            this.lblTransDesc2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // lblTransDesc1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(22, 156);
-            this.label7.Name = "label7";
-            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label7.Size = new System.Drawing.Size(261, 19);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Completed a game \"Gamename One\"";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTransDesc1.AutoSize = true;
+            this.lblTransDesc1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransDesc1.ForeColor = System.Drawing.Color.Silver;
+            this.lblTransDesc1.Location = new System.Drawing.Point(22, 156);
+            this.lblTransDesc1.Name = "lblTransDesc1";
+            this.lblTransDesc1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTransDesc1.Size = new System.Drawing.Size(261, 19);
+            this.lblTransDesc1.TabIndex = 13;
+            this.lblTransDesc1.Text = "Completed a game \"Gamename One\"";
+            this.lblTransDesc1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
@@ -501,19 +500,19 @@
             this.label6.Text = "Recent transactions";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // lblTotalPoints
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Manrope", 38.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(77, 43);
-            this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(153, 69);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "3456";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTotalPoints.AutoSize = true;
+            this.lblTotalPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalPoints.Font = new System.Drawing.Font("Manrope", 38.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalPoints.ForeColor = System.Drawing.Color.White;
+            this.lblTotalPoints.Location = new System.Drawing.Point(77, 43);
+            this.lblTotalPoints.Name = "lblTotalPoints";
+            this.lblTotalPoints.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTotalPoints.Size = new System.Drawing.Size(153, 69);
+            this.lblTotalPoints.TabIndex = 11;
+            this.lblTotalPoints.Text = "3456";
+            this.lblTotalPoints.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -545,84 +544,70 @@
             // roundedPanel4
             // 
             this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.roundedPanel4.Controls.Add(this.label67);
-            this.roundedPanel4.Controls.Add(this.label34);
-            this.roundedPanel4.Controls.Add(this.label33);
-            this.roundedPanel4.Controls.Add(this.roundedProgressBar1);
-            this.roundedPanel4.Controls.Add(this.label32);
+            this.roundedPanel4.Controls.Add(this.lblLevel);
+            this.roundedPanel4.Controls.Add(this.lblToGo);
+            this.roundedPanel4.Controls.Add(this.lblToGoPercent);
+            this.roundedPanel4.Controls.Add(this.pbToGo);
             this.roundedPanel4.Controls.Add(this.label31);
             this.roundedPanel4.Location = new System.Drawing.Point(818, 109);
             this.roundedPanel4.Name = "roundedPanel4";
             this.roundedPanel4.Size = new System.Drawing.Size(205, 171);
             this.roundedPanel4.TabIndex = 7;
             // 
-            // label67
+            // lblLevel
             // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Manrope", 28.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label67.ForeColor = System.Drawing.Color.White;
-            this.label67.Location = new System.Drawing.Point(72, 59);
-            this.label67.Name = "label67";
-            this.label67.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label67.Size = new System.Drawing.Size(61, 52);
-            this.label67.TabIndex = 42;
-            this.label67.Text = "13";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.Font = new System.Drawing.Font("Manrope", 28.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLevel.ForeColor = System.Drawing.Color.White;
+            this.lblLevel.Location = new System.Drawing.Point(72, 59);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblLevel.Size = new System.Drawing.Size(61, 52);
+            this.lblLevel.TabIndex = 42;
+            this.lblLevel.Text = "13";
+            this.lblLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label34
+            // lblToGo
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label34.ForeColor = System.Drawing.Color.Silver;
-            this.label34.Location = new System.Drawing.Point(12, 130);
-            this.label34.Name = "label34";
-            this.label34.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label34.Size = new System.Drawing.Size(79, 19);
-            this.label34.TabIndex = 41;
-            this.label34.Text = "1234 to go";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblToGo.AutoSize = true;
+            this.lblToGo.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblToGo.ForeColor = System.Drawing.Color.Silver;
+            this.lblToGo.Location = new System.Drawing.Point(12, 130);
+            this.lblToGo.Name = "lblToGo";
+            this.lblToGo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblToGo.Size = new System.Drawing.Size(79, 19);
+            this.lblToGo.TabIndex = 41;
+            this.lblToGo.Text = "1234 to go";
+            this.lblToGo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label33
+            // lblToGoPercent
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label33.ForeColor = System.Drawing.Color.Silver;
-            this.label33.Location = new System.Drawing.Point(152, 129);
-            this.label33.Name = "label33";
-            this.label33.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label33.Size = new System.Drawing.Size(37, 19);
-            this.label33.TabIndex = 40;
-            this.label33.Text = "74%";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label33.Click += new System.EventHandler(this.label33_Click);
+            this.lblToGoPercent.AutoSize = true;
+            this.lblToGoPercent.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblToGoPercent.ForeColor = System.Drawing.Color.Silver;
+            this.lblToGoPercent.Location = new System.Drawing.Point(152, 129);
+            this.lblToGoPercent.Name = "lblToGoPercent";
+            this.lblToGoPercent.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblToGoPercent.Size = new System.Drawing.Size(37, 19);
+            this.lblToGoPercent.TabIndex = 40;
+            this.lblToGoPercent.Text = "74%";
+            this.lblToGoPercent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblToGoPercent.Click += new System.EventHandler(this.label33_Click);
             // 
-            // roundedProgressBar1
+            // pbToGo
             // 
-            this.roundedProgressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.roundedProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.roundedProgressBar1.Location = new System.Drawing.Point(13, 119);
-            this.roundedProgressBar1.Name = "roundedProgressBar1";
-            this.roundedProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.roundedProgressBar1.Size = new System.Drawing.Size(175, 7);
-            this.roundedProgressBar1.TabIndex = 39;
-            this.roundedProgressBar1.Value = new decimal(new int[] {
+            this.pbToGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pbToGo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.pbToGo.Location = new System.Drawing.Point(13, 119);
+            this.pbToGo.Name = "pbToGo";
+            this.pbToGo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pbToGo.Size = new System.Drawing.Size(175, 7);
+            this.pbToGo.TabIndex = 39;
+            this.pbToGo.Value = new decimal(new int[] {
             74,
             0,
             0,
             131072});
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Manrope", 28.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(72, 47);
-            this.label32.Name = "label32";
-            this.label32.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label32.Size = new System.Drawing.Size(61, 52);
-            this.label32.TabIndex = 23;
-            this.label32.Text = "13";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label31
             // 
@@ -1592,13 +1577,13 @@
         private Controls.RoundedPanel roundedPanel5;
         private Controls.RoundedPanel roundedPanel6;
         private Label label11;
-        private Label label12;
+        private Label lblTransPoints2;
         private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
+        private Label lblTransPoints1;
+        private Label lblTransDesc2;
+        private Label lblTransDesc1;
         private Label label6;
-        private Label label5;
+        private Label lblTotalPoints;
         private Label label4;
         private Label label3;
         private LinkLabel linkLabel1;
@@ -1628,14 +1613,13 @@
         private Label label30;
         private Label label29;
         private Label label28;
-        private Label label32;
         private Label label31;
         private Controls.RoundedPanel roundedPanel8;
-        private Controls.RoundedProgressBar roundedProgressBar1;
-        private Label label33;
+        private Controls.RoundedProgressBar pbToGo;
+        private Label lblToGoPercent;
         private Label label66;
-        private Label label67;
-        private Label label34;
+        private Label lblLevel;
+        private Label lblToGo;
         private Label label51;
         private Label label52;
         private Label label53;

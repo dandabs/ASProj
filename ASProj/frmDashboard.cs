@@ -40,8 +40,42 @@ namespace ASProj
 
             lblUsername.Text = Program.CurrentSession.Username;
             lblDiscriminator.Text = "#" + Program.CurrentSession.Discriminator;
-
             pbxAvatar.Image = UserImage.Search(Program.CurrentSession.GetAvatar()).ToBitmap();
+
+            lblTotalPoints.Text = Convert.ToString(Program.CurrentSession.Points);
+
+            int transCount = Program.CurrentSession.Transactions.Count;
+            for (int i = 0; i < transCount; i++)
+            {
+                Transaction t = Program.CurrentSession.Transactions[i];
+                if (i == (transCount - 1))
+                {
+                    lblTransDesc1.Text = t.Description;
+                    lblTransPoints1.Text = Convert.ToString(t.Points);
+                } else if (i == (transCount - 2))
+                {
+                    lblTransDesc2.Text = t.Description;
+                    lblTransPoints2.Text = Convert.ToString(t.Points);
+                }
+            }
+            if (transCount == 0)
+            {
+                lblTransDesc1.Text = "No activity yet";
+                lblTransPoints1.Text = "-";
+                lblTransDesc2.Text = "No activity yet";
+                lblTransPoints2.Text = "-";
+            }
+            if (transCount == 1)
+            {
+                lblTransDesc2.Text = "No activity yet";
+                lblTransPoints2.Text = "-";
+            }
+
+            string level = Convert.ToString(ScoreUtils.GetLevel(Program.CurrentSession.Points));
+            lblLevel.Text = level.Length > 1 ? level : "0" + level;
+            lblToGo.Text = ScoreUtils.ToNextLevel(Program.CurrentSession.Points) + " to go";
+            lblToGoPercent.Text = (Program.CurrentSession.Points / ScoreUtils.PointsInLevel(Convert.ToInt32(level) + 1)) * 100 + "%";
+            pbToGo.Value = Program.CurrentSession.Points / ScoreUtils.PointsInLevel(Convert.ToInt32(level) + 1);
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
