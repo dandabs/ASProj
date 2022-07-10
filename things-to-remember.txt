@@ -47,3 +47,9 @@ https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-
 
 misc references
 https://stackoverflow.com/questions/9576868/how-to-put-image-in-a-picture-box-from-a-byte-in-c-sharp
+https://www.codeproject.com/Questions/194600/How-to-convert-the-JPEG-image-to-blob
+https://stackoverflow.com/questions/9576868/how-to-put-image-in-a-picture-box-from-a-byte-in-c-sharp
+https://stackoverflow.com/questions/7350679/convert-a-bitmap-into-a-byte-array
+https://stackoverflow.com/questions/20840256/create-uuid-with-zeros
+https://docs.microsoft.com/en-us/dotnet/api/system.guid.empty?view=net-6.0
+https://stackoverflow.com/questions/6122984/load-a-bitmap-image-into-windows-forms-using-open-file-dialog

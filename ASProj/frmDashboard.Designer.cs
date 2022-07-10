@@ -128,6 +128,7 @@
             this.squareButton4 = new ASProj.Controls.SquareButton();
             this.squareButton3 = new ASProj.Controls.SquareButton();
             this.squareButton2 = new ASProj.Controls.SquareButton();
+            this.ofdAvatar = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).BeginInit();
             this.roundedPanel1.SuspendLayout();
@@ -249,6 +250,7 @@
             // pbxAvatar
             // 
             this.pbxAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.pbxAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxAvatar.Image = global::ASProj.Properties.Resources._5082445c736781115816c8a0c7f6f461__tove_jansson_moomin;
             this.pbxAvatar.Location = new System.Drawing.Point(983, 30);
             this.pbxAvatar.Name = "pbxAvatar";
@@ -256,6 +258,7 @@
             this.pbxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAvatar.TabIndex = 2;
             this.pbxAvatar.TabStop = false;
+            this.pbxAvatar.Click += new System.EventHandler(this.pbxAvatar_Click);
             // 
             // lblDiscriminator
             // 
@@ -1510,6 +1513,11 @@
             this.squareButton2.Text = "NO TIMER";
             this.squareButton2.UseVisualStyleBackColor = false;
             // 
+            // ofdAvatar
+            // 
+            this.ofdAvatar.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;*.bmp";
+            this.ofdAvatar.Title = "Upload a new avatar";
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1666,5 +1674,6 @@
         private Controls.SquareButton squareButton4;
         private Controls.SquareButton squareButton3;
         private Controls.SquareButton squareButton2;
+        private OpenFileDialog ofdAvatar;
     }
 }

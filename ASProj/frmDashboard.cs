@@ -78,5 +78,21 @@ namespace ASProj
         {
 
         }
+
+        private void pbxAvatar_Click(object sender, EventArgs e)
+        {
+            ofdAvatar.InitialDirectory = FileHandler.dir;
+            if (ofdAvatar.ShowDialog() == DialogResult.OK)
+            {
+                // DA 10/7/22 Create image object and save it to the database
+                UserImage img = new UserImage(ofdAvatar.FileName);
+                img.Save();
+                pbxAvatar.Image = img.ToBitmap();
+
+                // DA 10/7/22 Update user object with the new avatar and save it to the database
+                Program.CurrentSession.Avatar = img.Id;
+                Program.CurrentSession.Save();
+            }
+        }
     }
 }

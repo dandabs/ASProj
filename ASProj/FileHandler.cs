@@ -14,7 +14,7 @@ namespace ASProj
         // DA 9/7/22 Needs to be readonly, as const keyword runs at compile-time, and folder path will change at runtime
         // DA 9/7/22 TODO Change directory name once a name is decided for the project
         // DA 9/7/22 TODO Check for permissions to write in ProgramFiles (to share results); if not, write in %APPDATA%
-        private static readonly string dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".\ASProj");
+        public static readonly string dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".\ASProj");
 
         public static string Select(string file) // DA 9/7/22 Similar to SQL's `SELECT *`
         {
