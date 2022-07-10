@@ -33,7 +33,7 @@
             this.menuListIconButton6 = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton5 = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton4 = new ASProj.Controls.MenuListIconButton();
-            this.menuListIconButton3 = new ASProj.Controls.MenuListIconButton();
+            this.btnLogout = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton2 = new ASProj.Controls.MenuListIconButton();
             this.pbxAvatar = new ASProj.Controls.OvalPictureBox();
             this.lblDiscriminator = new System.Windows.Forms.Label();
@@ -155,7 +155,7 @@
             this.panel1.Controls.Add(this.menuListIconButton6);
             this.panel1.Controls.Add(this.menuListIconButton5);
             this.panel1.Controls.Add(this.menuListIconButton4);
-            this.panel1.Controls.Add(this.menuListIconButton3);
+            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.menuListIconButton2);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
@@ -218,19 +218,21 @@
             this.menuListIconButton4.Size = new System.Drawing.Size(38, 38);
             this.menuListIconButton4.TabIndex = 4;
             // 
-            // menuListIconButton3
+            // btnLogout
             // 
-            this.menuListIconButton3.BackColor = System.Drawing.Color.Transparent;
-            this.menuListIconButton3.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menuListIconButton3.ForeColor = System.Drawing.Color.DarkGray;
-            this.menuListIconButton3.Icon = '';
-            this.menuListIconButton3.Location = new System.Drawing.Point(19, 660);
-            this.menuListIconButton3.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.menuListIconButton3.Name = "menuListIconButton3";
-            this.menuListIconButton3.Selected = false;
-            this.menuListIconButton3.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.menuListIconButton3.Size = new System.Drawing.Size(38, 38);
-            this.menuListIconButton3.TabIndex = 3;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogout.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.Icon = '';
+            this.btnLogout.Location = new System.Drawing.Point(19, 660);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Selected = false;
+            this.btnLogout.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnLogout.Size = new System.Drawing.Size(38, 38);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // menuListIconButton2
             // 
@@ -1576,7 +1578,7 @@
         private Panel panel1;
         private Controls.MenuListIconButton menuListIconButton1;
         private Controls.MenuListIconButton menuListIconButton2;
-        private Controls.MenuListIconButton menuListIconButton3;
+        private Controls.MenuListIconButton btnLogout;
         private Controls.MenuListIconButton menuListIconButton6;
         private Controls.MenuListIconButton menuListIconButton5;
         private Controls.MenuListIconButton menuListIconButton4;

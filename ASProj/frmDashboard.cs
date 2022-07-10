@@ -94,5 +94,15 @@ namespace ASProj
                 Program.CurrentSession.Save();
             }
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            File.Delete(Path.Combine(FileHandler.dir, ".session"));
+
+            Hide();
+            Form frmLogin = new frmLogin();
+            frmLogin.Show();
+            frmLogin.SetDesktopLocation(Location.X, Location.Y);
+        }
     }
 }

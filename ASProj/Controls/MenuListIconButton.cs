@@ -43,6 +43,12 @@ namespace ASProj.Controls
             Cursor = Cursors.Hand;
             centerText();
             onSelectionChanged();
+
+            ((Label)Controls.Find("icon", true)[0]).Click += new EventHandler(Control_Click);
+        }
+        private void Control_Click(object? sender, EventArgs e)
+        {
+            this.OnClick(e);
         }
         private void centerText()
         {
