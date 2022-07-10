@@ -44,7 +44,7 @@
             this.roundedPanel2 = new ASProj.Controls.RoundedPanel();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lblTimePlayed = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.roundedPanel3 = new ASProj.Controls.RoundedPanel();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,35 +65,35 @@
             this.label31 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new ASProj.Controls.RoundedPanel();
             this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
+            this.lblGameGenre6 = new System.Windows.Forms.Label();
+            this.lblGamePoints6 = new System.Windows.Forms.Label();
+            this.lblGameName6 = new System.Windows.Forms.Label();
+            this.lblGameIcon6 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
+            this.lblGameGenre5 = new System.Windows.Forms.Label();
+            this.lblGamePoints5 = new System.Windows.Forms.Label();
+            this.lblGameName5 = new System.Windows.Forms.Label();
+            this.lblGameIcon5 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
+            this.lblGameGenre4 = new System.Windows.Forms.Label();
+            this.lblGamePoints4 = new System.Windows.Forms.Label();
+            this.lblGameName4 = new System.Windows.Forms.Label();
+            this.lblGameIcon4 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.lblGameGenre3 = new System.Windows.Forms.Label();
+            this.lblGamePoints3 = new System.Windows.Forms.Label();
+            this.lblGameName3 = new System.Windows.Forms.Label();
+            this.lblGameIcon3 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
+            this.lblGameGenre2 = new System.Windows.Forms.Label();
+            this.lblGamePoints2 = new System.Windows.Forms.Label();
+            this.lblGameName2 = new System.Windows.Forms.Label();
+            this.lblGameIcon2 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.lblGameGenre1 = new System.Windows.Forms.Label();
+            this.lblGamePoints1 = new System.Windows.Forms.Label();
+            this.lblGameName1 = new System.Windows.Forms.Label();
+            this.lblGameIcon1 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.roundedPanel6 = new ASProj.Controls.RoundedPanel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -118,9 +118,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.roundedPanel8 = new ASProj.Controls.RoundedPanel();
-            this.label70 = new System.Windows.Forms.Label();
+            this.lblIncorrectNew = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
+            this.lblIncorrect = new System.Windows.Forms.Label();
             this.roundedPanel7 = new ASProj.Controls.RoundedPanel();
             this.squareButton6 = new ASProj.Controls.SquareButton();
             this.squareButton5 = new ASProj.Controls.SquareButton();
@@ -330,7 +330,7 @@
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.roundedPanel2.Controls.Add(this.label30);
             this.roundedPanel2.Controls.Add(this.label29);
-            this.roundedPanel2.Controls.Add(this.label28);
+            this.roundedPanel2.Controls.Add(this.lblTimePlayed);
             this.roundedPanel2.Controls.Add(this.label27);
             this.roundedPanel2.Location = new System.Drawing.Point(130, 398);
             this.roundedPanel2.Name = "roundedPanel2";
@@ -363,18 +363,18 @@
             this.label29.Text = "Time Played";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label28
+            // lblTimePlayed
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(57, 60);
-            this.label28.Name = "label28";
-            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label28.Size = new System.Drawing.Size(105, 34);
-            this.label28.TabIndex = 20;
-            this.label28.Text = "3H 40M";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTimePlayed.AutoSize = true;
+            this.lblTimePlayed.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTimePlayed.ForeColor = System.Drawing.Color.White;
+            this.lblTimePlayed.Location = new System.Drawing.Point(51, 60);
+            this.lblTimePlayed.Name = "lblTimePlayed";
+            this.lblTimePlayed.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTimePlayed.Size = new System.Drawing.Size(120, 34);
+            this.lblTimePlayed.TabIndex = 20;
+            this.lblTimePlayed.Text = "02:42:12";
+            this.lblTimePlayed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label27
             // 
@@ -626,35 +626,35 @@
             // 
             this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.roundedPanel5.Controls.Add(this.label51);
-            this.roundedPanel5.Controls.Add(this.label52);
-            this.roundedPanel5.Controls.Add(this.label53);
-            this.roundedPanel5.Controls.Add(this.label54);
-            this.roundedPanel5.Controls.Add(this.label55);
+            this.roundedPanel5.Controls.Add(this.lblGameGenre6);
+            this.roundedPanel5.Controls.Add(this.lblGamePoints6);
+            this.roundedPanel5.Controls.Add(this.lblGameName6);
+            this.roundedPanel5.Controls.Add(this.lblGameIcon6);
             this.roundedPanel5.Controls.Add(this.label56);
-            this.roundedPanel5.Controls.Add(this.label57);
-            this.roundedPanel5.Controls.Add(this.label58);
-            this.roundedPanel5.Controls.Add(this.label59);
-            this.roundedPanel5.Controls.Add(this.label60);
+            this.roundedPanel5.Controls.Add(this.lblGameGenre5);
+            this.roundedPanel5.Controls.Add(this.lblGamePoints5);
+            this.roundedPanel5.Controls.Add(this.lblGameName5);
+            this.roundedPanel5.Controls.Add(this.lblGameIcon5);
             this.roundedPanel5.Controls.Add(this.label61);
-            this.roundedPanel5.Controls.Add(this.label62);
-            this.roundedPanel5.Controls.Add(this.label63);
-            this.roundedPanel5.Controls.Add(this.label64);
-            this.roundedPanel5.Controls.Add(this.label65);
+            this.roundedPanel5.Controls.Add(this.lblGameGenre4);
+            this.roundedPanel5.Controls.Add(this.lblGamePoints4);
+            this.roundedPanel5.Controls.Add(this.lblGameName4);
+            this.roundedPanel5.Controls.Add(this.lblGameIcon4);
             this.roundedPanel5.Controls.Add(this.label46);
-            this.roundedPanel5.Controls.Add(this.label47);
-            this.roundedPanel5.Controls.Add(this.label48);
-            this.roundedPanel5.Controls.Add(this.label49);
-            this.roundedPanel5.Controls.Add(this.label50);
+            this.roundedPanel5.Controls.Add(this.lblGameGenre3);
+            this.roundedPanel5.Controls.Add(this.lblGamePoints3);
+            this.roundedPanel5.Controls.Add(this.lblGameName3);
+            this.roundedPanel5.Controls.Add(this.lblGameIcon3);
             this.roundedPanel5.Controls.Add(this.label41);
-            this.roundedPanel5.Controls.Add(this.label42);
-            this.roundedPanel5.Controls.Add(this.label43);
-            this.roundedPanel5.Controls.Add(this.label44);
-            this.roundedPanel5.Controls.Add(this.label45);
+            this.roundedPanel5.Controls.Add(this.lblGameGenre2);
+            this.roundedPanel5.Controls.Add(this.lblGamePoints2);
+            this.roundedPanel5.Controls.Add(this.lblGameName2);
+            this.roundedPanel5.Controls.Add(this.lblGameIcon2);
             this.roundedPanel5.Controls.Add(this.label39);
-            this.roundedPanel5.Controls.Add(this.label38);
-            this.roundedPanel5.Controls.Add(this.label40);
-            this.roundedPanel5.Controls.Add(this.label37);
-            this.roundedPanel5.Controls.Add(this.label36);
+            this.roundedPanel5.Controls.Add(this.lblGameGenre1);
+            this.roundedPanel5.Controls.Add(this.lblGamePoints1);
+            this.roundedPanel5.Controls.Add(this.lblGameName1);
+            this.roundedPanel5.Controls.Add(this.lblGameIcon1);
             this.roundedPanel5.Controls.Add(this.label35);
             this.roundedPanel5.Location = new System.Drawing.Point(369, 350);
             this.roundedPanel5.Name = "roundedPanel5";
@@ -675,58 +675,58 @@
             this.label51.Text = "";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label52
+            // lblGameGenre6
             // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label52.ForeColor = System.Drawing.Color.Silver;
-            this.label52.Location = new System.Drawing.Point(215, 271);
-            this.label52.Name = "label52";
-            this.label52.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label52.Size = new System.Drawing.Size(88, 19);
-            this.label52.TabIndex = 50;
-            this.label52.Text = "Gamegenre";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameGenre6.AutoSize = true;
+            this.lblGameGenre6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre6.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameGenre6.Location = new System.Drawing.Point(215, 271);
+            this.lblGameGenre6.Name = "lblGameGenre6";
+            this.lblGameGenre6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameGenre6.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre6.TabIndex = 50;
+            this.lblGameGenre6.Text = "Gamegenre";
+            this.lblGameGenre6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label53
+            // lblGamePoints6
             // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label53.ForeColor = System.Drawing.Color.Gray;
-            this.label53.Location = new System.Drawing.Point(380, 271);
-            this.label53.Name = "label53";
-            this.label53.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label53.Size = new System.Drawing.Size(25, 19);
-            this.label53.TabIndex = 46;
-            this.label53.Text = "78";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGamePoints6.AutoSize = true;
+            this.lblGamePoints6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints6.ForeColor = System.Drawing.Color.Gray;
+            this.lblGamePoints6.Location = new System.Drawing.Point(380, 271);
+            this.lblGamePoints6.Name = "lblGamePoints6";
+            this.lblGamePoints6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGamePoints6.Size = new System.Drawing.Size(25, 19);
+            this.lblGamePoints6.TabIndex = 46;
+            this.lblGamePoints6.Text = "78";
+            this.lblGamePoints6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label54
+            // lblGameName6
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label54.ForeColor = System.Drawing.Color.Silver;
-            this.label54.Location = new System.Drawing.Point(60, 272);
-            this.label54.Name = "label54";
-            this.label54.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label54.Size = new System.Drawing.Size(110, 19);
-            this.label54.TabIndex = 49;
-            this.label54.Text = "Gamename Six";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameName6.AutoSize = true;
+            this.lblGameName6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName6.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameName6.Location = new System.Drawing.Point(60, 272);
+            this.lblGameName6.Name = "lblGameName6";
+            this.lblGameName6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameName6.Size = new System.Drawing.Size(110, 19);
+            this.lblGameName6.TabIndex = 49;
+            this.lblGameName6.Text = "Gamename Six";
+            this.lblGameName6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label55
+            // lblGameIcon6
             // 
-            this.label55.AutoSize = true;
-            this.label55.BackColor = System.Drawing.Color.Transparent;
-            this.label55.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label55.Location = new System.Drawing.Point(19, 271);
-            this.label55.Name = "label55";
-            this.label55.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label55.Size = new System.Drawing.Size(34, 21);
-            this.label55.TabIndex = 48;
-            this.label55.Text = "";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameIcon6.AutoSize = true;
+            this.lblGameIcon6.BackColor = System.Drawing.Color.Transparent;
+            this.lblGameIcon6.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblGameIcon6.Location = new System.Drawing.Point(19, 271);
+            this.lblGameIcon6.Name = "lblGameIcon6";
+            this.lblGameIcon6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameIcon6.Size = new System.Drawing.Size(34, 21);
+            this.lblGameIcon6.TabIndex = 48;
+            this.lblGameIcon6.Text = "";
+            this.lblGameIcon6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label56
             // 
@@ -742,58 +742,58 @@
             this.label56.Text = "";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label57
+            // lblGameGenre5
             // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label57.ForeColor = System.Drawing.Color.Silver;
-            this.label57.Location = new System.Drawing.Point(215, 229);
-            this.label57.Name = "label57";
-            this.label57.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label57.Size = new System.Drawing.Size(88, 19);
-            this.label57.TabIndex = 45;
-            this.label57.Text = "Gamegenre";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameGenre5.AutoSize = true;
+            this.lblGameGenre5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre5.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameGenre5.Location = new System.Drawing.Point(215, 229);
+            this.lblGameGenre5.Name = "lblGameGenre5";
+            this.lblGameGenre5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameGenre5.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre5.TabIndex = 45;
+            this.lblGameGenre5.Text = "Gamegenre";
+            this.lblGameGenre5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label58
+            // lblGamePoints5
             // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label58.ForeColor = System.Drawing.Color.Gray;
-            this.label58.Location = new System.Drawing.Point(380, 229);
-            this.label58.Name = "label58";
-            this.label58.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label58.Size = new System.Drawing.Size(26, 19);
-            this.label58.TabIndex = 41;
-            this.label58.Text = "45";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGamePoints5.AutoSize = true;
+            this.lblGamePoints5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints5.ForeColor = System.Drawing.Color.Gray;
+            this.lblGamePoints5.Location = new System.Drawing.Point(380, 229);
+            this.lblGamePoints5.Name = "lblGamePoints5";
+            this.lblGamePoints5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGamePoints5.Size = new System.Drawing.Size(26, 19);
+            this.lblGamePoints5.TabIndex = 41;
+            this.lblGamePoints5.Text = "45";
+            this.lblGamePoints5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label59
+            // lblGameName5
             // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label59.ForeColor = System.Drawing.Color.Silver;
-            this.label59.Location = new System.Drawing.Point(60, 230);
-            this.label59.Name = "label59";
-            this.label59.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label59.Size = new System.Drawing.Size(116, 19);
-            this.label59.TabIndex = 44;
-            this.label59.Text = "Gamename Five";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameName5.AutoSize = true;
+            this.lblGameName5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName5.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameName5.Location = new System.Drawing.Point(60, 230);
+            this.lblGameName5.Name = "lblGameName5";
+            this.lblGameName5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameName5.Size = new System.Drawing.Size(116, 19);
+            this.lblGameName5.TabIndex = 44;
+            this.lblGameName5.Text = "Gamename Five";
+            this.lblGameName5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label60
+            // lblGameIcon5
             // 
-            this.label60.AutoSize = true;
-            this.label60.BackColor = System.Drawing.Color.Transparent;
-            this.label60.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label60.Location = new System.Drawing.Point(19, 229);
-            this.label60.Name = "label60";
-            this.label60.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label60.Size = new System.Drawing.Size(34, 21);
-            this.label60.TabIndex = 43;
-            this.label60.Text = "";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameIcon5.AutoSize = true;
+            this.lblGameIcon5.BackColor = System.Drawing.Color.Transparent;
+            this.lblGameIcon5.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblGameIcon5.Location = new System.Drawing.Point(19, 229);
+            this.lblGameIcon5.Name = "lblGameIcon5";
+            this.lblGameIcon5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameIcon5.Size = new System.Drawing.Size(34, 21);
+            this.lblGameIcon5.TabIndex = 43;
+            this.lblGameIcon5.Text = "";
+            this.lblGameIcon5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label61
             // 
@@ -809,58 +809,58 @@
             this.label61.Text = "";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label62
+            // lblGameGenre4
             // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label62.ForeColor = System.Drawing.Color.Silver;
-            this.label62.Location = new System.Drawing.Point(215, 188);
-            this.label62.Name = "label62";
-            this.label62.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label62.Size = new System.Drawing.Size(88, 19);
-            this.label62.TabIndex = 40;
-            this.label62.Text = "Gamegenre";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameGenre4.AutoSize = true;
+            this.lblGameGenre4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre4.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameGenre4.Location = new System.Drawing.Point(215, 188);
+            this.lblGameGenre4.Name = "lblGameGenre4";
+            this.lblGameGenre4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameGenre4.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre4.TabIndex = 40;
+            this.lblGameGenre4.Text = "Gamegenre";
+            this.lblGameGenre4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label63
+            // lblGamePoints4
             // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label63.ForeColor = System.Drawing.Color.Gray;
-            this.label63.Location = new System.Drawing.Point(380, 188);
-            this.label63.Name = "label63";
-            this.label63.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label63.Size = new System.Drawing.Size(26, 19);
-            this.label63.TabIndex = 36;
-            this.label63.Text = "34";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGamePoints4.AutoSize = true;
+            this.lblGamePoints4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints4.ForeColor = System.Drawing.Color.Gray;
+            this.lblGamePoints4.Location = new System.Drawing.Point(380, 188);
+            this.lblGamePoints4.Name = "lblGamePoints4";
+            this.lblGamePoints4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGamePoints4.Size = new System.Drawing.Size(26, 19);
+            this.lblGamePoints4.TabIndex = 36;
+            this.lblGamePoints4.Text = "34";
+            this.lblGamePoints4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label64
+            // lblGameName4
             // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label64.ForeColor = System.Drawing.Color.Silver;
-            this.label64.Location = new System.Drawing.Point(60, 189);
-            this.label64.Name = "label64";
-            this.label64.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label64.Size = new System.Drawing.Size(120, 19);
-            this.label64.TabIndex = 39;
-            this.label64.Text = "Gamename Four";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameName4.AutoSize = true;
+            this.lblGameName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName4.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameName4.Location = new System.Drawing.Point(60, 189);
+            this.lblGameName4.Name = "lblGameName4";
+            this.lblGameName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameName4.Size = new System.Drawing.Size(120, 19);
+            this.lblGameName4.TabIndex = 39;
+            this.lblGameName4.Text = "Gamename Four";
+            this.lblGameName4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label65
+            // lblGameIcon4
             // 
-            this.label65.AutoSize = true;
-            this.label65.BackColor = System.Drawing.Color.Transparent;
-            this.label65.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label65.Location = new System.Drawing.Point(19, 188);
-            this.label65.Name = "label65";
-            this.label65.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label65.Size = new System.Drawing.Size(36, 21);
-            this.label65.TabIndex = 38;
-            this.label65.Text = "";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameIcon4.AutoSize = true;
+            this.lblGameIcon4.BackColor = System.Drawing.Color.Transparent;
+            this.lblGameIcon4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblGameIcon4.Location = new System.Drawing.Point(19, 188);
+            this.lblGameIcon4.Name = "lblGameIcon4";
+            this.lblGameIcon4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameIcon4.Size = new System.Drawing.Size(36, 21);
+            this.lblGameIcon4.TabIndex = 38;
+            this.lblGameIcon4.Text = "";
+            this.lblGameIcon4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label46
             // 
@@ -876,58 +876,58 @@
             this.label46.Text = "";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label47
+            // lblGameGenre3
             // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label47.ForeColor = System.Drawing.Color.Silver;
-            this.label47.Location = new System.Drawing.Point(215, 149);
-            this.label47.Name = "label47";
-            this.label47.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label47.Size = new System.Drawing.Size(88, 19);
-            this.label47.TabIndex = 35;
-            this.label47.Text = "Gamegenre";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameGenre3.AutoSize = true;
+            this.lblGameGenre3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre3.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameGenre3.Location = new System.Drawing.Point(215, 149);
+            this.lblGameGenre3.Name = "lblGameGenre3";
+            this.lblGameGenre3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameGenre3.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre3.TabIndex = 35;
+            this.lblGameGenre3.Text = "Gamegenre";
+            this.lblGameGenre3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label48
+            // lblGamePoints3
             // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label48.ForeColor = System.Drawing.Color.Gray;
-            this.label48.Location = new System.Drawing.Point(380, 149);
-            this.label48.Name = "label48";
-            this.label48.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label48.Size = new System.Drawing.Size(26, 19);
-            this.label48.TabIndex = 31;
-            this.label48.Text = "92";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGamePoints3.AutoSize = true;
+            this.lblGamePoints3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints3.ForeColor = System.Drawing.Color.Gray;
+            this.lblGamePoints3.Location = new System.Drawing.Point(380, 149);
+            this.lblGamePoints3.Name = "lblGamePoints3";
+            this.lblGamePoints3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGamePoints3.Size = new System.Drawing.Size(26, 19);
+            this.lblGamePoints3.TabIndex = 31;
+            this.lblGamePoints3.Text = "92";
+            this.lblGamePoints3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label49
+            // lblGameName3
             // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label49.ForeColor = System.Drawing.Color.Silver;
-            this.label49.Location = new System.Drawing.Point(60, 150);
-            this.label49.Name = "label49";
-            this.label49.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label49.Size = new System.Drawing.Size(128, 19);
-            this.label49.TabIndex = 34;
-            this.label49.Text = "Gamename Three";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameName3.AutoSize = true;
+            this.lblGameName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName3.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameName3.Location = new System.Drawing.Point(60, 150);
+            this.lblGameName3.Name = "lblGameName3";
+            this.lblGameName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameName3.Size = new System.Drawing.Size(128, 19);
+            this.lblGameName3.TabIndex = 34;
+            this.lblGameName3.Text = "Gamename Three";
+            this.lblGameName3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label50
+            // lblGameIcon3
             // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label50.Location = new System.Drawing.Point(19, 149);
-            this.label50.Name = "label50";
-            this.label50.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label50.Size = new System.Drawing.Size(31, 21);
-            this.label50.TabIndex = 33;
-            this.label50.Text = "";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameIcon3.AutoSize = true;
+            this.lblGameIcon3.BackColor = System.Drawing.Color.Transparent;
+            this.lblGameIcon3.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblGameIcon3.Location = new System.Drawing.Point(19, 149);
+            this.lblGameIcon3.Name = "lblGameIcon3";
+            this.lblGameIcon3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameIcon3.Size = new System.Drawing.Size(31, 21);
+            this.lblGameIcon3.TabIndex = 33;
+            this.lblGameIcon3.Text = "";
+            this.lblGameIcon3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label41
             // 
@@ -943,58 +943,58 @@
             this.label41.Text = "";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label42
+            // lblGameGenre2
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label42.ForeColor = System.Drawing.Color.Silver;
-            this.label42.Location = new System.Drawing.Point(215, 107);
-            this.label42.Name = "label42";
-            this.label42.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label42.Size = new System.Drawing.Size(88, 19);
-            this.label42.TabIndex = 30;
-            this.label42.Text = "Gamegenre";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameGenre2.AutoSize = true;
+            this.lblGameGenre2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre2.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameGenre2.Location = new System.Drawing.Point(215, 107);
+            this.lblGameGenre2.Name = "lblGameGenre2";
+            this.lblGameGenre2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameGenre2.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre2.TabIndex = 30;
+            this.lblGameGenre2.Text = "Gamegenre";
+            this.lblGameGenre2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label43
+            // lblGamePoints2
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label43.ForeColor = System.Drawing.Color.Gray;
-            this.label43.Location = new System.Drawing.Point(380, 107);
-            this.label43.Name = "label43";
-            this.label43.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label43.Size = new System.Drawing.Size(27, 19);
-            this.label43.TabIndex = 26;
-            this.label43.Text = "89";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGamePoints2.AutoSize = true;
+            this.lblGamePoints2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints2.ForeColor = System.Drawing.Color.Gray;
+            this.lblGamePoints2.Location = new System.Drawing.Point(380, 107);
+            this.lblGamePoints2.Name = "lblGamePoints2";
+            this.lblGamePoints2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGamePoints2.Size = new System.Drawing.Size(27, 19);
+            this.lblGamePoints2.TabIndex = 26;
+            this.lblGamePoints2.Text = "89";
+            this.lblGamePoints2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label44
+            // lblGameName2
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label44.ForeColor = System.Drawing.Color.Silver;
-            this.label44.Location = new System.Drawing.Point(60, 108);
-            this.label44.Name = "label44";
-            this.label44.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label44.Size = new System.Drawing.Size(116, 19);
-            this.label44.TabIndex = 29;
-            this.label44.Text = "Gamename Two";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameName2.AutoSize = true;
+            this.lblGameName2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName2.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameName2.Location = new System.Drawing.Point(60, 108);
+            this.lblGameName2.Name = "lblGameName2";
+            this.lblGameName2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameName2.Size = new System.Drawing.Size(116, 19);
+            this.lblGameName2.TabIndex = 29;
+            this.lblGameName2.Text = "Gamename Two";
+            this.lblGameName2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label45
+            // lblGameIcon2
             // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label45.Location = new System.Drawing.Point(19, 107);
-            this.label45.Name = "label45";
-            this.label45.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label45.Size = new System.Drawing.Size(34, 21);
-            this.label45.TabIndex = 28;
-            this.label45.Text = "";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameIcon2.AutoSize = true;
+            this.lblGameIcon2.BackColor = System.Drawing.Color.Transparent;
+            this.lblGameIcon2.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblGameIcon2.Location = new System.Drawing.Point(19, 107);
+            this.lblGameIcon2.Name = "lblGameIcon2";
+            this.lblGameIcon2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameIcon2.Size = new System.Drawing.Size(34, 21);
+            this.lblGameIcon2.TabIndex = 28;
+            this.lblGameIcon2.Text = "";
+            this.lblGameIcon2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label39
             // 
@@ -1010,58 +1010,58 @@
             this.label39.Text = "";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label38
+            // lblGameGenre1
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label38.ForeColor = System.Drawing.Color.Silver;
-            this.label38.Location = new System.Drawing.Point(215, 66);
-            this.label38.Name = "label38";
-            this.label38.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label38.Size = new System.Drawing.Size(88, 19);
-            this.label38.TabIndex = 25;
-            this.label38.Text = "Gamegenre";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameGenre1.AutoSize = true;
+            this.lblGameGenre1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre1.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameGenre1.Location = new System.Drawing.Point(215, 66);
+            this.lblGameGenre1.Name = "lblGameGenre1";
+            this.lblGameGenre1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameGenre1.Size = new System.Drawing.Size(88, 19);
+            this.lblGameGenre1.TabIndex = 25;
+            this.lblGameGenre1.Text = "Gamegenre";
+            this.lblGameGenre1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label40
+            // lblGamePoints1
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label40.ForeColor = System.Drawing.Color.Gray;
-            this.label40.Location = new System.Drawing.Point(380, 66);
-            this.label40.Name = "label40";
-            this.label40.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label40.Size = new System.Drawing.Size(25, 19);
-            this.label40.TabIndex = 19;
-            this.label40.Text = "67";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGamePoints1.AutoSize = true;
+            this.lblGamePoints1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints1.ForeColor = System.Drawing.Color.Gray;
+            this.lblGamePoints1.Location = new System.Drawing.Point(380, 66);
+            this.lblGamePoints1.Name = "lblGamePoints1";
+            this.lblGamePoints1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGamePoints1.Size = new System.Drawing.Size(25, 19);
+            this.lblGamePoints1.TabIndex = 19;
+            this.lblGamePoints1.Text = "67";
+            this.lblGamePoints1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label37
+            // lblGameName1
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label37.ForeColor = System.Drawing.Color.Silver;
-            this.label37.Location = new System.Drawing.Point(60, 67);
-            this.label37.Name = "label37";
-            this.label37.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label37.Size = new System.Drawing.Size(116, 19);
-            this.label37.TabIndex = 24;
-            this.label37.Text = "Gamename One";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameName1.AutoSize = true;
+            this.lblGameName1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName1.ForeColor = System.Drawing.Color.Silver;
+            this.lblGameName1.Location = new System.Drawing.Point(60, 67);
+            this.lblGameName1.Name = "lblGameName1";
+            this.lblGameName1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameName1.Size = new System.Drawing.Size(116, 19);
+            this.lblGameName1.TabIndex = 24;
+            this.lblGameName1.Text = "Gamename One";
+            this.lblGameName1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label36
+            // lblGameIcon1
             // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label36.Location = new System.Drawing.Point(19, 66);
-            this.label36.Name = "label36";
-            this.label36.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label36.Size = new System.Drawing.Size(34, 21);
-            this.label36.TabIndex = 20;
-            this.label36.Text = "";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGameIcon1.AutoSize = true;
+            this.lblGameIcon1.BackColor = System.Drawing.Color.Transparent;
+            this.lblGameIcon1.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblGameIcon1.Location = new System.Drawing.Point(19, 66);
+            this.lblGameIcon1.Name = "lblGameIcon1";
+            this.lblGameIcon1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGameIcon1.Size = new System.Drawing.Size(34, 21);
+            this.lblGameIcon1.TabIndex = 20;
+            this.lblGameIcon1.Text = "";
+            this.lblGameIcon1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label35
             // 
@@ -1370,26 +1370,26 @@
             // roundedPanel8
             // 
             this.roundedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.roundedPanel8.Controls.Add(this.label70);
+            this.roundedPanel8.Controls.Add(this.lblIncorrectNew);
             this.roundedPanel8.Controls.Add(this.label69);
-            this.roundedPanel8.Controls.Add(this.label68);
+            this.roundedPanel8.Controls.Add(this.lblIncorrect);
             this.roundedPanel8.Location = new System.Drawing.Point(130, 596);
             this.roundedPanel8.Name = "roundedPanel8";
             this.roundedPanel8.Size = new System.Drawing.Size(217, 72);
             this.roundedPanel8.TabIndex = 8;
             // 
-            // label70
+            // lblIncorrectNew
             // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label70.Location = new System.Drawing.Point(60, 9);
-            this.label70.Name = "label70";
-            this.label70.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label70.Size = new System.Drawing.Size(44, 34);
-            this.label70.TabIndex = 44;
-            this.label70.Text = "+2";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblIncorrectNew.AutoSize = true;
+            this.lblIncorrectNew.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIncorrectNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblIncorrectNew.Location = new System.Drawing.Point(60, 9);
+            this.lblIncorrectNew.Name = "lblIncorrectNew";
+            this.lblIncorrectNew.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIncorrectNew.Size = new System.Drawing.Size(44, 34);
+            this.lblIncorrectNew.TabIndex = 44;
+            this.lblIncorrectNew.Text = "+2";
+            this.lblIncorrectNew.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label69
             // 
@@ -1404,18 +1404,18 @@
             this.label69.Text = "Incorrect answers";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label68
+            // lblIncorrect
             // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label68.ForeColor = System.Drawing.Color.White;
-            this.label68.Location = new System.Drawing.Point(17, 10);
-            this.label68.Name = "label68";
-            this.label68.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label68.Size = new System.Drawing.Size(45, 34);
-            this.label68.TabIndex = 43;
-            this.label68.Text = "45";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblIncorrect.AutoSize = true;
+            this.lblIncorrect.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIncorrect.ForeColor = System.Drawing.Color.White;
+            this.lblIncorrect.Location = new System.Drawing.Point(17, 10);
+            this.lblIncorrect.Name = "lblIncorrect";
+            this.lblIncorrect.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIncorrect.Size = new System.Drawing.Size(45, 34);
+            this.lblIncorrect.TabIndex = 43;
+            this.lblIncorrect.Text = "45";
+            this.lblIncorrect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundedPanel7
             // 
@@ -1612,7 +1612,7 @@
         private Label label27;
         private Label label30;
         private Label label29;
-        private Label label28;
+        private Label lblTimePlayed;
         private Label label31;
         private Controls.RoundedPanel roundedPanel8;
         private Controls.RoundedProgressBar pbToGo;
@@ -1621,39 +1621,39 @@
         private Label lblLevel;
         private Label lblToGo;
         private Label label51;
-        private Label label52;
-        private Label label53;
-        private Label label54;
-        private Label label55;
+        private Label lblGameGenre6;
+        private Label lblGamePoints6;
+        private Label lblGameName6;
+        private Label lblGameIcon6;
         private Label label56;
-        private Label label57;
-        private Label label58;
-        private Label label59;
-        private Label label60;
+        private Label lblGameGenre5;
+        private Label lblGamePoints5;
+        private Label lblGameName5;
+        private Label lblGameIcon5;
         private Label label61;
-        private Label label62;
-        private Label label63;
-        private Label label64;
-        private Label label65;
+        private Label lblGameGenre4;
+        private Label lblGamePoints4;
+        private Label lblGameName4;
+        private Label lblGameIcon4;
         private Label label46;
-        private Label label47;
-        private Label label48;
-        private Label label49;
-        private Label label50;
+        private Label lblGameGenre3;
+        private Label lblGamePoints3;
+        private Label lblGameName3;
+        private Label lblGameIcon3;
         private Label label41;
-        private Label label42;
-        private Label label43;
-        private Label label44;
-        private Label label45;
+        private Label lblGameGenre2;
+        private Label lblGamePoints2;
+        private Label lblGameName2;
+        private Label lblGameIcon2;
         private Label label39;
-        private Label label38;
-        private Label label40;
-        private Label label37;
-        private Label label36;
+        private Label lblGameGenre1;
+        private Label lblGamePoints1;
+        private Label lblGameName1;
+        private Label lblGameIcon1;
         private Label label35;
-        private Label label70;
+        private Label lblIncorrectNew;
         private Label label69;
-        private Label label68;
+        private Label lblIncorrect;
         private Controls.RoundedPanel roundedPanel7;
         private Controls.SquareButton squareButton6;
         private Controls.SquareButton squareButton5;

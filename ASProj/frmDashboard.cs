@@ -76,6 +76,25 @@ namespace ASProj
             lblToGo.Text = ScoreUtils.ToNextLevel(Program.CurrentSession.Points) + " to go";
             lblToGoPercent.Text = (Program.CurrentSession.Points / ScoreUtils.PointsInLevel(Convert.ToInt32(level) + 1)) * 100 + "%";
             pbToGo.Value = Program.CurrentSession.Points / ScoreUtils.PointsInLevel(Convert.ToInt32(level) + 1);
+
+            int incorrect = 0;
+            int incorrectnew = 0;
+
+            int timeplayed = 0;
+            foreach (GameRecord r in Program.CurrentSession.Records)
+            {
+                if (r.CompletionTime != null) timeplayed += (int)r.CompletionTime;
+                foreach (GivenAnswer ga in r.Answers)
+                {
+                    if (!ga.IsCorrect) incorrect++;
+                    if (r == Program.CurrentSession.Records[Program.CurrentSession.Records.Count - 1]) incorrectnew++; // DA 10/7/22 If most recent game
+                }
+            }
+            lblIncorrect.Text = Convert.ToString(incorrect);
+            lblIncorrectNew.Text = "+" + incorrectnew;
+
+            TimeSpan ts = TimeSpan.FromSeconds(timeplayed);
+            lblTimePlayed.Text = ts.ToString(@"hh\:mm\:ss");
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)

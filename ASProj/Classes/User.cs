@@ -14,7 +14,7 @@ namespace ASProj.Classes
         [JsonConstructor]
         public User(Guid Id, string Username, int Discriminator, DateTime CreatedAt, string Password,
             Guid? Avatar, Guid? Banner, Guid? Character, Guid? Theme, String? Status, List<Transaction> Transactions,
-            int Points)
+            int Points, List<GameRecord> Records)
         {
             this.Id = Id;
             this.Username = Username;
@@ -28,6 +28,7 @@ namespace ASProj.Classes
             this.Status = Status;
             this.Transactions = Transactions;
             this.Points = Points;
+            this.Records = Records;
         }
         public User(string username, string password)
         {
@@ -43,6 +44,7 @@ namespace ASProj.Classes
             CreatedAt = DateTime.Now;
             Transactions = new List<Transaction>();
             Points = 0;
+            Records = new List<GameRecord>();
 
             // DA 9/7/22 Hash and store password with SHA256
             using (SHA256 hash = SHA256.Create())
@@ -74,7 +76,7 @@ namespace ASProj.Classes
         // DA 10/7/22 Game Properties
         public List<Transaction> Transactions { get; set; }
         public int Points { get; set; }
-
+        public List<GameRecord> Records { get; set; }
         // DA 8/7/22 Property Methods (methods to return values for potentially nullable properties)
         public Guid GetAvatar()
         {
