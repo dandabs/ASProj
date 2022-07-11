@@ -32,15 +32,15 @@
             this.label66 = new System.Windows.Forms.Label();
             this.menuListIconButton6 = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton5 = new ASProj.Controls.MenuListIconButton();
-            this.menuListIconButton4 = new ASProj.Controls.MenuListIconButton();
+            this.btnAvatar = new ASProj.Controls.MenuListIconButton();
             this.btnLogout = new ASProj.Controls.MenuListIconButton();
-            this.menuListIconButton2 = new ASProj.Controls.MenuListIconButton();
+            this.btnOverview = new ASProj.Controls.MenuListIconButton();
             this.pbxAvatar = new ASProj.Controls.OvalPictureBox();
             this.lblDiscriminator = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.roundedPanel1 = new ASProj.Controls.RoundedPanel();
-            this.squareButton1 = new ASProj.Controls.SquareButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCustomizeCharacter = new ASProj.Controls.SquareButton();
+            this.pbxSmallAvatar = new System.Windows.Forms.PictureBox();
             this.roundedPanel2 = new ASProj.Controls.RoundedPanel();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -176,7 +176,7 @@
             this.pnlSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).BeginInit();
             this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSmallAvatar)).BeginInit();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
@@ -238,9 +238,9 @@
             this.pnlSidebar.Controls.Add(this.label66);
             this.pnlSidebar.Controls.Add(this.menuListIconButton6);
             this.pnlSidebar.Controls.Add(this.menuListIconButton5);
-            this.pnlSidebar.Controls.Add(this.menuListIconButton4);
+            this.pnlSidebar.Controls.Add(this.btnAvatar);
             this.pnlSidebar.Controls.Add(this.btnLogout);
-            this.pnlSidebar.Controls.Add(this.menuListIconButton2);
+            this.pnlSidebar.Controls.Add(this.btnOverview);
             this.pnlSidebar.Location = new System.Drawing.Point(-1, -1);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(77, 712);
@@ -288,19 +288,20 @@
             this.menuListIconButton5.Size = new System.Drawing.Size(38, 38);
             this.menuListIconButton5.TabIndex = 5;
             // 
-            // menuListIconButton4
+            // btnAvatar
             // 
-            this.menuListIconButton4.BackColor = System.Drawing.Color.Transparent;
-            this.menuListIconButton4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menuListIconButton4.ForeColor = System.Drawing.Color.DarkGray;
-            this.menuListIconButton4.Icon = '';
-            this.menuListIconButton4.Location = new System.Drawing.Point(19, 166);
-            this.menuListIconButton4.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.menuListIconButton4.Name = "menuListIconButton4";
-            this.menuListIconButton4.Selected = false;
-            this.menuListIconButton4.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.menuListIconButton4.Size = new System.Drawing.Size(38, 38);
-            this.menuListIconButton4.TabIndex = 4;
+            this.btnAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAvatar.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAvatar.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAvatar.Icon = '';
+            this.btnAvatar.Location = new System.Drawing.Point(19, 166);
+            this.btnAvatar.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnAvatar.Name = "btnAvatar";
+            this.btnAvatar.Selected = false;
+            this.btnAvatar.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnAvatar.Size = new System.Drawing.Size(38, 38);
+            this.btnAvatar.TabIndex = 4;
+            this.btnAvatar.Click += new System.EventHandler(this.btnAvatar_Click);
             // 
             // btnLogout
             // 
@@ -318,20 +319,21 @@
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // menuListIconButton2
+            // btnOverview
             // 
-            this.menuListIconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.menuListIconButton2.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menuListIconButton2.ForeColor = System.Drawing.Color.DarkGray;
-            this.menuListIconButton2.Icon = '';
-            this.menuListIconButton2.Location = new System.Drawing.Point(19, 110);
-            this.menuListIconButton2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.menuListIconButton2.Name = "menuListIconButton2";
-            this.menuListIconButton2.Selected = true;
-            this.menuListIconButton2.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.menuListIconButton2.Size = new System.Drawing.Size(38, 38);
-            this.menuListIconButton2.TabIndex = 2;
-            this.menuListIconButton2.Load += new System.EventHandler(this.menuListIconButton2_Load);
+            this.btnOverview.BackColor = System.Drawing.Color.Transparent;
+            this.btnOverview.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnOverview.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnOverview.Icon = '';
+            this.btnOverview.Location = new System.Drawing.Point(19, 110);
+            this.btnOverview.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnOverview.Name = "btnOverview";
+            this.btnOverview.Selected = true;
+            this.btnOverview.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnOverview.Size = new System.Drawing.Size(38, 38);
+            this.btnOverview.TabIndex = 2;
+            this.btnOverview.Load += new System.EventHandler(this.menuListIconButton2_Load);
+            this.btnOverview.Click += new System.EventHandler(this.menuListIconButton2_Click);
             // 
             // pbxAvatar
             // 
@@ -377,38 +379,38 @@
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.Transparent;
             this.roundedPanel1.BackgroundImage = global::ASProj.Properties.Resources.dark_blue_gradient_background_9562_1024x616;
-            this.roundedPanel1.Controls.Add(this.squareButton1);
-            this.roundedPanel1.Controls.Add(this.pictureBox1);
+            this.roundedPanel1.Controls.Add(this.btnCustomizeCharacter);
+            this.roundedPanel1.Controls.Add(this.pbxSmallAvatar);
             this.roundedPanel1.Location = new System.Drawing.Point(3, 73);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(217, 242);
             this.roundedPanel1.TabIndex = 6;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
-            // squareButton1
+            // btnCustomizeCharacter
             // 
-            this.squareButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.squareButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton1.Font = new System.Drawing.Font("Manrope", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareButton1.ForeColor = System.Drawing.Color.White;
-            this.squareButton1.Location = new System.Drawing.Point(25, 203);
-            this.squareButton1.Name = "squareButton1";
-            this.squareButton1.Size = new System.Drawing.Size(164, 27);
-            this.squareButton1.TabIndex = 10;
-            this.squareButton1.Text = "Customize Character";
-            this.squareButton1.UseVisualStyleBackColor = false;
+            this.btnCustomizeCharacter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnCustomizeCharacter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCustomizeCharacter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnCustomizeCharacter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomizeCharacter.Font = new System.Drawing.Font("Manrope", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCustomizeCharacter.ForeColor = System.Drawing.Color.White;
+            this.btnCustomizeCharacter.Location = new System.Drawing.Point(25, 203);
+            this.btnCustomizeCharacter.Name = "btnCustomizeCharacter";
+            this.btnCustomizeCharacter.Size = new System.Drawing.Size(164, 27);
+            this.btnCustomizeCharacter.TabIndex = 10;
+            this.btnCustomizeCharacter.Text = "Customize Character";
+            this.btnCustomizeCharacter.UseVisualStyleBackColor = false;
+            this.btnCustomizeCharacter.Click += new System.EventHandler(this.btnCustomizeCharacter_Click);
             // 
-            // pictureBox1
+            // pbxSmallAvatar
             // 
-            this.pictureBox1.Image = global::ASProj.Properties.Resources.theresa_may_34;
-            this.pictureBox1.Location = new System.Drawing.Point(-65, -12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(368, 308);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pbxSmallAvatar.Location = new System.Drawing.Point(0, 0);
+            this.pbxSmallAvatar.Name = "pbxSmallAvatar";
+            this.pbxSmallAvatar.Size = new System.Drawing.Size(217, 242);
+            this.pbxSmallAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxSmallAvatar.TabIndex = 9;
+            this.pbxSmallAvatar.TabStop = false;
             // 
             // roundedPanel2
             // 
@@ -1736,9 +1738,9 @@
             this.label8.Location = new System.Drawing.Point(19, 9);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label8.Size = new System.Drawing.Size(60, 19);
+            this.label8.Size = new System.Drawing.Size(41, 19);
             this.label8.TabIndex = 45;
-            this.label8.Text = "Bottom";
+            this.label8.Text = "Legs";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundedPanel9
@@ -1859,9 +1861,9 @@
             this.label7.Location = new System.Drawing.Point(19, 9);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label7.Size = new System.Drawing.Size(34, 19);
+            this.label7.Size = new System.Drawing.Size(44, 19);
             this.label7.TabIndex = 45;
-            this.label7.Text = "Top";
+            this.label7.Text = "Body";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundedPanel7
@@ -2148,9 +2150,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(1080, 710);
+            this.Controls.Add(this.pnlOverview);
             this.Controls.Add(this.pnlAvatar);
             this.Controls.Add(this.pnlSidebar);
-            this.Controls.Add(this.pnlOverview);
             this.Controls.Add(this.pnlLevels);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblDiscriminator);
@@ -2164,7 +2166,7 @@
             this.pnlSidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).EndInit();
             this.roundedPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSmallAvatar)).EndInit();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
             this.roundedPanel3.ResumeLayout(false);
@@ -2239,11 +2241,11 @@
 
         private Panel pnlSidebar;
         private Controls.MenuListIconButton menuListIconButton1;
-        private Controls.MenuListIconButton menuListIconButton2;
+        private Controls.MenuListIconButton btnOverview;
         private Controls.MenuListIconButton btnLogout;
         private Controls.MenuListIconButton menuListIconButton6;
         private Controls.MenuListIconButton menuListIconButton5;
-        private Controls.MenuListIconButton menuListIconButton4;
+        private Controls.MenuListIconButton btnAvatar;
         private Controls.OvalPictureBox pbxAvatar;
         private Label lblDiscriminator;
         private Label lblUsername;
@@ -2283,8 +2285,8 @@
         private Controls.OvalPictureBox pbxTopScore1;
         private Label lblTopScoreName1;
         private Label label13;
-        private Controls.SquareButton squareButton1;
-        private PictureBox pictureBox1;
+        private Controls.SquareButton btnCustomizeCharacter;
+        private PictureBox pbxSmallAvatar;
         private Label label26;
         private Label label27;
         private Label label30;
