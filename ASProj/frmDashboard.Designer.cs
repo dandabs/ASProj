@@ -132,43 +132,43 @@
             this.pnlAvatar = new System.Windows.Forms.Panel();
             this.roundedPanel10 = new ASProj.Controls.RoundedPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pbxLegsCarola = new System.Windows.Forms.PictureBox();
+            this.pbxLegsGaga = new System.Windows.Forms.PictureBox();
+            this.pbxLegsMatthias = new System.Windows.Forms.PictureBox();
+            this.pbxLegsPetra = new System.Windows.Forms.PictureBox();
+            this.pbxLegsSanna = new System.Windows.Forms.PictureBox();
+            this.pbxLegsTheresa = new System.Windows.Forms.PictureBox();
+            this.pbxLegsTheo = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.roundedPanel9 = new ASProj.Controls.RoundedPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pbxBodyCarola = new System.Windows.Forms.PictureBox();
+            this.pbxBodyGaga = new System.Windows.Forms.PictureBox();
+            this.pbxBodyMatthias = new System.Windows.Forms.PictureBox();
+            this.pbxBodyPetra = new System.Windows.Forms.PictureBox();
+            this.pbxBodySanna = new System.Windows.Forms.PictureBox();
+            this.pbxBodyTheresa = new System.Windows.Forms.PictureBox();
+            this.pbxBodyTheo = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.roundedPanel7 = new ASProj.Controls.RoundedPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pbxFaceCarola = new System.Windows.Forms.PictureBox();
+            this.pbxFaceGaga = new System.Windows.Forms.PictureBox();
+            this.pbxFaceMatthias = new System.Windows.Forms.PictureBox();
+            this.pbxFacePetra = new System.Windows.Forms.PictureBox();
+            this.pbxFaceSanna = new System.Windows.Forms.PictureBox();
+            this.pbxFaceTheresa = new System.Windows.Forms.PictureBox();
+            this.pbxFaceTheo = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.roundedPanel6 = new ASProj.Controls.RoundedPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pbxHairCarola = new System.Windows.Forms.PictureBox();
+            this.pbxHairGaga = new System.Windows.Forms.PictureBox();
+            this.pbxHairMatthias = new System.Windows.Forms.PictureBox();
+            this.pbxHairPetra = new System.Windows.Forms.PictureBox();
+            this.pbxHairSanna = new System.Windows.Forms.PictureBox();
+            this.pbxHairTheresa = new System.Windows.Forms.PictureBox();
+            this.pbxHairTheo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new ASProj.Controls.RoundedPanel();
@@ -194,40 +194,40 @@
             this.pnlAvatar.SuspendLayout();
             this.roundedPanel10.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsCarola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsGaga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsMatthias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsPetra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsSanna)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsTheresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsTheo)).BeginInit();
             this.roundedPanel9.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyCarola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyGaga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyMatthias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyPetra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodySanna)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyTheresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyTheo)).BeginInit();
             this.roundedPanel7.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceCarola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceGaga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceMatthias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFacePetra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceSanna)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceTheresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceTheo)).BeginInit();
             this.roundedPanel6.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairCarola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairGaga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairMatthias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairPetra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairSanna)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairTheresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairTheo)).BeginInit();
             this.roundedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFullCharacter)).BeginInit();
             this.SuspendLayout();
@@ -1631,88 +1631,102 @@
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.AutoScroll = true;
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox23);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox24);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox25);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox26);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox27);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox28);
-            this.flowLayoutPanel4.Controls.Add(this.pictureBox29);
+            this.flowLayoutPanel4.Controls.Add(this.pbxLegsCarola);
+            this.flowLayoutPanel4.Controls.Add(this.pbxLegsGaga);
+            this.flowLayoutPanel4.Controls.Add(this.pbxLegsMatthias);
+            this.flowLayoutPanel4.Controls.Add(this.pbxLegsPetra);
+            this.flowLayoutPanel4.Controls.Add(this.pbxLegsSanna);
+            this.flowLayoutPanel4.Controls.Add(this.pbxLegsTheresa);
+            this.flowLayoutPanel4.Controls.Add(this.pbxLegsTheo);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(19, 33);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(543, 69);
             this.flowLayoutPanel4.TabIndex = 49;
             this.flowLayoutPanel4.WrapContents = false;
             // 
-            // pictureBox23
+            // pbxLegsCarola
             // 
-            this.pictureBox23.Image = global::ASProj.Properties.Resources.bottom__1_;
-            this.pictureBox23.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 1;
-            this.pictureBox23.TabStop = false;
+            this.pbxLegsCarola.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxLegsCarola.Image = global::ASProj.Properties.Resources.bottom__1_;
+            this.pbxLegsCarola.Location = new System.Drawing.Point(3, 3);
+            this.pbxLegsCarola.Name = "pbxLegsCarola";
+            this.pbxLegsCarola.Size = new System.Drawing.Size(63, 62);
+            this.pbxLegsCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLegsCarola.TabIndex = 1;
+            this.pbxLegsCarola.TabStop = false;
+            this.pbxLegsCarola.Click += new System.EventHandler(this.pbxLegsCarola_Click);
             // 
-            // pictureBox24
+            // pbxLegsGaga
             // 
-            this.pictureBox24.Image = global::ASProj.Properties.Resources.bottom__2_;
-            this.pictureBox24.Location = new System.Drawing.Point(72, 3);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox24.TabIndex = 2;
-            this.pictureBox24.TabStop = false;
+            this.pbxLegsGaga.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxLegsGaga.Image = global::ASProj.Properties.Resources.bottom__2_;
+            this.pbxLegsGaga.Location = new System.Drawing.Point(72, 3);
+            this.pbxLegsGaga.Name = "pbxLegsGaga";
+            this.pbxLegsGaga.Size = new System.Drawing.Size(63, 62);
+            this.pbxLegsGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLegsGaga.TabIndex = 2;
+            this.pbxLegsGaga.TabStop = false;
+            this.pbxLegsGaga.Click += new System.EventHandler(this.pbxLegsGaga_Click);
             // 
-            // pictureBox25
+            // pbxLegsMatthias
             // 
-            this.pictureBox25.Image = global::ASProj.Properties.Resources.bottom__3_;
-            this.pictureBox25.Location = new System.Drawing.Point(141, 3);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox25.TabIndex = 3;
-            this.pictureBox25.TabStop = false;
+            this.pbxLegsMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxLegsMatthias.Image = global::ASProj.Properties.Resources.bottom__3_;
+            this.pbxLegsMatthias.Location = new System.Drawing.Point(141, 3);
+            this.pbxLegsMatthias.Name = "pbxLegsMatthias";
+            this.pbxLegsMatthias.Size = new System.Drawing.Size(63, 62);
+            this.pbxLegsMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLegsMatthias.TabIndex = 3;
+            this.pbxLegsMatthias.TabStop = false;
+            this.pbxLegsMatthias.Click += new System.EventHandler(this.pbxLegsMatthias_Click);
             // 
-            // pictureBox26
+            // pbxLegsPetra
             // 
-            this.pictureBox26.Image = global::ASProj.Properties.Resources.bottom__4_;
-            this.pictureBox26.Location = new System.Drawing.Point(210, 3);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox26.TabIndex = 4;
-            this.pictureBox26.TabStop = false;
+            this.pbxLegsPetra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxLegsPetra.Image = global::ASProj.Properties.Resources.bottom__4_;
+            this.pbxLegsPetra.Location = new System.Drawing.Point(210, 3);
+            this.pbxLegsPetra.Name = "pbxLegsPetra";
+            this.pbxLegsPetra.Size = new System.Drawing.Size(63, 62);
+            this.pbxLegsPetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLegsPetra.TabIndex = 4;
+            this.pbxLegsPetra.TabStop = false;
+            this.pbxLegsPetra.Click += new System.EventHandler(this.pbxLegsPetra_Click);
             // 
-            // pictureBox27
+            // pbxLegsSanna
             // 
-            this.pictureBox27.Image = global::ASProj.Properties.Resources.bottom__5_;
-            this.pictureBox27.Location = new System.Drawing.Point(279, 3);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox27.TabIndex = 5;
-            this.pictureBox27.TabStop = false;
+            this.pbxLegsSanna.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxLegsSanna.Image = global::ASProj.Properties.Resources.bottom__5_;
+            this.pbxLegsSanna.Location = new System.Drawing.Point(279, 3);
+            this.pbxLegsSanna.Name = "pbxLegsSanna";
+            this.pbxLegsSanna.Size = new System.Drawing.Size(63, 62);
+            this.pbxLegsSanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLegsSanna.TabIndex = 5;
+            this.pbxLegsSanna.TabStop = false;
+            this.pbxLegsSanna.Click += new System.EventHandler(this.pbxLegsSanna_Click);
             // 
-            // pictureBox28
+            // pbxLegsTheresa
             // 
-            this.pictureBox28.Image = global::ASProj.Properties.Resources.bottom__6_;
-            this.pictureBox28.Location = new System.Drawing.Point(348, 3);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox28.TabIndex = 6;
-            this.pictureBox28.TabStop = false;
+            this.pbxLegsTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxLegsTheresa.Image = global::ASProj.Properties.Resources.bottom__6_;
+            this.pbxLegsTheresa.Location = new System.Drawing.Point(348, 3);
+            this.pbxLegsTheresa.Name = "pbxLegsTheresa";
+            this.pbxLegsTheresa.Size = new System.Drawing.Size(63, 62);
+            this.pbxLegsTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLegsTheresa.TabIndex = 6;
+            this.pbxLegsTheresa.TabStop = false;
+            this.pbxLegsTheresa.Click += new System.EventHandler(this.pbxLegsTheresa_Click);
             // 
-            // pictureBox29
+            // pbxLegsTheo
             // 
-            this.pictureBox29.Image = global::ASProj.Properties.Resources.bottom__7_;
-            this.pictureBox29.Location = new System.Drawing.Point(417, 3);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox29.TabIndex = 7;
-            this.pictureBox29.TabStop = false;
+            this.pbxLegsTheo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxLegsTheo.Image = global::ASProj.Properties.Resources.bottom__7_;
+            this.pbxLegsTheo.Location = new System.Drawing.Point(417, 3);
+            this.pbxLegsTheo.Name = "pbxLegsTheo";
+            this.pbxLegsTheo.Size = new System.Drawing.Size(63, 62);
+            this.pbxLegsTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLegsTheo.TabIndex = 7;
+            this.pbxLegsTheo.TabStop = false;
+            this.pbxLegsTheo.Click += new System.EventHandler(this.pbxLegsTheo_Click);
             // 
             // label8
             // 
@@ -1740,88 +1754,102 @@
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox16);
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox17);
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox18);
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox19);
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox20);
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox21);
-            this.flowLayoutPanel3.Controls.Add(this.pictureBox22);
+            this.flowLayoutPanel3.Controls.Add(this.pbxBodyCarola);
+            this.flowLayoutPanel3.Controls.Add(this.pbxBodyGaga);
+            this.flowLayoutPanel3.Controls.Add(this.pbxBodyMatthias);
+            this.flowLayoutPanel3.Controls.Add(this.pbxBodyPetra);
+            this.flowLayoutPanel3.Controls.Add(this.pbxBodySanna);
+            this.flowLayoutPanel3.Controls.Add(this.pbxBodyTheresa);
+            this.flowLayoutPanel3.Controls.Add(this.pbxBodyTheo);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(19, 33);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(543, 69);
             this.flowLayoutPanel3.TabIndex = 48;
             this.flowLayoutPanel3.WrapContents = false;
             // 
-            // pictureBox16
+            // pbxBodyCarola
             // 
-            this.pictureBox16.Image = global::ASProj.Properties.Resources.top__1_;
-            this.pictureBox16.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 1;
-            this.pictureBox16.TabStop = false;
+            this.pbxBodyCarola.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxBodyCarola.Image = global::ASProj.Properties.Resources.top__1_;
+            this.pbxBodyCarola.Location = new System.Drawing.Point(3, 3);
+            this.pbxBodyCarola.Name = "pbxBodyCarola";
+            this.pbxBodyCarola.Size = new System.Drawing.Size(63, 62);
+            this.pbxBodyCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBodyCarola.TabIndex = 1;
+            this.pbxBodyCarola.TabStop = false;
+            this.pbxBodyCarola.Click += new System.EventHandler(this.pbxBodyCarola_Click);
             // 
-            // pictureBox17
+            // pbxBodyGaga
             // 
-            this.pictureBox17.Image = global::ASProj.Properties.Resources.top__2_;
-            this.pictureBox17.Location = new System.Drawing.Point(72, 3);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 2;
-            this.pictureBox17.TabStop = false;
+            this.pbxBodyGaga.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxBodyGaga.Image = global::ASProj.Properties.Resources.top__2_;
+            this.pbxBodyGaga.Location = new System.Drawing.Point(72, 3);
+            this.pbxBodyGaga.Name = "pbxBodyGaga";
+            this.pbxBodyGaga.Size = new System.Drawing.Size(63, 62);
+            this.pbxBodyGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBodyGaga.TabIndex = 2;
+            this.pbxBodyGaga.TabStop = false;
+            this.pbxBodyGaga.Click += new System.EventHandler(this.pbxBodyGaga_Click);
             // 
-            // pictureBox18
+            // pbxBodyMatthias
             // 
-            this.pictureBox18.Image = global::ASProj.Properties.Resources.top__3_;
-            this.pictureBox18.Location = new System.Drawing.Point(141, 3);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 3;
-            this.pictureBox18.TabStop = false;
+            this.pbxBodyMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxBodyMatthias.Image = global::ASProj.Properties.Resources.top__3_;
+            this.pbxBodyMatthias.Location = new System.Drawing.Point(141, 3);
+            this.pbxBodyMatthias.Name = "pbxBodyMatthias";
+            this.pbxBodyMatthias.Size = new System.Drawing.Size(63, 62);
+            this.pbxBodyMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBodyMatthias.TabIndex = 3;
+            this.pbxBodyMatthias.TabStop = false;
+            this.pbxBodyMatthias.Click += new System.EventHandler(this.pbxBodyMatthias_Click);
             // 
-            // pictureBox19
+            // pbxBodyPetra
             // 
-            this.pictureBox19.Image = global::ASProj.Properties.Resources.top__4_;
-            this.pictureBox19.Location = new System.Drawing.Point(210, 3);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 4;
-            this.pictureBox19.TabStop = false;
+            this.pbxBodyPetra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxBodyPetra.Image = global::ASProj.Properties.Resources.top__4_;
+            this.pbxBodyPetra.Location = new System.Drawing.Point(210, 3);
+            this.pbxBodyPetra.Name = "pbxBodyPetra";
+            this.pbxBodyPetra.Size = new System.Drawing.Size(63, 62);
+            this.pbxBodyPetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBodyPetra.TabIndex = 4;
+            this.pbxBodyPetra.TabStop = false;
+            this.pbxBodyPetra.Click += new System.EventHandler(this.pbxBodyPetra_Click);
             // 
-            // pictureBox20
+            // pbxBodySanna
             // 
-            this.pictureBox20.Image = global::ASProj.Properties.Resources.top__5_;
-            this.pictureBox20.Location = new System.Drawing.Point(279, 3);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 5;
-            this.pictureBox20.TabStop = false;
+            this.pbxBodySanna.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxBodySanna.Image = global::ASProj.Properties.Resources.top__5_;
+            this.pbxBodySanna.Location = new System.Drawing.Point(279, 3);
+            this.pbxBodySanna.Name = "pbxBodySanna";
+            this.pbxBodySanna.Size = new System.Drawing.Size(63, 62);
+            this.pbxBodySanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBodySanna.TabIndex = 5;
+            this.pbxBodySanna.TabStop = false;
+            this.pbxBodySanna.Click += new System.EventHandler(this.pbxBodySanna_Click);
             // 
-            // pictureBox21
+            // pbxBodyTheresa
             // 
-            this.pictureBox21.Image = global::ASProj.Properties.Resources.top__6_;
-            this.pictureBox21.Location = new System.Drawing.Point(348, 3);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox21.TabIndex = 6;
-            this.pictureBox21.TabStop = false;
+            this.pbxBodyTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxBodyTheresa.Image = global::ASProj.Properties.Resources.top__6_;
+            this.pbxBodyTheresa.Location = new System.Drawing.Point(348, 3);
+            this.pbxBodyTheresa.Name = "pbxBodyTheresa";
+            this.pbxBodyTheresa.Size = new System.Drawing.Size(63, 62);
+            this.pbxBodyTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBodyTheresa.TabIndex = 6;
+            this.pbxBodyTheresa.TabStop = false;
+            this.pbxBodyTheresa.Click += new System.EventHandler(this.pbxBodyTheresa_Click);
             // 
-            // pictureBox22
+            // pbxBodyTheo
             // 
-            this.pictureBox22.Image = global::ASProj.Properties.Resources.top__7_;
-            this.pictureBox22.Location = new System.Drawing.Point(417, 3);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 7;
-            this.pictureBox22.TabStop = false;
+            this.pbxBodyTheo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxBodyTheo.Image = global::ASProj.Properties.Resources.top__7_;
+            this.pbxBodyTheo.Location = new System.Drawing.Point(417, 3);
+            this.pbxBodyTheo.Name = "pbxBodyTheo";
+            this.pbxBodyTheo.Size = new System.Drawing.Size(63, 62);
+            this.pbxBodyTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBodyTheo.TabIndex = 7;
+            this.pbxBodyTheo.TabStop = false;
+            this.pbxBodyTheo.Click += new System.EventHandler(this.pbxBodyTheo_Click);
             // 
             // label7
             // 
@@ -1849,88 +1877,102 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox9);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox10);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox11);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox12);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox13);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox14);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox15);
+            this.flowLayoutPanel2.Controls.Add(this.pbxFaceCarola);
+            this.flowLayoutPanel2.Controls.Add(this.pbxFaceGaga);
+            this.flowLayoutPanel2.Controls.Add(this.pbxFaceMatthias);
+            this.flowLayoutPanel2.Controls.Add(this.pbxFacePetra);
+            this.flowLayoutPanel2.Controls.Add(this.pbxFaceSanna);
+            this.flowLayoutPanel2.Controls.Add(this.pbxFaceTheresa);
+            this.flowLayoutPanel2.Controls.Add(this.pbxFaceTheo);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(19, 33);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(543, 69);
             this.flowLayoutPanel2.TabIndex = 47;
             this.flowLayoutPanel2.WrapContents = false;
             // 
-            // pictureBox9
+            // pbxFaceCarola
             // 
-            this.pictureBox9.Image = global::ASProj.Properties.Resources.face__1_;
-            this.pictureBox9.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
+            this.pbxFaceCarola.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxFaceCarola.Image = global::ASProj.Properties.Resources.face__1_;
+            this.pbxFaceCarola.Location = new System.Drawing.Point(3, 3);
+            this.pbxFaceCarola.Name = "pbxFaceCarola";
+            this.pbxFaceCarola.Size = new System.Drawing.Size(63, 62);
+            this.pbxFaceCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFaceCarola.TabIndex = 1;
+            this.pbxFaceCarola.TabStop = false;
+            this.pbxFaceCarola.Click += new System.EventHandler(this.pbxFaceCarola_Click);
             // 
-            // pictureBox10
+            // pbxFaceGaga
             // 
-            this.pictureBox10.Image = global::ASProj.Properties.Resources.face__2_;
-            this.pictureBox10.Location = new System.Drawing.Point(72, 3);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
+            this.pbxFaceGaga.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxFaceGaga.Image = global::ASProj.Properties.Resources.face__2_;
+            this.pbxFaceGaga.Location = new System.Drawing.Point(72, 3);
+            this.pbxFaceGaga.Name = "pbxFaceGaga";
+            this.pbxFaceGaga.Size = new System.Drawing.Size(63, 62);
+            this.pbxFaceGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFaceGaga.TabIndex = 2;
+            this.pbxFaceGaga.TabStop = false;
+            this.pbxFaceGaga.Click += new System.EventHandler(this.pbxFaceGaga_Click);
             // 
-            // pictureBox11
+            // pbxFaceMatthias
             // 
-            this.pictureBox11.Image = global::ASProj.Properties.Resources.face__3_;
-            this.pictureBox11.Location = new System.Drawing.Point(141, 3);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 3;
-            this.pictureBox11.TabStop = false;
+            this.pbxFaceMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxFaceMatthias.Image = global::ASProj.Properties.Resources.face__3_;
+            this.pbxFaceMatthias.Location = new System.Drawing.Point(141, 3);
+            this.pbxFaceMatthias.Name = "pbxFaceMatthias";
+            this.pbxFaceMatthias.Size = new System.Drawing.Size(63, 62);
+            this.pbxFaceMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFaceMatthias.TabIndex = 3;
+            this.pbxFaceMatthias.TabStop = false;
+            this.pbxFaceMatthias.Click += new System.EventHandler(this.pbxFaceMatthias_Click);
             // 
-            // pictureBox12
+            // pbxFacePetra
             // 
-            this.pictureBox12.Image = global::ASProj.Properties.Resources.face__4_;
-            this.pictureBox12.Location = new System.Drawing.Point(210, 3);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 4;
-            this.pictureBox12.TabStop = false;
+            this.pbxFacePetra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxFacePetra.Image = global::ASProj.Properties.Resources.face__4_;
+            this.pbxFacePetra.Location = new System.Drawing.Point(210, 3);
+            this.pbxFacePetra.Name = "pbxFacePetra";
+            this.pbxFacePetra.Size = new System.Drawing.Size(63, 62);
+            this.pbxFacePetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFacePetra.TabIndex = 4;
+            this.pbxFacePetra.TabStop = false;
+            this.pbxFacePetra.Click += new System.EventHandler(this.pbxFacePetra_Click);
             // 
-            // pictureBox13
+            // pbxFaceSanna
             // 
-            this.pictureBox13.Image = global::ASProj.Properties.Resources.face__5_;
-            this.pictureBox13.Location = new System.Drawing.Point(279, 3);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 5;
-            this.pictureBox13.TabStop = false;
+            this.pbxFaceSanna.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxFaceSanna.Image = global::ASProj.Properties.Resources.face__5_;
+            this.pbxFaceSanna.Location = new System.Drawing.Point(279, 3);
+            this.pbxFaceSanna.Name = "pbxFaceSanna";
+            this.pbxFaceSanna.Size = new System.Drawing.Size(63, 62);
+            this.pbxFaceSanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFaceSanna.TabIndex = 5;
+            this.pbxFaceSanna.TabStop = false;
+            this.pbxFaceSanna.Click += new System.EventHandler(this.pbxFaceSanna_Click);
             // 
-            // pictureBox14
+            // pbxFaceTheresa
             // 
-            this.pictureBox14.Image = global::ASProj.Properties.Resources.face__6_;
-            this.pictureBox14.Location = new System.Drawing.Point(348, 3);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 6;
-            this.pictureBox14.TabStop = false;
+            this.pbxFaceTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxFaceTheresa.Image = global::ASProj.Properties.Resources.face__6_;
+            this.pbxFaceTheresa.Location = new System.Drawing.Point(348, 3);
+            this.pbxFaceTheresa.Name = "pbxFaceTheresa";
+            this.pbxFaceTheresa.Size = new System.Drawing.Size(63, 62);
+            this.pbxFaceTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFaceTheresa.TabIndex = 6;
+            this.pbxFaceTheresa.TabStop = false;
+            this.pbxFaceTheresa.Click += new System.EventHandler(this.pbxFaceTheresa_Click);
             // 
-            // pictureBox15
+            // pbxFaceTheo
             // 
-            this.pictureBox15.Image = global::ASProj.Properties.Resources.face__7_;
-            this.pictureBox15.Location = new System.Drawing.Point(417, 3);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 7;
-            this.pictureBox15.TabStop = false;
+            this.pbxFaceTheo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxFaceTheo.Image = global::ASProj.Properties.Resources.face__7_;
+            this.pbxFaceTheo.Location = new System.Drawing.Point(417, 3);
+            this.pbxFaceTheo.Name = "pbxFaceTheo";
+            this.pbxFaceTheo.Size = new System.Drawing.Size(63, 62);
+            this.pbxFaceTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFaceTheo.TabIndex = 7;
+            this.pbxFaceTheo.TabStop = false;
+            this.pbxFaceTheo.Click += new System.EventHandler(this.pbxFaceTheo_Click);
             // 
             // label5
             // 
@@ -1958,88 +2000,102 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox7);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox8);
+            this.flowLayoutPanel1.Controls.Add(this.pbxHairCarola);
+            this.flowLayoutPanel1.Controls.Add(this.pbxHairGaga);
+            this.flowLayoutPanel1.Controls.Add(this.pbxHairMatthias);
+            this.flowLayoutPanel1.Controls.Add(this.pbxHairPetra);
+            this.flowLayoutPanel1.Controls.Add(this.pbxHairSanna);
+            this.flowLayoutPanel1.Controls.Add(this.pbxHairTheresa);
+            this.flowLayoutPanel1.Controls.Add(this.pbxHairTheo);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(19, 33);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(543, 69);
             this.flowLayoutPanel1.TabIndex = 46;
             this.flowLayoutPanel1.WrapContents = false;
             // 
-            // pictureBox2
+            // pbxHairCarola
             // 
-            this.pictureBox2.Image = global::ASProj.Properties.Resources.hair__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pbxHairCarola.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxHairCarola.Image = global::ASProj.Properties.Resources.hair__1_;
+            this.pbxHairCarola.Location = new System.Drawing.Point(3, 3);
+            this.pbxHairCarola.Name = "pbxHairCarola";
+            this.pbxHairCarola.Size = new System.Drawing.Size(63, 62);
+            this.pbxHairCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxHairCarola.TabIndex = 0;
+            this.pbxHairCarola.TabStop = false;
+            this.pbxHairCarola.Click += new System.EventHandler(this.pbxHairCarola_Click);
             // 
-            // pictureBox3
+            // pbxHairGaga
             // 
-            this.pictureBox3.Image = global::ASProj.Properties.Resources.hair__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(72, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
+            this.pbxHairGaga.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxHairGaga.Image = global::ASProj.Properties.Resources.hair__2_;
+            this.pbxHairGaga.Location = new System.Drawing.Point(72, 3);
+            this.pbxHairGaga.Name = "pbxHairGaga";
+            this.pbxHairGaga.Size = new System.Drawing.Size(63, 62);
+            this.pbxHairGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxHairGaga.TabIndex = 1;
+            this.pbxHairGaga.TabStop = false;
+            this.pbxHairGaga.Click += new System.EventHandler(this.pbxHairGaga_Click);
             // 
-            // pictureBox4
+            // pbxHairMatthias
             // 
-            this.pictureBox4.Image = global::ASProj.Properties.Resources.hair__3_;
-            this.pictureBox4.Location = new System.Drawing.Point(141, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
+            this.pbxHairMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxHairMatthias.Image = global::ASProj.Properties.Resources.hair__3_;
+            this.pbxHairMatthias.Location = new System.Drawing.Point(141, 3);
+            this.pbxHairMatthias.Name = "pbxHairMatthias";
+            this.pbxHairMatthias.Size = new System.Drawing.Size(63, 62);
+            this.pbxHairMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxHairMatthias.TabIndex = 2;
+            this.pbxHairMatthias.TabStop = false;
+            this.pbxHairMatthias.Click += new System.EventHandler(this.pbxHairMatthias_Click);
             // 
-            // pictureBox5
+            // pbxHairPetra
             // 
-            this.pictureBox5.Image = global::ASProj.Properties.Resources.hair__4_;
-            this.pictureBox5.Location = new System.Drawing.Point(210, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
+            this.pbxHairPetra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxHairPetra.Image = global::ASProj.Properties.Resources.hair__4_;
+            this.pbxHairPetra.Location = new System.Drawing.Point(210, 3);
+            this.pbxHairPetra.Name = "pbxHairPetra";
+            this.pbxHairPetra.Size = new System.Drawing.Size(63, 62);
+            this.pbxHairPetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxHairPetra.TabIndex = 3;
+            this.pbxHairPetra.TabStop = false;
+            this.pbxHairPetra.Click += new System.EventHandler(this.pbxHairPetra_Click);
             // 
-            // pictureBox6
+            // pbxHairSanna
             // 
-            this.pictureBox6.Image = global::ASProj.Properties.Resources.hair__5_;
-            this.pictureBox6.Location = new System.Drawing.Point(279, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
+            this.pbxHairSanna.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxHairSanna.Image = global::ASProj.Properties.Resources.hair__5_;
+            this.pbxHairSanna.Location = new System.Drawing.Point(279, 3);
+            this.pbxHairSanna.Name = "pbxHairSanna";
+            this.pbxHairSanna.Size = new System.Drawing.Size(63, 62);
+            this.pbxHairSanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxHairSanna.TabIndex = 4;
+            this.pbxHairSanna.TabStop = false;
+            this.pbxHairSanna.Click += new System.EventHandler(this.pbxHairSanna_Click);
             // 
-            // pictureBox7
+            // pbxHairTheresa
             // 
-            this.pictureBox7.Image = global::ASProj.Properties.Resources.hair__6_;
-            this.pictureBox7.Location = new System.Drawing.Point(348, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
+            this.pbxHairTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxHairTheresa.Image = global::ASProj.Properties.Resources.hair__6_;
+            this.pbxHairTheresa.Location = new System.Drawing.Point(348, 3);
+            this.pbxHairTheresa.Name = "pbxHairTheresa";
+            this.pbxHairTheresa.Size = new System.Drawing.Size(63, 62);
+            this.pbxHairTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxHairTheresa.TabIndex = 5;
+            this.pbxHairTheresa.TabStop = false;
+            this.pbxHairTheresa.Click += new System.EventHandler(this.pbxHairTheresa_Click);
             // 
-            // pictureBox8
+            // pbxHairTheo
             // 
-            this.pictureBox8.Image = global::ASProj.Properties.Resources.hair__7_;
-            this.pictureBox8.Location = new System.Drawing.Point(417, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 6;
-            this.pictureBox8.TabStop = false;
+            this.pbxHairTheo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxHairTheo.Image = global::ASProj.Properties.Resources.hair__7_;
+            this.pbxHairTheo.Location = new System.Drawing.Point(417, 3);
+            this.pbxHairTheo.Name = "pbxHairTheo";
+            this.pbxHairTheo.Size = new System.Drawing.Size(63, 62);
+            this.pbxHairTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxHairTheo.TabIndex = 6;
+            this.pbxHairTheo.TabStop = false;
+            this.pbxHairTheo.Click += new System.EventHandler(this.pbxHairTheo_Click);
             // 
             // label2
             // 
@@ -2135,43 +2191,43 @@
             this.roundedPanel10.ResumeLayout(false);
             this.roundedPanel10.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsCarola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsGaga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsMatthias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsPetra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsSanna)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsTheresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegsTheo)).EndInit();
             this.roundedPanel9.ResumeLayout(false);
             this.roundedPanel9.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyCarola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyGaga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyMatthias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyPetra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodySanna)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyTheresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBodyTheo)).EndInit();
             this.roundedPanel7.ResumeLayout(false);
             this.roundedPanel7.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceCarola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceGaga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceMatthias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFacePetra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceSanna)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceTheresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFaceTheo)).EndInit();
             this.roundedPanel6.ResumeLayout(false);
             this.roundedPanel6.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairCarola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairGaga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairMatthias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairPetra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairSanna)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairTheresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxHairTheo)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxFullCharacter)).EndInit();
             this.ResumeLayout(false);
@@ -2286,43 +2342,43 @@
         private Panel pnlAvatar;
         private Controls.RoundedPanel roundedPanel10;
         private FlowLayoutPanel flowLayoutPanel4;
-        private PictureBox pictureBox23;
-        private PictureBox pictureBox24;
-        private PictureBox pictureBox25;
-        private PictureBox pictureBox26;
-        private PictureBox pictureBox27;
-        private PictureBox pictureBox28;
-        private PictureBox pictureBox29;
+        private PictureBox pbxLegsCarola;
+        private PictureBox pbxLegsGaga;
+        private PictureBox pbxLegsMatthias;
+        private PictureBox pbxLegsPetra;
+        private PictureBox pbxLegsSanna;
+        private PictureBox pbxLegsTheresa;
+        private PictureBox pbxLegsTheo;
         private Label label8;
         private Controls.RoundedPanel roundedPanel9;
         private FlowLayoutPanel flowLayoutPanel3;
-        private PictureBox pictureBox16;
-        private PictureBox pictureBox17;
-        private PictureBox pictureBox18;
-        private PictureBox pictureBox19;
-        private PictureBox pictureBox20;
-        private PictureBox pictureBox21;
-        private PictureBox pictureBox22;
+        private PictureBox pbxBodyCarola;
+        private PictureBox pbxBodyGaga;
+        private PictureBox pbxBodyMatthias;
+        private PictureBox pbxBodyPetra;
+        private PictureBox pbxBodySanna;
+        private PictureBox pbxBodyTheresa;
+        private PictureBox pbxBodyTheo;
         private Label label7;
         private Controls.RoundedPanel roundedPanel7;
         private FlowLayoutPanel flowLayoutPanel2;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox15;
+        private PictureBox pbxFaceCarola;
+        private PictureBox pbxFaceGaga;
+        private PictureBox pbxFaceMatthias;
+        private PictureBox pbxFacePetra;
+        private PictureBox pbxFaceSanna;
+        private PictureBox pbxFaceTheresa;
+        private PictureBox pbxFaceTheo;
         private Label label5;
         private Controls.RoundedPanel roundedPanel6;
         private FlowLayoutPanel flowLayoutPanel1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
+        private PictureBox pbxHairCarola;
+        private PictureBox pbxHairGaga;
+        private PictureBox pbxHairMatthias;
+        private PictureBox pbxHairPetra;
+        private PictureBox pbxHairSanna;
+        private PictureBox pbxHairTheresa;
+        private PictureBox pbxHairTheo;
         private Label label2;
         private Label label1;
         private Controls.RoundedPanel roundedPanel5;

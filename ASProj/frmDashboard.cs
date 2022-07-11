@@ -206,5 +206,201 @@ namespace ASProj
             frmLogin.Show();
             frmLogin.SetDesktopLocation(Location.X, Location.Y);
         }
+
+        private void pbxHairCarola_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Hair = "carola";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxHairGaga_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Hair = "gaga";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxHairMatthias_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Hair = "hatari";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxHairPetra_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Hair = "petra";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxHairSanna_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Hair = "sanna";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxHairTheresa_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Hair = "theresa";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxHairTheo_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Hair = "theo";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxFaceCarola_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Head = "carola";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxFaceGaga_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Head = "gaga";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxFaceMatthias_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Head = "hatari";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxFacePetra_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Head = "petra";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxFaceSanna_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Head = "sanna";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxFaceTheresa_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Head = "theresa";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxFaceTheo_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Head = "theo";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxBodyCarola_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Body = "carola";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxBodyGaga_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Body = "gaga";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxBodyMatthias_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Body = "hatari";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxBodyPetra_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Body = "petra";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxBodySanna_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Body = "sanna";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxBodyTheresa_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Body = "theresa";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxBodyTheo_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Body = "theo";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxLegsCarola_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Legs = "carola";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxLegsGaga_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Legs = "gaga";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxLegsMatthias_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Legs = "hatari";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxLegsPetra_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Legs = "petra";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxLegsSanna_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Legs = "sanna";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxLegsTheresa_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Legs = "theresa";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
+
+        private void pbxLegsTheo_Click(object sender, EventArgs e)
+        {
+            Program.CurrentSession.Character.Legs = "theo";
+            Program.CurrentSession.Save();
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+        }
     }
 }
