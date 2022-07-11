@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ASProj.Utils;
 
 namespace ASProj.Controls
 {
@@ -15,12 +16,12 @@ namespace ASProj.Controls
         public RoundedPanel()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
         protected override void OnResize(EventArgs eventargs)
         {
             base.OnResize(eventargs);
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
     }
 }

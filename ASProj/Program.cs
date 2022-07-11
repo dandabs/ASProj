@@ -1,4 +1,5 @@
 using ASProj.Classes;
+using ASProj.Utils;
 
 namespace ASProj
 {
@@ -15,7 +16,7 @@ namespace ASProj
             ApplicationConfiguration.Initialize();
 
             bool isDebug = false;
-            Utils.updateDebug(ref isDebug);
+            GenericUtils.updateDebug(ref isDebug);
 
             /*if (isDebug)
             {

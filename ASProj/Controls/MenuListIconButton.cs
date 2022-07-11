@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ASProj.Utils;
 
 namespace ASProj.Controls
 {
@@ -39,7 +40,7 @@ namespace ASProj.Controls
                 Font = new Font("Font Awesome 6 Free Solid", 12),
                 Text = ico.ToString()
             });
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             Cursor = Cursors.Hand;
             centerText();
             onSelectionChanged();
@@ -67,7 +68,7 @@ namespace ASProj.Controls
                 int alpha = (int)Math.Floor(255 * 0.30); // set transparency / alpha channel value to 50% of 255 (full value)
                 Color dcWithAlpha = Color.FromArgb(alpha, SelectedColor.R, SelectedColor.G, SelectedColor.B);
 
-                BackColor = Utils.AlphaComposite(parentBackColor, dcWithAlpha); // combine the two colors as if they were transparent
+                BackColor = GenericUtils.AlphaComposite(parentBackColor, dcWithAlpha); // combine the two colors as if they were transparent
                 ((Label)Controls.Find("icon", true)[0]).ForeColor = SelectedColor;
             } else
             {
@@ -78,7 +79,7 @@ namespace ASProj.Controls
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
             centerText();
         }
         protected override void OnFontChanged(EventArgs e)

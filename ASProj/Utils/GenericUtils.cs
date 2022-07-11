@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ASProj
+namespace ASProj.Utils
 {
-    public class Utils
+    public class GenericUtils
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         public static extern IntPtr CreateRoundRectRgn
@@ -30,7 +30,7 @@ namespace ASProj
         {
             var opa1 = _opacities[c1.A];
             var opa2 = _opacities[c2.A];
-            var ar = opa1 + opa2 - (opa1 * opa2);
+            var ar = opa1 + opa2 - opa1 * opa2;
             var asr = opa2 / ar;
             var a1 = 1 - asr;
             var a2 = asr * (1 - opa1);

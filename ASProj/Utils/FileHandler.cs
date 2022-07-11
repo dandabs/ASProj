@@ -7,9 +7,10 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ASProj
+namespace ASProj.Utils
 {
-    public class FileHandler {
+    public class FileHandler
+    {
 
         // DA 9/7/22 Needs to be readonly, as const keyword runs at compile-time, and folder path will change at runtime
         // DA 9/7/22 TODO Change directory name once a name is decided for the project
@@ -37,8 +38,8 @@ namespace ASProj
         }
         public static void Update<T>(string file, string Id, string SerializedObject) // DA 9/7/22 Will perform an `INSERT` if Id doesn't exist in file
         {
-            FileHandler.Delete<T>(file, Id);
-            FileHandler.Insert<T>(file, SerializedObject);
+            Delete<T>(file, Id);
+            Insert<T>(file, SerializedObject);
         }
         public static void Delete<T>(string file, string Id) // DA 9/7/22 TODO test
         {
@@ -75,7 +76,8 @@ namespace ASProj
             {
                 var _ = JToken.Parse(json);
                 return true;
-            } catch (Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }

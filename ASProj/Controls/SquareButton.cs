@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ASProj.Utils;
 
 namespace ASProj.Controls
 {
@@ -15,14 +16,14 @@ namespace ASProj.Controls
         public SquareButton()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             Cursor = Cursors.Hand;
         }
 
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
         }
     }
 }

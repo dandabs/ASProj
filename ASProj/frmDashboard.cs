@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ASProj.Utils;
 
 namespace ASProj
 {
@@ -18,7 +19,7 @@ namespace ASProj
         public frmDashboard()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
         }
 
         private void menuListIconButton2_Load(object sender, EventArgs e)

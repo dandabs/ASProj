@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ASProj.Utils;
 
 namespace ASProj.Controls
 {
@@ -23,7 +24,7 @@ namespace ASProj.Controls
                 ForeColor = Color.DarkGray
             });
             Controls.Find("value", true)[0].Top = (Height - Controls.Find("value", true)[0].Height) / 2;
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             ((TextBox)Controls.Find("value", true)[0]).PasswordChar = PasswordChar;
         }
         public string PlaceholderText
@@ -54,7 +55,7 @@ namespace ASProj.Controls
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             Controls.Find("value", true)[0].Top = (Height - Controls.Find("value", true)[0].Height) / 2;
             Controls.Find("value", true)[0].Width = Width - 15;
         }

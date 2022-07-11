@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ASProj.Utils;
 
 namespace ASProj.Controls
 {
@@ -22,7 +23,7 @@ namespace ASProj.Controls
         public RoundedProgressBar()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             this.Controls.Add(new Panel()
             {
                 Name = "progress",
@@ -38,7 +39,7 @@ namespace ASProj.Controls
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            Region = Region.FromHrgn(Utils.CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             reloadBar();
         }
         protected override void OnForeColorChanged(EventArgs e)
