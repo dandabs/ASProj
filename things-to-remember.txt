@@ -57,3 +57,4 @@ https://social.msdn.microsoft.com/Forums/en-US/fb67aede-d454-4be1-bae4-29f669f14
 https://stackoverflow.com/questions/463642/how-can-i-convert-seconds-into-hourminutessecondsmilliseconds-time
 https://stackoverflow.com/questions/3143657/truncate-two-decimal-places-without-rounding
 https://stackoverflow.com/questions/13153616/how-to-round-a-integer-to-the-close-hundred
+https://stackoverflow.com/questions/6842750/merge-two-png-images-with-transparency-and-retain-transparency

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlSidebar = new System.Windows.Forms.Panel();
             this.label66 = new System.Windows.Forms.Label();
             this.menuListIconButton6 = new ASProj.Controls.MenuListIconButton();
             this.menuListIconButton5 = new ASProj.Controls.MenuListIconButton();
@@ -121,14 +121,59 @@
             this.lblIncorrectNew = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.lblIncorrect = new System.Windows.Forms.Label();
-            this.roundedPanel7 = new ASProj.Controls.RoundedPanel();
+            this.pnlLevels = new ASProj.Controls.RoundedPanel();
             this.squareButton6 = new ASProj.Controls.SquareButton();
             this.squareButton5 = new ASProj.Controls.SquareButton();
             this.squareButton4 = new ASProj.Controls.SquareButton();
             this.squareButton3 = new ASProj.Controls.SquareButton();
             this.squareButton2 = new ASProj.Controls.SquareButton();
             this.ofdAvatar = new System.Windows.Forms.OpenFileDialog();
-            this.panel1.SuspendLayout();
+            this.pnlOverview = new System.Windows.Forms.Panel();
+            this.pnlAvatar = new System.Windows.Forms.Panel();
+            this.roundedPanel10 = new ASProj.Controls.RoundedPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.roundedPanel9 = new ASProj.Controls.RoundedPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.roundedPanel7 = new ASProj.Controls.RoundedPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.roundedPanel6 = new ASProj.Controls.RoundedPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roundedPanel5 = new ASProj.Controls.RoundedPanel();
+            this.pbxFullCharacter = new System.Windows.Forms.PictureBox();
+            this.pnlSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).BeginInit();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -144,22 +189,62 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore1)).BeginInit();
             this.roundedPanel8.SuspendLayout();
+            this.pnlLevels.SuspendLayout();
+            this.pnlOverview.SuspendLayout();
+            this.pnlAvatar.SuspendLayout();
+            this.roundedPanel10.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            this.roundedPanel9.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.roundedPanel7.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.roundedPanel6.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.roundedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFullCharacter)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlSidebar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.panel1.Controls.Add(this.label66);
-            this.panel1.Controls.Add(this.menuListIconButton6);
-            this.panel1.Controls.Add(this.menuListIconButton5);
-            this.panel1.Controls.Add(this.menuListIconButton4);
-            this.panel1.Controls.Add(this.btnLogout);
-            this.panel1.Controls.Add(this.menuListIconButton2);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(77, 712);
-            this.panel1.TabIndex = 0;
+            this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.pnlSidebar.Controls.Add(this.label66);
+            this.pnlSidebar.Controls.Add(this.menuListIconButton6);
+            this.pnlSidebar.Controls.Add(this.menuListIconButton5);
+            this.pnlSidebar.Controls.Add(this.menuListIconButton4);
+            this.pnlSidebar.Controls.Add(this.btnLogout);
+            this.pnlSidebar.Controls.Add(this.menuListIconButton2);
+            this.pnlSidebar.Location = new System.Drawing.Point(-1, -1);
+            this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(77, 712);
+            this.pnlSidebar.TabIndex = 0;
             // 
             // label66
             // 
@@ -208,7 +293,7 @@
             this.menuListIconButton4.BackColor = System.Drawing.Color.Transparent;
             this.menuListIconButton4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuListIconButton4.ForeColor = System.Drawing.Color.DarkGray;
-            this.menuListIconButton4.Icon = '';
+            this.menuListIconButton4.Icon = '';
             this.menuListIconButton4.Location = new System.Drawing.Point(19, 166);
             this.menuListIconButton4.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.menuListIconButton4.Name = "menuListIconButton4";
@@ -294,7 +379,7 @@
             this.roundedPanel1.BackgroundImage = global::ASProj.Properties.Resources.dark_blue_gradient_background_9562_1024x616;
             this.roundedPanel1.Controls.Add(this.squareButton1);
             this.roundedPanel1.Controls.Add(this.pictureBox1);
-            this.roundedPanel1.Location = new System.Drawing.Point(130, 137);
+            this.roundedPanel1.Location = new System.Drawing.Point(3, 73);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(217, 242);
             this.roundedPanel1.TabIndex = 6;
@@ -332,7 +417,7 @@
             this.roundedPanel2.Controls.Add(this.label29);
             this.roundedPanel2.Controls.Add(this.lblTimePlayed);
             this.roundedPanel2.Controls.Add(this.label27);
-            this.roundedPanel2.Location = new System.Drawing.Point(130, 398);
+            this.roundedPanel2.Location = new System.Drawing.Point(3, 331);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(217, 178);
             this.roundedPanel2.TabIndex = 7;
@@ -402,7 +487,7 @@
             this.roundedPanel3.Controls.Add(this.lblTotalPoints);
             this.roundedPanel3.Controls.Add(this.label4);
             this.roundedPanel3.Controls.Add(this.label3);
-            this.roundedPanel3.Location = new System.Drawing.Point(369, 109);
+            this.roundedPanel3.Location = new System.Drawing.Point(239, 22);
             this.roundedPanel3.Name = "roundedPanel3";
             this.roundedPanel3.Size = new System.Drawing.Size(425, 220);
             this.roundedPanel3.TabIndex = 7;
@@ -549,7 +634,7 @@
             this.roundedPanel4.Controls.Add(this.lblToGoPercent);
             this.roundedPanel4.Controls.Add(this.pbToGo);
             this.roundedPanel4.Controls.Add(this.label31);
-            this.roundedPanel4.Location = new System.Drawing.Point(818, 109);
+            this.roundedPanel4.Location = new System.Drawing.Point(682, 22);
             this.roundedPanel4.Name = "roundedPanel4";
             this.roundedPanel4.Size = new System.Drawing.Size(205, 171);
             this.roundedPanel4.TabIndex = 7;
@@ -656,7 +741,7 @@
             this.pnlGames.Controls.Add(this.lblGameName1);
             this.pnlGames.Controls.Add(this.lblGameIcon1);
             this.pnlGames.Controls.Add(this.label35);
-            this.pnlGames.Location = new System.Drawing.Point(369, 350);
+            this.pnlGames.Location = new System.Drawing.Point(239, 254);
             this.pnlGames.Name = "pnlGames";
             this.pnlGames.Size = new System.Drawing.Size(425, 318);
             this.pnlGames.TabIndex = 8;
@@ -1099,7 +1184,7 @@
             this.pnlScores.Controls.Add(this.pbxTopScore1);
             this.pnlScores.Controls.Add(this.lblTopScoreName1);
             this.pnlScores.Controls.Add(this.label13);
-            this.pnlScores.Location = new System.Drawing.Point(818, 300);
+            this.pnlScores.Location = new System.Drawing.Point(682, 204);
             this.pnlScores.Name = "pnlScores";
             this.pnlScores.Size = new System.Drawing.Size(205, 368);
             this.pnlScores.TabIndex = 8;
@@ -1359,7 +1444,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(130, 86);
+            this.label26.Location = new System.Drawing.Point(10, 23);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label26.Size = new System.Drawing.Size(130, 36);
@@ -1417,18 +1502,18 @@
             this.lblIncorrect.Text = "45";
             this.lblIncorrect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // roundedPanel7
+            // pnlLevels
             // 
-            this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.roundedPanel7.Controls.Add(this.squareButton6);
-            this.roundedPanel7.Controls.Add(this.squareButton5);
-            this.roundedPanel7.Controls.Add(this.squareButton4);
-            this.roundedPanel7.Controls.Add(this.squareButton3);
-            this.roundedPanel7.Controls.Add(this.squareButton2);
-            this.roundedPanel7.Location = new System.Drawing.Point(130, 28);
-            this.roundedPanel7.Name = "roundedPanel7";
-            this.roundedPanel7.Size = new System.Drawing.Size(664, 47);
-            this.roundedPanel7.TabIndex = 10;
+            this.pnlLevels.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.pnlLevels.Controls.Add(this.squareButton6);
+            this.pnlLevels.Controls.Add(this.squareButton5);
+            this.pnlLevels.Controls.Add(this.squareButton4);
+            this.pnlLevels.Controls.Add(this.squareButton3);
+            this.pnlLevels.Controls.Add(this.squareButton2);
+            this.pnlLevels.Location = new System.Drawing.Point(130, 28);
+            this.pnlLevels.Name = "pnlLevels";
+            this.pnlLevels.Size = new System.Drawing.Size(664, 47);
+            this.pnlLevels.TabIndex = 10;
             // 
             // squareButton6
             // 
@@ -1505,32 +1590,522 @@
             this.ofdAvatar.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;*.bmp";
             this.ofdAvatar.Title = "Upload a new avatar";
             // 
+            // pnlOverview
+            // 
+            this.pnlOverview.Controls.Add(this.label26);
+            this.pnlOverview.Controls.Add(this.roundedPanel1);
+            this.pnlOverview.Controls.Add(this.roundedPanel2);
+            this.pnlOverview.Controls.Add(this.roundedPanel3);
+            this.pnlOverview.Controls.Add(this.roundedPanel4);
+            this.pnlOverview.Controls.Add(this.pnlGames);
+            this.pnlOverview.Controls.Add(this.pnlScores);
+            this.pnlOverview.Controls.Add(this.roundedPanel8);
+            this.pnlOverview.Location = new System.Drawing.Point(130, 86);
+            this.pnlOverview.Name = "pnlOverview";
+            this.pnlOverview.Size = new System.Drawing.Size(893, 582);
+            this.pnlOverview.TabIndex = 11;
+            // 
+            // pnlAvatar
+            // 
+            this.pnlAvatar.Controls.Add(this.roundedPanel10);
+            this.pnlAvatar.Controls.Add(this.roundedPanel9);
+            this.pnlAvatar.Controls.Add(this.roundedPanel7);
+            this.pnlAvatar.Controls.Add(this.roundedPanel6);
+            this.pnlAvatar.Controls.Add(this.label1);
+            this.pnlAvatar.Controls.Add(this.roundedPanel5);
+            this.pnlAvatar.Location = new System.Drawing.Point(130, 86);
+            this.pnlAvatar.Name = "pnlAvatar";
+            this.pnlAvatar.Size = new System.Drawing.Size(893, 582);
+            this.pnlAvatar.TabIndex = 12;
+            // 
+            // roundedPanel10
+            // 
+            this.roundedPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.roundedPanel10.Controls.Add(this.flowLayoutPanel4);
+            this.roundedPanel10.Controls.Add(this.label8);
+            this.roundedPanel10.Location = new System.Drawing.Point(309, 451);
+            this.roundedPanel10.Name = "roundedPanel10";
+            this.roundedPanel10.Size = new System.Drawing.Size(578, 117);
+            this.roundedPanel10.TabIndex = 48;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.AutoScroll = true;
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox23);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox24);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox25);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox26);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox27);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox28);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox29);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(19, 33);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(543, 69);
+            this.flowLayoutPanel4.TabIndex = 49;
+            this.flowLayoutPanel4.WrapContents = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::ASProj.Properties.Resources.bottom__1_;
+            this.pictureBox23.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox23.TabIndex = 1;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::ASProj.Properties.Resources.bottom__2_;
+            this.pictureBox24.Location = new System.Drawing.Point(72, 3);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox24.TabIndex = 2;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::ASProj.Properties.Resources.bottom__3_;
+            this.pictureBox25.Location = new System.Drawing.Point(141, 3);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox25.TabIndex = 3;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::ASProj.Properties.Resources.bottom__4_;
+            this.pictureBox26.Location = new System.Drawing.Point(210, 3);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox26.TabIndex = 4;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::ASProj.Properties.Resources.bottom__5_;
+            this.pictureBox27.Location = new System.Drawing.Point(279, 3);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox27.TabIndex = 5;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::ASProj.Properties.Resources.bottom__6_;
+            this.pictureBox28.Location = new System.Drawing.Point(348, 3);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox28.TabIndex = 6;
+            this.pictureBox28.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::ASProj.Properties.Resources.bottom__7_;
+            this.pictureBox29.Location = new System.Drawing.Point(417, 3);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox29.TabIndex = 7;
+            this.pictureBox29.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(19, 9);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label8.Size = new System.Drawing.Size(60, 19);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "Bottom";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel9
+            // 
+            this.roundedPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.roundedPanel9.Controls.Add(this.flowLayoutPanel3);
+            this.roundedPanel9.Controls.Add(this.label7);
+            this.roundedPanel9.Location = new System.Drawing.Point(309, 325);
+            this.roundedPanel9.Name = "roundedPanel9";
+            this.roundedPanel9.Size = new System.Drawing.Size(578, 117);
+            this.roundedPanel9.TabIndex = 47;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox16);
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox17);
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox18);
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox19);
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox20);
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox21);
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox22);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(19, 33);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(543, 69);
+            this.flowLayoutPanel3.TabIndex = 48;
+            this.flowLayoutPanel3.WrapContents = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::ASProj.Properties.Resources.top__1_;
+            this.pictureBox16.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 1;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::ASProj.Properties.Resources.top__2_;
+            this.pictureBox17.Location = new System.Drawing.Point(72, 3);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 2;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::ASProj.Properties.Resources.top__3_;
+            this.pictureBox18.Location = new System.Drawing.Point(141, 3);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 3;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::ASProj.Properties.Resources.top__4_;
+            this.pictureBox19.Location = new System.Drawing.Point(210, 3);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 4;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::ASProj.Properties.Resources.top__5_;
+            this.pictureBox20.Location = new System.Drawing.Point(279, 3);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 5;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::ASProj.Properties.Resources.top__6_;
+            this.pictureBox21.Location = new System.Drawing.Point(348, 3);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox21.TabIndex = 6;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::ASProj.Properties.Resources.top__7_;
+            this.pictureBox22.Location = new System.Drawing.Point(417, 3);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 7;
+            this.pictureBox22.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Silver;
+            this.label7.Location = new System.Drawing.Point(19, 9);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label7.Size = new System.Drawing.Size(34, 19);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Top";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel7
+            // 
+            this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.roundedPanel7.Controls.Add(this.flowLayoutPanel2);
+            this.roundedPanel7.Controls.Add(this.label5);
+            this.roundedPanel7.Location = new System.Drawing.Point(309, 199);
+            this.roundedPanel7.Name = "roundedPanel7";
+            this.roundedPanel7.Size = new System.Drawing.Size(578, 117);
+            this.roundedPanel7.TabIndex = 46;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox9);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox10);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox11);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox12);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox13);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox14);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox15);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(19, 33);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(543, 69);
+            this.flowLayoutPanel2.TabIndex = 47;
+            this.flowLayoutPanel2.WrapContents = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::ASProj.Properties.Resources.face__1_;
+            this.pictureBox9.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::ASProj.Properties.Resources.face__2_;
+            this.pictureBox10.Location = new System.Drawing.Point(72, 3);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::ASProj.Properties.Resources.face__3_;
+            this.pictureBox11.Location = new System.Drawing.Point(141, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::ASProj.Properties.Resources.face__4_;
+            this.pictureBox12.Location = new System.Drawing.Point(210, 3);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 4;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::ASProj.Properties.Resources.face__5_;
+            this.pictureBox13.Location = new System.Drawing.Point(279, 3);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 5;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::ASProj.Properties.Resources.face__6_;
+            this.pictureBox14.Location = new System.Drawing.Point(348, 3);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 6;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::ASProj.Properties.Resources.face__7_;
+            this.pictureBox15.Location = new System.Drawing.Point(417, 3);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 7;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Silver;
+            this.label5.Location = new System.Drawing.Point(19, 9);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(40, 19);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Face";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel6
+            // 
+            this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.roundedPanel6.Controls.Add(this.flowLayoutPanel1);
+            this.roundedPanel6.Controls.Add(this.label2);
+            this.roundedPanel6.Location = new System.Drawing.Point(309, 73);
+            this.roundedPanel6.Name = "roundedPanel6";
+            this.roundedPanel6.Size = new System.Drawing.Size(578, 117);
+            this.roundedPanel6.TabIndex = 10;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox7);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox8);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(19, 33);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(543, 69);
+            this.flowLayoutPanel1.TabIndex = 46;
+            this.flowLayoutPanel1.WrapContents = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ASProj.Properties.Resources.hair__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ASProj.Properties.Resources.hair__2_;
+            this.pictureBox3.Location = new System.Drawing.Point(72, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ASProj.Properties.Resources.hair__3_;
+            this.pictureBox4.Location = new System.Drawing.Point(141, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::ASProj.Properties.Resources.hair__4_;
+            this.pictureBox5.Location = new System.Drawing.Point(210, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::ASProj.Properties.Resources.hair__5_;
+            this.pictureBox6.Location = new System.Drawing.Point(279, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::ASProj.Properties.Resources.hair__6_;
+            this.pictureBox7.Location = new System.Drawing.Point(348, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::ASProj.Properties.Resources.hair__7_;
+            this.pictureBox8.Location = new System.Drawing.Point(417, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 6;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(19, 9);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(37, 19);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Hair";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(10, 23);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(198, 36);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Your character";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel5
+            // 
+            this.roundedPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.roundedPanel5.BackgroundImage = global::ASProj.Properties.Resources.dark_blue_gradient_background_9562_1024x616;
+            this.roundedPanel5.Controls.Add(this.pbxFullCharacter);
+            this.roundedPanel5.Location = new System.Drawing.Point(3, 73);
+            this.roundedPanel5.Name = "roundedPanel5";
+            this.roundedPanel5.Size = new System.Drawing.Size(289, 506);
+            this.roundedPanel5.TabIndex = 6;
+            // 
+            // pbxFullCharacter
+            // 
+            this.pbxFullCharacter.Location = new System.Drawing.Point(0, 0);
+            this.pbxFullCharacter.Name = "pbxFullCharacter";
+            this.pbxFullCharacter.Size = new System.Drawing.Size(289, 506);
+            this.pbxFullCharacter.TabIndex = 0;
+            this.pbxFullCharacter.TabStop = false;
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(1080, 710);
-            this.Controls.Add(this.roundedPanel7);
-            this.Controls.Add(this.roundedPanel8);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.pnlScores);
-            this.Controls.Add(this.pnlGames);
-            this.Controls.Add(this.roundedPanel4);
-            this.Controls.Add(this.roundedPanel3);
-            this.Controls.Add(this.roundedPanel2);
-            this.Controls.Add(this.roundedPanel1);
+            this.Controls.Add(this.pnlAvatar);
+            this.Controls.Add(this.pnlSidebar);
+            this.Controls.Add(this.pnlOverview);
+            this.Controls.Add(this.pnlLevels);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblDiscriminator);
             this.Controls.Add(this.pbxAvatar);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDashboard";
             this.Text = "z";
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmDashboard_MouseDown);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlSidebar.ResumeLayout(false);
+            this.pnlSidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).EndInit();
             this.roundedPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1552,7 +2127,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxTopScore1)).EndInit();
             this.roundedPanel8.ResumeLayout(false);
             this.roundedPanel8.PerformLayout();
+            this.pnlLevels.ResumeLayout(false);
+            this.pnlOverview.ResumeLayout(false);
+            this.pnlOverview.PerformLayout();
+            this.pnlAvatar.ResumeLayout(false);
+            this.pnlAvatar.PerformLayout();
+            this.roundedPanel10.ResumeLayout(false);
+            this.roundedPanel10.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            this.roundedPanel9.ResumeLayout(false);
+            this.roundedPanel9.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.roundedPanel7.ResumeLayout(false);
+            this.roundedPanel7.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.roundedPanel6.ResumeLayout(false);
+            this.roundedPanel6.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.roundedPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFullCharacter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1560,7 +2181,7 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel pnlSidebar;
         private Controls.MenuListIconButton menuListIconButton1;
         private Controls.MenuListIconButton menuListIconButton2;
         private Controls.MenuListIconButton btnLogout;
@@ -1654,12 +2275,57 @@
         private Label lblIncorrectNew;
         private Label label69;
         private Label lblIncorrect;
-        private Controls.RoundedPanel roundedPanel7;
+        private Controls.RoundedPanel pnlLevels;
         private Controls.SquareButton squareButton6;
         private Controls.SquareButton squareButton5;
         private Controls.SquareButton squareButton4;
         private Controls.SquareButton squareButton3;
         private Controls.SquareButton squareButton2;
         private OpenFileDialog ofdAvatar;
+        private Panel pnlOverview;
+        private Panel pnlAvatar;
+        private Controls.RoundedPanel roundedPanel10;
+        private FlowLayoutPanel flowLayoutPanel4;
+        private PictureBox pictureBox23;
+        private PictureBox pictureBox24;
+        private PictureBox pictureBox25;
+        private PictureBox pictureBox26;
+        private PictureBox pictureBox27;
+        private PictureBox pictureBox28;
+        private PictureBox pictureBox29;
+        private Label label8;
+        private Controls.RoundedPanel roundedPanel9;
+        private FlowLayoutPanel flowLayoutPanel3;
+        private PictureBox pictureBox16;
+        private PictureBox pictureBox17;
+        private PictureBox pictureBox18;
+        private PictureBox pictureBox19;
+        private PictureBox pictureBox20;
+        private PictureBox pictureBox21;
+        private PictureBox pictureBox22;
+        private Label label7;
+        private Controls.RoundedPanel roundedPanel7;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox14;
+        private PictureBox pictureBox15;
+        private Label label5;
+        private Controls.RoundedPanel roundedPanel6;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
+        private Label label2;
+        private Label label1;
+        private Controls.RoundedPanel roundedPanel5;
+        private PictureBox pbxFullCharacter;
     }
 }

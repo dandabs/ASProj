@@ -13,7 +13,7 @@ namespace ASProj.Classes
         // DA 8/7/22 Constructor
         [JsonConstructor]
         public User(Guid Id, string Username, int Discriminator, DateTime CreatedAt, string Password,
-            Guid? Avatar, Guid? Banner, Guid? Character, Guid? Theme, String? Status, List<Transaction> Transactions,
+            Guid? Avatar, Guid? Banner, Character Character, Guid? Theme, String? Status, List<Transaction> Transactions,
             int Points, List<GameRecord> Records)
         {
             this.Id = Id;
@@ -46,6 +46,8 @@ namespace ASProj.Classes
             Points = 0;
             Records = new List<GameRecord>();
 
+            Character = new Character();
+
             // DA 9/7/22 Hash and store password with SHA256
             using (SHA256 hash = SHA256.Create())
             {
@@ -69,7 +71,7 @@ namespace ASProj.Classes
         public string Password { get; set; } // DA 9/7/22 Should be hashed with SHA256 - DO NOT STORE AS PLAINTEXT
         public Guid? Avatar { get; set; }
         public Guid? Banner { get; set; }
-        public Guid? Character { get; set; }
+        public Character Character { get; set; }
         public Guid? Theme { get; set; } // DA 8/7/22 TODO player can customise their profile theme music
         public string? Status { get; set; }
 
@@ -93,14 +95,6 @@ namespace ASProj.Classes
                 return this.Banner.Value;
             }
             else return Program.DefaultUserBanner;
-        }
-        public Guid GetCharacter()
-        {
-            if (Character.HasValue)
-            {
-                return this.Character.Value;
-            }
-            else return Program.DefaultUserCharacter;
         }
         public Guid GetTheme()
         {

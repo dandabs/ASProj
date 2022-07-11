@@ -103,15 +103,15 @@ namespace ASProj
                 Game game = games[i];
                 if (i <= 6)
                 {
-                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGameIcon" + (i + 1), false)[0].Text   = game.Icon.ToString();
-                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGameName" + (i + 1), false)[0].Text = game.Name;
-                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGameGenre" + (i + 1), false)[0].Text = game.Genre;
+                    this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGameIcon" + (i + 1), false)[0].Text   = game.Icon.ToString();
+                    this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGameName" + (i + 1), false)[0].Text = game.Name;
+                    this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGameGenre" + (i + 1), false)[0].Text = game.Genre;
                     int points = 0;
                     foreach (Question q in game.Questions)
                     {
                         points += q.Points;
                     }
-                    this.Controls.Find("pnlGames", false)[0].Controls.Find("lblGamePoints" + (i + 1), false)[0].Text = Convert.ToString(points);
+                    this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGamePoints" + (i + 1), false)[0].Text = Convert.ToString(points);
                 }
             }
 
@@ -136,12 +136,14 @@ namespace ASProj
                     {
                         GameRecord gr = sortedRecords[i];
                         User u = User.Search(gr.User);
-                        this.Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreName" + (i + 1), false)[0].Text = u.Username + "#" + u.Discriminator;
-                        this.Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreDesc" + (i + 1), false)[0].Text = gr.Points + " on " + gr.Date.Day + "/" + gr.Date.Month + "/" + gr.Date.Year;
-                        ((PictureBox)this.Controls.Find("pnlScores", false)[0].Controls.Find("pbxTopScore" + (i + 1), false)[0]).Image = UserImage.Search(u.GetAvatar()).ToBitmap();
+                        this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreName" + (i + 1), false)[0].Text = u.Username + "#" + u.Discriminator;
+                        this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreDesc" + (i + 1), false)[0].Text = gr.Points + " on " + gr.Date.Day + "/" + gr.Date.Month + "/" + gr.Date.Year;
+                        ((PictureBox)this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("pbxTopScore" + (i + 1), false)[0]).Image = UserImage.Search(u.GetAvatar()).ToBitmap();
                     }
                 }
             }
+
+            pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
