@@ -169,7 +169,13 @@ namespace ASProj.Games
             if (_state == 4)
             {
                 Random r = new Random();
-                askQuestion(Program.CurrentGame.Questions[r.Next(0, (Program.CurrentGame.Questions.Length - 1))]);
+
+                Question random = _currentquestion;
+                while (random == _currentquestion)
+                {
+                    random = Program.CurrentGame.Questions[r.Next(0, (Program.CurrentGame.Questions.Length))];
+                }
+                askQuestion(random);
             }
             if (_state == 5)
             {
@@ -211,8 +217,8 @@ namespace ASProj.Games
             }
         }
 
-        private int _yourhealth = 3;
-        private int _arnyhealth = 3;
+        private int _yourhealth = 4;
+        private int _arnyhealth = 4;
 
         private void askQuestion(Question q)
         {
@@ -300,17 +306,19 @@ namespace ASProj.Games
                 _arnyhealth--;
                 switch (_arnyhealth)
                 {
+                    case 3:
+                        pbxOppHealth3.Image = Properties.Resources.heart_empty;
+                        break;
                     case 2:
                         pbxOppHealth3.Image = Properties.Resources.heart_empty;
+                        pbxOppHealth2.Image = Properties.Resources.heart_empty;
                         break;
                     case 1:
                         pbxOppHealth3.Image = Properties.Resources.heart_empty;
                         pbxOppHealth2.Image = Properties.Resources.heart_empty;
+                        pbxOppHealth1.Image = Properties.Resources.heart_empty;
                         break;
                     case 0:
-                        pbxOppHealth3.Image = Properties.Resources.heart_empty;
-                        pbxOppHealth2.Image = Properties.Resources.heart_empty;
-                        pbxOppHealth1.Image = Properties.Resources.heart_empty;
                         _state = 5;
                         break;
                 }
@@ -319,17 +327,19 @@ namespace ASProj.Games
                 _yourhealth--;
                 switch (_yourhealth)
                 {
+                    case 3:
+                        pbxUsrHealth3.Image = Properties.Resources.heart_empty;
+                        break;
                     case 2:
                         pbxUsrHealth3.Image = Properties.Resources.heart_empty;
+                        pbxUsrHealth2.Image = Properties.Resources.heart_empty;
                         break;
                     case 1:
                         pbxUsrHealth3.Image = Properties.Resources.heart_empty;
                         pbxUsrHealth2.Image = Properties.Resources.heart_empty;
+                        pbxUsrHealth1.Image = Properties.Resources.heart_empty;
                         break;
                     case 0:
-                        pbxUsrHealth3.Image = Properties.Resources.heart_empty;
-                        pbxUsrHealth2.Image = Properties.Resources.heart_empty;
-                        pbxUsrHealth1.Image = Properties.Resources.heart_empty;
                         _state = 5;
                         break;
                 }

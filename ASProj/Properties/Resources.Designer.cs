@@ -63,26 +63,6 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _350a232967f2ad354ff2ef464a75bc0d {
-            get {
-                object obj = ResourceManager.GetObject("350a232967f2ad354ff2ef464a75bc0d", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _5082445c736781115816c8a0c7f6f461__tove_jansson_moomin {
-            get {
-                object obj = ResourceManager.GetObject("5082445c736781115816c8a0c7f6f461--tove-jansson-moomin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _740ecb78aa4c10cb0a2170ea2350c337 {
             get {
                 object obj = ResourceManager.GetObject("740ecb78aa4c10cb0a2170ea2350c337", resourceCulture);
@@ -106,16 +86,6 @@ namespace ASProj.Properties {
         internal static System.Drawing.Bitmap arny_fjola {
             get {
                 object obj = ResourceManager.GetObject("arny fjola", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blur_blurred_dark_gradient {
-            get {
-                object obj = ResourceManager.GetObject("blur-blurred-dark-gradient", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -736,16 +706,6 @@ namespace ASProj.Properties {
         internal static System.Drawing.Bitmap imageedit_8_7025415654 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_8_7025415654", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images {
-            get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
