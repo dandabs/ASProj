@@ -103,6 +103,16 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arny_fjola {
+            get {
+                object obj = ResourceManager.GetObject("arny fjola", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blur_blurred_dark_gradient {
             get {
                 object obj = ResourceManager.GetObject("blur-blurred-dark-gradient", resourceCulture);
@@ -256,6 +266,26 @@ namespace ASProj.Properties {
         internal static System.Drawing.Bitmap face__7_ {
             get {
                 object obj = ResourceManager.GetObject("face__7_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FireBall {
+            get {
+                object obj = ResourceManager.GetObject("FireBall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FireBallAttack {
+            get {
+                object obj = ResourceManager.GetObject("FireBallAttack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -623,6 +653,36 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heart_empty {
+            get {
+                object obj = ResourceManager.GetObject("heart_empty", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heart_full {
+            get {
+                object obj = ResourceManager.GetObject("heart_full", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Hit_Super_Effective {
+            get {
+                object obj = ResourceManager.GetObject("Hit_Super_Effective", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imageedit_1_6924211824 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_1_6924211824", resourceCulture);
@@ -693,6 +753,26 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pokemon_landscape_by_brainblower_d8i3udq_fullview {
+            get {
+                object obj = ResourceManager.GetObject("pokemon_landscape_by_brainblower_d8i3udq-fullview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] PokemonDiamond {
+            get {
+                object obj = ResourceManager.GetObject("PokemonDiamond", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap t4ovzMA {
             get {
                 object obj = ResourceManager.GetObject("t4ovzMA", resourceCulture);
@@ -706,6 +786,26 @@ namespace ASProj.Properties {
         internal static System.Drawing.Bitmap theresa_may_34 {
             get {
                 object obj = ResourceManager.GetObject("theresa-may-34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TheresaMay_070622_F3EN1K_jpg {
+            get {
+                object obj = ResourceManager.GetObject("TheresaMay_070622_F3EN1K.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TheresaMay_070622_F3EN1K1 {
+            get {
+                object obj = ResourceManager.GetObject("TheresaMay_070622_F3EN1K1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

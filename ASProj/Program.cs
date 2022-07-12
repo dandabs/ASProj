@@ -63,11 +63,14 @@ namespace ASProj
         public static User? CurrentSession = null;
 
         // DA 8/7/22 TODO update these values once the file saving system has been implemented
-        public static Guid DefaultUserAvatar = Guid.Parse("618e90d6-1516-4149-ab34-c82955667396");
-        public static Guid DefaultUserBanner = Guid.Empty;
+        public static readonly Guid DefaultUserAvatar = Guid.Parse("618e90d6-1516-4149-ab34-c82955667396");
+        public static readonly Guid DefaultUserBanner = Guid.Empty;
 
-        public static Guid DefaultUserCharacter = Guid.Empty;
+        public static readonly Guid DefaultUserCharacter = Guid.Empty;
 
-        public static Guid DefaultUserTheme = Guid.Empty;
+        public static readonly Guid DefaultUserTheme = Guid.Empty;
+
+        // DA 12/07/22 This will change depending on the game that is being played. Change this before opening the game form
+        public static Game? CurrentGame = null;
     }
 }

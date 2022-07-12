@@ -122,11 +122,11 @@
             this.label69 = new System.Windows.Forms.Label();
             this.lblIncorrect = new System.Windows.Forms.Label();
             this.pnlLevels = new ASProj.Controls.RoundedPanel();
-            this.squareButton6 = new ASProj.Controls.SquareButton();
-            this.squareButton5 = new ASProj.Controls.SquareButton();
-            this.squareButton4 = new ASProj.Controls.SquareButton();
-            this.squareButton3 = new ASProj.Controls.SquareButton();
-            this.squareButton2 = new ASProj.Controls.SquareButton();
+            this.btnDeathmatch = new ASProj.Controls.SquareButton();
+            this.btnHard = new ASProj.Controls.SquareButton();
+            this.btnNormal = new ASProj.Controls.SquareButton();
+            this.btnEasy = new ASProj.Controls.SquareButton();
+            this.btnNoTimer = new ASProj.Controls.SquareButton();
             this.ofdAvatar = new System.Windows.Forms.OpenFileDialog();
             this.pnlOverview = new System.Windows.Forms.Panel();
             this.pnlAvatar = new System.Windows.Forms.Panel();
@@ -381,7 +381,7 @@
             this.roundedPanel1.BackgroundImage = global::ASProj.Properties.Resources.dark_blue_gradient_background_9562_1024x616;
             this.roundedPanel1.Controls.Add(this.btnCustomizeCharacter);
             this.roundedPanel1.Controls.Add(this.pbxSmallAvatar);
-            this.roundedPanel1.Location = new System.Drawing.Point(3, 73);
+            this.roundedPanel1.Location = new System.Drawing.Point(3, 58);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(217, 242);
             this.roundedPanel1.TabIndex = 6;
@@ -419,7 +419,7 @@
             this.roundedPanel2.Controls.Add(this.label29);
             this.roundedPanel2.Controls.Add(this.lblTimePlayed);
             this.roundedPanel2.Controls.Add(this.label27);
-            this.roundedPanel2.Location = new System.Drawing.Point(3, 331);
+            this.roundedPanel2.Location = new System.Drawing.Point(3, 313);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(217, 178);
             this.roundedPanel2.TabIndex = 7;
@@ -1446,7 +1446,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(10, 23);
+            this.label26.Location = new System.Drawing.Point(10, 12);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label26.Size = new System.Drawing.Size(130, 36);
@@ -1460,7 +1460,7 @@
             this.roundedPanel8.Controls.Add(this.lblIncorrectNew);
             this.roundedPanel8.Controls.Add(this.label69);
             this.roundedPanel8.Controls.Add(this.lblIncorrect);
-            this.roundedPanel8.Location = new System.Drawing.Point(130, 596);
+            this.roundedPanel8.Location = new System.Drawing.Point(3, 500);
             this.roundedPanel8.Name = "roundedPanel8";
             this.roundedPanel8.Size = new System.Drawing.Size(217, 72);
             this.roundedPanel8.TabIndex = 8;
@@ -1507,85 +1507,86 @@
             // pnlLevels
             // 
             this.pnlLevels.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.pnlLevels.Controls.Add(this.squareButton6);
-            this.pnlLevels.Controls.Add(this.squareButton5);
-            this.pnlLevels.Controls.Add(this.squareButton4);
-            this.pnlLevels.Controls.Add(this.squareButton3);
-            this.pnlLevels.Controls.Add(this.squareButton2);
+            this.pnlLevels.Controls.Add(this.btnDeathmatch);
+            this.pnlLevels.Controls.Add(this.btnHard);
+            this.pnlLevels.Controls.Add(this.btnNormal);
+            this.pnlLevels.Controls.Add(this.btnEasy);
+            this.pnlLevels.Controls.Add(this.btnNoTimer);
             this.pnlLevels.Location = new System.Drawing.Point(130, 28);
             this.pnlLevels.Name = "pnlLevels";
             this.pnlLevels.Size = new System.Drawing.Size(664, 47);
             this.pnlLevels.TabIndex = 10;
             // 
-            // squareButton6
+            // btnDeathmatch
             // 
-            this.squareButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton6.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareButton6.ForeColor = System.Drawing.Color.Gray;
-            this.squareButton6.Location = new System.Drawing.Point(530, 8);
-            this.squareButton6.Name = "squareButton6";
-            this.squareButton6.Size = new System.Drawing.Size(124, 32);
-            this.squareButton6.TabIndex = 4;
-            this.squareButton6.Text = "DEATHMATCH";
-            this.squareButton6.UseVisualStyleBackColor = false;
+            this.btnDeathmatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnDeathmatch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnDeathmatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeathmatch.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeathmatch.ForeColor = System.Drawing.Color.Gray;
+            this.btnDeathmatch.Location = new System.Drawing.Point(530, 8);
+            this.btnDeathmatch.Name = "btnDeathmatch";
+            this.btnDeathmatch.Size = new System.Drawing.Size(124, 32);
+            this.btnDeathmatch.TabIndex = 4;
+            this.btnDeathmatch.Text = "DEATHMATCH";
+            this.btnDeathmatch.UseVisualStyleBackColor = false;
             // 
-            // squareButton5
+            // btnHard
             // 
-            this.squareButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton5.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareButton5.ForeColor = System.Drawing.Color.Gray;
-            this.squareButton5.Location = new System.Drawing.Point(400, 8);
-            this.squareButton5.Name = "squareButton5";
-            this.squareButton5.Size = new System.Drawing.Size(124, 32);
-            this.squareButton5.TabIndex = 3;
-            this.squareButton5.Text = "HARD";
-            this.squareButton5.UseVisualStyleBackColor = false;
+            this.btnHard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnHard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnHard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHard.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHard.ForeColor = System.Drawing.Color.Gray;
+            this.btnHard.Location = new System.Drawing.Point(400, 8);
+            this.btnHard.Name = "btnHard";
+            this.btnHard.Size = new System.Drawing.Size(124, 32);
+            this.btnHard.TabIndex = 3;
+            this.btnHard.Text = "HARD";
+            this.btnHard.UseVisualStyleBackColor = false;
             // 
-            // squareButton4
+            // btnNormal
             // 
-            this.squareButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.squareButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.squareButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton4.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareButton4.ForeColor = System.Drawing.Color.White;
-            this.squareButton4.Location = new System.Drawing.Point(270, 8);
-            this.squareButton4.Name = "squareButton4";
-            this.squareButton4.Size = new System.Drawing.Size(124, 32);
-            this.squareButton4.TabIndex = 2;
-            this.squareButton4.Text = "NORMAL";
-            this.squareButton4.UseVisualStyleBackColor = false;
+            this.btnNormal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnNormal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnNormal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNormal.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNormal.ForeColor = System.Drawing.Color.White;
+            this.btnNormal.Location = new System.Drawing.Point(270, 8);
+            this.btnNormal.Name = "btnNormal";
+            this.btnNormal.Size = new System.Drawing.Size(124, 32);
+            this.btnNormal.TabIndex = 2;
+            this.btnNormal.Text = "NORMAL";
+            this.btnNormal.UseVisualStyleBackColor = false;
+            this.btnNormal.Click += new System.EventHandler(this.btnNormal_Click);
             // 
-            // squareButton3
+            // btnEasy
             // 
-            this.squareButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton3.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareButton3.ForeColor = System.Drawing.Color.Gray;
-            this.squareButton3.Location = new System.Drawing.Point(140, 8);
-            this.squareButton3.Name = "squareButton3";
-            this.squareButton3.Size = new System.Drawing.Size(124, 32);
-            this.squareButton3.TabIndex = 1;
-            this.squareButton3.Text = "EASY";
-            this.squareButton3.UseVisualStyleBackColor = false;
+            this.btnEasy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnEasy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnEasy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEasy.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEasy.ForeColor = System.Drawing.Color.Gray;
+            this.btnEasy.Location = new System.Drawing.Point(140, 8);
+            this.btnEasy.Name = "btnEasy";
+            this.btnEasy.Size = new System.Drawing.Size(124, 32);
+            this.btnEasy.TabIndex = 1;
+            this.btnEasy.Text = "EASY";
+            this.btnEasy.UseVisualStyleBackColor = false;
             // 
-            // squareButton2
+            // btnNoTimer
             // 
-            this.squareButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
-            this.squareButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton2.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.squareButton2.ForeColor = System.Drawing.Color.Gray;
-            this.squareButton2.Location = new System.Drawing.Point(10, 8);
-            this.squareButton2.Name = "squareButton2";
-            this.squareButton2.Size = new System.Drawing.Size(124, 32);
-            this.squareButton2.TabIndex = 0;
-            this.squareButton2.Text = "NO TIMER";
-            this.squareButton2.UseVisualStyleBackColor = false;
+            this.btnNoTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnNoTimer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnNoTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNoTimer.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNoTimer.ForeColor = System.Drawing.Color.Gray;
+            this.btnNoTimer.Location = new System.Drawing.Point(10, 8);
+            this.btnNoTimer.Name = "btnNoTimer";
+            this.btnNoTimer.Size = new System.Drawing.Size(124, 32);
+            this.btnNoTimer.TabIndex = 0;
+            this.btnNoTimer.Text = "NO TIMER";
+            this.btnNoTimer.UseVisualStyleBackColor = false;
             // 
             // ofdAvatar
             // 
@@ -2118,7 +2119,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 23);
+            this.label1.Location = new System.Drawing.Point(10, 12);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(198, 36);
@@ -2334,11 +2335,11 @@
         private Label label69;
         private Label lblIncorrect;
         private Controls.RoundedPanel pnlLevels;
-        private Controls.SquareButton squareButton6;
-        private Controls.SquareButton squareButton5;
-        private Controls.SquareButton squareButton4;
-        private Controls.SquareButton squareButton3;
-        private Controls.SquareButton squareButton2;
+        private Controls.SquareButton btnDeathmatch;
+        private Controls.SquareButton btnHard;
+        private Controls.SquareButton btnNormal;
+        private Controls.SquareButton btnEasy;
+        private Controls.SquareButton btnNoTimer;
         private OpenFileDialog ofdAvatar;
         private Panel pnlOverview;
         private Panel pnlAvatar;

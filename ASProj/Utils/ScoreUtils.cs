@@ -12,7 +12,9 @@ namespace ASProj.Utils
         {
             string sP = Convert.ToString(points);
             if (sP.Length != 3) return 1;
-            return Convert.ToInt32(sP[0]) + 1;
+            char[] sPP = sP.ToCharArray();
+            int s = Convert.ToInt32(sPP[0]) - 48;
+            return s + 1;
         }
 
         public static int ToNextLevel(int points)

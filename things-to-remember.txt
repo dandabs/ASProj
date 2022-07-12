@@ -58,3 +58,10 @@ https://stackoverflow.com/questions/463642/how-can-i-convert-seconds-into-hourmi
 https://stackoverflow.com/questions/3143657/truncate-two-decimal-places-without-rounding
 https://stackoverflow.com/questions/13153616/how-to-round-a-integer-to-the-close-hundred
 https://stackoverflow.com/questions/6842750/merge-two-png-images-with-transparency-and-retain-transparency
+
+audio player
+https://github.com/naudio/NAudio
+https://downloads.khinsider.com/game-soundtracks/album/pokemon-sfx-gen-3-attack-moves-rse-fr-lg
+
+gif rotation
+https://ezgif.com/rotate/ezgif-1-d7d0f46285.gif

@@ -76,8 +76,11 @@ namespace ASProj
             string level = Convert.ToString(ScoreUtils.GetLevel(Program.CurrentSession.Points));
             lblLevel.Text = level.Length > 1 ? level : "0" + level;
             lblToGo.Text = ScoreUtils.ToNextLevel(Program.CurrentSession.Points) + " to go";
-            lblToGoPercent.Text = (Program.CurrentSession.Points / ScoreUtils.PointsInLevel(Convert.ToInt32(level) + 1)) * 100 + "%";
-            pbToGo.Value = Program.CurrentSession.Points / ScoreUtils.PointsInLevel(Convert.ToInt32(level) + 1);
+
+            decimal pil = ScoreUtils.PointsInLevel(Convert.ToInt32(level) + 1);
+            decimal value = (decimal)Program.CurrentSession.Points / pil;
+            lblToGoPercent.Text = (value * 100) + "%";
+            pbToGo.Value = value;
 
             int incorrect = 0;
             int incorrectnew = 0;
@@ -133,14 +136,17 @@ namespace ASProj
             {
                 for (int i = 0; i <= 6; i++)
                 {
-                    if (sortedRecords.Count >= i + 1)
+                    if (sortedRecords.Count >= i)
                     {
-                        GameRecord gr = sortedRecords[i];
-                        User u = User.Search(gr.User);
-                        this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreName" + (i + 1), false)[0].Text = u.Username + "#" + u.Discriminator;
-                        this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreDesc" + (i + 1), false)[0].Text = gr.Points + " on " + gr.Date.Day + "/" + gr.Date.Month + "/" + gr.Date.Year;
-                        ((PictureBox)this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("pbxTopScore" + (i + 1), false)[0]).Image = UserImage.Search(u.GetAvatar()).ToBitmap();
-                    }
+                        try
+                        {
+                            GameRecord gr = sortedRecords[i];
+                            User u = User.Search(gr.User);
+                            this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreName" + (i + 1), false)[0].Text = u.Username + "#" + u.Discriminator;
+                            this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreDesc" + (i + 1), false)[0].Text = gr.Points + " on " + gr.Date.Day + "/" + gr.Date.Month + "/" + gr.Date.Year;
+                            ((PictureBox)this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("pbxTopScore" + (i + 1), false)[0]).Image = UserImage.Search(u.GetAvatar()).ToBitmap();
+                        } catch (Exception) { }
+                        }
                 }
             }
 
@@ -449,6 +455,18 @@ namespace ASProj
         {
             pnlOverview.Hide(); btnOverview.Selected = false;
             pnlAvatar.Show(); btnAvatar.Selected = true;
+        }
+
+        private void btnNormal_Click(object sender, EventArgs e)
+        {
+            // DA 12/07/22 TODO change this to a random game selector
+            Game[] games = JsonConvert.DeserializeObject<Game[]>(FileHandler.Select("games.json"));
+            Program.CurrentGame = games[0];
+
+            Hide();
+            Form gfrmConversation = new Games.gfrmConversation();
+            gfrmConversation.Show();
+            gfrmConversation.SetDesktopLocation(Location.X, Location.Y);
         }
     }
 }
