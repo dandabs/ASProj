@@ -209,10 +209,10 @@ namespace ASProj.Games
                 Program.CurrentSession.Records.Add(record);
                 Program.CurrentSession.Save();
 
-                Hide();
                 Form frmDashboard = new frmDashboard();
                 frmDashboard.Show();
                 frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+                Close();
 
             }
         }

@@ -65,3 +65,6 @@ https://downloads.khinsider.com/game-soundtracks/album/pokemon-sfx-gen-3-attack-
 
 gif rotation
 https://ezgif.com/rotate/ezgif-1-d7d0f46285.gif
+
+marqueelabel class
+https://stackoverflow.com/questions/54271604/how-to-implement-the-same-effect-of-marquees-in-winform/54272427#54272427

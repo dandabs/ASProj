@@ -139,8 +139,8 @@
   <data name="bottom__7_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottom (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="top__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hair_0000s_0002s_0001_theo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_0000s_0002s_0001_theo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,23 +160,20 @@
   <data name="heart_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\heart_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="740ecb78aa4c10cb0a2170ea2350c337" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\740ecb78aa4c10cb0a2170ea2350c337.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pokemon_landscape_by_brainblower_d8i3udq-fullview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pokemon_landscape_by_brainblower_d8i3udq-fullview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face__5_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\face (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arny fjola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arny fjola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hair_0000s_0001s_0003_gaga" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_0000s_0001s_0003_gaga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hair__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="animesher.com_bird-fantasy-anime-nature-1145927" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animesher.com_bird-fantasy-anime-nature-1145927.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_0000s_0003s_0002_petra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0003s_0002_petra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="animesher.com_bird-fantasy-anime-nature-1145927" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\animesher.com_bird-fantasy-anime-nature-1145927.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hair_0000s_0000s_0005_sanna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_0000s_0000s_0005_sanna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face__4_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +187,8 @@
   <data name="hair__5_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hair_0000s_0002s_0000_hatari" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_0000s_0002s_0000_hatari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="top__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theresa-may-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theresa-may-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,14 +196,17 @@
   <data name="hair_0000s_0002s_0003_gaga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0002s_0003_gaga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hair_0000s_0000s_0003_gaga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_0000s_0000s_0003_gaga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="face__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hair_0000s_0000s_0001_theo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_0000s_0000s_0001_theo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face__5_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_0000s_0001s_0006_teresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0001s_0006_teresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,14 +235,14 @@
   <data name="imageedit_1_6924211824" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_1_6924211824.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hair_0000s_0002s_0000_hatari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_0000s_0002s_0000_hatari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ww0_bizydale_nets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ww0_bizydale_nets.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_0000s_0001s_0000_hatari" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0001s_0000_hatari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hair_0000s_0000s_0005_sanna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_0000s_0000s_0005_sanna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_0000s_0001s_0002_petra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0001s_0002_petra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,14 +253,23 @@
   <data name="top__7_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hair_0000s_0001s_0001_theo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_0000s_0001s_0001_theo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bottom__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottom (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="740ecb78aa4c10cb0a2170ea2350c337" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\740ecb78aa4c10cb0a2170ea2350c337.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottom__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottom (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imageedit_3_3894007498" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_3_3894007498.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_0000s_0000s_0001_theo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_0000s_0000s_0001_theo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottom__4_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottom (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,6 +286,9 @@
   <data name="hair_0000s_0000s_0002_petra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0000s_0002_petra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Hit_Super_Effective" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hit Super Effective.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="hair_0000s_0003s_0005_sanna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0003s_0005_sanna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -292,20 +304,26 @@
   <data name="hair__7_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hair__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PokemonDiamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pokémon Diamond.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FireBallAttack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FireBallAttack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imageedit_2_3131043951" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_2_3131043951.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FireBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FireBall.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hair_0000s_0000s_0000_hatari" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0000s_0000_hatari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hair_0000s_0002s_0001_theo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_0000s_0002s_0001_theo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pokemon_landscape_by_brainblower_d8i3udq-fullview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pokemon_landscape_by_brainblower_d8i3udq-fullview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face__6_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,11 +346,8 @@
   <data name="top__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hair_0000s_0001s_0001_theo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_0000s_0001s_0001_theo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hair_0000s_0000s_0003_gaga" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_0000s_0000s_0003_gaga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hair_0000s_0001s_0003_gaga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_0000s_0001s_0003_gaga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face__7_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,19 +358,13 @@
   <data name="top__5_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arny fjola" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arny fjola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="a46c81229e41a8a4c365ce467fb23d5b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a46c81229e41a8a4c365ce467fb23d5b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PokemonDiamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pokémon Diamond.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="The_Days_In_Swordcraft_Academy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The Days In Swordcraft Academy.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Hit_Super_Effective" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hit Super Effective.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FireBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FireBall.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FireBallAttack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FireBallAttack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="The_Days_In_Swordcraft_Academy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The Days In Swordcraft Academy2.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -464,9 +464,9 @@ namespace ASProj
             Program.CurrentGame = games[0];
 
             Hide();
-            Form gfrmConversation = new Games.gfrmConversation();
-            gfrmConversation.Show();
-            gfrmConversation.SetDesktopLocation(Location.X, Location.Y);
+            Form gfrmFeed = new Games.gfrmFeed();
+            gfrmFeed.Show();
+            gfrmFeed.SetDesktopLocation(Location.X, Location.Y);
         }
     }
 }

@@ -73,6 +73,16 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap a46c81229e41a8a4c365ce467fb23d5b {
+            get {
+                object obj = ResourceManager.GetObject("a46c81229e41a8a4c365ce467fb23d5b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap animesher_com_bird_fantasy_anime_nature_1145927 {
             get {
                 object obj = ResourceManager.GetObject("animesher.com_bird-fantasy-anime-nature-1145927", resourceCulture);
@@ -737,6 +747,26 @@ namespace ASProj.Properties {
             get {
                 object obj = ResourceManager.GetObject("t4ovzMA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] The_Days_In_Swordcraft_Academy {
+            get {
+                object obj = ResourceManager.GetObject("The_Days_In_Swordcraft_Academy", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] The_Days_In_Swordcraft_Academy2 {
+            get {
+                object obj = ResourceManager.GetObject("The_Days_In_Swordcraft_Academy2", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
