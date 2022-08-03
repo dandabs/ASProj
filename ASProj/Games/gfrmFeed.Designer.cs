@@ -79,7 +79,9 @@
             this.lblAnswer1.Size = new System.Drawing.Size(103, 13);
             this.lblAnswer1.TabIndex = 0;
             this.lblAnswer1.Text = "answer 1";
+            this.lblAnswer1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblAnswer1_MouseDown);
             this.lblAnswer1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblAnswer1_MouseMove);
+            this.lblAnswer1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblAnswer1_MouseUp);
             // 
             // lblAnswer2
             // 
@@ -92,7 +94,9 @@
             this.lblAnswer2.Size = new System.Drawing.Size(103, 13);
             this.lblAnswer2.TabIndex = 2;
             this.lblAnswer2.Text = "answer 2";
+            this.lblAnswer2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblAnswer2_MouseDown);
             this.lblAnswer2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblAnswer2_MouseMove);
+            this.lblAnswer2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblAnswer2_MouseUp);
             // 
             // lblAnswer3
             // 
@@ -105,7 +109,9 @@
             this.lblAnswer3.Size = new System.Drawing.Size(103, 13);
             this.lblAnswer3.TabIndex = 3;
             this.lblAnswer3.Text = "answer 3";
+            this.lblAnswer3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblAnswer3_MouseDown);
             this.lblAnswer3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblAnswer3_MouseMove);
+            this.lblAnswer3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblAnswer3_MouseUp);
             // 
             // lblAnswer4
             // 
@@ -118,7 +124,9 @@
             this.lblAnswer4.Size = new System.Drawing.Size(103, 13);
             this.lblAnswer4.TabIndex = 4;
             this.lblAnswer4.Text = "answer 4";
+            this.lblAnswer4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblAnswer4_MouseDown);
             this.lblAnswer4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblAnswer4_MouseMove);
+            this.lblAnswer4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblAnswer4_MouseUp);
             // 
             // lblAnswer5
             // 
@@ -131,7 +139,9 @@
             this.lblAnswer5.Size = new System.Drawing.Size(103, 13);
             this.lblAnswer5.TabIndex = 5;
             this.lblAnswer5.Text = "answer 5";
+            this.lblAnswer5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblAnswer5_MouseDown);
             this.lblAnswer5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblAnswer5_MouseMove);
+            this.lblAnswer5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblAnswer5_MouseUp);
             // 
             // lblAnswer6
             // 
@@ -144,7 +154,9 @@
             this.lblAnswer6.Size = new System.Drawing.Size(103, 13);
             this.lblAnswer6.TabIndex = 6;
             this.lblAnswer6.Text = "answer 6";
+            this.lblAnswer6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblAnswer6_MouseDown);
             this.lblAnswer6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblAnswer6_MouseMove);
+            this.lblAnswer6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblAnswer6_MouseUp);
             // 
             // gfrmFeed
             // 

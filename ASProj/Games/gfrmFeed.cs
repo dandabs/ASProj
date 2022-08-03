@@ -60,10 +60,6 @@ namespace ASProj.Games
                 lblAnswer1.Left = e.X + lblAnswer1.Left;
                 lblAnswer1.Top = e.Y + lblAnswer1.Top;
             }
-            if (lblAnswer1.Bounds.IntersectsWith(pbxCharacter.Bounds))
-            {
-                handleAnswer(0);
-            }
         }
 
         private void handleAnswer(int i)
@@ -149,10 +145,6 @@ namespace ASProj.Games
                 lblAnswer2.Left = e.X + lblAnswer2.Left;
                 lblAnswer2.Top = e.Y + lblAnswer2.Top;
             }
-            if (lblAnswer2.Bounds.IntersectsWith(pbxCharacter.Bounds))
-            {
-                handleAnswer(1);
-            }
         }
 
         private void lblAnswer3_MouseMove(object sender, MouseEventArgs e)
@@ -161,10 +153,6 @@ namespace ASProj.Games
             {
                 lblAnswer3.Left = e.X + lblAnswer3.Left;
                 lblAnswer3.Top = e.Y + lblAnswer3.Top;
-            }
-            if (lblAnswer3.Bounds.IntersectsWith(pbxCharacter.Bounds))
-            {
-                handleAnswer(2);
             }
         }
 
@@ -175,10 +163,6 @@ namespace ASProj.Games
                 lblAnswer4.Left = e.X + lblAnswer4.Left;
                 lblAnswer4.Top = e.Y + lblAnswer4.Top;
             }
-            if (lblAnswer4.Bounds.IntersectsWith(pbxCharacter.Bounds))
-            {
-                handleAnswer(3);
-            }
         }
 
         private void lblAnswer5_MouseMove(object sender, MouseEventArgs e)
@@ -187,10 +171,6 @@ namespace ASProj.Games
             {
                 lblAnswer5.Left = e.X + lblAnswer5.Left;
                 lblAnswer5.Top = e.Y + lblAnswer5.Top;
-            }
-            if (lblAnswer5.Bounds.IntersectsWith(pbxCharacter.Bounds))
-            {
-                handleAnswer(4);
             }
         }
 
@@ -201,6 +181,80 @@ namespace ASProj.Games
                 lblAnswer6.Left = e.X + lblAnswer6.Left;
                 lblAnswer6.Top = e.Y + lblAnswer6.Top;
             }
+        }
+
+        private void lblAnswer2_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void lblAnswer1_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void lblAnswer3_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void lblAnswer4_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void lblAnswer5_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void lblAnswer6_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void lblAnswer1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (lblAnswer1.Bounds.IntersectsWith(pbxCharacter.Bounds))
+            {
+                handleAnswer(0);
+            }
+        }
+
+        private void lblAnswer2_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (lblAnswer2.Bounds.IntersectsWith(pbxCharacter.Bounds))
+            {
+                handleAnswer(1);
+            }
+        }
+
+        private void lblAnswer3_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (lblAnswer3.Bounds.IntersectsWith(pbxCharacter.Bounds))
+            {
+                handleAnswer(2);
+            }
+        }
+
+        private void lblAnswer4_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (lblAnswer4.Bounds.IntersectsWith(pbxCharacter.Bounds))
+            {
+                handleAnswer(3);
+            }
+        }
+
+        private void lblAnswer5_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (lblAnswer5.Bounds.IntersectsWith(pbxCharacter.Bounds))
+            {
+                handleAnswer(4);
+            }
+        }
+
+        private void lblAnswer6_MouseUp(object sender, MouseEventArgs e)
+        {
             if (lblAnswer6.Bounds.IntersectsWith(pbxCharacter.Bounds))
             {
                 handleAnswer(5);
