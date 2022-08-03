@@ -45,6 +45,7 @@ namespace ASProj.Games
         private void gfrmFeed_Load(object sender, EventArgs e)
         {
             playSound(Properties.Resources.The_Days_In_Swordcraft_Academy2, 0.5f);
+            pbxCharacter.Image = Program.CurrentSession.Character.GetBitmap();
             askQuestion(_currentgame.Questions[0]);
         }
 
