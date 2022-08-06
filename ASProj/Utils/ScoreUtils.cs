@@ -11,10 +11,11 @@ namespace ASProj.Utils
         public static int GetLevel(int points)
         {
             string sP = Convert.ToString(points);
-            if (sP.Length != 3) return 1;
+            if (sP.Length < 3) return 1;
             char[] sPP = sP.ToCharArray();
             int s = Convert.ToInt32(sPP[0]) - 48;
-            return s + 1;
+            int s2 = Convert.ToInt32(sPP[1]) - 48;
+            if (sP.Length != 4) { return s + 1; } else { return Convert.ToInt32(s + "" + s2) + 1; }
         }
 
         public static int ToNextLevel(int points)

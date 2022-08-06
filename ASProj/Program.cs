@@ -28,6 +28,12 @@ namespace ASProj
 
             } else Application.Run(new frmLogin());*/
 
+            if (!Directory.Exists(FileHandler.dir)) Directory.CreateDirectory(FileHandler.dir);
+
+            if (!File.Exists(Path.Combine(FileHandler.dir, "users.json"))) File.WriteAllText(Path.Combine(FileHandler.dir, "users.json"), "[]");
+            if (!File.Exists(Path.Combine(FileHandler.dir, "games.json"))) File.WriteAllText(Path.Combine(FileHandler.dir, "games.json"), "[]");
+            if (!File.Exists(Path.Combine(FileHandler.dir, "images.json"))) File.WriteAllText(Path.Combine(FileHandler.dir, "images.json"), "[]");
+
             if (File.Exists(Path.Combine(FileHandler.dir, ".session")))
             {
                 try // DA 10/7/22 If user isn't found, or GUID fails to parse, then we'll not throw an error and simply ask for login details
