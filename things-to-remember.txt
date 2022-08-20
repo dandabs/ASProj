@@ -68,3 +68,6 @@ https://ezgif.com/rotate/ezgif-1-d7d0f46285.gif
 
 marqueelabel class
 https://stackoverflow.com/questions/54271604/how-to-implement-the-same-effect-of-marquees-in-winform/54272427#54272427
+
+bitmap rotation
+https://stackoverflow.com/questions/2163829/how-do-i-rotate-a-picture-in-winforms
