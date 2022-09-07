@@ -107,7 +107,7 @@ namespace ASProj
                 Game game = games[i];
                 if (i <= 6)
                 {
-                    this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGameIcon" + (i + 1), false)[0].Text   = game.Icon.ToString();
+                    this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGameIcon" + (i + 1), false)[0].Text = game.Icon.ToString();
                     this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGameName" + (i + 1), false)[0].Text = game.Name;
                     this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlGames", false)[0].Controls.Find("lblGameGenre" + (i + 1), false)[0].Text = game.Genre;
                     int points = 0;
@@ -467,6 +467,68 @@ namespace ASProj
             Form gfrmSwim = new Games.gfrmSwim();
             gfrmSwim.Show();
             gfrmSwim.SetDesktopLocation(Location.X, Location.Y);
+        }
+
+        private void lblGameIcon1_Click(object sender, EventArgs e)
+        {
+            Game[] games = JsonConvert.DeserializeObject<Game[]>(FileHandler.Select("games.json"));
+            for (int i = 1; i < (games.Length + 1); i++)
+            {
+                Game game = games[i - 1];
+                if (i == 1)
+                {
+                    // DA 6/9/22 TODO change method to loop through each game and click method depending on that game
+                    Program.CurrentGame = game;
+
+                    Hide();
+                    Form gfrmGame = new Games.gfrmConversation();
+                    gfrmGame.Show();
+                    gfrmGame.SetDesktopLocation(Location.X, Location.Y);
+                }
+            }
+        }
+
+        private void roundedPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblGameIcon2_Click(object sender, EventArgs e)
+        {
+            Game[] games = JsonConvert.DeserializeObject<Game[]>(FileHandler.Select("games.json"));
+            for (int i = 1; i < (games.Length + 1); i++)
+            {
+                Game game = games[i - 1];
+                if (i == 1)
+                {
+                    // DA 6/9/22 TODO change method to loop through each game and click method depending on that game
+                    Program.CurrentGame = game;
+
+                    Hide();
+                    Form gfrmGame = new Games.gfrmFeed();
+                    gfrmGame.Show();
+                    gfrmGame.SetDesktopLocation(Location.X, Location.Y);
+                }
+            }
+        }
+
+        private void lblGameIcon3_Click(object sender, EventArgs e)
+        {
+            Game[] games = JsonConvert.DeserializeObject<Game[]>(FileHandler.Select("games.json"));
+            for (int i = 1; i < (games.Length + 1); i++)
+            {
+                Game game = games[i - 1];
+                if (i == 1)
+                {
+                    // DA 6/9/22 TODO change method to loop through each game and click method depending on that game
+                    Program.CurrentGame = game;
+
+                    Hide();
+                    Form gfrmGame = new Games.gfrmSwim();
+                    gfrmGame.Show();
+                    gfrmGame.SetDesktopLocation(Location.X, Location.Y);
+                }
+            }
         }
     }
 }

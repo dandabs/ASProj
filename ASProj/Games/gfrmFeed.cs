@@ -106,12 +106,12 @@ namespace ASProj.Games
             lblAnswer5.Text = q.Answers[4];
             lblAnswer6.Text = q.Answers[5];
 
-            lblAnswer1.Location = new Point(57, 146);
-            lblAnswer2.Location = new Point(744, 544);
-            lblAnswer3.Location = new Point(906, 78);
-            lblAnswer4.Location = new Point(398, 268);
-            lblAnswer5.Location = new Point(491, 9);
-            lblAnswer6.Location = new Point(28, 565);
+            lblAnswer1.Location = new Point(106, 311);
+            lblAnswer2.Location = new Point(1382, 1161);
+            lblAnswer3.Location = new Point(1683, 166);
+            lblAnswer4.Location = new Point(739, 572);
+            lblAnswer5.Location = new Point(912, 19);
+            lblAnswer6.Location = new Point(52, 1205);
 
             mqlQuestion.Text = q.Description;
 

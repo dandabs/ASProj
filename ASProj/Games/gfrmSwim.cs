@@ -60,10 +60,10 @@ namespace ASProj.Games
 
                 Label lbl = new Label();
                 lbl.Text = a;
-                lbl.Location = new Point(i % 2 != 0 ? 150 : 822, -30);
+                lbl.Location = new Point(i % 2 != 0 ? 249 : 1468, -30);
                 lbl.Parent = this;
                 lbl.Name = "albl_" + q.Id + "i" + (i - (i % 2)) / 2 + "_" + a + "_" + i;
-                lbl.Size = new Size(77, 21);
+                lbl.Size = new Size(100, 35);
                 lbl.BackColor = Color.Transparent;
                 lbl.ForeColor = Color.White;
                 Controls.Add(lbl);
@@ -87,7 +87,7 @@ namespace ASProj.Games
                     int level = Convert.ToInt32(c.Name.Split("_")[1].Substring(2));
                     if ((level == 0) || (level == 1 && _downtime >= 10) || (level == 2 && _downtime >= 20))
                     {
-                        c.Location = new Point(c.Location.X, c.Location.Y + 20);
+                        c.Location = new Point(c.Location.X, c.Location.Y + 40);
                     }
                 } else if (c.Name.StartsWith("albl_"))
                 {
@@ -151,7 +151,7 @@ namespace ASProj.Games
                 {
                     Controls.Remove(c);
                     handleAnswer(Convert.ToInt32(c.Name.Split('_')[3]));
-                    pbxCharacter.Location = new Point(454, 380);
+                    pbxCharacter.Location = new Point(880, 920);
                 }
             }
 
