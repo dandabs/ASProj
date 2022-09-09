@@ -16,7 +16,7 @@ namespace ASProj.Controls
         public string textStorage = "";
         public string IconText
         {
-            get { return ((Label)Controls.Find("check", true)[0]).Text; }
+            get { return textStorage; }
             set { ((Label)Controls.Find("check", true)[0]).Text = value; textStorage = value; centerText(); }
         }
         public SocialIcon()
@@ -28,7 +28,9 @@ namespace ASProj.Controls
                 Font = new Font("Font Awesome 6 Brands", 12),
                 ForeColor = Color.White,
                 BackColor = Color.Transparent,
-                Text = textStorage
+                Text = IconText,//CHECK THIS - Not grabbing the Icon
+                Height = this.Height,
+                Width = this.Width
             });
             ((Label)Controls.Find("check", true)[0]).Font = Font;
             ((Label)Controls.Find("check", true)[0]).Text = IconText;

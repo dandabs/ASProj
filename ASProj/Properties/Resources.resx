@@ -148,6 +148,9 @@
   <data name="hair__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="top__7_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="heart_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\heart_full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -262,8 +265,8 @@
   <data name="top__6_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="top__7_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lizzo-bet-awards-5daad5-0@1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lizzo-bet-awards-5daad5-0@1x.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottom__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottom (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,6 +334,9 @@
   <data name="hair_0000s_0001s_0003_gaga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0001s_0003_gaga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ezgif.com-gif-maker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ezgif.com-gif-maker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="face__6_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -342,6 +348,9 @@
   </data>
   <data name="hair_0000s_0003s_0000_hatari" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_0000s_0003s_0000_hatari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tumblr_b95fc3c386f44f7b45e0ab738c952a0e_08b15f0f_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tumblr_b95fc3c386f44f7b45e0ab738c952a0e_08b15f0f_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="t4ovzMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\t4ovzMA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,7 +376,10 @@
   <data name="top__5_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ezgif.com-gif-maker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ezgif.com-gif-maker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="brick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brick.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brickwall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brickwall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

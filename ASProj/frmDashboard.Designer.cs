@@ -342,10 +342,10 @@
             this.pbxAvatar.BackColor = System.Drawing.Color.Transparent;
             this.pbxAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxAvatar.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxAvatar.Location = new System.Drawing.Point(1826, 64);
+            this.pbxAvatar.Location = new System.Drawing.Point(1810, 64);
             this.pbxAvatar.Margin = new System.Windows.Forms.Padding(6);
             this.pbxAvatar.Name = "pbxAvatar";
-            this.pbxAvatar.Size = new System.Drawing.Size(74, 85);
+            this.pbxAvatar.Size = new System.Drawing.Size(85, 85);
             this.pbxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAvatar.TabIndex = 2;
             this.pbxAvatar.TabStop = false;
@@ -356,7 +356,7 @@
             this.lblDiscriminator.AutoSize = true;
             this.lblDiscriminator.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDiscriminator.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblDiscriminator.Location = new System.Drawing.Point(1712, 87);
+            this.lblDiscriminator.Location = new System.Drawing.Point(1696, 87);
             this.lblDiscriminator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblDiscriminator.Name = "lblDiscriminator";
             this.lblDiscriminator.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -371,7 +371,7 @@
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(1577, 87);
+            this.lblUsername.Location = new System.Drawing.Point(1552, 87);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
