@@ -403,7 +403,7 @@ namespace ASProj.Games
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Manrope ExtraBold", 24F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(684, 78);
+            this.label1.Location = new System.Drawing.Point(646, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(671, 87);
             this.label1.TabIndex = 0;
