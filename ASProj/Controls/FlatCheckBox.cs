@@ -44,7 +44,7 @@ namespace ASProj.Controls
             Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             centerText();
         }
-        private void Control_Click(object? sender, EventArgs e)
+        private void Control_Click(object sender, EventArgs e)
         {
             this.OnClick(e);
         }

@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -47,7 +48,7 @@ namespace ASProj.Utils
             string cont = File.ReadAllText(path);
             if (IsFileValid(cont))
             {
-                List<T>? array = JsonConvert.DeserializeObject<List<T>>(cont);
+                List<T> array = JsonConvert.DeserializeObject<List<T>>(cont);
                 List<T> arrayCopy = new List<T>();
                 if (array != null)
                 {

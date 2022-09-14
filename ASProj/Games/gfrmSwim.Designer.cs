@@ -1,4 +1,6 @@
-﻿namespace ASProj.Games
+﻿using System.Windows.Forms;
+
+namespace ASProj.Games
 {
     partial class gfrmSwim
     {
@@ -40,10 +42,10 @@
             // 
             this.pbxCharacter.BackColor = System.Drawing.Color.Transparent;
             this.pbxCharacter.Image = global::ASProj.Properties.Resources.TheresaMay_070622_F3EN1K_jpg;
-            this.pbxCharacter.Location = new System.Drawing.Point(880, 920);
-            this.pbxCharacter.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxCharacter.Location = new System.Drawing.Point(812, 719);
+            this.pbxCharacter.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxCharacter.Name = "pbxCharacter";
-            this.pbxCharacter.Size = new System.Drawing.Size(257, 350);
+            this.pbxCharacter.Size = new System.Drawing.Size(237, 273);
             this.pbxCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxCharacter.TabIndex = 0;
             this.pbxCharacter.TabStop = false;
@@ -62,9 +64,9 @@
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.lblQuestion.ForeColor = System.Drawing.Color.White;
-            this.lblQuestion.Location = new System.Drawing.Point(22, 1276);
+            this.lblQuestion.Location = new System.Drawing.Point(20, 997);
             this.lblQuestion.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(1053, 130);
@@ -73,15 +75,18 @@
             // 
             // gfrmSwim
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::ASProj.Properties.Resources.ezgif_com_gif_maker;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1976, 1431);
+            this.ClientSize = new System.Drawing.Size(1824, 1118);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.pbxCharacter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximumSize = new System.Drawing.Size(1824, 1118);
+            this.MinimumSize = new System.Drawing.Size(1824, 1118);
             this.Name = "gfrmSwim";
             this.Text = "frmSwim";
             this.Load += new System.EventHandler(this.gfrmSwim_Load);

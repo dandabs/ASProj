@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ASProj.Utils;
+using System.IO;
 
 namespace ASProj
 {
@@ -142,7 +143,7 @@ namespace ASProj
             }
             int disc = Convert.ToInt32(tbxDiscriminatorLogin.Text);
 
-            List<User>? users = null;
+            List<User> users = null;
             users = JsonConvert.DeserializeObject<List<User>>(FileHandler.Select("users.json"));
             if (users == null) users = new List<User>();
 

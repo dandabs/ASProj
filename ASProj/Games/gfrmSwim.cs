@@ -24,7 +24,7 @@ namespace ASProj.Games
 
         private int _time = 0;
         private int _points = 0;
-        private Question? _currentquestion = null;
+        private Question _currentquestion = null;
         private Game _currentgame = Program.CurrentGame;
 
         private int _questionindex = -1;
@@ -84,7 +84,7 @@ namespace ASProj.Games
             {
                 if (c.Name.StartsWith("albl_" + _currentquestion.Id))
                 {
-                    int level = Convert.ToInt32(c.Name.Split("_")[1].Substring(2));
+                    int level = Convert.ToInt32(c.Name.Split('_')[1].Substring(2));
                     if ((level == 0) || (level == 1 && _downtime >= 10) || (level == 2 && _downtime >= 20))
                     {
                         c.Location = new Point(c.Location.X, c.Location.Y + 40);

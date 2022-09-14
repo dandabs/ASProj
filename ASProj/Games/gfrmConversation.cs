@@ -6,8 +6,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -27,7 +29,7 @@ namespace ASProj.Games
 
         private int _state = 0; // DA 12/07/22 0-started, 1-readyforresponse, 2-typingresponse, 3-readyforplay, 4-nextquestion, 5-gameend, 6-readytoend
 
-        private Question? _currentquestion = null;
+        private Question _currentquestion = null;
 
         private int _time = 0;
         private int _points = 0;

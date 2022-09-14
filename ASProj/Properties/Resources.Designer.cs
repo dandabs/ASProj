@@ -19,7 +19,7 @@ namespace ASProj.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -197,6 +197,33 @@ namespace ASProj.Properties {
             get {
                 object obj = ResourceManager.GetObject("dark-blue-gradient-background-9562-1024x616", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Test game 1&quot;,&quot;Icon&quot;:&quot;&quot;,&quot;Author&quot;:&quot;Daniel Adams&quot;,&quot;Genre&quot;:&quot;Action, FPS&quot;,&quot;Goal&quot;:&quot;Translate the following words!&quot;,&quot;Questions&quot;:[{&quot;Id&quot;:0,&quot;Description&quot;:&quot;What does the word isskapur mean?&quot;,&quot;Points&quot;:20,&quot;CorrectAnswer&quot;:&quot;fridge&quot;,&quot;Answers&quot;:[&quot;fridge&quot;,&quot;freezer&quot;,&quot;dog&quot;,&quot;cat&quot;,&quot;Iceland&quot;,&quot;indoors&quot;]},{&quot;Id&quot;:1,&quot;Description&quot;:&quot;What does the word hundur mean?&quot;,&quot;Points&quot;:20,&quot;CorrectAnswer&quot;:&quot;dog&quot;,&quot;Answers&quot;:[&quot;anteater&quot;,&quot;horse&quot;,&quot;dog&quot;,&quot;cat&quot;,&quot;elephant&quot;,&quot;orange&quot;]},{&quot;Id&quot;:2,&quot;Description&quot;:&quot;What does the word island mean?&quot;,&quot;Po [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string default_games {
+            get {
+                return ResourceManager.GetString("default_games", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;Blob&quot;:&quot;/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wgARCAEAAQADASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAUGAQMEAv/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/aAAwDAQACEAMQAAABog15QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1LzWGWzqtjSV25SppiJrt5EWAAAAAAAAAAbddqtns68NuEEAOTrRNL1WqrZd2BXQAAAAAAAACSs8bJbcIWyAAAVizxtdawMe4AAAAAAAAey47To80EAA [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string default_images {
+            get {
+                return ResourceManager.GetString("default_images", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;Id&quot;:&quot;21a5c192-f882-4c41-aada-d9d5908de6cc&quot;,&quot;Username&quot;:&quot;dandabs&quot;,&quot;Discriminator&quot;:9726,&quot;CreatedAt&quot;:&quot;2022-08-30T19:53:54.9443284+01:00&quot;,&quot;Password&quot;:&quot;722f15e47bb9b3db93ec653351344bb4aa0c478b09f8607e3a8096a9bc1f2e3f&quot;,&quot;Avatar&quot;:null,&quot;Banner&quot;:null,&quot;Character&quot;:{&quot;Hair&quot;:&quot;carola&quot;,&quot;Head&quot;:&quot;theresa&quot;,&quot;Body&quot;:&quot;theresa&quot;,&quot;Legs&quot;:&quot;gaga&quot;},&quot;Theme&quot;:null,&quot;Status&quot;:null,&quot;Transactions&quot;:[{&quot;Time&quot;:&quot;2022-09-01T10:42:16.6311442+01:00&quot;,&quot;Points&quot;:80,&quot;Description&quot;:&quot;Completed a game: Test game 1&quot;},{&quot;Time&quot;:&quot;2022-09-01T10:45:16.9293638+01:00&quot;,&quot;P [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string default_users {
+            get {
+                return ResourceManager.GetString("default_users", resourceCulture);
             }
         }
         

@@ -24,21 +24,27 @@ namespace ASProj.Games
 
         private void gfrmMaze_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.W)
+            foreach (Control c1 in Controls)
             {
-                pbxCharacter.Top -= 20;
-            }
-            if (e.KeyCode == Keys.S)
-            {
-                pbxCharacter.Top += 20;
-            }
-            if (e.KeyCode == Keys.A)
-            {
-                pbxCharacter.Left -= 20;
-            }
-            if (e.KeyCode == Keys.D)
-            {
-                pbxCharacter.Left += 20;
+                if (!((!c1.Equals(pbxCharacter)) && c1.Bounds.IntersectsWith(pbxCharacter.Bounds) && c1.Tag.ToString() == "wall"))
+                {
+                    if (e.KeyCode == Keys.W)
+                    {
+                        pbxCharacter.Top -= 20;
+                    }
+                    if (e.KeyCode == Keys.S)
+                    {
+                        pbxCharacter.Top += 20;
+                    }
+                    if (e.KeyCode == Keys.A)
+                    {
+                        pbxCharacter.Left -= 20;
+                    }
+                    if (e.KeyCode == Keys.D)
+                    {
+                        pbxCharacter.Left += 20;
+                    }
+                }
             }
         }
     }

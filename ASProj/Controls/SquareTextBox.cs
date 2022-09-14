@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using ASProj.Utils;
 
 namespace ASProj.Controls
@@ -27,11 +29,11 @@ namespace ASProj.Controls
             Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
             ((TextBox)Controls.Find("value", true)[0]).PasswordChar = PasswordChar;
         }
-        public string PlaceholderText
+        /*public string PlaceholderText
         {
             get { return ((TextBox)Controls.Find("value", true)[0]).PlaceholderText; }
             set { ((TextBox)Controls.Find("value", true)[0]).PlaceholderText = value; }
-        }
+        }*/
         public char PasswordChar
         {
             get { return ((TextBox)Controls.Find("value", true)[0]).PasswordChar; }

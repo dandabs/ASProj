@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ASProj.Utils;
+using System.IO;
 
 namespace ASProj
 {
@@ -464,7 +465,7 @@ namespace ASProj
             Program.CurrentGame = games[0];
 
             Hide();
-            Form gfrmSwim = new Games.gfrmSwim();
+            Form gfrmSwim = new Games.gfrmMaze();
             gfrmSwim.Show();
             gfrmSwim.SetDesktopLocation(Location.X, Location.Y);
         }

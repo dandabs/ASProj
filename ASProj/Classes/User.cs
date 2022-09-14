@@ -14,7 +14,7 @@ namespace ASProj.Classes
         // DA 8/7/22 Constructor
         [JsonConstructor]
         public User(Guid Id, string Username, int Discriminator, DateTime CreatedAt, string Password,
-            Guid? Avatar, Guid? Banner, Character Character, Guid? Theme, String? Status, List<Transaction> Transactions,
+            Guid? Avatar, Guid? Banner, Character Character, Guid? Theme, string Status, List<Transaction> Transactions,
             int Points, List<GameRecord> Records)
         {
             this.Id = Id;
@@ -74,7 +74,7 @@ namespace ASProj.Classes
         public Guid? Banner { get; set; }
         public Character Character { get; set; }
         public Guid? Theme { get; set; } // DA 8/7/22 TODO player can customise their profile theme music
-        public string? Status { get; set; }
+        public string Status { get; set; }
 
         // DA 10/7/22 Game Properties
         public List<Transaction> Transactions { get; set; }

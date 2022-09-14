@@ -1,4 +1,6 @@
-﻿namespace ASProj
+﻿using System.Windows.Forms;
+
+namespace ASProj
 {
     partial class frmDashboard
     {
@@ -242,18 +244,18 @@
             this.pnlSidebar.Controls.Add(this.btnLogout);
             this.pnlSidebar.Controls.Add(this.btnOverview);
             this.pnlSidebar.Location = new System.Drawing.Point(-2, -2);
-            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(143, 1519);
+            this.pnlSidebar.Size = new System.Drawing.Size(132, 1187);
             this.pnlSidebar.TabIndex = 0;
             // 
             // label66
             // 
             this.label66.AutoSize = true;
             this.label66.BackColor = System.Drawing.Color.Transparent;
-            this.label66.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 30.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label66.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 30.25F, System.Drawing.FontStyle.Bold);
             this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label66.Location = new System.Drawing.Point(19, 62);
+            this.label66.Location = new System.Drawing.Point(18, 48);
             this.label66.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label66.Name = "label66";
             this.label66.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -265,43 +267,46 @@
             // menuListIconButton6
             // 
             this.menuListIconButton6.BackColor = System.Drawing.Color.Transparent;
-            this.menuListIconButton6.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.menuListIconButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuListIconButton6.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
             this.menuListIconButton6.ForeColor = System.Drawing.Color.DarkGray;
             this.menuListIconButton6.Icon = '';
-            this.menuListIconButton6.Location = new System.Drawing.Point(35, 593);
-            this.menuListIconButton6.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.menuListIconButton6.Location = new System.Drawing.Point(32, 463);
+            this.menuListIconButton6.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.menuListIconButton6.Name = "menuListIconButton6";
             this.menuListIconButton6.Selected = false;
             this.menuListIconButton6.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.menuListIconButton6.Size = new System.Drawing.Size(71, 81);
+            this.menuListIconButton6.Size = new System.Drawing.Size(66, 63);
             this.menuListIconButton6.TabIndex = 6;
             // 
             // menuListIconButton5
             // 
             this.menuListIconButton5.BackColor = System.Drawing.Color.Transparent;
-            this.menuListIconButton5.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.menuListIconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuListIconButton5.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
             this.menuListIconButton5.ForeColor = System.Drawing.Color.DarkGray;
             this.menuListIconButton5.Icon = '';
-            this.menuListIconButton5.Location = new System.Drawing.Point(35, 474);
-            this.menuListIconButton5.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.menuListIconButton5.Location = new System.Drawing.Point(32, 370);
+            this.menuListIconButton5.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.menuListIconButton5.Name = "menuListIconButton5";
             this.menuListIconButton5.Selected = false;
             this.menuListIconButton5.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.menuListIconButton5.Size = new System.Drawing.Size(71, 81);
+            this.menuListIconButton5.Size = new System.Drawing.Size(66, 63);
             this.menuListIconButton5.TabIndex = 5;
             // 
             // btnAvatar
             // 
             this.btnAvatar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAvatar.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAvatar.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
             this.btnAvatar.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAvatar.Icon = '';
-            this.btnAvatar.Location = new System.Drawing.Point(35, 354);
-            this.btnAvatar.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.btnAvatar.Location = new System.Drawing.Point(32, 277);
+            this.btnAvatar.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.btnAvatar.Name = "btnAvatar";
             this.btnAvatar.Selected = false;
             this.btnAvatar.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.btnAvatar.Size = new System.Drawing.Size(71, 81);
+            this.btnAvatar.Size = new System.Drawing.Size(66, 63);
             this.btnAvatar.TabIndex = 4;
             this.btnAvatar.Click += new System.EventHandler(this.btnAvatar_Click);
             // 
@@ -309,30 +314,31 @@
             // 
             this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogout.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
             this.btnLogout.ForeColor = System.Drawing.Color.DarkGray;
             this.btnLogout.Icon = '';
-            this.btnLogout.Location = new System.Drawing.Point(35, 1408);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.btnLogout.Location = new System.Drawing.Point(32, 1100);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Selected = false;
             this.btnLogout.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.btnLogout.Size = new System.Drawing.Size(71, 81);
+            this.btnLogout.Size = new System.Drawing.Size(66, 63);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnOverview
             // 
             this.btnOverview.BackColor = System.Drawing.Color.Transparent;
-            this.btnOverview.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnOverview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOverview.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
             this.btnOverview.ForeColor = System.Drawing.Color.DarkGray;
             this.btnOverview.Icon = '';
-            this.btnOverview.Location = new System.Drawing.Point(35, 235);
-            this.btnOverview.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.btnOverview.Location = new System.Drawing.Point(32, 184);
+            this.btnOverview.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.btnOverview.Name = "btnOverview";
             this.btnOverview.Selected = true;
             this.btnOverview.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.btnOverview.Size = new System.Drawing.Size(71, 69);
+            this.btnOverview.Size = new System.Drawing.Size(66, 54);
             this.btnOverview.TabIndex = 2;
             this.btnOverview.Load += new System.EventHandler(this.menuListIconButton2_Load);
             this.btnOverview.Click += new System.EventHandler(this.menuListIconButton2_Click);
@@ -342,10 +348,10 @@
             this.pbxAvatar.BackColor = System.Drawing.Color.Transparent;
             this.pbxAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxAvatar.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxAvatar.Location = new System.Drawing.Point(1810, 64);
-            this.pbxAvatar.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxAvatar.Location = new System.Drawing.Point(1671, 50);
+            this.pbxAvatar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxAvatar.Name = "pbxAvatar";
-            this.pbxAvatar.Size = new System.Drawing.Size(85, 85);
+            this.pbxAvatar.Size = new System.Drawing.Size(78, 66);
             this.pbxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAvatar.TabIndex = 2;
             this.pbxAvatar.TabStop = false;
@@ -354,9 +360,9 @@
             // lblDiscriminator
             // 
             this.lblDiscriminator.AutoSize = true;
-            this.lblDiscriminator.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDiscriminator.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblDiscriminator.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblDiscriminator.Location = new System.Drawing.Point(1696, 87);
+            this.lblDiscriminator.Location = new System.Drawing.Point(1566, 68);
             this.lblDiscriminator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblDiscriminator.Name = "lblDiscriminator";
             this.lblDiscriminator.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -369,9 +375,9 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(1552, 87);
+            this.lblUsername.Location = new System.Drawing.Point(1433, 68);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -386,10 +392,10 @@
             this.roundedPanel1.BackgroundImage = global::ASProj.Properties.Resources.dark_blue_gradient_background_9562_1024x616;
             this.roundedPanel1.Controls.Add(this.btnCustomizeCharacter);
             this.roundedPanel1.Controls.Add(this.pbxSmallAvatar);
-            this.roundedPanel1.Location = new System.Drawing.Point(6, 124);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel1.Location = new System.Drawing.Point(6, 97);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(403, 516);
+            this.roundedPanel1.Size = new System.Drawing.Size(372, 403);
             this.roundedPanel1.TabIndex = 6;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
@@ -399,12 +405,12 @@
             this.btnCustomizeCharacter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCustomizeCharacter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.btnCustomizeCharacter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustomizeCharacter.Font = new System.Drawing.Font("Manrope", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCustomizeCharacter.Font = new System.Drawing.Font("Manrope", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnCustomizeCharacter.ForeColor = System.Drawing.Color.White;
-            this.btnCustomizeCharacter.Location = new System.Drawing.Point(46, 433);
-            this.btnCustomizeCharacter.Margin = new System.Windows.Forms.Padding(6);
+            this.btnCustomizeCharacter.Location = new System.Drawing.Point(42, 338);
+            this.btnCustomizeCharacter.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnCustomizeCharacter.Name = "btnCustomizeCharacter";
-            this.btnCustomizeCharacter.Size = new System.Drawing.Size(305, 58);
+            this.btnCustomizeCharacter.Size = new System.Drawing.Size(282, 45);
             this.btnCustomizeCharacter.TabIndex = 10;
             this.btnCustomizeCharacter.Text = "Customize Character";
             this.btnCustomizeCharacter.UseVisualStyleBackColor = false;
@@ -413,9 +419,9 @@
             // pbxSmallAvatar
             // 
             this.pbxSmallAvatar.Location = new System.Drawing.Point(0, 0);
-            this.pbxSmallAvatar.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxSmallAvatar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxSmallAvatar.Name = "pbxSmallAvatar";
-            this.pbxSmallAvatar.Size = new System.Drawing.Size(403, 516);
+            this.pbxSmallAvatar.Size = new System.Drawing.Size(372, 403);
             this.pbxSmallAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxSmallAvatar.TabIndex = 9;
             this.pbxSmallAvatar.TabStop = false;
@@ -427,22 +433,22 @@
             this.roundedPanel2.Controls.Add(this.label29);
             this.roundedPanel2.Controls.Add(this.lblTimePlayed);
             this.roundedPanel2.Controls.Add(this.label27);
-            this.roundedPanel2.Location = new System.Drawing.Point(6, 668);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel2.Location = new System.Drawing.Point(6, 522);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(403, 380);
+            this.roundedPanel2.Size = new System.Drawing.Size(372, 297);
             this.roundedPanel2.TabIndex = 7;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label30.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 12F, System.Drawing.FontStyle.Bold);
             this.label30.ForeColor = System.Drawing.Color.Silver;
-            this.label30.Location = new System.Drawing.Point(165, 297);
+            this.label30.Location = new System.Drawing.Point(152, 232);
             this.label30.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label30.Name = "label30";
             this.label30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label30.Size = new System.Drawing.Size(70, 32);
+            this.label30.Size = new System.Drawing.Size(71, 32);
             this.label30.TabIndex = 22;
             this.label30.Text = "  ";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -450,9 +456,9 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label29.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label29.ForeColor = System.Drawing.Color.Silver;
-            this.label29.Location = new System.Drawing.Point(117, 203);
+            this.label29.Location = new System.Drawing.Point(108, 159);
             this.label29.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label29.Name = "label29";
             this.label29.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -464,9 +470,9 @@
             // lblTimePlayed
             // 
             this.lblTimePlayed.AutoSize = true;
-            this.lblTimePlayed.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTimePlayed.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold);
             this.lblTimePlayed.ForeColor = System.Drawing.Color.White;
-            this.lblTimePlayed.Location = new System.Drawing.Point(95, 128);
+            this.lblTimePlayed.Location = new System.Drawing.Point(88, 100);
             this.lblTimePlayed.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTimePlayed.Name = "lblTimePlayed";
             this.lblTimePlayed.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -478,9 +484,9 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label27.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label27.ForeColor = System.Drawing.Color.Silver;
-            this.label27.Location = new System.Drawing.Point(95, 38);
+            this.label27.Location = new System.Drawing.Point(88, 30);
             this.label27.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -502,10 +508,10 @@
             this.roundedPanel3.Controls.Add(this.lblTotalPoints);
             this.roundedPanel3.Controls.Add(this.label4);
             this.roundedPanel3.Controls.Add(this.label3);
-            this.roundedPanel3.Location = new System.Drawing.Point(444, 47);
-            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel3.Location = new System.Drawing.Point(410, 37);
+            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(789, 469);
+            this.roundedPanel3.Size = new System.Drawing.Size(728, 366);
             this.roundedPanel3.TabIndex = 7;
             this.roundedPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel3_Paint);
             // 
@@ -513,9 +519,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label11.Location = new System.Drawing.Point(670, 395);
+            this.label11.Location = new System.Drawing.Point(618, 309);
             this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
             this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -527,9 +533,9 @@
             // lblTransPoints2
             // 
             this.lblTransPoints2.AutoSize = true;
-            this.lblTransPoints2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransPoints2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTransPoints2.ForeColor = System.Drawing.Color.Gray;
-            this.lblTransPoints2.Location = new System.Drawing.Point(706, 388);
+            this.lblTransPoints2.Location = new System.Drawing.Point(652, 303);
             this.lblTransPoints2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTransPoints2.Name = "lblTransPoints2";
             this.lblTransPoints2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -542,9 +548,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label10.Location = new System.Drawing.Point(670, 346);
+            this.label10.Location = new System.Drawing.Point(618, 270);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -556,9 +562,9 @@
             // lblTransPoints1
             // 
             this.lblTransPoints1.AutoSize = true;
-            this.lblTransPoints1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransPoints1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTransPoints1.ForeColor = System.Drawing.Color.Gray;
-            this.lblTransPoints1.Location = new System.Drawing.Point(706, 337);
+            this.lblTransPoints1.Location = new System.Drawing.Point(652, 263);
             this.lblTransPoints1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTransPoints1.Name = "lblTransPoints1";
             this.lblTransPoints1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -570,9 +576,9 @@
             // lblTransDesc2
             // 
             this.lblTransDesc2.AutoSize = true;
-            this.lblTransDesc2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransDesc2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTransDesc2.ForeColor = System.Drawing.Color.Silver;
-            this.lblTransDesc2.Location = new System.Drawing.Point(41, 390);
+            this.lblTransDesc2.Location = new System.Drawing.Point(38, 305);
             this.lblTransDesc2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTransDesc2.Name = "lblTransDesc2";
             this.lblTransDesc2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -584,9 +590,9 @@
             // lblTransDesc1
             // 
             this.lblTransDesc1.AutoSize = true;
-            this.lblTransDesc1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTransDesc1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTransDesc1.ForeColor = System.Drawing.Color.Silver;
-            this.lblTransDesc1.Location = new System.Drawing.Point(41, 333);
+            this.lblTransDesc1.Location = new System.Drawing.Point(38, 260);
             this.lblTransDesc1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTransDesc1.Name = "lblTransDesc1";
             this.lblTransDesc1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -598,9 +604,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(41, 275);
+            this.label6.Location = new System.Drawing.Point(38, 215);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -613,13 +619,13 @@
             // 
             this.lblTotalPoints.AutoSize = true;
             this.lblTotalPoints.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalPoints.Font = new System.Drawing.Font("Manrope", 38.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalPoints.Font = new System.Drawing.Font("Manrope", 38.25F, System.Drawing.FontStyle.Bold);
             this.lblTotalPoints.ForeColor = System.Drawing.Color.White;
-            this.lblTotalPoints.Location = new System.Drawing.Point(148, 92);
+            this.lblTotalPoints.Location = new System.Drawing.Point(137, 72);
             this.lblTotalPoints.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTotalPoints.Name = "lblTotalPoints";
             this.lblTotalPoints.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblTotalPoints.Size = new System.Drawing.Size(303, 140);
+            this.lblTotalPoints.Size = new System.Drawing.Size(304, 140);
             this.lblTotalPoints.TabIndex = 11;
             this.lblTotalPoints.Text = "3456";
             this.lblTotalPoints.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -628,9 +634,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 38.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 38.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label4.Location = new System.Drawing.Point(20, 109);
+            this.label4.Location = new System.Drawing.Point(18, 85);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -642,9 +648,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(41, 34);
+            this.label3.Location = new System.Drawing.Point(38, 27);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -661,22 +667,22 @@
             this.roundedPanel4.Controls.Add(this.lblToGoPercent);
             this.roundedPanel4.Controls.Add(this.pbToGo);
             this.roundedPanel4.Controls.Add(this.label31);
-            this.roundedPanel4.Location = new System.Drawing.Point(1267, 47);
-            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel4.Location = new System.Drawing.Point(1170, 37);
+            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel4.Name = "roundedPanel4";
-            this.roundedPanel4.Size = new System.Drawing.Size(381, 365);
+            this.roundedPanel4.Size = new System.Drawing.Size(352, 285);
             this.roundedPanel4.TabIndex = 7;
             // 
             // lblLevel
             // 
             this.lblLevel.AutoSize = true;
-            this.lblLevel.Font = new System.Drawing.Font("Manrope", 28.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLevel.Font = new System.Drawing.Font("Manrope", 28.25F, System.Drawing.FontStyle.Bold);
             this.lblLevel.ForeColor = System.Drawing.Color.White;
-            this.lblLevel.Location = new System.Drawing.Point(134, 126);
+            this.lblLevel.Location = new System.Drawing.Point(124, 98);
             this.lblLevel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLevel.Size = new System.Drawing.Size(121, 104);
+            this.lblLevel.Size = new System.Drawing.Size(122, 104);
             this.lblLevel.TabIndex = 42;
             this.lblLevel.Text = "13";
             this.lblLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -684,9 +690,9 @@
             // lblToGo
             // 
             this.lblToGo.AutoSize = true;
-            this.lblToGo.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblToGo.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblToGo.ForeColor = System.Drawing.Color.Silver;
-            this.lblToGo.Location = new System.Drawing.Point(22, 277);
+            this.lblToGo.Location = new System.Drawing.Point(20, 216);
             this.lblToGo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblToGo.Name = "lblToGo";
             this.lblToGo.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -698,9 +704,9 @@
             // lblToGoPercent
             // 
             this.lblToGoPercent.AutoSize = true;
-            this.lblToGoPercent.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblToGoPercent.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblToGoPercent.ForeColor = System.Drawing.Color.Silver;
-            this.lblToGoPercent.Location = new System.Drawing.Point(282, 275);
+            this.lblToGoPercent.Location = new System.Drawing.Point(260, 215);
             this.lblToGoPercent.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblToGoPercent.Name = "lblToGoPercent";
             this.lblToGoPercent.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -714,11 +720,11 @@
             // 
             this.pbToGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pbToGo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.pbToGo.Location = new System.Drawing.Point(24, 254);
-            this.pbToGo.Margin = new System.Windows.Forms.Padding(6);
+            this.pbToGo.Location = new System.Drawing.Point(22, 198);
+            this.pbToGo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbToGo.Name = "pbToGo";
             this.pbToGo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pbToGo.Size = new System.Drawing.Size(325, 15);
+            this.pbToGo.Size = new System.Drawing.Size(300, 12);
             this.pbToGo.TabIndex = 39;
             this.pbToGo.Value = new decimal(new int[] {
             74,
@@ -729,9 +735,9 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label31.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label31.ForeColor = System.Drawing.Color.Silver;
-            this.label31.Location = new System.Drawing.Point(115, 30);
+            this.label31.Location = new System.Drawing.Point(106, 23);
             this.label31.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label31.Name = "label31";
             this.label31.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -774,19 +780,19 @@
             this.pnlGames.Controls.Add(this.lblGameName1);
             this.pnlGames.Controls.Add(this.lblGameIcon1);
             this.pnlGames.Controls.Add(this.label35);
-            this.pnlGames.Location = new System.Drawing.Point(444, 542);
-            this.pnlGames.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlGames.Location = new System.Drawing.Point(410, 423);
+            this.pnlGames.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pnlGames.Name = "pnlGames";
-            this.pnlGames.Size = new System.Drawing.Size(789, 678);
+            this.pnlGames.Size = new System.Drawing.Size(728, 530);
             this.pnlGames.TabIndex = 8;
             // 
             // label51
             // 
             this.label51.AutoSize = true;
             this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label51.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label51.Location = new System.Drawing.Point(670, 585);
+            this.label51.Location = new System.Drawing.Point(618, 457);
             this.label51.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label51.Name = "label51";
             this.label51.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -798,9 +804,9 @@
             // lblGameGenre6
             // 
             this.lblGameGenre6.AutoSize = true;
-            this.lblGameGenre6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameGenre6.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameGenre6.Location = new System.Drawing.Point(399, 578);
+            this.lblGameGenre6.Location = new System.Drawing.Point(368, 452);
             this.lblGameGenre6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameGenre6.Name = "lblGameGenre6";
             this.lblGameGenre6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -812,9 +818,9 @@
             // lblGamePoints6
             // 
             this.lblGamePoints6.AutoSize = true;
-            this.lblGamePoints6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGamePoints6.ForeColor = System.Drawing.Color.Gray;
-            this.lblGamePoints6.Location = new System.Drawing.Point(706, 578);
+            this.lblGamePoints6.Location = new System.Drawing.Point(652, 452);
             this.lblGamePoints6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGamePoints6.Name = "lblGamePoints6";
             this.lblGamePoints6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -826,9 +832,9 @@
             // lblGameName6
             // 
             this.lblGameName6.AutoSize = true;
-            this.lblGameName6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameName6.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameName6.Location = new System.Drawing.Point(111, 580);
+            this.lblGameName6.Location = new System.Drawing.Point(102, 453);
             this.lblGameName6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameName6.Name = "lblGameName6";
             this.lblGameName6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -841,9 +847,9 @@
             // 
             this.lblGameIcon6.AutoSize = true;
             this.lblGameIcon6.BackColor = System.Drawing.Color.Transparent;
-            this.lblGameIcon6.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon6.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
             this.lblGameIcon6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblGameIcon6.Location = new System.Drawing.Point(35, 578);
+            this.lblGameIcon6.Location = new System.Drawing.Point(32, 452);
             this.lblGameIcon6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameIcon6.Name = "lblGameIcon6";
             this.lblGameIcon6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -856,9 +862,9 @@
             // 
             this.label56.AutoSize = true;
             this.label56.BackColor = System.Drawing.Color.Transparent;
-            this.label56.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label56.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label56.Location = new System.Drawing.Point(670, 495);
+            this.label56.Location = new System.Drawing.Point(618, 387);
             this.label56.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label56.Name = "label56";
             this.label56.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -870,9 +876,9 @@
             // lblGameGenre5
             // 
             this.lblGameGenre5.AutoSize = true;
-            this.lblGameGenre5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameGenre5.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameGenre5.Location = new System.Drawing.Point(399, 489);
+            this.lblGameGenre5.Location = new System.Drawing.Point(368, 382);
             this.lblGameGenre5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameGenre5.Name = "lblGameGenre5";
             this.lblGameGenre5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -884,9 +890,9 @@
             // lblGamePoints5
             // 
             this.lblGamePoints5.AutoSize = true;
-            this.lblGamePoints5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGamePoints5.ForeColor = System.Drawing.Color.Gray;
-            this.lblGamePoints5.Location = new System.Drawing.Point(706, 489);
+            this.lblGamePoints5.Location = new System.Drawing.Point(652, 382);
             this.lblGamePoints5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGamePoints5.Name = "lblGamePoints5";
             this.lblGamePoints5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -898,9 +904,9 @@
             // lblGameName5
             // 
             this.lblGameName5.AutoSize = true;
-            this.lblGameName5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameName5.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameName5.Location = new System.Drawing.Point(111, 491);
+            this.lblGameName5.Location = new System.Drawing.Point(102, 384);
             this.lblGameName5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameName5.Name = "lblGameName5";
             this.lblGameName5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -913,9 +919,9 @@
             // 
             this.lblGameIcon5.AutoSize = true;
             this.lblGameIcon5.BackColor = System.Drawing.Color.Transparent;
-            this.lblGameIcon5.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon5.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
             this.lblGameIcon5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblGameIcon5.Location = new System.Drawing.Point(35, 489);
+            this.lblGameIcon5.Location = new System.Drawing.Point(32, 382);
             this.lblGameIcon5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameIcon5.Name = "lblGameIcon5";
             this.lblGameIcon5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -928,9 +934,9 @@
             // 
             this.label61.AutoSize = true;
             this.label61.BackColor = System.Drawing.Color.Transparent;
-            this.label61.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label61.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label61.Location = new System.Drawing.Point(670, 407);
+            this.label61.Location = new System.Drawing.Point(618, 318);
             this.label61.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label61.Name = "label61";
             this.label61.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -942,9 +948,9 @@
             // lblGameGenre4
             // 
             this.lblGameGenre4.AutoSize = true;
-            this.lblGameGenre4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameGenre4.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameGenre4.Location = new System.Drawing.Point(399, 401);
+            this.lblGameGenre4.Location = new System.Drawing.Point(368, 313);
             this.lblGameGenre4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameGenre4.Name = "lblGameGenre4";
             this.lblGameGenre4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -956,9 +962,9 @@
             // lblGamePoints4
             // 
             this.lblGamePoints4.AutoSize = true;
-            this.lblGamePoints4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGamePoints4.ForeColor = System.Drawing.Color.Gray;
-            this.lblGamePoints4.Location = new System.Drawing.Point(706, 401);
+            this.lblGamePoints4.Location = new System.Drawing.Point(652, 313);
             this.lblGamePoints4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGamePoints4.Name = "lblGamePoints4";
             this.lblGamePoints4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -970,9 +976,9 @@
             // lblGameName4
             // 
             this.lblGameName4.AutoSize = true;
-            this.lblGameName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameName4.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameName4.Location = new System.Drawing.Point(111, 403);
+            this.lblGameName4.Location = new System.Drawing.Point(102, 315);
             this.lblGameName4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameName4.Name = "lblGameName4";
             this.lblGameName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -985,9 +991,9 @@
             // 
             this.lblGameIcon4.AutoSize = true;
             this.lblGameIcon4.BackColor = System.Drawing.Color.Transparent;
-            this.lblGameIcon4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
             this.lblGameIcon4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblGameIcon4.Location = new System.Drawing.Point(35, 401);
+            this.lblGameIcon4.Location = new System.Drawing.Point(32, 313);
             this.lblGameIcon4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameIcon4.Name = "lblGameIcon4";
             this.lblGameIcon4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1000,9 +1006,9 @@
             // 
             this.label46.AutoSize = true;
             this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label46.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label46.Location = new System.Drawing.Point(670, 324);
+            this.label46.Location = new System.Drawing.Point(618, 253);
             this.label46.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label46.Name = "label46";
             this.label46.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1014,9 +1020,9 @@
             // lblGameGenre3
             // 
             this.lblGameGenre3.AutoSize = true;
-            this.lblGameGenre3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameGenre3.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameGenre3.Location = new System.Drawing.Point(399, 318);
+            this.lblGameGenre3.Location = new System.Drawing.Point(368, 248);
             this.lblGameGenre3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameGenre3.Name = "lblGameGenre3";
             this.lblGameGenre3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1028,9 +1034,9 @@
             // lblGamePoints3
             // 
             this.lblGamePoints3.AutoSize = true;
-            this.lblGamePoints3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGamePoints3.ForeColor = System.Drawing.Color.Gray;
-            this.lblGamePoints3.Location = new System.Drawing.Point(706, 318);
+            this.lblGamePoints3.Location = new System.Drawing.Point(652, 248);
             this.lblGamePoints3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGamePoints3.Name = "lblGamePoints3";
             this.lblGamePoints3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1042,9 +1048,9 @@
             // lblGameName3
             // 
             this.lblGameName3.AutoSize = true;
-            this.lblGameName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameName3.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameName3.Location = new System.Drawing.Point(111, 320);
+            this.lblGameName3.Location = new System.Drawing.Point(102, 250);
             this.lblGameName3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameName3.Name = "lblGameName3";
             this.lblGameName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1057,9 +1063,9 @@
             // 
             this.lblGameIcon3.AutoSize = true;
             this.lblGameIcon3.BackColor = System.Drawing.Color.Transparent;
-            this.lblGameIcon3.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon3.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
             this.lblGameIcon3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblGameIcon3.Location = new System.Drawing.Point(35, 318);
+            this.lblGameIcon3.Location = new System.Drawing.Point(32, 248);
             this.lblGameIcon3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameIcon3.Name = "lblGameIcon3";
             this.lblGameIcon3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1073,9 +1079,9 @@
             // 
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label41.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label41.Location = new System.Drawing.Point(670, 235);
+            this.label41.Location = new System.Drawing.Point(618, 184);
             this.label41.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label41.Name = "label41";
             this.label41.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1087,9 +1093,9 @@
             // lblGameGenre2
             // 
             this.lblGameGenre2.AutoSize = true;
-            this.lblGameGenre2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameGenre2.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameGenre2.Location = new System.Drawing.Point(399, 228);
+            this.lblGameGenre2.Location = new System.Drawing.Point(368, 178);
             this.lblGameGenre2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameGenre2.Name = "lblGameGenre2";
             this.lblGameGenre2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1101,9 +1107,9 @@
             // lblGamePoints2
             // 
             this.lblGamePoints2.AutoSize = true;
-            this.lblGamePoints2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGamePoints2.ForeColor = System.Drawing.Color.Gray;
-            this.lblGamePoints2.Location = new System.Drawing.Point(706, 228);
+            this.lblGamePoints2.Location = new System.Drawing.Point(652, 178);
             this.lblGamePoints2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGamePoints2.Name = "lblGamePoints2";
             this.lblGamePoints2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1115,9 +1121,9 @@
             // lblGameName2
             // 
             this.lblGameName2.AutoSize = true;
-            this.lblGameName2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameName2.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameName2.Location = new System.Drawing.Point(111, 230);
+            this.lblGameName2.Location = new System.Drawing.Point(102, 180);
             this.lblGameName2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameName2.Name = "lblGameName2";
             this.lblGameName2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1130,9 +1136,9 @@
             // 
             this.lblGameIcon2.AutoSize = true;
             this.lblGameIcon2.BackColor = System.Drawing.Color.Transparent;
-            this.lblGameIcon2.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon2.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
             this.lblGameIcon2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblGameIcon2.Location = new System.Drawing.Point(35, 228);
+            this.lblGameIcon2.Location = new System.Drawing.Point(32, 178);
             this.lblGameIcon2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameIcon2.Name = "lblGameIcon2";
             this.lblGameIcon2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1146,9 +1152,9 @@
             // 
             this.label39.AutoSize = true;
             this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label39.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
             this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label39.Location = new System.Drawing.Point(670, 147);
+            this.label39.Location = new System.Drawing.Point(618, 115);
             this.label39.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label39.Name = "label39";
             this.label39.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1160,9 +1166,9 @@
             // lblGameGenre1
             // 
             this.lblGameGenre1.AutoSize = true;
-            this.lblGameGenre1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameGenre1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameGenre1.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameGenre1.Location = new System.Drawing.Point(399, 141);
+            this.lblGameGenre1.Location = new System.Drawing.Point(368, 110);
             this.lblGameGenre1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameGenre1.Name = "lblGameGenre1";
             this.lblGameGenre1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1174,9 +1180,9 @@
             // lblGamePoints1
             // 
             this.lblGamePoints1.AutoSize = true;
-            this.lblGamePoints1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGamePoints1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGamePoints1.ForeColor = System.Drawing.Color.Gray;
-            this.lblGamePoints1.Location = new System.Drawing.Point(706, 141);
+            this.lblGamePoints1.Location = new System.Drawing.Point(652, 110);
             this.lblGamePoints1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGamePoints1.Name = "lblGamePoints1";
             this.lblGamePoints1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1188,9 +1194,9 @@
             // lblGameName1
             // 
             this.lblGameName1.AutoSize = true;
-            this.lblGameName1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameName1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblGameName1.ForeColor = System.Drawing.Color.Silver;
-            this.lblGameName1.Location = new System.Drawing.Point(111, 143);
+            this.lblGameName1.Location = new System.Drawing.Point(102, 112);
             this.lblGameName1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameName1.Name = "lblGameName1";
             this.lblGameName1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1203,9 +1209,9 @@
             // 
             this.lblGameIcon1.AutoSize = true;
             this.lblGameIcon1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGameIcon1.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblGameIcon1.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
             this.lblGameIcon1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblGameIcon1.Location = new System.Drawing.Point(35, 141);
+            this.lblGameIcon1.Location = new System.Drawing.Point(32, 110);
             this.lblGameIcon1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGameIcon1.Name = "lblGameIcon1";
             this.lblGameIcon1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1218,9 +1224,9 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label35.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label35.ForeColor = System.Drawing.Color.Silver;
-            this.label35.Location = new System.Drawing.Point(41, 47);
+            this.label35.Location = new System.Drawing.Point(38, 37);
             this.label35.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label35.Name = "label35";
             this.label35.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1252,19 +1258,19 @@
             this.pnlScores.Controls.Add(this.pbxTopScore1);
             this.pnlScores.Controls.Add(this.lblTopScoreName1);
             this.pnlScores.Controls.Add(this.label13);
-            this.pnlScores.Location = new System.Drawing.Point(1267, 435);
-            this.pnlScores.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlScores.Location = new System.Drawing.Point(1170, 340);
+            this.pnlScores.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pnlScores.Name = "pnlScores";
-            this.pnlScores.Size = new System.Drawing.Size(381, 785);
+            this.pnlScores.Size = new System.Drawing.Size(352, 613);
             this.pnlScores.TabIndex = 8;
             // 
             // linkLabel1
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.Font = new System.Drawing.Font("Manrope", 10.25F);
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.linkLabel1.Location = new System.Drawing.Point(33, 710);
+            this.linkLabel1.Location = new System.Drawing.Point(30, 555);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(102, 38);
@@ -1276,9 +1282,9 @@
             // lblTopScoreDesc6
             // 
             this.lblTopScoreDesc6.AutoSize = true;
-            this.lblTopScoreDesc6.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc6.Font = new System.Drawing.Font("Manrope", 9.25F);
             this.lblTopScoreDesc6.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreDesc6.Location = new System.Drawing.Point(69, 649);
+            this.lblTopScoreDesc6.Location = new System.Drawing.Point(64, 507);
             this.lblTopScoreDesc6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreDesc6.Name = "lblTopScoreDesc6";
             this.lblTopScoreDesc6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1291,10 +1297,10 @@
             // 
             this.pbxTopScore6.BackColor = System.Drawing.Color.Transparent;
             this.pbxTopScore6.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxTopScore6.Location = new System.Drawing.Point(24, 608);
-            this.pbxTopScore6.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxTopScore6.Location = new System.Drawing.Point(22, 475);
+            this.pbxTopScore6.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxTopScore6.Name = "pbxTopScore6";
-            this.pbxTopScore6.Size = new System.Drawing.Size(37, 43);
+            this.pbxTopScore6.Size = new System.Drawing.Size(34, 34);
             this.pbxTopScore6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxTopScore6.TabIndex = 34;
             this.pbxTopScore6.TabStop = false;
@@ -1302,9 +1308,9 @@
             // lblTopScoreName6
             // 
             this.lblTopScoreName6.AutoSize = true;
-            this.lblTopScoreName6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName6.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTopScoreName6.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreName6.Location = new System.Drawing.Point(65, 608);
+            this.lblTopScoreName6.Location = new System.Drawing.Point(60, 475);
             this.lblTopScoreName6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreName6.Name = "lblTopScoreName6";
             this.lblTopScoreName6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1316,9 +1322,9 @@
             // lblTopScoreDesc5
             // 
             this.lblTopScoreDesc5.AutoSize = true;
-            this.lblTopScoreDesc5.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc5.Font = new System.Drawing.Font("Manrope", 9.25F);
             this.lblTopScoreDesc5.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreDesc5.Location = new System.Drawing.Point(69, 544);
+            this.lblTopScoreDesc5.Location = new System.Drawing.Point(64, 425);
             this.lblTopScoreDesc5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreDesc5.Name = "lblTopScoreDesc5";
             this.lblTopScoreDesc5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1331,10 +1337,10 @@
             // 
             this.pbxTopScore5.BackColor = System.Drawing.Color.Transparent;
             this.pbxTopScore5.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxTopScore5.Location = new System.Drawing.Point(24, 503);
-            this.pbxTopScore5.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxTopScore5.Location = new System.Drawing.Point(22, 393);
+            this.pbxTopScore5.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxTopScore5.Name = "pbxTopScore5";
-            this.pbxTopScore5.Size = new System.Drawing.Size(37, 43);
+            this.pbxTopScore5.Size = new System.Drawing.Size(34, 34);
             this.pbxTopScore5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxTopScore5.TabIndex = 31;
             this.pbxTopScore5.TabStop = false;
@@ -1342,9 +1348,9 @@
             // lblTopScoreName5
             // 
             this.lblTopScoreName5.AutoSize = true;
-            this.lblTopScoreName5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTopScoreName5.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreName5.Location = new System.Drawing.Point(65, 503);
+            this.lblTopScoreName5.Location = new System.Drawing.Point(60, 393);
             this.lblTopScoreName5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreName5.Name = "lblTopScoreName5";
             this.lblTopScoreName5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1356,9 +1362,9 @@
             // lblTopScoreDesc4
             // 
             this.lblTopScoreDesc4.AutoSize = true;
-            this.lblTopScoreDesc4.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc4.Font = new System.Drawing.Font("Manrope", 9.25F);
             this.lblTopScoreDesc4.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreDesc4.Location = new System.Drawing.Point(72, 446);
+            this.lblTopScoreDesc4.Location = new System.Drawing.Point(66, 348);
             this.lblTopScoreDesc4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreDesc4.Name = "lblTopScoreDesc4";
             this.lblTopScoreDesc4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1371,10 +1377,10 @@
             // 
             this.pbxTopScore4.BackColor = System.Drawing.Color.Transparent;
             this.pbxTopScore4.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxTopScore4.Location = new System.Drawing.Point(28, 405);
-            this.pbxTopScore4.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxTopScore4.Location = new System.Drawing.Point(26, 316);
+            this.pbxTopScore4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxTopScore4.Name = "pbxTopScore4";
-            this.pbxTopScore4.Size = new System.Drawing.Size(37, 43);
+            this.pbxTopScore4.Size = new System.Drawing.Size(34, 34);
             this.pbxTopScore4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxTopScore4.TabIndex = 28;
             this.pbxTopScore4.TabStop = false;
@@ -1382,9 +1388,9 @@
             // lblTopScoreName4
             // 
             this.lblTopScoreName4.AutoSize = true;
-            this.lblTopScoreName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTopScoreName4.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreName4.Location = new System.Drawing.Point(69, 405);
+            this.lblTopScoreName4.Location = new System.Drawing.Point(64, 316);
             this.lblTopScoreName4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreName4.Name = "lblTopScoreName4";
             this.lblTopScoreName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1396,9 +1402,9 @@
             // lblTopScoreDesc3
             // 
             this.lblTopScoreDesc3.AutoSize = true;
-            this.lblTopScoreDesc3.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc3.Font = new System.Drawing.Font("Manrope", 9.25F);
             this.lblTopScoreDesc3.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreDesc3.Location = new System.Drawing.Point(72, 341);
+            this.lblTopScoreDesc3.Location = new System.Drawing.Point(66, 266);
             this.lblTopScoreDesc3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreDesc3.Name = "lblTopScoreDesc3";
             this.lblTopScoreDesc3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1411,10 +1417,10 @@
             // 
             this.pbxTopScore3.BackColor = System.Drawing.Color.Transparent;
             this.pbxTopScore3.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxTopScore3.Location = new System.Drawing.Point(28, 301);
-            this.pbxTopScore3.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxTopScore3.Location = new System.Drawing.Point(26, 235);
+            this.pbxTopScore3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxTopScore3.Name = "pbxTopScore3";
-            this.pbxTopScore3.Size = new System.Drawing.Size(37, 43);
+            this.pbxTopScore3.Size = new System.Drawing.Size(34, 34);
             this.pbxTopScore3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxTopScore3.TabIndex = 25;
             this.pbxTopScore3.TabStop = false;
@@ -1422,9 +1428,9 @@
             // lblTopScoreName3
             // 
             this.lblTopScoreName3.AutoSize = true;
-            this.lblTopScoreName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTopScoreName3.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreName3.Location = new System.Drawing.Point(69, 301);
+            this.lblTopScoreName3.Location = new System.Drawing.Point(64, 235);
             this.lblTopScoreName3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreName3.Name = "lblTopScoreName3";
             this.lblTopScoreName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1436,9 +1442,9 @@
             // lblTopScoreDesc2
             // 
             this.lblTopScoreDesc2.AutoSize = true;
-            this.lblTopScoreDesc2.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc2.Font = new System.Drawing.Font("Manrope", 9.25F);
             this.lblTopScoreDesc2.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreDesc2.Location = new System.Drawing.Point(69, 243);
+            this.lblTopScoreDesc2.Location = new System.Drawing.Point(64, 190);
             this.lblTopScoreDesc2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreDesc2.Name = "lblTopScoreDesc2";
             this.lblTopScoreDesc2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1451,10 +1457,10 @@
             // 
             this.pbxTopScore2.BackColor = System.Drawing.Color.Transparent;
             this.pbxTopScore2.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxTopScore2.Location = new System.Drawing.Point(24, 203);
-            this.pbxTopScore2.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxTopScore2.Location = new System.Drawing.Point(22, 159);
+            this.pbxTopScore2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxTopScore2.Name = "pbxTopScore2";
-            this.pbxTopScore2.Size = new System.Drawing.Size(37, 43);
+            this.pbxTopScore2.Size = new System.Drawing.Size(34, 34);
             this.pbxTopScore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxTopScore2.TabIndex = 22;
             this.pbxTopScore2.TabStop = false;
@@ -1462,9 +1468,9 @@
             // lblTopScoreName2
             // 
             this.lblTopScoreName2.AutoSize = true;
-            this.lblTopScoreName2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTopScoreName2.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreName2.Location = new System.Drawing.Point(65, 203);
+            this.lblTopScoreName2.Location = new System.Drawing.Point(60, 159);
             this.lblTopScoreName2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreName2.Name = "lblTopScoreName2";
             this.lblTopScoreName2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1476,9 +1482,9 @@
             // lblTopScoreDesc1
             // 
             this.lblTopScoreDesc1.AutoSize = true;
-            this.lblTopScoreDesc1.Font = new System.Drawing.Font("Manrope", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreDesc1.Font = new System.Drawing.Font("Manrope", 9.25F);
             this.lblTopScoreDesc1.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreDesc1.Location = new System.Drawing.Point(69, 139);
+            this.lblTopScoreDesc1.Location = new System.Drawing.Point(64, 109);
             this.lblTopScoreDesc1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreDesc1.Name = "lblTopScoreDesc1";
             this.lblTopScoreDesc1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1491,10 +1497,10 @@
             // 
             this.pbxTopScore1.BackColor = System.Drawing.Color.Transparent;
             this.pbxTopScore1.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
-            this.pbxTopScore1.Location = new System.Drawing.Point(24, 98);
-            this.pbxTopScore1.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxTopScore1.Location = new System.Drawing.Point(22, 77);
+            this.pbxTopScore1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxTopScore1.Name = "pbxTopScore1";
-            this.pbxTopScore1.Size = new System.Drawing.Size(37, 43);
+            this.pbxTopScore1.Size = new System.Drawing.Size(34, 34);
             this.pbxTopScore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxTopScore1.TabIndex = 9;
             this.pbxTopScore1.TabStop = false;
@@ -1502,9 +1508,9 @@
             // lblTopScoreName1
             // 
             this.lblTopScoreName1.AutoSize = true;
-            this.lblTopScoreName1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTopScoreName1.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblTopScoreName1.ForeColor = System.Drawing.Color.Silver;
-            this.lblTopScoreName1.Location = new System.Drawing.Point(65, 98);
+            this.lblTopScoreName1.Location = new System.Drawing.Point(60, 77);
             this.lblTopScoreName1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTopScoreName1.Name = "lblTopScoreName1";
             this.lblTopScoreName1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1516,9 +1522,9 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.Silver;
-            this.label13.Location = new System.Drawing.Point(24, 28);
+            this.label13.Location = new System.Drawing.Point(22, 22);
             this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1531,9 +1537,9 @@
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label26.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold);
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(19, 26);
+            this.label26.Location = new System.Drawing.Point(18, 20);
             this.label26.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1548,18 +1554,18 @@
             this.roundedPanel8.Controls.Add(this.lblIncorrectNew);
             this.roundedPanel8.Controls.Add(this.label69);
             this.roundedPanel8.Controls.Add(this.lblIncorrect);
-            this.roundedPanel8.Location = new System.Drawing.Point(6, 1067);
-            this.roundedPanel8.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel8.Location = new System.Drawing.Point(6, 834);
+            this.roundedPanel8.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel8.Name = "roundedPanel8";
-            this.roundedPanel8.Size = new System.Drawing.Size(403, 154);
+            this.roundedPanel8.Size = new System.Drawing.Size(372, 120);
             this.roundedPanel8.TabIndex = 8;
             // 
             // lblIncorrectNew
             // 
             this.lblIncorrectNew.AutoSize = true;
-            this.lblIncorrectNew.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIncorrectNew.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold);
             this.lblIncorrectNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblIncorrectNew.Location = new System.Drawing.Point(111, 19);
+            this.lblIncorrectNew.Location = new System.Drawing.Point(102, 15);
             this.lblIncorrectNew.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblIncorrectNew.Name = "lblIncorrectNew";
             this.lblIncorrectNew.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1571,9 +1577,9 @@
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label69.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label69.ForeColor = System.Drawing.Color.Silver;
-            this.label69.Location = new System.Drawing.Point(35, 90);
+            this.label69.Location = new System.Drawing.Point(32, 70);
             this.label69.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label69.Name = "label69";
             this.label69.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1585,9 +1591,9 @@
             // lblIncorrect
             // 
             this.lblIncorrect.AutoSize = true;
-            this.lblIncorrect.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIncorrect.Font = new System.Drawing.Font("Manrope", 18.25F, System.Drawing.FontStyle.Bold);
             this.lblIncorrect.ForeColor = System.Drawing.Color.White;
-            this.lblIncorrect.Location = new System.Drawing.Point(32, 21);
+            this.lblIncorrect.Location = new System.Drawing.Point(30, 16);
             this.lblIncorrect.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblIncorrect.Name = "lblIncorrect";
             this.lblIncorrect.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1604,23 +1610,24 @@
             this.pnlLevels.Controls.Add(this.btnNormal);
             this.pnlLevels.Controls.Add(this.btnEasy);
             this.pnlLevels.Controls.Add(this.btnNoTimer);
-            this.pnlLevels.Location = new System.Drawing.Point(241, 60);
-            this.pnlLevels.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlLevels.Location = new System.Drawing.Point(222, 47);
+            this.pnlLevels.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pnlLevels.Name = "pnlLevels";
-            this.pnlLevels.Size = new System.Drawing.Size(1233, 100);
+            this.pnlLevels.Size = new System.Drawing.Size(1138, 78);
             this.pnlLevels.TabIndex = 10;
             // 
             // btnDeathmatch
             // 
             this.btnDeathmatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnDeathmatch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeathmatch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.btnDeathmatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeathmatch.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeathmatch.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold);
             this.btnDeathmatch.ForeColor = System.Drawing.Color.Gray;
-            this.btnDeathmatch.Location = new System.Drawing.Point(984, 17);
-            this.btnDeathmatch.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDeathmatch.Location = new System.Drawing.Point(908, 13);
+            this.btnDeathmatch.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnDeathmatch.Name = "btnDeathmatch";
-            this.btnDeathmatch.Size = new System.Drawing.Size(230, 68);
+            this.btnDeathmatch.Size = new System.Drawing.Size(212, 53);
             this.btnDeathmatch.TabIndex = 4;
             this.btnDeathmatch.Text = "DEATHMATCH";
             this.btnDeathmatch.UseVisualStyleBackColor = false;
@@ -1628,14 +1635,15 @@
             // btnHard
             // 
             this.btnHard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnHard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.btnHard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHard.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHard.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold);
             this.btnHard.ForeColor = System.Drawing.Color.Gray;
-            this.btnHard.Location = new System.Drawing.Point(743, 17);
-            this.btnHard.Margin = new System.Windows.Forms.Padding(6);
+            this.btnHard.Location = new System.Drawing.Point(686, 13);
+            this.btnHard.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnHard.Name = "btnHard";
-            this.btnHard.Size = new System.Drawing.Size(230, 68);
+            this.btnHard.Size = new System.Drawing.Size(212, 53);
             this.btnHard.TabIndex = 3;
             this.btnHard.Text = "HARD";
             this.btnHard.UseVisualStyleBackColor = false;
@@ -1643,14 +1651,15 @@
             // btnNormal
             // 
             this.btnNormal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnNormal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNormal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
             this.btnNormal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNormal.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNormal.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold);
             this.btnNormal.ForeColor = System.Drawing.Color.White;
-            this.btnNormal.Location = new System.Drawing.Point(501, 17);
-            this.btnNormal.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNormal.Location = new System.Drawing.Point(462, 13);
+            this.btnNormal.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnNormal.Name = "btnNormal";
-            this.btnNormal.Size = new System.Drawing.Size(230, 68);
+            this.btnNormal.Size = new System.Drawing.Size(212, 53);
             this.btnNormal.TabIndex = 2;
             this.btnNormal.Text = "NORMAL";
             this.btnNormal.UseVisualStyleBackColor = false;
@@ -1659,14 +1668,15 @@
             // btnEasy
             // 
             this.btnEasy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnEasy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEasy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.btnEasy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEasy.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEasy.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold);
             this.btnEasy.ForeColor = System.Drawing.Color.Gray;
-            this.btnEasy.Location = new System.Drawing.Point(260, 17);
-            this.btnEasy.Margin = new System.Windows.Forms.Padding(6);
+            this.btnEasy.Location = new System.Drawing.Point(240, 13);
+            this.btnEasy.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnEasy.Name = "btnEasy";
-            this.btnEasy.Size = new System.Drawing.Size(230, 68);
+            this.btnEasy.Size = new System.Drawing.Size(212, 53);
             this.btnEasy.TabIndex = 1;
             this.btnEasy.Text = "EASY";
             this.btnEasy.UseVisualStyleBackColor = false;
@@ -1674,14 +1684,15 @@
             // btnNoTimer
             // 
             this.btnNoTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.btnNoTimer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNoTimer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.btnNoTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNoTimer.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNoTimer.Font = new System.Drawing.Font("Manrope ExtraBold", 10.25F, System.Drawing.FontStyle.Bold);
             this.btnNoTimer.ForeColor = System.Drawing.Color.Gray;
-            this.btnNoTimer.Location = new System.Drawing.Point(19, 17);
-            this.btnNoTimer.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNoTimer.Location = new System.Drawing.Point(18, 13);
+            this.btnNoTimer.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnNoTimer.Name = "btnNoTimer";
-            this.btnNoTimer.Size = new System.Drawing.Size(230, 68);
+            this.btnNoTimer.Size = new System.Drawing.Size(212, 53);
             this.btnNoTimer.TabIndex = 0;
             this.btnNoTimer.Text = "NO TIMER";
             this.btnNoTimer.UseVisualStyleBackColor = false;
@@ -1701,10 +1712,10 @@
             this.pnlOverview.Controls.Add(this.pnlGames);
             this.pnlOverview.Controls.Add(this.pnlScores);
             this.pnlOverview.Controls.Add(this.roundedPanel8);
-            this.pnlOverview.Location = new System.Drawing.Point(241, 183);
-            this.pnlOverview.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlOverview.Location = new System.Drawing.Point(222, 143);
+            this.pnlOverview.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pnlOverview.Name = "pnlOverview";
-            this.pnlOverview.Size = new System.Drawing.Size(1658, 1242);
+            this.pnlOverview.Size = new System.Drawing.Size(1530, 970);
             this.pnlOverview.TabIndex = 11;
             // 
             // pnlAvatar
@@ -1715,10 +1726,10 @@
             this.pnlAvatar.Controls.Add(this.roundedPanel6);
             this.pnlAvatar.Controls.Add(this.label1);
             this.pnlAvatar.Controls.Add(this.roundedPanel5);
-            this.pnlAvatar.Location = new System.Drawing.Point(241, 183);
-            this.pnlAvatar.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlAvatar.Location = new System.Drawing.Point(222, 143);
+            this.pnlAvatar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pnlAvatar.Name = "pnlAvatar";
-            this.pnlAvatar.Size = new System.Drawing.Size(1658, 1242);
+            this.pnlAvatar.Size = new System.Drawing.Size(1530, 970);
             this.pnlAvatar.TabIndex = 12;
             // 
             // roundedPanel10
@@ -1726,10 +1737,10 @@
             this.roundedPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.roundedPanel10.Controls.Add(this.flowLayoutPanel4);
             this.roundedPanel10.Controls.Add(this.label8);
-            this.roundedPanel10.Location = new System.Drawing.Point(574, 962);
-            this.roundedPanel10.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel10.Location = new System.Drawing.Point(530, 752);
+            this.roundedPanel10.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel10.Name = "roundedPanel10";
-            this.roundedPanel10.Size = new System.Drawing.Size(1073, 250);
+            this.roundedPanel10.Size = new System.Drawing.Size(990, 195);
             this.roundedPanel10.TabIndex = 48;
             // 
             // flowLayoutPanel4
@@ -1742,10 +1753,10 @@
             this.flowLayoutPanel4.Controls.Add(this.pbxLegsSanna);
             this.flowLayoutPanel4.Controls.Add(this.pbxLegsTheresa);
             this.flowLayoutPanel4.Controls.Add(this.pbxLegsTheo);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(35, 70);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(6);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(32, 55);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(1008, 147);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(930, 115);
             this.flowLayoutPanel4.TabIndex = 49;
             this.flowLayoutPanel4.WrapContents = false;
             // 
@@ -1753,10 +1764,10 @@
             // 
             this.pbxLegsCarola.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLegsCarola.Image = global::ASProj.Properties.Resources.bottom__1_;
-            this.pbxLegsCarola.Location = new System.Drawing.Point(6, 6);
-            this.pbxLegsCarola.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxLegsCarola.Location = new System.Drawing.Point(6, 5);
+            this.pbxLegsCarola.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxLegsCarola.Name = "pbxLegsCarola";
-            this.pbxLegsCarola.Size = new System.Drawing.Size(117, 132);
+            this.pbxLegsCarola.Size = new System.Drawing.Size(108, 103);
             this.pbxLegsCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLegsCarola.TabIndex = 1;
             this.pbxLegsCarola.TabStop = false;
@@ -1766,10 +1777,10 @@
             // 
             this.pbxLegsGaga.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLegsGaga.Image = global::ASProj.Properties.Resources.bottom__2_;
-            this.pbxLegsGaga.Location = new System.Drawing.Point(135, 6);
-            this.pbxLegsGaga.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxLegsGaga.Location = new System.Drawing.Point(126, 5);
+            this.pbxLegsGaga.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxLegsGaga.Name = "pbxLegsGaga";
-            this.pbxLegsGaga.Size = new System.Drawing.Size(117, 132);
+            this.pbxLegsGaga.Size = new System.Drawing.Size(108, 103);
             this.pbxLegsGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLegsGaga.TabIndex = 2;
             this.pbxLegsGaga.TabStop = false;
@@ -1779,10 +1790,10 @@
             // 
             this.pbxLegsMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLegsMatthias.Image = global::ASProj.Properties.Resources.bottom__3_;
-            this.pbxLegsMatthias.Location = new System.Drawing.Point(264, 6);
-            this.pbxLegsMatthias.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxLegsMatthias.Location = new System.Drawing.Point(246, 5);
+            this.pbxLegsMatthias.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxLegsMatthias.Name = "pbxLegsMatthias";
-            this.pbxLegsMatthias.Size = new System.Drawing.Size(117, 132);
+            this.pbxLegsMatthias.Size = new System.Drawing.Size(108, 103);
             this.pbxLegsMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLegsMatthias.TabIndex = 3;
             this.pbxLegsMatthias.TabStop = false;
@@ -1792,10 +1803,10 @@
             // 
             this.pbxLegsPetra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLegsPetra.Image = global::ASProj.Properties.Resources.bottom__4_;
-            this.pbxLegsPetra.Location = new System.Drawing.Point(393, 6);
-            this.pbxLegsPetra.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxLegsPetra.Location = new System.Drawing.Point(366, 5);
+            this.pbxLegsPetra.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxLegsPetra.Name = "pbxLegsPetra";
-            this.pbxLegsPetra.Size = new System.Drawing.Size(117, 132);
+            this.pbxLegsPetra.Size = new System.Drawing.Size(108, 103);
             this.pbxLegsPetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLegsPetra.TabIndex = 4;
             this.pbxLegsPetra.TabStop = false;
@@ -1805,10 +1816,10 @@
             // 
             this.pbxLegsSanna.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLegsSanna.Image = global::ASProj.Properties.Resources.bottom__5_;
-            this.pbxLegsSanna.Location = new System.Drawing.Point(522, 6);
-            this.pbxLegsSanna.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxLegsSanna.Location = new System.Drawing.Point(486, 5);
+            this.pbxLegsSanna.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxLegsSanna.Name = "pbxLegsSanna";
-            this.pbxLegsSanna.Size = new System.Drawing.Size(117, 132);
+            this.pbxLegsSanna.Size = new System.Drawing.Size(108, 103);
             this.pbxLegsSanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLegsSanna.TabIndex = 5;
             this.pbxLegsSanna.TabStop = false;
@@ -1818,10 +1829,10 @@
             // 
             this.pbxLegsTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLegsTheresa.Image = global::ASProj.Properties.Resources.bottom__6_;
-            this.pbxLegsTheresa.Location = new System.Drawing.Point(651, 6);
-            this.pbxLegsTheresa.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxLegsTheresa.Location = new System.Drawing.Point(606, 5);
+            this.pbxLegsTheresa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxLegsTheresa.Name = "pbxLegsTheresa";
-            this.pbxLegsTheresa.Size = new System.Drawing.Size(117, 132);
+            this.pbxLegsTheresa.Size = new System.Drawing.Size(108, 103);
             this.pbxLegsTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLegsTheresa.TabIndex = 6;
             this.pbxLegsTheresa.TabStop = false;
@@ -1831,10 +1842,10 @@
             // 
             this.pbxLegsTheo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLegsTheo.Image = global::ASProj.Properties.Resources.bottom__7_;
-            this.pbxLegsTheo.Location = new System.Drawing.Point(780, 6);
-            this.pbxLegsTheo.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxLegsTheo.Location = new System.Drawing.Point(726, 5);
+            this.pbxLegsTheo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxLegsTheo.Name = "pbxLegsTheo";
-            this.pbxLegsTheo.Size = new System.Drawing.Size(117, 132);
+            this.pbxLegsTheo.Size = new System.Drawing.Size(108, 103);
             this.pbxLegsTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLegsTheo.TabIndex = 7;
             this.pbxLegsTheo.TabStop = false;
@@ -1843,9 +1854,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(35, 19);
+            this.label8.Location = new System.Drawing.Point(32, 15);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1859,10 +1870,10 @@
             this.roundedPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.roundedPanel9.Controls.Add(this.flowLayoutPanel3);
             this.roundedPanel9.Controls.Add(this.label7);
-            this.roundedPanel9.Location = new System.Drawing.Point(574, 693);
-            this.roundedPanel9.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel9.Location = new System.Drawing.Point(530, 541);
+            this.roundedPanel9.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel9.Name = "roundedPanel9";
-            this.roundedPanel9.Size = new System.Drawing.Size(1073, 250);
+            this.roundedPanel9.Size = new System.Drawing.Size(990, 195);
             this.roundedPanel9.TabIndex = 47;
             // 
             // flowLayoutPanel3
@@ -1875,10 +1886,10 @@
             this.flowLayoutPanel3.Controls.Add(this.pbxBodySanna);
             this.flowLayoutPanel3.Controls.Add(this.pbxBodyTheresa);
             this.flowLayoutPanel3.Controls.Add(this.pbxBodyTheo);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(35, 70);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(6);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(32, 55);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1008, 147);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(930, 115);
             this.flowLayoutPanel3.TabIndex = 48;
             this.flowLayoutPanel3.WrapContents = false;
             // 
@@ -1886,10 +1897,10 @@
             // 
             this.pbxBodyCarola.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBodyCarola.Image = global::ASProj.Properties.Resources.top__1_;
-            this.pbxBodyCarola.Location = new System.Drawing.Point(6, 6);
-            this.pbxBodyCarola.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxBodyCarola.Location = new System.Drawing.Point(6, 5);
+            this.pbxBodyCarola.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxBodyCarola.Name = "pbxBodyCarola";
-            this.pbxBodyCarola.Size = new System.Drawing.Size(117, 132);
+            this.pbxBodyCarola.Size = new System.Drawing.Size(108, 103);
             this.pbxBodyCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBodyCarola.TabIndex = 1;
             this.pbxBodyCarola.TabStop = false;
@@ -1899,10 +1910,10 @@
             // 
             this.pbxBodyGaga.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBodyGaga.Image = global::ASProj.Properties.Resources.top__2_;
-            this.pbxBodyGaga.Location = new System.Drawing.Point(135, 6);
-            this.pbxBodyGaga.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxBodyGaga.Location = new System.Drawing.Point(126, 5);
+            this.pbxBodyGaga.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxBodyGaga.Name = "pbxBodyGaga";
-            this.pbxBodyGaga.Size = new System.Drawing.Size(117, 132);
+            this.pbxBodyGaga.Size = new System.Drawing.Size(108, 103);
             this.pbxBodyGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBodyGaga.TabIndex = 2;
             this.pbxBodyGaga.TabStop = false;
@@ -1912,10 +1923,10 @@
             // 
             this.pbxBodyMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBodyMatthias.Image = global::ASProj.Properties.Resources.top__3_;
-            this.pbxBodyMatthias.Location = new System.Drawing.Point(264, 6);
-            this.pbxBodyMatthias.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxBodyMatthias.Location = new System.Drawing.Point(246, 5);
+            this.pbxBodyMatthias.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxBodyMatthias.Name = "pbxBodyMatthias";
-            this.pbxBodyMatthias.Size = new System.Drawing.Size(117, 132);
+            this.pbxBodyMatthias.Size = new System.Drawing.Size(108, 103);
             this.pbxBodyMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBodyMatthias.TabIndex = 3;
             this.pbxBodyMatthias.TabStop = false;
@@ -1925,10 +1936,10 @@
             // 
             this.pbxBodyPetra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBodyPetra.Image = global::ASProj.Properties.Resources.top__4_;
-            this.pbxBodyPetra.Location = new System.Drawing.Point(393, 6);
-            this.pbxBodyPetra.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxBodyPetra.Location = new System.Drawing.Point(366, 5);
+            this.pbxBodyPetra.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxBodyPetra.Name = "pbxBodyPetra";
-            this.pbxBodyPetra.Size = new System.Drawing.Size(117, 132);
+            this.pbxBodyPetra.Size = new System.Drawing.Size(108, 103);
             this.pbxBodyPetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBodyPetra.TabIndex = 4;
             this.pbxBodyPetra.TabStop = false;
@@ -1938,10 +1949,10 @@
             // 
             this.pbxBodySanna.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBodySanna.Image = global::ASProj.Properties.Resources.top__5_;
-            this.pbxBodySanna.Location = new System.Drawing.Point(522, 6);
-            this.pbxBodySanna.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxBodySanna.Location = new System.Drawing.Point(486, 5);
+            this.pbxBodySanna.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxBodySanna.Name = "pbxBodySanna";
-            this.pbxBodySanna.Size = new System.Drawing.Size(117, 132);
+            this.pbxBodySanna.Size = new System.Drawing.Size(108, 103);
             this.pbxBodySanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBodySanna.TabIndex = 5;
             this.pbxBodySanna.TabStop = false;
@@ -1951,10 +1962,10 @@
             // 
             this.pbxBodyTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBodyTheresa.Image = global::ASProj.Properties.Resources.top__6_;
-            this.pbxBodyTheresa.Location = new System.Drawing.Point(651, 6);
-            this.pbxBodyTheresa.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxBodyTheresa.Location = new System.Drawing.Point(606, 5);
+            this.pbxBodyTheresa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxBodyTheresa.Name = "pbxBodyTheresa";
-            this.pbxBodyTheresa.Size = new System.Drawing.Size(117, 132);
+            this.pbxBodyTheresa.Size = new System.Drawing.Size(108, 103);
             this.pbxBodyTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBodyTheresa.TabIndex = 6;
             this.pbxBodyTheresa.TabStop = false;
@@ -1964,10 +1975,10 @@
             // 
             this.pbxBodyTheo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBodyTheo.Image = global::ASProj.Properties.Resources.top__7_;
-            this.pbxBodyTheo.Location = new System.Drawing.Point(780, 6);
-            this.pbxBodyTheo.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxBodyTheo.Location = new System.Drawing.Point(726, 5);
+            this.pbxBodyTheo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxBodyTheo.Name = "pbxBodyTheo";
-            this.pbxBodyTheo.Size = new System.Drawing.Size(117, 132);
+            this.pbxBodyTheo.Size = new System.Drawing.Size(108, 103);
             this.pbxBodyTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBodyTheo.TabIndex = 7;
             this.pbxBodyTheo.TabStop = false;
@@ -1976,9 +1987,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(35, 19);
+            this.label7.Location = new System.Drawing.Point(32, 15);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1992,10 +2003,10 @@
             this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.roundedPanel7.Controls.Add(this.flowLayoutPanel2);
             this.roundedPanel7.Controls.Add(this.label5);
-            this.roundedPanel7.Location = new System.Drawing.Point(574, 425);
-            this.roundedPanel7.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel7.Location = new System.Drawing.Point(530, 332);
+            this.roundedPanel7.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel7.Name = "roundedPanel7";
-            this.roundedPanel7.Size = new System.Drawing.Size(1073, 250);
+            this.roundedPanel7.Size = new System.Drawing.Size(990, 195);
             this.roundedPanel7.TabIndex = 46;
             // 
             // flowLayoutPanel2
@@ -2008,10 +2019,10 @@
             this.flowLayoutPanel2.Controls.Add(this.pbxFaceSanna);
             this.flowLayoutPanel2.Controls.Add(this.pbxFaceTheresa);
             this.flowLayoutPanel2.Controls.Add(this.pbxFaceTheo);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(35, 70);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(6);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(32, 55);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1008, 147);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(930, 115);
             this.flowLayoutPanel2.TabIndex = 47;
             this.flowLayoutPanel2.WrapContents = false;
             // 
@@ -2019,10 +2030,10 @@
             // 
             this.pbxFaceCarola.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxFaceCarola.Image = global::ASProj.Properties.Resources.face__1_;
-            this.pbxFaceCarola.Location = new System.Drawing.Point(6, 6);
-            this.pbxFaceCarola.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFaceCarola.Location = new System.Drawing.Point(6, 5);
+            this.pbxFaceCarola.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFaceCarola.Name = "pbxFaceCarola";
-            this.pbxFaceCarola.Size = new System.Drawing.Size(117, 132);
+            this.pbxFaceCarola.Size = new System.Drawing.Size(108, 103);
             this.pbxFaceCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFaceCarola.TabIndex = 1;
             this.pbxFaceCarola.TabStop = false;
@@ -2032,10 +2043,10 @@
             // 
             this.pbxFaceGaga.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxFaceGaga.Image = global::ASProj.Properties.Resources.face__2_;
-            this.pbxFaceGaga.Location = new System.Drawing.Point(135, 6);
-            this.pbxFaceGaga.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFaceGaga.Location = new System.Drawing.Point(126, 5);
+            this.pbxFaceGaga.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFaceGaga.Name = "pbxFaceGaga";
-            this.pbxFaceGaga.Size = new System.Drawing.Size(117, 132);
+            this.pbxFaceGaga.Size = new System.Drawing.Size(108, 103);
             this.pbxFaceGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFaceGaga.TabIndex = 2;
             this.pbxFaceGaga.TabStop = false;
@@ -2045,10 +2056,10 @@
             // 
             this.pbxFaceMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxFaceMatthias.Image = global::ASProj.Properties.Resources.face__3_;
-            this.pbxFaceMatthias.Location = new System.Drawing.Point(264, 6);
-            this.pbxFaceMatthias.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFaceMatthias.Location = new System.Drawing.Point(246, 5);
+            this.pbxFaceMatthias.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFaceMatthias.Name = "pbxFaceMatthias";
-            this.pbxFaceMatthias.Size = new System.Drawing.Size(117, 132);
+            this.pbxFaceMatthias.Size = new System.Drawing.Size(108, 103);
             this.pbxFaceMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFaceMatthias.TabIndex = 3;
             this.pbxFaceMatthias.TabStop = false;
@@ -2058,10 +2069,10 @@
             // 
             this.pbxFacePetra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxFacePetra.Image = global::ASProj.Properties.Resources.face__4_;
-            this.pbxFacePetra.Location = new System.Drawing.Point(393, 6);
-            this.pbxFacePetra.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFacePetra.Location = new System.Drawing.Point(366, 5);
+            this.pbxFacePetra.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFacePetra.Name = "pbxFacePetra";
-            this.pbxFacePetra.Size = new System.Drawing.Size(117, 132);
+            this.pbxFacePetra.Size = new System.Drawing.Size(108, 103);
             this.pbxFacePetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFacePetra.TabIndex = 4;
             this.pbxFacePetra.TabStop = false;
@@ -2071,10 +2082,10 @@
             // 
             this.pbxFaceSanna.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxFaceSanna.Image = global::ASProj.Properties.Resources.face__5_;
-            this.pbxFaceSanna.Location = new System.Drawing.Point(522, 6);
-            this.pbxFaceSanna.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFaceSanna.Location = new System.Drawing.Point(486, 5);
+            this.pbxFaceSanna.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFaceSanna.Name = "pbxFaceSanna";
-            this.pbxFaceSanna.Size = new System.Drawing.Size(117, 132);
+            this.pbxFaceSanna.Size = new System.Drawing.Size(108, 103);
             this.pbxFaceSanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFaceSanna.TabIndex = 5;
             this.pbxFaceSanna.TabStop = false;
@@ -2084,10 +2095,10 @@
             // 
             this.pbxFaceTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxFaceTheresa.Image = global::ASProj.Properties.Resources.face__6_;
-            this.pbxFaceTheresa.Location = new System.Drawing.Point(651, 6);
-            this.pbxFaceTheresa.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFaceTheresa.Location = new System.Drawing.Point(606, 5);
+            this.pbxFaceTheresa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFaceTheresa.Name = "pbxFaceTheresa";
-            this.pbxFaceTheresa.Size = new System.Drawing.Size(117, 132);
+            this.pbxFaceTheresa.Size = new System.Drawing.Size(108, 103);
             this.pbxFaceTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFaceTheresa.TabIndex = 6;
             this.pbxFaceTheresa.TabStop = false;
@@ -2097,10 +2108,10 @@
             // 
             this.pbxFaceTheo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxFaceTheo.Image = global::ASProj.Properties.Resources.face__7_;
-            this.pbxFaceTheo.Location = new System.Drawing.Point(780, 6);
-            this.pbxFaceTheo.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFaceTheo.Location = new System.Drawing.Point(726, 5);
+            this.pbxFaceTheo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFaceTheo.Name = "pbxFaceTheo";
-            this.pbxFaceTheo.Size = new System.Drawing.Size(117, 132);
+            this.pbxFaceTheo.Size = new System.Drawing.Size(108, 103);
             this.pbxFaceTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFaceTheo.TabIndex = 7;
             this.pbxFaceTheo.TabStop = false;
@@ -2109,9 +2120,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(35, 19);
+            this.label5.Location = new System.Drawing.Point(32, 15);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2125,10 +2136,10 @@
             this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
             this.roundedPanel6.Controls.Add(this.flowLayoutPanel1);
             this.roundedPanel6.Controls.Add(this.label2);
-            this.roundedPanel6.Location = new System.Drawing.Point(574, 156);
-            this.roundedPanel6.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel6.Location = new System.Drawing.Point(530, 122);
+            this.roundedPanel6.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel6.Name = "roundedPanel6";
-            this.roundedPanel6.Size = new System.Drawing.Size(1073, 250);
+            this.roundedPanel6.Size = new System.Drawing.Size(990, 195);
             this.roundedPanel6.TabIndex = 10;
             // 
             // flowLayoutPanel1
@@ -2141,10 +2152,10 @@
             this.flowLayoutPanel1.Controls.Add(this.pbxHairSanna);
             this.flowLayoutPanel1.Controls.Add(this.pbxHairTheresa);
             this.flowLayoutPanel1.Controls.Add(this.pbxHairTheo);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(35, 70);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 55);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1008, 147);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(930, 115);
             this.flowLayoutPanel1.TabIndex = 46;
             this.flowLayoutPanel1.WrapContents = false;
             // 
@@ -2152,10 +2163,10 @@
             // 
             this.pbxHairCarola.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHairCarola.Image = global::ASProj.Properties.Resources.hair__1_;
-            this.pbxHairCarola.Location = new System.Drawing.Point(6, 6);
-            this.pbxHairCarola.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxHairCarola.Location = new System.Drawing.Point(6, 5);
+            this.pbxHairCarola.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxHairCarola.Name = "pbxHairCarola";
-            this.pbxHairCarola.Size = new System.Drawing.Size(117, 132);
+            this.pbxHairCarola.Size = new System.Drawing.Size(108, 103);
             this.pbxHairCarola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxHairCarola.TabIndex = 0;
             this.pbxHairCarola.TabStop = false;
@@ -2165,10 +2176,10 @@
             // 
             this.pbxHairGaga.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHairGaga.Image = global::ASProj.Properties.Resources.hair__2_;
-            this.pbxHairGaga.Location = new System.Drawing.Point(135, 6);
-            this.pbxHairGaga.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxHairGaga.Location = new System.Drawing.Point(126, 5);
+            this.pbxHairGaga.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxHairGaga.Name = "pbxHairGaga";
-            this.pbxHairGaga.Size = new System.Drawing.Size(117, 132);
+            this.pbxHairGaga.Size = new System.Drawing.Size(108, 103);
             this.pbxHairGaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxHairGaga.TabIndex = 1;
             this.pbxHairGaga.TabStop = false;
@@ -2178,10 +2189,10 @@
             // 
             this.pbxHairMatthias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHairMatthias.Image = global::ASProj.Properties.Resources.hair__3_;
-            this.pbxHairMatthias.Location = new System.Drawing.Point(264, 6);
-            this.pbxHairMatthias.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxHairMatthias.Location = new System.Drawing.Point(246, 5);
+            this.pbxHairMatthias.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxHairMatthias.Name = "pbxHairMatthias";
-            this.pbxHairMatthias.Size = new System.Drawing.Size(117, 132);
+            this.pbxHairMatthias.Size = new System.Drawing.Size(108, 103);
             this.pbxHairMatthias.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxHairMatthias.TabIndex = 2;
             this.pbxHairMatthias.TabStop = false;
@@ -2191,10 +2202,10 @@
             // 
             this.pbxHairPetra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHairPetra.Image = global::ASProj.Properties.Resources.hair__4_;
-            this.pbxHairPetra.Location = new System.Drawing.Point(393, 6);
-            this.pbxHairPetra.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxHairPetra.Location = new System.Drawing.Point(366, 5);
+            this.pbxHairPetra.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxHairPetra.Name = "pbxHairPetra";
-            this.pbxHairPetra.Size = new System.Drawing.Size(117, 132);
+            this.pbxHairPetra.Size = new System.Drawing.Size(108, 103);
             this.pbxHairPetra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxHairPetra.TabIndex = 3;
             this.pbxHairPetra.TabStop = false;
@@ -2204,10 +2215,10 @@
             // 
             this.pbxHairSanna.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHairSanna.Image = global::ASProj.Properties.Resources.hair__5_;
-            this.pbxHairSanna.Location = new System.Drawing.Point(522, 6);
-            this.pbxHairSanna.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxHairSanna.Location = new System.Drawing.Point(486, 5);
+            this.pbxHairSanna.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxHairSanna.Name = "pbxHairSanna";
-            this.pbxHairSanna.Size = new System.Drawing.Size(117, 132);
+            this.pbxHairSanna.Size = new System.Drawing.Size(108, 103);
             this.pbxHairSanna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxHairSanna.TabIndex = 4;
             this.pbxHairSanna.TabStop = false;
@@ -2217,10 +2228,10 @@
             // 
             this.pbxHairTheresa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHairTheresa.Image = global::ASProj.Properties.Resources.hair__6_;
-            this.pbxHairTheresa.Location = new System.Drawing.Point(651, 6);
-            this.pbxHairTheresa.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxHairTheresa.Location = new System.Drawing.Point(606, 5);
+            this.pbxHairTheresa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxHairTheresa.Name = "pbxHairTheresa";
-            this.pbxHairTheresa.Size = new System.Drawing.Size(117, 132);
+            this.pbxHairTheresa.Size = new System.Drawing.Size(108, 103);
             this.pbxHairTheresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxHairTheresa.TabIndex = 5;
             this.pbxHairTheresa.TabStop = false;
@@ -2230,10 +2241,10 @@
             // 
             this.pbxHairTheo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHairTheo.Image = global::ASProj.Properties.Resources.hair__7_;
-            this.pbxHairTheo.Location = new System.Drawing.Point(780, 6);
-            this.pbxHairTheo.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxHairTheo.Location = new System.Drawing.Point(726, 5);
+            this.pbxHairTheo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxHairTheo.Name = "pbxHairTheo";
-            this.pbxHairTheo.Size = new System.Drawing.Size(117, 132);
+            this.pbxHairTheo.Size = new System.Drawing.Size(108, 103);
             this.pbxHairTheo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxHairTheo.TabIndex = 6;
             this.pbxHairTheo.TabStop = false;
@@ -2242,9 +2253,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(35, 19);
+            this.label2.Location = new System.Drawing.Point(32, 15);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2257,9 +2268,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(19, 26);
+            this.label1.Location = new System.Drawing.Point(18, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2273,29 +2284,30 @@
             this.roundedPanel5.BackColor = System.Drawing.Color.Transparent;
             this.roundedPanel5.BackgroundImage = global::ASProj.Properties.Resources.dark_blue_gradient_background_9562_1024x616;
             this.roundedPanel5.Controls.Add(this.pbxFullCharacter);
-            this.roundedPanel5.Location = new System.Drawing.Point(6, 156);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(6);
+            this.roundedPanel5.Location = new System.Drawing.Point(6, 122);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(537, 1079);
+            this.roundedPanel5.Size = new System.Drawing.Size(496, 843);
             this.roundedPanel5.TabIndex = 6;
             // 
             // pbxFullCharacter
             // 
             this.pbxFullCharacter.Image = global::ASProj.Properties.Resources.TheresaMay_070622_F3EN1K1;
             this.pbxFullCharacter.Location = new System.Drawing.Point(0, 0);
-            this.pbxFullCharacter.Margin = new System.Windows.Forms.Padding(6);
+            this.pbxFullCharacter.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxFullCharacter.Name = "pbxFullCharacter";
-            this.pbxFullCharacter.Size = new System.Drawing.Size(537, 1079);
+            this.pbxFullCharacter.Size = new System.Drawing.Size(496, 843);
             this.pbxFullCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFullCharacter.TabIndex = 0;
             this.pbxFullCharacter.TabStop = false;
             // 
             // frmDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(2006, 1515);
+            this.ClientSize = new System.Drawing.Size(1852, 1184);
             this.Controls.Add(this.pnlOverview);
             this.Controls.Add(this.pnlAvatar);
             this.Controls.Add(this.pnlSidebar);
@@ -2304,7 +2316,9 @@
             this.Controls.Add(this.lblDiscriminator);
             this.Controls.Add(this.pbxAvatar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximumSize = new System.Drawing.Size(1852, 1184);
+            this.MinimumSize = new System.Drawing.Size(1852, 1184);
             this.Name = "frmDashboard";
             this.Text = "z";
             this.Load += new System.EventHandler(this.frmDashboard_Load);

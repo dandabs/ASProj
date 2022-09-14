@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ASProj.Utils;
+using System.Drawing;
+using System.IO;
 
 namespace ASProj.Classes
 {

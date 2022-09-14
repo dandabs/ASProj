@@ -1,20 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32616.157
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASProj", "ASProj\ASProj.csproj", "{2CAF0FDF-2B30-4470-BE86-76CD641D9367}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D689B6FA-77E5-4DEA-A2CC-5D5AC31DD813}"
-	ProjectSection(SolutionItems) = preProject
-		Font Awesome 6 Brands-Regular-400.otf = Font Awesome 6 Brands-Regular-400.otf
-		Font Awesome 6 Free-Regular-400.otf = Font Awesome 6 Free-Regular-400.otf
-		Font Awesome 6 Free-Solid-900.otf = Font Awesome 6 Free-Solid-900.otf
-		Manrope-VariableFont_wght.ttf = Manrope-VariableFont_wght.ttf
-		PokemonGb-RAeo.ttf = PokemonGb-RAeo.ttf
-		README.md = README.md
-		things-to-remember.txt = things-to-remember.txt
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASProj", "ASProj\ASProj.csproj", "{2C860C25-AE85-473C-B920-C8E8EE4E188C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2CAF0FDF-2B30-4470-BE86-76CD641D9367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CAF0FDF-2B30-4470-BE86-76CD641D9367}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CAF0FDF-2B30-4470-BE86-76CD641D9367}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CAF0FDF-2B30-4470-BE86-76CD641D9367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C860C25-AE85-473C-B920-C8E8EE4E188C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C860C25-AE85-473C-B920-C8E8EE4E188C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C860C25-AE85-473C-B920-C8E8EE4E188C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C860C25-AE85-473C-B920-C8E8EE4E188C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A37D72B1-0745-42D2-A504-187FBD4275E6}
+		SolutionGuid = {E4FED9FA-6FEB-41D0-8DD8-A652FA2241F0}
 	EndGlobalSection
 EndGlobal

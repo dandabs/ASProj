@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,7 @@ namespace ASProj.Games
 
         private int _time = 0;
         private int _points = 0;
-        private Question? _currentquestion = null;
+        private Question _currentquestion = null;
         private Game _currentgame = Program.CurrentGame;
 
         private int _questionindex = -1;

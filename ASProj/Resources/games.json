@@ -1,0 +1,33 @@
+[
+  {
+    "Id": 0,
+    "Name": "Test game 1",
+    "Icon": "",
+    "Author": "Daniel Adams",
+    "Genre": "Action, FPS",
+    "Goal": "Translate the following words!",
+    "Questions": [
+      {
+        "Id": 0,
+        "Description": "What does the word isskapur mean?",
+        "Points": 20,
+        "CorrectAnswer": "fridge",
+        "Answers": [ "fridge", "freezer", "dog", "cat", "Iceland", "indoors" ]
+      },
+      {
+        "Id": 1,
+        "Description": "What does the word hundur mean?",
+        "Points": 20,
+        "CorrectAnswer": "dog",
+        "Answers": [ "anteater", "horse", "dog", "cat", "elephant", "orange" ]
+      },
+      {
+        "Id": 2,
+        "Description": "What does the word island mean?",
+        "Points": 20,
+        "CorrectAnswer": "Iceland",
+        "Answers": [ "horse", "fridge", "ice cream", "Iceland", "island", "ink" ]
+      }
+    ]
+  }
+]
