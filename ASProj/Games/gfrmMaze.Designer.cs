@@ -30,6 +30,7 @@ namespace ASProj.Games
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -63,7 +64,15 @@ namespace ASProj.Games
             this.panel30 = new System.Windows.Forms.Panel();
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblQuestion = new System.Windows.Forms.Label();
+            this.tmrGameplay = new System.Windows.Forms.Timer(this.components);
+            this.lblA1 = new System.Windows.Forms.Label();
+            this.lblA2 = new System.Windows.Forms.Label();
+            this.lblA3 = new System.Windows.Forms.Label();
+            this.lblA4 = new System.Windows.Forms.Label();
+            this.lblA5 = new System.Windows.Forms.Label();
+            this.lblA6 = new System.Windows.Forms.Label();
+            this.lblFinish = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCharacter)).BeginInit();
             this.panel32.SuspendLayout();
             this.SuspendLayout();
@@ -152,7 +161,7 @@ namespace ASProj.Games
             this.panel9.Location = new System.Drawing.Point(0, 104);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(810, 34);
+            this.panel9.Size = new System.Drawing.Size(975, 34);
             this.panel9.TabIndex = 2;
             this.panel9.Tag = "wall";
             // 
@@ -278,7 +287,7 @@ namespace ASProj.Games
             // 
             this.pbxCharacter.BackColor = System.Drawing.SystemColors.GrayText;
             this.pbxCharacter.Image = global::ASProj.Properties.Resources.arny_fjola;
-            this.pbxCharacter.Location = new System.Drawing.Point(129, 768);
+            this.pbxCharacter.Location = new System.Drawing.Point(25, 765);
             this.pbxCharacter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbxCharacter.Name = "pbxCharacter";
             this.pbxCharacter.Size = new System.Drawing.Size(98, 78);
@@ -389,7 +398,7 @@ namespace ASProj.Games
             // panel32
             // 
             this.panel32.BackgroundImage = global::ASProj.Properties.Resources.brickwall;
-            this.panel32.Controls.Add(this.label1);
+            this.panel32.Controls.Add(this.lblQuestion);
             this.panel32.Location = new System.Drawing.Point(-17, 902);
             this.panel32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel32.Name = "panel32";
@@ -397,17 +406,100 @@ namespace ASProj.Games
             this.panel32.TabIndex = 3;
             this.panel32.Tag = "wall";
             // 
-            // label1
+            // lblQuestion
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Manrope ExtraBold", 24F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(646, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(671, 87);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Here is the question";
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuestion.Font = new System.Drawing.Font("Manrope ExtraBold", 24F, System.Drawing.FontStyle.Bold);
+            this.lblQuestion.ForeColor = System.Drawing.Color.White;
+            this.lblQuestion.Location = new System.Drawing.Point(599, 63);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(671, 87);
+            this.lblQuestion.TabIndex = 0;
+            this.lblQuestion.Text = "Here is the question";
+            // 
+            // tmrGameplay
+            // 
+            this.tmrGameplay.Interval = 1000;
+            this.tmrGameplay.Tick += new System.EventHandler(this.tmrGameplay_Tick);
+            // 
+            // lblA1
+            // 
+            this.lblA1.AutoSize = true;
+            this.lblA1.BackColor = System.Drawing.Color.Transparent;
+            this.lblA1.ForeColor = System.Drawing.Color.White;
+            this.lblA1.Location = new System.Drawing.Point(25, 31);
+            this.lblA1.Name = "lblA1";
+            this.lblA1.Size = new System.Drawing.Size(93, 25);
+            this.lblA1.TabIndex = 8;
+            this.lblA1.Text = "answer1";
+            // 
+            // lblA2
+            // 
+            this.lblA2.AutoSize = true;
+            this.lblA2.BackColor = System.Drawing.Color.Transparent;
+            this.lblA2.ForeColor = System.Drawing.Color.White;
+            this.lblA2.Location = new System.Drawing.Point(768, 849);
+            this.lblA2.Name = "lblA2";
+            this.lblA2.Size = new System.Drawing.Size(93, 25);
+            this.lblA2.TabIndex = 9;
+            this.lblA2.Text = "answer2";
+            // 
+            // lblA3
+            // 
+            this.lblA3.AutoSize = true;
+            this.lblA3.BackColor = System.Drawing.Color.Transparent;
+            this.lblA3.ForeColor = System.Drawing.Color.White;
+            this.lblA3.Location = new System.Drawing.Point(12, 593);
+            this.lblA3.Name = "lblA3";
+            this.lblA3.Size = new System.Drawing.Size(93, 25);
+            this.lblA3.TabIndex = 10;
+            this.lblA3.Text = "answer3";
+            // 
+            // lblA4
+            // 
+            this.lblA4.AutoSize = true;
+            this.lblA4.BackColor = System.Drawing.Color.Transparent;
+            this.lblA4.ForeColor = System.Drawing.Color.White;
+            this.lblA4.Location = new System.Drawing.Point(1221, 104);
+            this.lblA4.Name = "lblA4";
+            this.lblA4.Size = new System.Drawing.Size(93, 25);
+            this.lblA4.TabIndex = 11;
+            this.lblA4.Text = "answer4";
+            // 
+            // lblA5
+            // 
+            this.lblA5.AutoSize = true;
+            this.lblA5.BackColor = System.Drawing.Color.Transparent;
+            this.lblA5.ForeColor = System.Drawing.Color.White;
+            this.lblA5.Location = new System.Drawing.Point(1221, 234);
+            this.lblA5.Name = "lblA5";
+            this.lblA5.Size = new System.Drawing.Size(93, 25);
+            this.lblA5.TabIndex = 12;
+            this.lblA5.Text = "answer5";
+            // 
+            // lblA6
+            // 
+            this.lblA6.AutoSize = true;
+            this.lblA6.BackColor = System.Drawing.Color.Transparent;
+            this.lblA6.ForeColor = System.Drawing.Color.White;
+            this.lblA6.Location = new System.Drawing.Point(1703, 642);
+            this.lblA6.Name = "lblA6";
+            this.lblA6.Size = new System.Drawing.Size(93, 25);
+            this.lblA6.TabIndex = 13;
+            this.lblA6.Text = "answer6";
+            // 
+            // lblFinish
+            // 
+            this.lblFinish.AutoSize = true;
+            this.lblFinish.BackColor = System.Drawing.Color.Transparent;
+            this.lblFinish.Font = new System.Drawing.Font("Manrope ExtraBold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFinish.ForeColor = System.Drawing.Color.White;
+            this.lblFinish.Location = new System.Drawing.Point(1707, 30);
+            this.lblFinish.Name = "lblFinish";
+            this.lblFinish.Size = new System.Drawing.Size(105, 37);
+            this.lblFinish.TabIndex = 14;
+            this.lblFinish.Text = "FINISH";
             // 
             // gfrmMaze
             // 
@@ -417,6 +509,13 @@ namespace ASProj.Games
             this.BackgroundImage = global::ASProj.Properties.Resources.tumblr_b95fc3c386f44f7b45e0ab738c952a0e_08b15f0f_1280;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1824, 1118);
+            this.Controls.Add(this.lblFinish);
+            this.Controls.Add(this.lblA6);
+            this.Controls.Add(this.lblA5);
+            this.Controls.Add(this.lblA4);
+            this.Controls.Add(this.lblA3);
+            this.Controls.Add(this.lblA2);
+            this.Controls.Add(this.lblA1);
             this.Controls.Add(this.panel32);
             this.Controls.Add(this.panel31);
             this.Controls.Add(this.panel30);
@@ -458,11 +557,13 @@ namespace ASProj.Games
             this.Name = "gfrmMaze";
             this.Tag = "wall";
             this.Text = "gfrmMaze";
+            this.Load += new System.EventHandler(this.gfrmMaze_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gfrmMaze_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbxCharacter)).EndInit();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -501,6 +602,14 @@ namespace ASProj.Games
         private Panel panel30;
         private Panel panel31;
         private Panel panel32;
-        private Label label1;
+        private Label lblQuestion;
+        private Timer tmrGameplay;
+        private Label lblA1;
+        private Label lblA2;
+        private Label lblA3;
+        private Label lblA4;
+        private Label lblA5;
+        private Label lblA6;
+        private Label lblFinish;
     }
 }

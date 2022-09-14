@@ -5,6 +5,18 @@ VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASProj", "ASProj\ASProj.csproj", "{2C860C25-AE85-473C-B920-C8E8EE4E188C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8FA0B1BF-9EF9-4A80-AABF-60C7985CF7A8}"
+	ProjectSection(SolutionItems) = preProject
+		Font Awesome 6 Brands-Regular-400.otf = Font Awesome 6 Brands-Regular-400.otf
+		Font Awesome 6 Free-Regular-400.otf = Font Awesome 6 Free-Regular-400.otf
+		Font Awesome 6 Free-Solid-900.otf = Font Awesome 6 Free-Solid-900.otf
+		Manrope-VariableFont_wght.ttf = Manrope-VariableFont_wght.ttf
+		PokemonGb-RAeo.ttf = PokemonGb-RAeo.ttf
+		README.md = README.md
+		ssd a2 coursework game icon.psd = ssd a2 coursework game icon.psd
+		things-to-remember.txt = things-to-remember.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
