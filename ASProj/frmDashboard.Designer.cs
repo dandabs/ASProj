@@ -377,7 +377,7 @@ namespace ASProj
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(1433, 68);
+            this.lblUsername.Location = new System.Drawing.Point(1421, 68);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -678,7 +678,7 @@ namespace ASProj
             this.lblLevel.AutoSize = true;
             this.lblLevel.Font = new System.Drawing.Font("Manrope", 28.25F, System.Drawing.FontStyle.Bold);
             this.lblLevel.ForeColor = System.Drawing.Color.White;
-            this.lblLevel.Location = new System.Drawing.Point(124, 98);
+            this.lblLevel.Location = new System.Drawing.Point(124, 91);
             this.lblLevel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.RightToLeft = System.Windows.Forms.RightToLeft.No;

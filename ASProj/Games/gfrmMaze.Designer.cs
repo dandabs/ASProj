@@ -395,6 +395,7 @@ namespace ASProj.Games
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(1971, 245);
             this.panel32.TabIndex = 3;
+            this.panel32.Tag = "wall";
             // 
             // label1
             // 

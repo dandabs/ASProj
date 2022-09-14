@@ -24,26 +24,52 @@ namespace ASProj.Games
 
         private void gfrmMaze_KeyDown(object sender, KeyEventArgs e)
         {
+            bool canMove = true;
             foreach (Control c1 in Controls)
             {
-                if (!((!c1.Equals(pbxCharacter)) && c1.Bounds.IntersectsWith(pbxCharacter.Bounds) && c1.Tag.ToString() == "wall"))
+                Rectangle potentialBounds = pbxCharacter.Bounds;
+
+                if (e.KeyCode == Keys.W || e.KeyCode == Keys.Up)
                 {
-                    if (e.KeyCode == Keys.W)
-                    {
-                        pbxCharacter.Top -= 20;
-                    }
-                    if (e.KeyCode == Keys.S)
-                    {
-                        pbxCharacter.Top += 20;
-                    }
-                    if (e.KeyCode == Keys.A)
-                    {
-                        pbxCharacter.Left -= 20;
-                    }
-                    if (e.KeyCode == Keys.D)
-                    {
-                        pbxCharacter.Left += 20;
-                    }
+                    potentialBounds.Location = new Point(potentialBounds.Left, potentialBounds.Top - 10);
+                }
+                if (e.KeyCode == Keys.S || e.KeyCode == Keys.Down)
+                {
+                    potentialBounds.Location = new Point(potentialBounds.Left, potentialBounds.Top + 10);
+                }
+                if (e.KeyCode == Keys.A || e.KeyCode == Keys.Left)
+                {
+                    potentialBounds.Location = new Point(potentialBounds.Left - 10, potentialBounds.Top);
+                }
+                if (e.KeyCode == Keys.D || e.KeyCode == Keys.Right)
+                {
+                    potentialBounds.Location = new Point(potentialBounds.Left + 10, potentialBounds.Top);
+                }
+
+                bool doesIntersect = c1.Bounds.IntersectsWith(potentialBounds);
+
+                if ((string)c1.Tag == "wall" && doesIntersect)
+                {
+                    canMove = false;
+                }
+            }
+            if (canMove)
+            {
+                if (e.KeyCode == Keys.W || e.KeyCode == Keys.Up)
+                {
+                    pbxCharacter.Top -= 10;
+                }
+                if (e.KeyCode == Keys.S || e.KeyCode == Keys.Down)
+                {
+                    pbxCharacter.Top += 10;
+                }
+                if (e.KeyCode == Keys.A || e.KeyCode == Keys.Left)
+                {
+                    pbxCharacter.Left -= 10;
+                }
+                if (e.KeyCode == Keys.D || e.KeyCode == Keys.Right)
+                {
+                    pbxCharacter.Left += 10;
                 }
             }
         }
