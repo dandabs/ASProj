@@ -35,6 +35,9 @@
   <PropertyGroup>
     <StartupObject>ASProj.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Untitled-1.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.4.7.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
@@ -367,6 +370,7 @@
     <Content Include="Resources\top %286%29.png" />
     <Content Include="Resources\top %287%29.png" />
     <Content Include="Resources\tumblr_b95fc3c386f44f7b45e0ab738c952a0e_08b15f0f_1280.png" />
+    <None Include="Resources\Untitled-1.ico" />
     <Content Include="Resources\ww0_bizydale_nets.jpg" />
     <Content Include="Resources\ww0_bizydale_nets1.jpg" />
   </ItemGroup>
