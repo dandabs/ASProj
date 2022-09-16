@@ -33,6 +33,8 @@ namespace ASProj
 
             } else Application.Run(new frmLogin());*/
 
+            FontManager.initialize();
+
             if (!Directory.Exists(FileHandler.dir)) Directory.CreateDirectory(FileHandler.dir);
 
             if (!File.Exists(Path.Combine(FileHandler.dir, "users.json"))) File.WriteAllText(Path.Combine(FileHandler.dir, "users.json"), Properties.Resources.default_users);

@@ -29,8 +29,8 @@ namespace ASProj.Utils
             pfc.AddMemoryFont(_FARmd, _FARl);
 
             // DA 16/9/22 FontAwesome Solid
-            int _FASl = Properties.Resources.Font_Awesome_6_Free_Solid_400.Length;
-            byte[] _FASd = Properties.Resources.Font_Awesome_6_Free_Solid_400;
+            int _FASl = Properties.Resources.Font_Awesome_6_Free_Solid_900.Length;
+            byte[] _FASd = Properties.Resources.Font_Awesome_6_Free_Solid_900;
             IntPtr _FASmd = Marshal.AllocCoTaskMem(_FASl);
             Marshal.Copy(_FASd, 0, _FASmd, _FASl);
             pfc.AddMemoryFont(_FASmd, _FASl);
