@@ -328,6 +328,36 @@ namespace ASProj.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Font_Awesome_6_Brands_Regular_400 {
+            get {
+                object obj = ResourceManager.GetObject("Font_Awesome_6_Brands_Regular_400", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Font_Awesome_6_Free_Regular_400 {
+            get {
+                object obj = ResourceManager.GetObject("Font_Awesome_6_Free_Regular_400", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Font_Awesome_6_Free_Solid_900 {
+            get {
+                object obj = ResourceManager.GetObject("Font_Awesome_6_Free_Solid_900", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap hair__1_ {
@@ -798,6 +828,16 @@ namespace ASProj.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Manrope_VariableFont_wght {
+            get {
+                object obj = ResourceManager.GetObject("Manrope_VariableFont_wght", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap pokemon_landscape_by_brainblower_d8i3udq_fullview {
@@ -813,6 +853,16 @@ namespace ASProj.Properties {
         public static byte[] PokemonDiamond {
             get {
                 object obj = ResourceManager.GetObject("PokemonDiamond", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] PokemonGb_RAeo {
+            get {
+                object obj = ResourceManager.GetObject("PokemonGb_RAeo", resourceCulture);
                 return ((byte[])(obj));
             }
         }

@@ -85,7 +85,7 @@ namespace ASProj.Games
             this.pbxUsrHealth1.BackColor = System.Drawing.Color.Transparent;
             this.pbxUsrHealth1.Image = global::ASProj.Properties.Resources.heart_full;
             this.pbxUsrHealth1.Location = new System.Drawing.Point(1704, 5);
-            this.pbxUsrHealth1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxUsrHealth1.Margin = new System.Windows.Forms.Padding(5);
             this.pbxUsrHealth1.Name = "pbxUsrHealth1";
             this.pbxUsrHealth1.Size = new System.Drawing.Size(74, 67);
             this.pbxUsrHealth1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +103,7 @@ namespace ASProj.Games
             this.pnlHUD.Controls.Add(this.pbxUsrHealth2);
             this.pnlHUD.Controls.Add(this.pbxUsrHealth1);
             this.pnlHUD.Location = new System.Drawing.Point(21, 20);
-            this.pnlHUD.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pnlHUD.Margin = new System.Windows.Forms.Padding(5);
             this.pnlHUD.Name = "pnlHUD";
             this.pnlHUD.Size = new System.Drawing.Size(1783, 78);
             this.pnlHUD.TabIndex = 1;
@@ -113,7 +113,7 @@ namespace ASProj.Games
             this.pbxOppHealth1.BackColor = System.Drawing.Color.Transparent;
             this.pbxOppHealth1.Image = global::ASProj.Properties.Resources.heart_full;
             this.pbxOppHealth1.Location = new System.Drawing.Point(94, 5);
-            this.pbxOppHealth1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxOppHealth1.Margin = new System.Windows.Forms.Padding(5);
             this.pbxOppHealth1.Name = "pbxOppHealth1";
             this.pbxOppHealth1.Size = new System.Drawing.Size(74, 67);
             this.pbxOppHealth1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +125,7 @@ namespace ASProj.Games
             this.pbxOppHealth2.BackColor = System.Drawing.Color.Transparent;
             this.pbxOppHealth2.Image = global::ASProj.Properties.Resources.heart_full;
             this.pbxOppHealth2.Location = new System.Drawing.Point(178, 5);
-            this.pbxOppHealth2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxOppHealth2.Margin = new System.Windows.Forms.Padding(5);
             this.pbxOppHealth2.Name = "pbxOppHealth2";
             this.pbxOppHealth2.Size = new System.Drawing.Size(74, 67);
             this.pbxOppHealth2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@ namespace ASProj.Games
             this.pbxOppHealth3.BackColor = System.Drawing.Color.Transparent;
             this.pbxOppHealth3.Image = global::ASProj.Properties.Resources.heart_full;
             this.pbxOppHealth3.Location = new System.Drawing.Point(262, 5);
-            this.pbxOppHealth3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxOppHealth3.Margin = new System.Windows.Forms.Padding(5);
             this.pbxOppHealth3.Name = "pbxOppHealth3";
             this.pbxOppHealth3.Size = new System.Drawing.Size(74, 67);
             this.pbxOppHealth3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +160,7 @@ namespace ASProj.Games
             this.pbxUsrHealth3.BackColor = System.Drawing.Color.Transparent;
             this.pbxUsrHealth3.Image = global::ASProj.Properties.Resources.heart_full;
             this.pbxUsrHealth3.Location = new System.Drawing.Point(1536, 5);
-            this.pbxUsrHealth3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxUsrHealth3.Margin = new System.Windows.Forms.Padding(5);
             this.pbxUsrHealth3.Name = "pbxUsrHealth3";
             this.pbxUsrHealth3.Size = new System.Drawing.Size(74, 67);
             this.pbxUsrHealth3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,7 +172,7 @@ namespace ASProj.Games
             this.pbxUsrHealth2.BackColor = System.Drawing.Color.Transparent;
             this.pbxUsrHealth2.Image = global::ASProj.Properties.Resources.heart_full;
             this.pbxUsrHealth2.Location = new System.Drawing.Point(1620, 5);
-            this.pbxUsrHealth2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxUsrHealth2.Margin = new System.Windows.Forms.Padding(5);
             this.pbxUsrHealth2.Name = "pbxUsrHealth2";
             this.pbxUsrHealth2.Size = new System.Drawing.Size(74, 67);
             this.pbxUsrHealth2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,7 +184,7 @@ namespace ASProj.Games
             this.pbxCharacter.BackColor = System.Drawing.Color.Transparent;
             this.pbxCharacter.Image = global::ASProj.Properties.Resources.TheresaMay_070622_F3EN1K1;
             this.pbxCharacter.Location = new System.Drawing.Point(1270, 230);
-            this.pbxCharacter.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxCharacter.Margin = new System.Windows.Forms.Padding(5);
             this.pbxCharacter.Name = "pbxCharacter";
             this.pbxCharacter.Size = new System.Drawing.Size(466, 833);
             this.pbxCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -196,7 +196,7 @@ namespace ASProj.Games
             this.pbxArny.BackColor = System.Drawing.Color.Transparent;
             this.pbxArny.Image = global::ASProj.Properties.Resources.arny_fjola;
             this.pbxArny.Location = new System.Drawing.Point(-514, 108);
-            this.pbxArny.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxArny.Margin = new System.Windows.Forms.Padding(5);
             this.pbxArny.Name = "pbxArny";
             this.pbxArny.Size = new System.Drawing.Size(482, 833);
             this.pbxArny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +208,7 @@ namespace ASProj.Games
             this.pnlName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
             this.pnlName.Controls.Add(this.lblMessageName);
             this.pnlName.Location = new System.Drawing.Point(461, 797);
-            this.pnlName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pnlName.Margin = new System.Windows.Forms.Padding(5);
             this.pnlName.Name = "pnlName";
             this.pnlName.Size = new System.Drawing.Size(269, 57);
             this.pnlName.TabIndex = 5;
@@ -230,7 +230,7 @@ namespace ASProj.Games
             // 
             this.pnlMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(219)))), ((int)(((byte)(203)))));
             this.pnlMessage.Location = new System.Drawing.Point(336, 825);
-            this.pnlMessage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pnlMessage.Margin = new System.Windows.Forms.Padding(5);
             this.pnlMessage.Name = "pnlMessage";
             this.pnlMessage.Size = new System.Drawing.Size(1107, 213);
             this.pnlMessage.TabIndex = 6;
@@ -259,7 +259,7 @@ namespace ASProj.Games
             // 
             this.pnlAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(219)))), ((int)(((byte)(203)))));
             this.pnlAnswer.Location = new System.Drawing.Point(708, 275);
-            this.pnlAnswer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pnlAnswer.Margin = new System.Windows.Forms.Padding(5);
             this.pnlAnswer.Name = "pnlAnswer";
             this.pnlAnswer.Size = new System.Drawing.Size(432, 470);
             this.pnlAnswer.TabIndex = 8;
@@ -269,7 +269,7 @@ namespace ASProj.Games
             this.ansOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
             this.ansOne.Controls.Add(this.lblAnsOne);
             this.ansOne.Location = new System.Drawing.Point(732, 320);
-            this.ansOne.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ansOne.Margin = new System.Windows.Forms.Padding(5);
             this.ansOne.Name = "ansOne";
             this.ansOne.Size = new System.Drawing.Size(382, 57);
             this.ansOne.TabIndex = 6;
@@ -308,7 +308,7 @@ namespace ASProj.Games
             this.ansTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
             this.ansTwo.Controls.Add(this.lblAnsTwo);
             this.ansTwo.Location = new System.Drawing.Point(732, 387);
-            this.ansTwo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ansTwo.Margin = new System.Windows.Forms.Padding(5);
             this.ansTwo.Name = "ansTwo";
             this.ansTwo.Size = new System.Drawing.Size(382, 57);
             this.ansTwo.TabIndex = 7;
@@ -319,7 +319,7 @@ namespace ASProj.Games
             this.ansThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
             this.ansThree.Controls.Add(this.lblAnsThree);
             this.ansThree.Location = new System.Drawing.Point(732, 453);
-            this.ansThree.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ansThree.Margin = new System.Windows.Forms.Padding(5);
             this.ansThree.Name = "ansThree";
             this.ansThree.Size = new System.Drawing.Size(382, 57);
             this.ansThree.TabIndex = 8;
@@ -344,7 +344,7 @@ namespace ASProj.Games
             this.ansFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
             this.ansFour.Controls.Add(this.lblAnsFour);
             this.ansFour.Location = new System.Drawing.Point(732, 520);
-            this.ansFour.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ansFour.Margin = new System.Windows.Forms.Padding(5);
             this.ansFour.Name = "ansFour";
             this.ansFour.Size = new System.Drawing.Size(382, 57);
             this.ansFour.TabIndex = 9;
@@ -369,7 +369,7 @@ namespace ASProj.Games
             this.ansFive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
             this.ansFive.Controls.Add(this.lblAnsFive);
             this.ansFive.Location = new System.Drawing.Point(732, 587);
-            this.ansFive.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ansFive.Margin = new System.Windows.Forms.Padding(5);
             this.ansFive.Name = "ansFive";
             this.ansFive.Size = new System.Drawing.Size(382, 57);
             this.ansFive.TabIndex = 10;
@@ -394,7 +394,7 @@ namespace ASProj.Games
             this.ansSix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
             this.ansSix.Controls.Add(this.lblAnsSix);
             this.ansSix.Location = new System.Drawing.Point(732, 653);
-            this.ansSix.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ansSix.Margin = new System.Windows.Forms.Padding(5);
             this.ansSix.Name = "ansSix";
             this.ansSix.Size = new System.Drawing.Size(382, 57);
             this.ansSix.TabIndex = 11;
@@ -419,7 +419,7 @@ namespace ASProj.Games
             this.pbxAttack.BackColor = System.Drawing.Color.Transparent;
             this.pbxAttack.Image = global::ASProj.Properties.Resources.FireBall;
             this.pbxAttack.Location = new System.Drawing.Point(417, 320);
-            this.pbxAttack.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxAttack.Margin = new System.Windows.Forms.Padding(5);
             this.pbxAttack.Name = "pbxAttack";
             this.pbxAttack.Size = new System.Drawing.Size(895, 455);
             this.pbxAttack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -456,11 +456,12 @@ namespace ASProj.Games
             this.Controls.Add(this.pbxCharacter);
             this.Controls.Add(this.pnlHUD);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximumSize = new System.Drawing.Size(1824, 1118);
             this.MinimumSize = new System.Drawing.Size(1824, 1118);
             this.Name = "gfrmConversation";
             this.Text = "gfrmConversation";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.gfrmConversation_FormClosing);
             this.Load += new System.EventHandler(this.gfrmConversation_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gfrmConversation_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbxUsrHealth1)).EndInit();

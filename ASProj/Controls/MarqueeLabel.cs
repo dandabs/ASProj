@@ -14,7 +14,7 @@ namespace ASProj.Controls
         public MarqueeLabel()
         {
             DoubleBuffered = true;
-            timer = new System.Windows.Forms.Timer() { Interval = 100 };
+            timer = new System.Windows.Forms.Timer() { Interval = 25 };
             timer.Enabled = true;
             timer.Tick += Timer_Tick;
         }

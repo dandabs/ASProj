@@ -93,18 +93,6 @@ namespace ASProj.Games
             ansSix.Visible = visiblity;
         }
 
-        private void playSound(byte[] resource, float volume)
-        {
-            IWavePlayer wOut = new WaveOut();
-            MemoryStream mp3 = new MemoryStream(resource);
-            Mp3FileReader reader = new Mp3FileReader(mp3);
-            wOut.Volume = volume;
-            wOut.Init(reader);
-            wOut.Play();
-
-            FormClosing += (s, a) => { wOut.Stop(); };
-        }
-
         private void gfrmConversation_Load(object sender, EventArgs e)
         {
             showAnswerBubble(false);
@@ -115,7 +103,7 @@ namespace ASProj.Games
 
             pbxCharacter.Image = Program.CurrentSession.Character.GetBitmap();
 
-            playSound(Properties.Resources.PokemonDiamond, 0.5f);
+            MusicPlayer.playResource(Properties.Resources.PokemonDiamond, 0.5f);
 
             pbxArny.Left = -300;
             tmrArnyAnim1.Enabled = true;
@@ -210,6 +198,8 @@ namespace ASProj.Games
 
                 Program.CurrentSession.Records.Add(record);
                 Program.CurrentSession.Save();
+
+                MusicPlayer.stopResource();
 
                 Form frmDashboard = new frmDashboard();
                 frmDashboard.Show();
@@ -353,7 +343,7 @@ namespace ASProj.Games
             tmrGameplay.Enabled = false;
             showAnswerBubble(false);
 
-            playSound(Properties.Resources.Hit_Super_Effective, 1f);
+            MusicPlayer.playResource(Properties.Resources.Hit_Super_Effective, 1f);
 
             pbxAttack.Visible = true;
 
@@ -435,6 +425,11 @@ namespace ASProj.Games
         private void tmrGameplay_Tick(object sender, EventArgs e)
         {
             _time++;
+        }
+
+        private void gfrmConversation_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

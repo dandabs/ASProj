@@ -31,21 +31,23 @@ namespace ASProj.Games
 
         private GameRecord _record = new GameRecord(Program.CurrentGame, Program.CurrentSession.Id);
 
-        private void playSound(byte[] resource, float volume)
-        {
-            IWavePlayer wOut = new WaveOut();
-            MemoryStream mp3 = new MemoryStream(resource);
-            Mp3FileReader reader = new Mp3FileReader(mp3);
-            wOut.Volume = volume;
-            wOut.Init(reader);
-            wOut.Play();
-
-            FormClosing += (s, a) => { wOut.Stop(); };
-        }
+        private Point loc1;
+        private Point loc2;
+        private Point loc3;
+        private Point loc4;
+        private Point loc5;
+        private Point loc6;
 
         private void gfrmFeed_Load(object sender, EventArgs e)
         {
-            playSound(Properties.Resources.The_Days_In_Swordcraft_Academy2, 0.5f);
+            loc1 = lblAnswer1.Location;
+            loc2 = lblAnswer2.Location;
+            loc3 = lblAnswer3.Location;
+            loc4 = lblAnswer4.Location;
+            loc5 = lblAnswer5.Location;
+            loc6 = lblAnswer6.Location;
+
+            MusicPlayer.playResource(Properties.Resources.The_Days_In_Swordcraft_Academy2, 0.5f);
             pbxCharacter.Image = Program.CurrentSession.Character.GetBitmap();
             askQuestion(_currentgame.Questions[0]);
         }
@@ -107,12 +109,12 @@ namespace ASProj.Games
             lblAnswer5.Text = q.Answers[4];
             lblAnswer6.Text = q.Answers[5];
 
-            lblAnswer1.Location = new Point(106, 311);
-            lblAnswer2.Location = new Point(1382, 1161);
-            lblAnswer3.Location = new Point(1683, 166);
-            lblAnswer4.Location = new Point(739, 572);
-            lblAnswer5.Location = new Point(912, 19);
-            lblAnswer6.Location = new Point(52, 1205);
+            lblAnswer1.Location = loc1;
+            lblAnswer2.Location = loc2;
+            lblAnswer3.Location = loc3;
+            lblAnswer4.Location = loc4;
+            lblAnswer5.Location = loc5;
+            lblAnswer6.Location = loc6;
 
             mqlQuestion.Text = q.Description;
 
@@ -133,6 +135,8 @@ namespace ASProj.Games
             Program.CurrentSession.Points += _points;
 
             Program.CurrentSession.Save();
+
+            MusicPlayer.stopResource();
 
             Form frmDashboard = new frmDashboard();
             frmDashboard.Show();
