@@ -73,6 +73,16 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap _8b40d0ff8c8592393ceffcbb0e9654d3 {
+            get {
+                object obj = ResourceManager.GetObject("8b40d0ff8c8592393ceffcbb0e9654d3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap a46c81229e41a8a4c365ce467fb23d5b {
             get {
                 object obj = ResourceManager.GetObject("a46c81229e41a8a4c365ce467fb23d5b", resourceCulture);

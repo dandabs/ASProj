@@ -31,9 +31,10 @@ namespace ASProj
         private void InitializeComponent()
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.btnSearch = new ASProj.Controls.MenuListIconButton();
             this.label66 = new System.Windows.Forms.Label();
             this.menuListIconButton6 = new ASProj.Controls.MenuListIconButton();
-            this.menuListIconButton5 = new ASProj.Controls.MenuListIconButton();
+            this.btnIncorrect = new ASProj.Controls.MenuListIconButton();
             this.btnAvatar = new ASProj.Controls.MenuListIconButton();
             this.btnLogout = new ASProj.Controls.MenuListIconButton();
             this.btnOverview = new ASProj.Controls.MenuListIconButton();
@@ -175,6 +176,26 @@ namespace ASProj
             this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel5 = new ASProj.Controls.RoundedPanel();
             this.pbxFullCharacter = new System.Windows.Forms.PictureBox();
+            this.pnlIncorrect = new System.Windows.Forms.Panel();
+            this.roundedPanel11 = new ASProj.Controls.RoundedPanel();
+            this.flpAnswers = new System.Windows.Forms.FlowLayoutPanel();
+            this.rplTemp = new ASProj.Controls.RoundedPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pnlSearch = new System.Windows.Forms.Panel();
+            this.roundedPanel15 = new ASProj.Controls.RoundedPanel();
+            this.cbxUserList = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pnlProfile = new System.Windows.Forms.Panel();
+            this.lblProfileId = new System.Windows.Forms.Label();
+            this.lblProfileUsername = new System.Windows.Forms.Label();
+            this.pbxProfilePhoto = new ASProj.Controls.OvalPictureBox();
+            this.pbxBanner = new System.Windows.Forms.PictureBox();
+            this.lblProfilePoints = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.pnlSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).BeginInit();
             this.roundedPanel1.SuspendLayout();
@@ -232,14 +253,24 @@ namespace ASProj
             ((System.ComponentModel.ISupportInitialize)(this.pbxHairTheo)).BeginInit();
             this.roundedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFullCharacter)).BeginInit();
+            this.pnlIncorrect.SuspendLayout();
+            this.roundedPanel11.SuspendLayout();
+            this.flpAnswers.SuspendLayout();
+            this.rplTemp.SuspendLayout();
+            this.pnlSearch.SuspendLayout();
+            this.roundedPanel15.SuspendLayout();
+            this.pnlProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProfilePhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBanner)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.pnlSidebar.Controls.Add(this.btnSearch);
             this.pnlSidebar.Controls.Add(this.label66);
             this.pnlSidebar.Controls.Add(this.menuListIconButton6);
-            this.pnlSidebar.Controls.Add(this.menuListIconButton5);
+            this.pnlSidebar.Controls.Add(this.btnIncorrect);
             this.pnlSidebar.Controls.Add(this.btnAvatar);
             this.pnlSidebar.Controls.Add(this.btnLogout);
             this.pnlSidebar.Controls.Add(this.btnOverview);
@@ -249,13 +280,29 @@ namespace ASProj
             this.pnlSidebar.Size = new System.Drawing.Size(132, 1187);
             this.pnlSidebar.TabIndex = 0;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
+            this.btnSearch.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.Icon = '';
+            this.btnSearch.Location = new System.Drawing.Point(33, 562);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Selected = false;
+            this.btnSearch.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnSearch.Size = new System.Drawing.Size(66, 63);
+            this.btnSearch.TabIndex = 20;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // label66
             // 
             this.label66.AutoSize = true;
             this.label66.BackColor = System.Drawing.Color.Transparent;
             this.label66.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 30.25F, System.Drawing.FontStyle.Bold);
             this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label66.Location = new System.Drawing.Point(18, 48);
+            this.label66.Location = new System.Drawing.Point(14, 48);
             this.label66.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label66.Name = "label66";
             this.label66.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -279,20 +326,21 @@ namespace ASProj
             this.menuListIconButton6.Size = new System.Drawing.Size(66, 63);
             this.menuListIconButton6.TabIndex = 6;
             // 
-            // menuListIconButton5
+            // btnIncorrect
             // 
-            this.menuListIconButton5.BackColor = System.Drawing.Color.Transparent;
-            this.menuListIconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuListIconButton5.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
-            this.menuListIconButton5.ForeColor = System.Drawing.Color.DarkGray;
-            this.menuListIconButton5.Icon = '';
-            this.menuListIconButton5.Location = new System.Drawing.Point(32, 370);
-            this.menuListIconButton5.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.menuListIconButton5.Name = "menuListIconButton5";
-            this.menuListIconButton5.Selected = false;
-            this.menuListIconButton5.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.menuListIconButton5.Size = new System.Drawing.Size(66, 63);
-            this.menuListIconButton5.TabIndex = 5;
+            this.btnIncorrect.BackColor = System.Drawing.Color.Transparent;
+            this.btnIncorrect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIncorrect.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 13.25F, System.Drawing.FontStyle.Bold);
+            this.btnIncorrect.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnIncorrect.Icon = '';
+            this.btnIncorrect.Location = new System.Drawing.Point(32, 370);
+            this.btnIncorrect.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.btnIncorrect.Name = "btnIncorrect";
+            this.btnIncorrect.Selected = false;
+            this.btnIncorrect.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.btnIncorrect.Size = new System.Drawing.Size(66, 63);
+            this.btnIncorrect.TabIndex = 5;
+            this.btnIncorrect.Click += new System.EventHandler(this.btnIncorrect_Click);
             // 
             // btnAvatar
             // 
@@ -2301,6 +2349,253 @@ namespace ASProj
             this.pbxFullCharacter.TabIndex = 0;
             this.pbxFullCharacter.TabStop = false;
             // 
+            // pnlIncorrect
+            // 
+            this.pnlIncorrect.Controls.Add(this.roundedPanel11);
+            this.pnlIncorrect.Controls.Add(this.label16);
+            this.pnlIncorrect.Location = new System.Drawing.Point(222, 142);
+            this.pnlIncorrect.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.pnlIncorrect.Name = "pnlIncorrect";
+            this.pnlIncorrect.Size = new System.Drawing.Size(1530, 970);
+            this.pnlIncorrect.TabIndex = 49;
+            this.pnlIncorrect.Visible = false;
+            // 
+            // roundedPanel11
+            // 
+            this.roundedPanel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.roundedPanel11.Controls.Add(this.flpAnswers);
+            this.roundedPanel11.Location = new System.Drawing.Point(30, 123);
+            this.roundedPanel11.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.roundedPanel11.Name = "roundedPanel11";
+            this.roundedPanel11.Size = new System.Drawing.Size(1490, 824);
+            this.roundedPanel11.TabIndex = 48;
+            // 
+            // flpAnswers
+            // 
+            this.flpAnswers.AutoScroll = true;
+            this.flpAnswers.Controls.Add(this.rplTemp);
+            this.flpAnswers.Location = new System.Drawing.Point(18, 0);
+            this.flpAnswers.Name = "flpAnswers";
+            this.flpAnswers.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
+            this.flpAnswers.Size = new System.Drawing.Size(1455, 821);
+            this.flpAnswers.TabIndex = 0;
+            // 
+            // rplTemp
+            // 
+            this.rplTemp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(77)))));
+            this.rplTemp.Controls.Add(this.label14);
+            this.rplTemp.Controls.Add(this.label12);
+            this.rplTemp.Controls.Add(this.label9);
+            this.rplTemp.Location = new System.Drawing.Point(3, 18);
+            this.rplTemp.Name = "rplTemp";
+            this.rplTemp.Size = new System.Drawing.Size(1410, 107);
+            this.rplTemp.TabIndex = 0;
+            this.rplTemp.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Manrope Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(1067, 39);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(235, 28);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Correct answer: fridge";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Manrope Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(602, 39);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(143, 28);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "You said: dog";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Manrope Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(45, 39);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(277, 28);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "What does Ísskápur mean?";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(18, 20);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label16.Name = "label16";
+            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label16.Size = new System.Drawing.Size(484, 71);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "Incorrect answers";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pnlSearch
+            // 
+            this.pnlSearch.Controls.Add(this.roundedPanel15);
+            this.pnlSearch.Controls.Add(this.label20);
+            this.pnlSearch.Location = new System.Drawing.Point(222, 143);
+            this.pnlSearch.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.pnlSearch.Name = "pnlSearch";
+            this.pnlSearch.Size = new System.Drawing.Size(1530, 970);
+            this.pnlSearch.TabIndex = 50;
+            this.pnlSearch.Visible = false;
+            this.pnlSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSearch_Paint);
+            // 
+            // roundedPanel15
+            // 
+            this.roundedPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.roundedPanel15.Controls.Add(this.cbxUserList);
+            this.roundedPanel15.Controls.Add(this.label19);
+            this.roundedPanel15.Location = new System.Drawing.Point(18, 122);
+            this.roundedPanel15.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.roundedPanel15.Name = "roundedPanel15";
+            this.roundedPanel15.Size = new System.Drawing.Size(1502, 190);
+            this.roundedPanel15.TabIndex = 10;
+            // 
+            // cbxUserList
+            // 
+            this.cbxUserList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(37)))));
+            this.cbxUserList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxUserList.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbxUserList.Font = new System.Drawing.Font("Manrope SemiBold", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxUserList.ForeColor = System.Drawing.Color.White;
+            this.cbxUserList.FormattingEnabled = true;
+            this.cbxUserList.Location = new System.Drawing.Point(39, 74);
+            this.cbxUserList.Name = "cbxUserList";
+            this.cbxUserList.Size = new System.Drawing.Size(1421, 81);
+            this.cbxUserList.TabIndex = 46;
+            this.cbxUserList.SelectedIndexChanged += new System.EventHandler(this.cbxUserList_SelectedIndexChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label19.ForeColor = System.Drawing.Color.Silver;
+            this.label19.Location = new System.Drawing.Point(32, 15);
+            this.label19.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label19.Name = "label19";
+            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label19.Size = new System.Drawing.Size(194, 38);
+            this.label19.TabIndex = 45;
+            this.label19.Text = "Select a user";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Manrope", 19.25F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(18, 20);
+            this.label20.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label20.Name = "label20";
+            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label20.Size = new System.Drawing.Size(196, 71);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Profile";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pnlProfile
+            // 
+            this.pnlProfile.Controls.Add(this.lblProfilePoints);
+            this.pnlProfile.Controls.Add(this.label17);
+            this.pnlProfile.Controls.Add(this.lblProfileId);
+            this.pnlProfile.Controls.Add(this.lblProfileUsername);
+            this.pnlProfile.Controls.Add(this.pbxProfilePhoto);
+            this.pnlProfile.Controls.Add(this.pbxBanner);
+            this.pnlProfile.Location = new System.Drawing.Point(223, 143);
+            this.pnlProfile.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.pnlProfile.Name = "pnlProfile";
+            this.pnlProfile.Size = new System.Drawing.Size(1530, 970);
+            this.pnlProfile.TabIndex = 51;
+            // 
+            // lblProfileId
+            // 
+            this.lblProfileId.AutoSize = true;
+            this.lblProfileId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.lblProfileId.Font = new System.Drawing.Font("Manrope SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileId.ForeColor = System.Drawing.Color.Gray;
+            this.lblProfileId.Location = new System.Drawing.Point(362, 457);
+            this.lblProfileId.Name = "lblProfileId";
+            this.lblProfileId.Size = new System.Drawing.Size(662, 44);
+            this.lblProfileId.TabIndex = 3;
+            this.lblProfileId.Text = "baf0b322-e0a6-43ce-8002-1e82ebc7adf9";
+            // 
+            // lblProfileUsername
+            // 
+            this.lblProfileUsername.AutoSize = true;
+            this.lblProfileUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.lblProfileUsername.Font = new System.Drawing.Font("Manrope", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileUsername.ForeColor = System.Drawing.Color.White;
+            this.lblProfileUsername.Location = new System.Drawing.Point(360, 401);
+            this.lblProfileUsername.Name = "lblProfileUsername";
+            this.lblProfileUsername.Size = new System.Drawing.Size(350, 59);
+            this.lblProfileUsername.TabIndex = 2;
+            this.lblProfileUsername.Text = "dandabs#2088";
+            // 
+            // pbxProfilePhoto
+            // 
+            this.pbxProfilePhoto.BackColor = System.Drawing.Color.DarkGray;
+            this.pbxProfilePhoto.Image = global::ASProj.Properties.Resources._740ecb78aa4c10cb0a2170ea2350c337;
+            this.pbxProfilePhoto.Location = new System.Drawing.Point(50, 218);
+            this.pbxProfilePhoto.Name = "pbxProfilePhoto";
+            this.pbxProfilePhoto.Size = new System.Drawing.Size(295, 284);
+            this.pbxProfilePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxProfilePhoto.TabIndex = 0;
+            this.pbxProfilePhoto.TabStop = false;
+            // 
+            // pbxBanner
+            // 
+            this.pbxBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxBanner.Image = global::ASProj.Properties.Resources.animesher_com_bird_fantasy_anime_nature_1145927;
+            this.pbxBanner.Location = new System.Drawing.Point(-1, -1);
+            this.pbxBanner.Name = "pbxBanner";
+            this.pbxBanner.Size = new System.Drawing.Size(1527, 386);
+            this.pbxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxBanner.TabIndex = 1;
+            this.pbxBanner.TabStop = false;
+            // 
+            // lblProfilePoints
+            // 
+            this.lblProfilePoints.AutoSize = true;
+            this.lblProfilePoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblProfilePoints.Font = new System.Drawing.Font("Manrope", 38.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfilePoints.ForeColor = System.Drawing.Color.White;
+            this.lblProfilePoints.Location = new System.Drawing.Point(1200, 388);
+            this.lblProfilePoints.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfilePoints.Name = "lblProfilePoints";
+            this.lblProfilePoints.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfilePoints.Size = new System.Drawing.Size(304, 140);
+            this.lblProfilePoints.TabIndex = 13;
+            this.lblProfilePoints.Text = "3456";
+            this.lblProfilePoints.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 38.25F, System.Drawing.FontStyle.Bold);
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.label17.Location = new System.Drawing.Point(1071, 406);
+            this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label17.Name = "label17";
+            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label17.Size = new System.Drawing.Size(158, 102);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -2308,7 +2603,10 @@ namespace ASProj
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(1852, 1184);
+            this.Controls.Add(this.pnlProfile);
             this.Controls.Add(this.pnlOverview);
+            this.Controls.Add(this.pnlSearch);
+            this.Controls.Add(this.pnlIncorrect);
             this.Controls.Add(this.pnlAvatar);
             this.Controls.Add(this.pnlSidebar);
             this.Controls.Add(this.pnlLevels);
@@ -2320,6 +2618,7 @@ namespace ASProj
             this.MaximumSize = new System.Drawing.Size(1852, 1184);
             this.MinimumSize = new System.Drawing.Size(1852, 1184);
             this.Name = "frmDashboard";
+            this.Padding = new System.Windows.Forms.Padding(0, 0, 132, 0);
             this.Text = "z";
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmDashboard_MouseDown);
@@ -2393,6 +2692,20 @@ namespace ASProj
             ((System.ComponentModel.ISupportInitialize)(this.pbxHairTheo)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxFullCharacter)).EndInit();
+            this.pnlIncorrect.ResumeLayout(false);
+            this.pnlIncorrect.PerformLayout();
+            this.roundedPanel11.ResumeLayout(false);
+            this.flpAnswers.ResumeLayout(false);
+            this.rplTemp.ResumeLayout(false);
+            this.rplTemp.PerformLayout();
+            this.pnlSearch.ResumeLayout(false);
+            this.pnlSearch.PerformLayout();
+            this.roundedPanel15.ResumeLayout(false);
+            this.roundedPanel15.PerformLayout();
+            this.pnlProfile.ResumeLayout(false);
+            this.pnlProfile.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProfilePhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBanner)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2405,7 +2718,7 @@ namespace ASProj
         private Controls.MenuListIconButton btnOverview;
         private Controls.MenuListIconButton btnLogout;
         private Controls.MenuListIconButton menuListIconButton6;
-        private Controls.MenuListIconButton menuListIconButton5;
+        private Controls.MenuListIconButton btnIncorrect;
         private Controls.MenuListIconButton btnAvatar;
         private Controls.OvalPictureBox pbxAvatar;
         private Label lblDiscriminator;
@@ -2546,5 +2859,26 @@ namespace ASProj
         private Label label1;
         private Controls.RoundedPanel roundedPanel5;
         private PictureBox pbxFullCharacter;
+        private Controls.MenuListIconButton btnSearch;
+        private Panel pnlIncorrect;
+        private Controls.RoundedPanel roundedPanel11;
+        private Label label16;
+        private FlowLayoutPanel flpAnswers;
+        private Controls.RoundedPanel rplTemp;
+        private Label label14;
+        private Label label12;
+        private Label label9;
+        private Panel pnlSearch;
+        private Controls.RoundedPanel roundedPanel15;
+        private Label label19;
+        private Label label20;
+        private ComboBox cbxUserList;
+        private Panel pnlProfile;
+        private Label lblProfileId;
+        private Label lblProfileUsername;
+        private Controls.OvalPictureBox pbxProfilePhoto;
+        private PictureBox pbxBanner;
+        private Label lblProfilePoints;
+        private Label label17;
     }
 }

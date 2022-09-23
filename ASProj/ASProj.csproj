@@ -205,6 +205,12 @@
     <Compile Include="Games\gfrmMaze.Designer.cs">
       <DependentUpon>gfrmMaze.cs</DependentUpon>
     </Compile>
+    <Compile Include="Games\gfrmPlatformer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\gfrmPlatformer.Designer.cs">
+      <DependentUpon>gfrmPlatformer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Games\gfrmSwim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +271,9 @@
     <EmbeddedResource Include="Games\gfrmMaze.resx">
       <DependentUpon>gfrmMaze.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Games\gfrmPlatformer.resx">
+      <DependentUpon>gfrmPlatformer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Games\gfrmSwim.resx">
       <DependentUpon>gfrmSwim.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,6 +312,7 @@
     <Content Include="Resources\350a232967f2ad354ff2ef464a75bc0d.jpg" />
     <Content Include="Resources\5082445c736781115816c8a0c7f6f461--tove-jansson-moomin.jpg" />
     <Content Include="Resources\740ecb78aa4c10cb0a2170ea2350c337.jpg" />
+    <None Include="Resources\8b40d0ff8c8592393ceffcbb0e9654d3.jpg" />
     <Content Include="Resources\91895290_3152419521475609_8245228045900709888_n.jpg" />
     <Content Include="Resources\a46c81229e41a8a4c365ce467fb23d5b.png" />
     <Content Include="Resources\animesher.com_bird-fantasy-anime-nature-1145927.gif" />

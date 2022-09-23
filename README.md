@@ -63,6 +63,8 @@ https://stackoverflow.com/questions/463642/how-can-i-convert-seconds-into-hourmi
 https://stackoverflow.com/questions/3143657/truncate-two-decimal-places-without-rounding
 https://stackoverflow.com/questions/13153616/how-to-round-a-integer-to-the-close-hundred
 https://stackoverflow.com/questions/6842750/merge-two-png-images-with-transparency-and-retain-transparency
+https://stackoverflow.com/questions/1297264/using-custom-fonts-on-a-label-on-winforms
+https://stackoverflow.com/questions/3473597/it-is-possible-to-copy-all-the-properties-of-a-certain-control-c-window-forms?noredirect=1&lq=1
 
 ### audio player
 https://github.com/naudio/NAudio

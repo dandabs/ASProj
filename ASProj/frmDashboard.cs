@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ASProj.Utils;
 using System.IO;
+using System.Reflection;
 
 namespace ASProj
 {
@@ -20,12 +21,32 @@ namespace ASProj
         public frmDashboard()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
         private void menuListIconButton2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void copyControl(Control sourceControl, Control targetControl)
+        {
+            // make sure these are the same
+            if (sourceControl.GetType() != targetControl.GetType())
+            {
+                throw new Exception("Incorrect control types");
+            }
+
+            foreach (PropertyInfo sourceProperty in sourceControl.GetType().GetProperties())
+            {
+                object newValue = sourceProperty.GetValue(sourceControl, null);
+
+                MethodInfo mi = sourceProperty.GetSetMethod(true);
+                if (mi != null)
+                {
+                    sourceProperty.SetValue(targetControl, newValue, null);
+                }
+            }
         }
 
         private void frmDashboard_Load(object sender, EventArgs e)
@@ -41,6 +62,10 @@ namespace ASProj
             List<User> str2 = User.Deserialize(str);
             MessageBox.Show(str2.Count + "");*/
 
+            pnlProfile.Hide();
+            pnlSearch.Hide();
+            pnlIncorrect.Hide();
+
             lblUsername.Text = Program.CurrentSession.Username;
             lblDiscriminator.Text = "#" + Program.CurrentSession.Discriminator;
             pbxAvatar.Image = UserImage.Search(Program.CurrentSession.GetAvatar()).ToBitmap();
@@ -55,7 +80,8 @@ namespace ASProj
                 {
                     lblTransDesc1.Text = t.Description;
                     lblTransPoints1.Text = Convert.ToString(t.Points);
-                } else if (i == (transCount - 2))
+                }
+                else if (i == (transCount - 2))
                 {
                     lblTransDesc2.Text = t.Description;
                     lblTransPoints2.Text = Convert.ToString(t.Points);
@@ -131,8 +157,9 @@ namespace ASProj
                         records.Add(gr);
                     }
                 }
+                cbxUserList.Items.Add(u.Username + "#" + u.Discriminator);
             }
-            List<GameRecord> sortedRecords = records.OrderByDescending(gr=>gr.Points).ToList();
+            List<GameRecord> sortedRecords = records.OrderByDescending(gr => gr.Points).ToList();
             if (sortedRecords.Count != 0)
             {
                 for (int i = 0; i <= 6; i++)
@@ -146,13 +173,96 @@ namespace ASProj
                             this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreName" + (i + 1), false)[0].Text = u.Username + "#" + u.Discriminator;
                             this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("lblTopScoreDesc" + (i + 1), false)[0].Text = gr.Points + " on " + gr.Date.Day + "/" + gr.Date.Month + "/" + gr.Date.Year;
                             ((PictureBox)this.Controls.Find("pnlOverview", false)[0].Controls.Find("pnlScores", false)[0].Controls.Find("pbxTopScore" + (i + 1), false)[0]).Image = UserImage.Search(u.GetAvatar()).ToBitmap();
-                        } catch (Exception) { }
                         }
+                        catch (Exception) { }
+                    }
                 }
             }
 
             pbxFullCharacter.Image = Program.CurrentSession.Character.GetBitmap();
             pbxSmallAvatar.Image = Program.CurrentSession.Character.GetBitmap();
+
+            foreach (GameRecord r in Program.CurrentSession.Records)
+            {
+                foreach (GivenAnswer ga in r.Answers)
+                {
+                    if (!ga.IsCorrect)
+                    {
+
+                        ASProj.Controls.RoundedPanel rpl = new ASProj.Controls.RoundedPanel();
+                        Label lblQ = new Label();
+                        Label lblIA = new Label();
+                        Label lblCA = new Label();
+
+                        copyControl(rplTemp, rpl);
+
+                        rpl.Size = rplTemp.Size;
+                        rpl.Visible = true;
+
+                        ((Label)lblQ).Text = ga.Question.Description;
+                        ((Label)lblIA).Text = "You said: " + ga.ChosenAnswer;
+                        ((Label)lblCA).Text = "Correct answer: " + ga.CorrectAnswer;
+
+                        lblQ.Location = rplTemp.Controls[2].Location;
+                        lblIA.Location = rplTemp.Controls[1].Location;
+                        lblCA.Location = rplTemp.Controls[0].Location;
+
+                        lblQ.ForeColor = Color.White;
+                        lblIA.ForeColor = Color.White;
+                        lblCA.ForeColor = Color.White;
+
+                        lblQ.Size = new Size(lblQ.Size.Width * 2, lblQ.Size.Height);
+                        lblIA.Size = new Size(lblIA.Size.Width * 2, lblIA.Size.Height);
+                        lblCA.Size = new Size(lblCA.Size.Width * 2, lblCA.Size.Height);
+
+                        lblQ.Parent = rpl;
+                        lblIA.Parent = rpl;
+                        lblCA.Parent = rpl;
+
+                        /*ASProj.Controls.RoundedPanel rpl = new ASProj.Controls.RoundedPanel();
+                        Label lblQ = new Label();
+                        Label lblIA = new Label();
+                        Label lblCA = new Label();
+
+                        rpl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(77)))));
+                        rpl.Location = new System.Drawing.Point(3, 1020);
+                        rpl.Name = "roundedPanel21";
+                        rpl.Size = rplTemp.Size;
+
+                        lblQ.AutoSize = true;
+                        lblQ.Font = new System.Drawing.Font("Manrope Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        lblQ.ForeColor = System.Drawing.Color.White;
+                        lblQ.Location = new System.Drawing.Point(45, 39);
+                        lblQ.Name = "label9";
+                        lblQ.Size = new System.Drawing.Size(277, 28);
+                        lblQ.TabIndex = 0;
+                        lblQ.Text = "What does Ísskápur mean?";
+                        lblQ.Parent = rpl;
+
+                        lblIA.AutoSize = true;
+                        lblIA.Font = new System.Drawing.Font("Manrope Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        lblIA.ForeColor = System.Drawing.Color.White;
+                        lblIA.Location = new System.Drawing.Point(602, 39);
+                        lblIA.Name = "label12";
+                        lblIA.Size = new System.Drawing.Size(143, 28);
+                        lblIA.TabIndex = 1;
+                        lblIA.Text = "You said: dog";
+                        lblIA.Parent = rpl;
+
+                        lblCA.AutoSize = true;
+                        lblCA.Font = new System.Drawing.Font("Manrope Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        lblCA.ForeColor = System.Drawing.Color.White;
+                        lblCA.Location = new System.Drawing.Point(1067, 39);
+                        lblCA.Name = "label14";
+                        lblCA.Size = new System.Drawing.Size(235, 28);
+                        lblCA.TabIndex = 2;
+                        lblCA.Text = "Correct answer: fridge";
+                        lblCA.Parent = rpl;*/
+
+                        flpAnswers.Controls.Add(rpl);
+                    }
+                }
+            }
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
@@ -443,19 +553,28 @@ namespace ASProj
         private void menuListIconButton2_Click(object sender, EventArgs e)
         {
             pnlOverview.Show(); btnOverview.Selected = true;
+            pnlIncorrect.Hide(); btnIncorrect.Selected = false;
+            pnlSearch.Hide(); btnSearch.Selected = false;
             pnlAvatar.Hide(); btnAvatar.Selected = false;
+            pnlProfile.Hide();
         }
 
         private void btnAvatar_Click(object sender, EventArgs e)
         {
             pnlOverview.Hide(); btnOverview.Selected = false;
+            pnlIncorrect.Hide(); btnIncorrect.Selected = false;
+            pnlSearch.Hide(); btnSearch.Selected = false;
             pnlAvatar.Show(); btnAvatar.Selected = true;
+            pnlProfile.Hide();
         }
 
         private void btnCustomizeCharacter_Click(object sender, EventArgs e)
         {
             pnlOverview.Hide(); btnOverview.Selected = false;
+            pnlIncorrect.Hide(); btnIncorrect.Selected = false;
+            pnlSearch.Hide(); btnSearch.Selected = false;
             pnlAvatar.Show(); btnAvatar.Selected = true;
+            pnlProfile.Hide();
         }
 
         private void btnNormal_Click(object sender, EventArgs e)
@@ -465,7 +584,7 @@ namespace ASProj
             Program.CurrentGame = games[0];
 
             Hide();
-            Form gfrmSwim = new Games.gfrmMaze();
+            Form gfrmSwim = new Games.gfrmPlatformer();
             gfrmSwim.Show();
             gfrmSwim.SetDesktopLocation(Location.X, Location.Y);
         }
@@ -530,6 +649,48 @@ namespace ASProj
                     gfrmGame.SetDesktopLocation(Location.X, Location.Y);
                 }
             }
+        }
+
+        private void btnIncorrect_Click(object sender, EventArgs e)
+        {
+            pnlOverview.Hide(); btnOverview.Selected = false;
+            pnlAvatar.Hide(); btnAvatar.Selected = false;
+            pnlSearch.Hide(); btnSearch.Selected = false;
+            pnlIncorrect.Show(); btnIncorrect.Selected = true;
+            pnlProfile.Hide();
+        }
+
+        private void pnlSearch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbxUserList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pnlSearch.Hide();
+            pnlProfile.Show();
+
+            User[] users = JsonConvert.DeserializeObject<User[]>(FileHandler.Select("users.json"));
+            List<GameRecord> records = new List<GameRecord>();
+            foreach (User u in users)
+            {
+                if (u.Username + "#" + u.Discriminator == cbxUserList.Text)
+                {
+                    lblProfileUsername.Text = u.Username + "#" + u.Discriminator;
+                    lblProfileId.Text = u.Id.ToString();
+                    pbxProfilePhoto.Image = UserImage.Search(u.GetAvatar()).ToBitmap();
+                    lblProfilePoints.Text = u.Points.ToString();
+                }
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            pnlOverview.Hide(); btnOverview.Selected = false;
+            pnlAvatar.Hide(); btnAvatar.Selected = false;
+            pnlIncorrect.Hide(); btnIncorrect.Selected = false;
+            pnlProfile.Hide();
+            pnlSearch.Show(); btnSearch.Selected = true;
         }
     }
 }

@@ -470,7 +470,7 @@ namespace ASProj
             // 
             this.socialIcon6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(64)))), ((int)(((byte)(74)))));
             this.socialIcon6.Font = new System.Drawing.Font("Font Awesome 6 Brands Regular", 18F);
-            this.socialIcon6.IconText = "";
+            this.socialIcon6.IconText = ".";
             this.socialIcon6.Location = new System.Drawing.Point(66, 648);
             this.socialIcon6.Margin = new System.Windows.Forms.Padding(16, 5, 16, 5);
             this.socialIcon6.Name = "socialIcon6";

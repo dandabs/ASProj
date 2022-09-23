@@ -57,6 +57,12 @@ namespace ASProj.Controls
         {
             base.OnFontChanged(e);
             ((Label)Controls.Find("check", true)[0]).Font = Font;
+            centerText();
+        }
+
+        private void SocialIcon_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

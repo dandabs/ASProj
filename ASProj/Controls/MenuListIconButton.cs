@@ -53,12 +53,15 @@ namespace ASProj.Controls
         }
         private void centerText()
         {
-            // place the label in the middle of the textbox
-            /*height*/
-            ((Label)Controls.Find("icon", true)[0]).Top = (Height / 2) - (Controls.Find("icon", true)[0].PreferredSize.Height / 2);
-            /*width*/
-            ((Label)Controls.Find("icon", true)[0]).Left = (Width / 2) - (Controls.Find("icon", true)[0].PreferredSize.Width / 2);
-        }
+            try
+            {
+                // place the label in the middle of the textbox
+                /*height*/
+                ((Label)Controls.Find("icon", true)[0]).Top = (Height / 2) - (Controls.Find("icon", true)[0].PreferredSize.Height / 2);
+                /*width*/
+                ((Label)Controls.Find("icon", true)[0]).Left = (Width / 2) - (Controls.Find("icon", true)[0].PreferredSize.Width / 2);
+            } catch (Exception _) { }
+            }
         private void onSelectionChanged()
         {
             ((Label)Controls.Find("icon", true)[0]).Text = ico.ToString();
@@ -86,6 +89,11 @@ namespace ASProj.Controls
         {
             base.OnFontChanged(e);
             ((Label)Controls.Find("icon", true)[0]).Font = Font;
+        }
+
+        private void MenuListIconButton_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
