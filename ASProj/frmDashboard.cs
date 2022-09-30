@@ -680,6 +680,30 @@ namespace ASProj
                     lblProfileId.Text = u.Id.ToString();
                     pbxProfilePhoto.Image = UserImage.Search(u.GetAvatar()).ToBitmap();
                     lblProfilePoints.Text = u.Points.ToString();
+
+                    int highest = (int)u.Records[0].Points;
+                    foreach (GameRecord r in u.Records) if ((int)r.Points > highest) highest = (int)r.Points;
+                    lblProfileHighScore.Text = Convert.ToString(highest);
+
+                    int lowest = (int)u.Records[0].Points;
+                    foreach (GameRecord r in u.Records) if ((int)r.Points < lowest) lowest = (int)r.Points;
+                    lblProfileLowScore.Text = Convert.ToString(lowest);
+
+                    int incorrect = 0;
+                    foreach (GameRecord r in u.Records) foreach (GivenAnswer a in r.Answers) if (a.IsCorrect) incorrect++;
+                    lblProfileIncorrect.Text = Convert.ToString(incorrect);
+
+                    for (int i = 1; i < (u.Records.Count + 1) && i <= 4; i++)
+                    {
+                        ((Label)Controls.Find("lblProfileGameIcon" + i, true)[0]).Text =
+                            u.Records[i - 1].Game.Icon.ToString();
+                        ((Label)Controls.Find("lblProfileGameName" + i, true)[0]).Text =
+                            u.Records[i - 1].Game.Name;
+                        ((Label)Controls.Find("lblProfileGameDate" + i, true)[0]).Text =
+                            u.Records[i - 1].Date.ToShortDateString();
+                        ((Label)Controls.Find("lblProfileGamePoints" + i, true)[0]).Text =
+                            u.Records[i - 1].Points.ToString();
+                    }
                 }
             }
         }
@@ -691,6 +715,11 @@ namespace ASProj
             pnlIncorrect.Hide(); btnIncorrect.Selected = false;
             pnlProfile.Hide();
             pnlSearch.Show(); btnSearch.Selected = true;
+        }
+
+        private void pnlProfile_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

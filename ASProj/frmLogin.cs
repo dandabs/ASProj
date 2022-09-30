@@ -87,7 +87,7 @@ namespace ASProj
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            tbxUsername.Text = Environment.UserName;
         }
 
         private void pnlRegister_Paint(object sender, PaintEventArgs e)

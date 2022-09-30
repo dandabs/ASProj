@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ASProj.Utils
 {
-    public abstract class FontManager
+    public class FontManager
     {
         public static PrivateFontCollection pfc = new PrivateFontCollection();
 
