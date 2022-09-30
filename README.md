@@ -1,5 +1,5 @@
 # ASProj
-Playing around with my potential AS Level coursework for Software Systems Development through CCEA. Applies to the 2016 specification with 2022 ammendments.
+My AS Level coursework for Software Systems Development through CCEA. Applies to the 2016 specification with 2022 ammendments.
 
 ## things-to-remember.txt
 
