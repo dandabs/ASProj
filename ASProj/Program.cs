@@ -60,18 +60,18 @@ namespace ASProj
                     }
                     else
                     {
-                        File.Delete(Path.Combine(FileHandler.dir, ".session"));
+                        File.Delete(Path.Combine(FileHandler.dir, ".session")); // DA 11/10/22 Password has been changed since token was saved
                         Application.Run(new frmLogin());
                     }
                 }
                 catch (Exception)
                 {
-                    File.Delete(Path.Combine(FileHandler.dir, ".session"));
+                    /*File.Delete(Path.Combine(FileHandler.dir, ".session"));*/
                     Application.Run(new frmLogin());
                 }
             }
             else Application.Run(new frmLogin());
-
+            
         }
 
         public static User CurrentSession = null;

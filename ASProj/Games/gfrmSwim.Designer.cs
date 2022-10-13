@@ -42,7 +42,7 @@ namespace ASProj.Games
             // 
             this.pbxCharacter.BackColor = System.Drawing.Color.Transparent;
             this.pbxCharacter.Image = global::ASProj.Properties.Resources.TheresaMay_070622_F3EN1K_jpg;
-            this.pbxCharacter.Location = new System.Drawing.Point(812, 719);
+            this.pbxCharacter.Location = new System.Drawing.Point(812, 714);
             this.pbxCharacter.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxCharacter.Name = "pbxCharacter";
             this.pbxCharacter.Size = new System.Drawing.Size(237, 273);
@@ -64,12 +64,12 @@ namespace ASProj.Games
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lblQuestion.Font = new System.Drawing.Font("Manrope", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.White;
-            this.lblQuestion.Location = new System.Drawing.Point(20, 997);
+            this.lblQuestion.Location = new System.Drawing.Point(20, 982);
             this.lblQuestion.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(1053, 130);
+            this.lblQuestion.Size = new System.Drawing.Size(1090, 130);
             this.lblQuestion.TabIndex = 1;
             this.lblQuestion.Text = "This is a sample question, what does it mean?\r\nAnd with two lines?";
             // 
@@ -83,6 +83,7 @@ namespace ASProj.Games
             this.ClientSize = new System.Drawing.Size(1824, 1118);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.pbxCharacter);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximumSize = new System.Drawing.Size(1824, 1118);

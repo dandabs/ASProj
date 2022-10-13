@@ -681,11 +681,13 @@ namespace ASProj
                     pbxProfilePhoto.Image = UserImage.Search(u.GetAvatar()).ToBitmap();
                     lblProfilePoints.Text = u.Points.ToString();
 
-                    int highest = (int)u.Records[0].Points;
+                    int highest = 0;
+                    if (u.Records.Count != 0) highest = (int)u.Records[0].Points;
                     foreach (GameRecord r in u.Records) if ((int)r.Points > highest) highest = (int)r.Points;
                     lblProfileHighScore.Text = Convert.ToString(highest);
 
-                    int lowest = (int)u.Records[0].Points;
+                    int lowest = 0;
+                    if (u.Records.Count != 0) lowest = (int)u.Records[0].Points;
                     foreach (GameRecord r in u.Records) if ((int)r.Points < lowest) lowest = (int)r.Points;
                     lblProfileLowScore.Text = Convert.ToString(lowest);
 
@@ -720,6 +722,43 @@ namespace ASProj
         private void pnlProfile_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pbxBanner_MouseEnter(object sender, EventArgs e)
+        {
+            if (lblProfileId.Text == Program.CurrentSession.Id.ToString()) Cursor = Cursors.Hand;
+        }
+
+        private void pbxBanner_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
+
+        private void pbxBanner_Click(object sender, EventArgs e)
+        {
+            if (lblProfileId.Text != Program.CurrentSession.Id.ToString()) return;
+            ofdBanner.InitialDirectory = FileHandler.dir;
+            if (ofdBanner.ShowDialog() == DialogResult.OK)
+            {
+                // DA 5/10/22 Create image object and save it to the database
+                UserImage img = new UserImage(ofdBanner.FileName);
+                img.Save();
+                pbxBanner.Image = img.ToBitmap();
+
+                // DA 5/10/22 Update user object with the new banner and save it to the database
+                Program.CurrentSession.Banner = img.Id;
+                Program.CurrentSession.Save();
+            }
+        }
+
+        private void pbxAvatar_DragEnter(object sender, DragEventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void pbxAvatar_DragLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
         }
     }
 }

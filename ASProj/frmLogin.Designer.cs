@@ -685,6 +685,7 @@ namespace ASProj
             this.Controls.Add(this.lblLoginTitle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRegisterTitle);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximumSize = new System.Drawing.Size(1852, 1184);

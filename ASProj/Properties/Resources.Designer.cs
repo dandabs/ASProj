@@ -203,6 +203,16 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap controls_platformer {
+            get {
+                object obj = ResourceManager.GetObject("controls platformer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap dark_blue_gradient_background_9562_1024x616 {
             get {
                 object obj = ResourceManager.GetObject("dark-blue-gradient-background-9562-1024x616", resourceCulture);
@@ -844,6 +854,16 @@ namespace ASProj.Properties {
             get {
                 object obj = ResourceManager.GetObject("Manrope_VariableFont_wght", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap photo_1616108738832_504f7b6addf2 {
+            get {
+                object obj = ResourceManager.GetObject("photo-1616108738832-504f7b6addf2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

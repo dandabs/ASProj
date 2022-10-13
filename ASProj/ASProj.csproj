@@ -332,6 +332,7 @@
     <Content Include="Resources\brickwall.jpg" />
     <Content Include="Resources\brown-toned-brick-wall-repeating-pattern-brown-toned-brick-wall-repeating-pattern-161622734.jpg" />
     <Content Include="Resources\brown-toned-brick-wall-repeating-pattern-brown-toned-brick-wall-repeating-pattern-1616227341.jpg" />
+    <None Include="Resources\controls platformer.png" />
     <Content Include="Resources\dark-blue-gradient-background-9562-1024x616.jpg" />
     <Content Include="Resources\ezgif.com-gif-maker.jpg" />
     <Content Include="Resources\face %281%29.png" />
@@ -390,6 +391,7 @@
     <Content Include="Resources\imageedit_8_7025415654.png" />
     <Content Include="Resources\images.jpg" />
     <Content Include="Resources\lizzo-bet-awards-5daad5-0%401x.jpeg" />
+    <None Include="Resources\photo-1616108738832-504f7b6addf2.jpeg" />
     <Content Include="Resources\pokemon_landscape_by_brainblower_d8i3udq-fullview.jpg" />
     <Content Include="Resources\Pokémon Diamond.mp3" />
     <Content Include="Resources\t4ovzMA.gif" />

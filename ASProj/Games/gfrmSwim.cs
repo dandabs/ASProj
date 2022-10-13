@@ -27,6 +27,8 @@ namespace ASProj.Games
         private Question _currentquestion = null;
         private Game _currentgame = Program.CurrentGame;
 
+        private Point _pbxCharacterDefault;
+
         private int _questionindex = -1;
 
         private GameRecord _record = new GameRecord(Program.CurrentGame, Program.CurrentSession.Id);
@@ -151,7 +153,7 @@ namespace ASProj.Games
                 {
                     Controls.Remove(c);
                     handleAnswer(Convert.ToInt32(c.Name.Split('_')[3]));
-                    pbxCharacter.Location = new Point(880, 920);
+                    pbxCharacter.Location = _pbxCharacterDefault;
                 }
             }
 
@@ -178,6 +180,7 @@ namespace ASProj.Games
         private void gfrmSwim_Load(object sender, EventArgs e)
         {
             pbxCharacter.Image = Program.CurrentSession.Character.GetBitmap();
+            _pbxCharacterDefault = pbxCharacter.Location;
             askQuestion(_currentgame.Questions[0]);
         }
     }

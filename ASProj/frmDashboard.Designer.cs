@@ -190,6 +190,17 @@ namespace ASProj
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.pnlProfile = new System.Windows.Forms.Panel();
+            this.label47 = new System.Windows.Forms.Label();
+            this.lblProfileGameDate4 = new System.Windows.Forms.Label();
+            this.lblProfileGamePoints4 = new System.Windows.Forms.Label();
+            this.lblProfileGameName4 = new System.Windows.Forms.Label();
+            this.lblProfileGameIcon4 = new System.Windows.Forms.Label();
+            this.lblProfileStatus = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.lblProfileGameDate3 = new System.Windows.Forms.Label();
+            this.lblProfileGamePoints3 = new System.Windows.Forms.Label();
+            this.lblProfileGameName3 = new System.Windows.Forms.Label();
+            this.lblProfileGameIcon3 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.lblProfileGameDate2 = new System.Windows.Forms.Label();
             this.lblProfileGamePoints2 = new System.Windows.Forms.Label();
@@ -212,17 +223,7 @@ namespace ASProj
             this.lblProfileUsername = new System.Windows.Forms.Label();
             this.pbxProfilePhoto = new ASProj.Controls.OvalPictureBox();
             this.pbxBanner = new System.Windows.Forms.PictureBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.lblProfileGameDate3 = new System.Windows.Forms.Label();
-            this.lblProfileGamePoints3 = new System.Windows.Forms.Label();
-            this.lblProfileGameName3 = new System.Windows.Forms.Label();
-            this.lblProfileGameIcon3 = new System.Windows.Forms.Label();
-            this.lblProfileStatus = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.lblProfileGameDate4 = new System.Windows.Forms.Label();
-            this.lblProfileGamePoints4 = new System.Windows.Forms.Label();
-            this.lblProfileGameName4 = new System.Windows.Forms.Label();
-            this.lblProfileGameIcon4 = new System.Windows.Forms.Label();
+            this.ofdBanner = new System.Windows.Forms.OpenFileDialog();
             this.pnlSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).BeginInit();
             this.roundedPanel1.SuspendLayout();
@@ -426,11 +427,13 @@ namespace ASProj
             this.pbxAvatar.Location = new System.Drawing.Point(1671, 50);
             this.pbxAvatar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pbxAvatar.Name = "pbxAvatar";
-            this.pbxAvatar.Size = new System.Drawing.Size(78, 66);
+            this.pbxAvatar.Size = new System.Drawing.Size(66, 66);
             this.pbxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAvatar.TabIndex = 2;
             this.pbxAvatar.TabStop = false;
             this.pbxAvatar.Click += new System.EventHandler(this.pbxAvatar_Click);
+            this.pbxAvatar.DragEnter += new System.Windows.Forms.DragEventHandler(this.pbxAvatar_DragEnter);
+            this.pbxAvatar.DragLeave += new System.EventHandler(this.pbxAvatar_DragLeave);
             // 
             // lblDiscriminator
             // 
@@ -2575,6 +2578,167 @@ namespace ASProj
             this.pnlProfile.TabIndex = 51;
             this.pnlProfile.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlProfile_Paint);
             // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.label47.Location = new System.Drawing.Point(951, 900);
+            this.label47.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label47.Name = "label47";
+            this.label47.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label47.Size = new System.Drawing.Size(40, 28);
+            this.label47.TabIndex = 43;
+            this.label47.Text = "";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGameDate4
+            // 
+            this.lblProfileGameDate4.AutoSize = true;
+            this.lblProfileGameDate4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGameDate4.ForeColor = System.Drawing.Color.Silver;
+            this.lblProfileGameDate4.Location = new System.Drawing.Point(701, 895);
+            this.lblProfileGameDate4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGameDate4.Name = "lblProfileGameDate4";
+            this.lblProfileGameDate4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGameDate4.Size = new System.Drawing.Size(163, 38);
+            this.lblProfileGameDate4.TabIndex = 46;
+            this.lblProfileGameDate4.Text = "No activity";
+            this.lblProfileGameDate4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGamePoints4
+            // 
+            this.lblProfileGamePoints4.AutoSize = true;
+            this.lblProfileGamePoints4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGamePoints4.ForeColor = System.Drawing.Color.Gray;
+            this.lblProfileGamePoints4.Location = new System.Drawing.Point(985, 895);
+            this.lblProfileGamePoints4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGamePoints4.Name = "lblProfileGamePoints4";
+            this.lblProfileGamePoints4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGamePoints4.Size = new System.Drawing.Size(29, 38);
+            this.lblProfileGamePoints4.TabIndex = 42;
+            this.lblProfileGamePoints4.Text = "-";
+            this.lblProfileGamePoints4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGameName4
+            // 
+            this.lblProfileGameName4.AutoSize = true;
+            this.lblProfileGameName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGameName4.ForeColor = System.Drawing.Color.Silver;
+            this.lblProfileGameName4.Location = new System.Drawing.Point(435, 897);
+            this.lblProfileGameName4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGameName4.Name = "lblProfileGameName4";
+            this.lblProfileGameName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGameName4.Size = new System.Drawing.Size(163, 38);
+            this.lblProfileGameName4.TabIndex = 45;
+            this.lblProfileGameName4.Text = "No activity";
+            this.lblProfileGameName4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGameIcon4
+            // 
+            this.lblProfileGameIcon4.AutoSize = true;
+            this.lblProfileGameIcon4.BackColor = System.Drawing.Color.Transparent;
+            this.lblProfileGameIcon4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGameIcon4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblProfileGameIcon4.Location = new System.Drawing.Point(365, 895);
+            this.lblProfileGameIcon4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGameIcon4.Name = "lblProfileGameIcon4";
+            this.lblProfileGameIcon4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGameIcon4.Size = new System.Drawing.Size(44, 41);
+            this.lblProfileGameIcon4.TabIndex = 44;
+            this.lblProfileGameIcon4.Text = "-";
+            this.lblProfileGameIcon4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileStatus
+            // 
+            this.lblProfileStatus.AutoSize = true;
+            this.lblProfileStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblProfileStatus.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileStatus.ForeColor = System.Drawing.Color.Silver;
+            this.lblProfileStatus.Location = new System.Drawing.Point(363, 524);
+            this.lblProfileStatus.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileStatus.Name = "lblProfileStatus";
+            this.lblProfileStatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileStatus.Size = new System.Drawing.Size(727, 152);
+            this.lblProfileStatus.TabIndex = 41;
+            this.lblProfileStatus.Text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit. Donec a ligula ut augu" +
+    "e luctus posuere. Nulla \r\neget augue erat. Quisque lobortis sem dictum ante\r\npha" +
+    "retra, non varius nisi consequat.\"";
+            this.lblProfileStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.label38.Location = new System.Drawing.Point(951, 840);
+            this.label38.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label38.Name = "label38";
+            this.label38.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label38.Size = new System.Drawing.Size(40, 28);
+            this.label38.TabIndex = 37;
+            this.label38.Text = "";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGameDate3
+            // 
+            this.lblProfileGameDate3.AutoSize = true;
+            this.lblProfileGameDate3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGameDate3.ForeColor = System.Drawing.Color.Silver;
+            this.lblProfileGameDate3.Location = new System.Drawing.Point(701, 835);
+            this.lblProfileGameDate3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGameDate3.Name = "lblProfileGameDate3";
+            this.lblProfileGameDate3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGameDate3.Size = new System.Drawing.Size(163, 38);
+            this.lblProfileGameDate3.TabIndex = 40;
+            this.lblProfileGameDate3.Text = "No activity";
+            this.lblProfileGameDate3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGamePoints3
+            // 
+            this.lblProfileGamePoints3.AutoSize = true;
+            this.lblProfileGamePoints3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGamePoints3.ForeColor = System.Drawing.Color.Gray;
+            this.lblProfileGamePoints3.Location = new System.Drawing.Point(985, 835);
+            this.lblProfileGamePoints3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGamePoints3.Name = "lblProfileGamePoints3";
+            this.lblProfileGamePoints3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGamePoints3.Size = new System.Drawing.Size(29, 38);
+            this.lblProfileGamePoints3.TabIndex = 36;
+            this.lblProfileGamePoints3.Text = "-";
+            this.lblProfileGamePoints3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGameName3
+            // 
+            this.lblProfileGameName3.AutoSize = true;
+            this.lblProfileGameName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGameName3.ForeColor = System.Drawing.Color.Silver;
+            this.lblProfileGameName3.Location = new System.Drawing.Point(435, 837);
+            this.lblProfileGameName3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGameName3.Name = "lblProfileGameName3";
+            this.lblProfileGameName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGameName3.Size = new System.Drawing.Size(163, 38);
+            this.lblProfileGameName3.TabIndex = 39;
+            this.lblProfileGameName3.Text = "No activity";
+            this.lblProfileGameName3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblProfileGameIcon3
+            // 
+            this.lblProfileGameIcon3.AutoSize = true;
+            this.lblProfileGameIcon3.BackColor = System.Drawing.Color.Transparent;
+            this.lblProfileGameIcon3.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
+            this.lblProfileGameIcon3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
+            this.lblProfileGameIcon3.Location = new System.Drawing.Point(365, 835);
+            this.lblProfileGameIcon3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblProfileGameIcon3.Name = "lblProfileGameIcon3";
+            this.lblProfileGameIcon3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileGameIcon3.Size = new System.Drawing.Size(44, 41);
+            this.lblProfileGameIcon3.TabIndex = 38;
+            this.lblProfileGameIcon3.Text = "-";
+            this.lblProfileGameIcon3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -2599,9 +2763,9 @@ namespace ASProj
             this.lblProfileGameDate2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGameDate2.Name = "lblProfileGameDate2";
             this.lblProfileGameDate2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameDate2.Size = new System.Drawing.Size(179, 38);
+            this.lblProfileGameDate2.Size = new System.Drawing.Size(163, 38);
             this.lblProfileGameDate2.TabIndex = 35;
-            this.lblProfileGameDate2.Text = "30/09/2022";
+            this.lblProfileGameDate2.Text = "No activity";
             this.lblProfileGameDate2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblProfileGamePoints2
@@ -2613,9 +2777,9 @@ namespace ASProj
             this.lblProfileGamePoints2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGamePoints2.Name = "lblProfileGamePoints2";
             this.lblProfileGamePoints2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGamePoints2.Size = new System.Drawing.Size(52, 38);
+            this.lblProfileGamePoints2.Size = new System.Drawing.Size(29, 38);
             this.lblProfileGamePoints2.TabIndex = 31;
-            this.lblProfileGamePoints2.Text = "20";
+            this.lblProfileGamePoints2.Text = "-";
             this.lblProfileGamePoints2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblProfileGameName2
@@ -2627,9 +2791,9 @@ namespace ASProj
             this.lblProfileGameName2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGameName2.Name = "lblProfileGameName2";
             this.lblProfileGameName2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameName2.Size = new System.Drawing.Size(175, 38);
+            this.lblProfileGameName2.Size = new System.Drawing.Size(163, 38);
             this.lblProfileGameName2.TabIndex = 34;
-            this.lblProfileGameName2.Text = "Test game 1";
+            this.lblProfileGameName2.Text = "No activity";
             this.lblProfileGameName2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblProfileGameIcon2
@@ -2642,9 +2806,9 @@ namespace ASProj
             this.lblProfileGameIcon2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGameIcon2.Name = "lblProfileGameIcon2";
             this.lblProfileGameIcon2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameIcon2.Size = new System.Drawing.Size(64, 41);
+            this.lblProfileGameIcon2.Size = new System.Drawing.Size(44, 41);
             this.lblProfileGameIcon2.TabIndex = 33;
-            this.lblProfileGameIcon2.Text = "";
+            this.lblProfileGameIcon2.Text = "-";
             this.lblProfileGameIcon2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label18
@@ -2671,9 +2835,9 @@ namespace ASProj
             this.lblProfileGameDate1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGameDate1.Name = "lblProfileGameDate1";
             this.lblProfileGameDate1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameDate1.Size = new System.Drawing.Size(179, 38);
+            this.lblProfileGameDate1.Size = new System.Drawing.Size(163, 38);
             this.lblProfileGameDate1.TabIndex = 30;
-            this.lblProfileGameDate1.Text = "30/09/2022";
+            this.lblProfileGameDate1.Text = "No activity";
             this.lblProfileGameDate1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblProfileGamePoints1
@@ -2685,9 +2849,9 @@ namespace ASProj
             this.lblProfileGamePoints1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGamePoints1.Name = "lblProfileGamePoints1";
             this.lblProfileGamePoints1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGamePoints1.Size = new System.Drawing.Size(52, 38);
+            this.lblProfileGamePoints1.Size = new System.Drawing.Size(29, 38);
             this.lblProfileGamePoints1.TabIndex = 26;
-            this.lblProfileGamePoints1.Text = "20";
+            this.lblProfileGamePoints1.Text = "-";
             this.lblProfileGamePoints1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblProfileGameName1
@@ -2699,9 +2863,9 @@ namespace ASProj
             this.lblProfileGameName1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGameName1.Name = "lblProfileGameName1";
             this.lblProfileGameName1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameName1.Size = new System.Drawing.Size(175, 38);
+            this.lblProfileGameName1.Size = new System.Drawing.Size(163, 38);
             this.lblProfileGameName1.TabIndex = 29;
-            this.lblProfileGameName1.Text = "Test game 1";
+            this.lblProfileGameName1.Text = "No activity";
             this.lblProfileGameName1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblProfileGameIcon1
@@ -2714,9 +2878,9 @@ namespace ASProj
             this.lblProfileGameIcon1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileGameIcon1.Name = "lblProfileGameIcon1";
             this.lblProfileGameIcon1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameIcon1.Size = new System.Drawing.Size(64, 41);
+            this.lblProfileGameIcon1.Size = new System.Drawing.Size(44, 41);
             this.lblProfileGameIcon1.TabIndex = 28;
-            this.lblProfileGameIcon1.Text = "";
+            this.lblProfileGameIcon1.Text = "-";
             this.lblProfileGameIcon1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblProfileIncorrect
@@ -2729,9 +2893,9 @@ namespace ASProj
             this.lblProfileIncorrect.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileIncorrect.Name = "lblProfileIncorrect";
             this.lblProfileIncorrect.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileIncorrect.Size = new System.Drawing.Size(114, 140);
+            this.lblProfileIncorrect.Size = new System.Drawing.Size(127, 140);
             this.lblProfileIncorrect.TabIndex = 19;
-            this.lblProfileIncorrect.Text = "7";
+            this.lblProfileIncorrect.Text = "0";
             this.lblProfileIncorrect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label23
@@ -2759,9 +2923,9 @@ namespace ASProj
             this.lblProfileLowScore.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileLowScore.Name = "lblProfileLowScore";
             this.lblProfileLowScore.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileLowScore.Size = new System.Drawing.Size(180, 140);
+            this.lblProfileLowScore.Size = new System.Drawing.Size(127, 140);
             this.lblProfileLowScore.TabIndex = 17;
-            this.lblProfileLowScore.Text = "32";
+            this.lblProfileLowScore.Text = "0";
             this.lblProfileLowScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label21
@@ -2789,9 +2953,9 @@ namespace ASProj
             this.lblProfileHighScore.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfileHighScore.Name = "lblProfileHighScore";
             this.lblProfileHighScore.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileHighScore.Size = new System.Drawing.Size(225, 140);
+            this.lblProfileHighScore.Size = new System.Drawing.Size(127, 140);
             this.lblProfileHighScore.TabIndex = 15;
-            this.lblProfileHighScore.Text = "123";
+            this.lblProfileHighScore.Text = "0";
             this.lblProfileHighScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label15
@@ -2819,9 +2983,9 @@ namespace ASProj
             this.lblProfilePoints.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProfilePoints.Name = "lblProfilePoints";
             this.lblProfilePoints.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfilePoints.Size = new System.Drawing.Size(304, 140);
+            this.lblProfilePoints.Size = new System.Drawing.Size(127, 140);
             this.lblProfilePoints.TabIndex = 13;
-            this.lblProfilePoints.Text = "3456";
+            this.lblProfilePoints.Text = "0";
             this.lblProfilePoints.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label17
@@ -2884,166 +3048,14 @@ namespace ASProj
             this.pbxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxBanner.TabIndex = 1;
             this.pbxBanner.TabStop = false;
+            this.pbxBanner.Click += new System.EventHandler(this.pbxBanner_Click);
+            this.pbxBanner.MouseEnter += new System.EventHandler(this.pbxBanner_MouseEnter);
+            this.pbxBanner.MouseLeave += new System.EventHandler(this.pbxBanner_MouseLeave);
             // 
-            // label38
+            // ofdBanner
             // 
-            this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label38.Location = new System.Drawing.Point(951, 840);
-            this.label38.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label38.Name = "label38";
-            this.label38.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label38.Size = new System.Drawing.Size(40, 28);
-            this.label38.TabIndex = 37;
-            this.label38.Text = "";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGameDate3
-            // 
-            this.lblProfileGameDate3.AutoSize = true;
-            this.lblProfileGameDate3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGameDate3.ForeColor = System.Drawing.Color.Silver;
-            this.lblProfileGameDate3.Location = new System.Drawing.Point(701, 835);
-            this.lblProfileGameDate3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGameDate3.Name = "lblProfileGameDate3";
-            this.lblProfileGameDate3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameDate3.Size = new System.Drawing.Size(179, 38);
-            this.lblProfileGameDate3.TabIndex = 40;
-            this.lblProfileGameDate3.Text = "30/09/2022";
-            this.lblProfileGameDate3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGamePoints3
-            // 
-            this.lblProfileGamePoints3.AutoSize = true;
-            this.lblProfileGamePoints3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGamePoints3.ForeColor = System.Drawing.Color.Gray;
-            this.lblProfileGamePoints3.Location = new System.Drawing.Point(985, 835);
-            this.lblProfileGamePoints3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGamePoints3.Name = "lblProfileGamePoints3";
-            this.lblProfileGamePoints3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGamePoints3.Size = new System.Drawing.Size(52, 38);
-            this.lblProfileGamePoints3.TabIndex = 36;
-            this.lblProfileGamePoints3.Text = "20";
-            this.lblProfileGamePoints3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGameName3
-            // 
-            this.lblProfileGameName3.AutoSize = true;
-            this.lblProfileGameName3.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGameName3.ForeColor = System.Drawing.Color.Silver;
-            this.lblProfileGameName3.Location = new System.Drawing.Point(435, 837);
-            this.lblProfileGameName3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGameName3.Name = "lblProfileGameName3";
-            this.lblProfileGameName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameName3.Size = new System.Drawing.Size(175, 38);
-            this.lblProfileGameName3.TabIndex = 39;
-            this.lblProfileGameName3.Text = "Test game 1";
-            this.lblProfileGameName3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGameIcon3
-            // 
-            this.lblProfileGameIcon3.AutoSize = true;
-            this.lblProfileGameIcon3.BackColor = System.Drawing.Color.Transparent;
-            this.lblProfileGameIcon3.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGameIcon3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblProfileGameIcon3.Location = new System.Drawing.Point(365, 835);
-            this.lblProfileGameIcon3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGameIcon3.Name = "lblProfileGameIcon3";
-            this.lblProfileGameIcon3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameIcon3.Size = new System.Drawing.Size(64, 41);
-            this.lblProfileGameIcon3.TabIndex = 38;
-            this.lblProfileGameIcon3.Text = "";
-            this.lblProfileGameIcon3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileStatus
-            // 
-            this.lblProfileStatus.AutoSize = true;
-            this.lblProfileStatus.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileStatus.ForeColor = System.Drawing.Color.Silver;
-            this.lblProfileStatus.Location = new System.Drawing.Point(363, 524);
-            this.lblProfileStatus.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileStatus.Name = "lblProfileStatus";
-            this.lblProfileStatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileStatus.Size = new System.Drawing.Size(727, 152);
-            this.lblProfileStatus.TabIndex = 41;
-            this.lblProfileStatus.Text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit. Donec a ligula ut augu" +
-    "e luctus posuere. Nulla \r\neget augue erat. Quisque lobortis sem dictum ante\r\npha" +
-    "retra, non varius nisi consequat.\"";
-            this.lblProfileStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.label47.Location = new System.Drawing.Point(951, 900);
-            this.label47.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label47.Name = "label47";
-            this.label47.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label47.Size = new System.Drawing.Size(40, 28);
-            this.label47.TabIndex = 43;
-            this.label47.Text = "";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGameDate4
-            // 
-            this.lblProfileGameDate4.AutoSize = true;
-            this.lblProfileGameDate4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGameDate4.ForeColor = System.Drawing.Color.Silver;
-            this.lblProfileGameDate4.Location = new System.Drawing.Point(701, 895);
-            this.lblProfileGameDate4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGameDate4.Name = "lblProfileGameDate4";
-            this.lblProfileGameDate4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameDate4.Size = new System.Drawing.Size(179, 38);
-            this.lblProfileGameDate4.TabIndex = 46;
-            this.lblProfileGameDate4.Text = "30/09/2022";
-            this.lblProfileGameDate4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGamePoints4
-            // 
-            this.lblProfileGamePoints4.AutoSize = true;
-            this.lblProfileGamePoints4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGamePoints4.ForeColor = System.Drawing.Color.Gray;
-            this.lblProfileGamePoints4.Location = new System.Drawing.Point(985, 895);
-            this.lblProfileGamePoints4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGamePoints4.Name = "lblProfileGamePoints4";
-            this.lblProfileGamePoints4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGamePoints4.Size = new System.Drawing.Size(52, 38);
-            this.lblProfileGamePoints4.TabIndex = 42;
-            this.lblProfileGamePoints4.Text = "20";
-            this.lblProfileGamePoints4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGameName4
-            // 
-            this.lblProfileGameName4.AutoSize = true;
-            this.lblProfileGameName4.Font = new System.Drawing.Font("Manrope", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGameName4.ForeColor = System.Drawing.Color.Silver;
-            this.lblProfileGameName4.Location = new System.Drawing.Point(435, 897);
-            this.lblProfileGameName4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGameName4.Name = "lblProfileGameName4";
-            this.lblProfileGameName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameName4.Size = new System.Drawing.Size(175, 38);
-            this.lblProfileGameName4.TabIndex = 45;
-            this.lblProfileGameName4.Text = "Test game 1";
-            this.lblProfileGameName4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblProfileGameIcon4
-            // 
-            this.lblProfileGameIcon4.AutoSize = true;
-            this.lblProfileGameIcon4.BackColor = System.Drawing.Color.Transparent;
-            this.lblProfileGameIcon4.Font = new System.Drawing.Font("Font Awesome 6 Free Solid", 15.25F, System.Drawing.FontStyle.Bold);
-            this.lblProfileGameIcon4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(176)))), ((int)(((byte)(210)))));
-            this.lblProfileGameIcon4.Location = new System.Drawing.Point(365, 895);
-            this.lblProfileGameIcon4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblProfileGameIcon4.Name = "lblProfileGameIcon4";
-            this.lblProfileGameIcon4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileGameIcon4.Size = new System.Drawing.Size(64, 41);
-            this.lblProfileGameIcon4.TabIndex = 44;
-            this.lblProfileGameIcon4.Text = "";
-            this.lblProfileGameIcon4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ofdBanner.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;*.bmp";
+            this.ofdBanner.Title = "Upload a new banner";
             // 
             // frmDashboard
             // 
@@ -3062,6 +3074,7 @@ namespace ASProj
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblDiscriminator);
             this.Controls.Add(this.pbxAvatar);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximumSize = new System.Drawing.Size(1852, 1184);
@@ -3356,5 +3369,6 @@ namespace ASProj
         private Label lblProfileGameName4;
         private Label lblProfileGameIcon4;
         private Label lblProfileStatus;
+        private OpenFileDialog ofdBanner;
     }
 }

@@ -41,26 +41,26 @@ namespace ASProj.Games
             this.pbxUsrHealth2 = new System.Windows.Forms.PictureBox();
             this.pbxCharacter = new System.Windows.Forms.PictureBox();
             this.pbxArny = new System.Windows.Forms.PictureBox();
+            this.lblMessageText = new System.Windows.Forms.Label();
+            this.tmrArnyAnim1 = new System.Windows.Forms.Timer(this.components);
+            this.pbxAttack = new System.Windows.Forms.PictureBox();
+            this.tmrGameplay = new System.Windows.Forms.Timer(this.components);
+            this.ansSix = new ASProj.Controls.RoundedPanel();
+            this.lblAnsSix = new System.Windows.Forms.Label();
+            this.ansFive = new ASProj.Controls.RoundedPanel();
+            this.lblAnsFive = new System.Windows.Forms.Label();
+            this.ansFour = new ASProj.Controls.RoundedPanel();
+            this.lblAnsFour = new System.Windows.Forms.Label();
+            this.ansThree = new ASProj.Controls.RoundedPanel();
+            this.lblAnsThree = new System.Windows.Forms.Label();
+            this.ansTwo = new ASProj.Controls.RoundedPanel();
+            this.lblAnsTwo = new System.Windows.Forms.Label();
+            this.ansOne = new ASProj.Controls.RoundedPanel();
+            this.lblAnsOne = new System.Windows.Forms.Label();
+            this.pnlAnswer = new ASProj.Controls.PillPanel();
             this.pnlName = new ASProj.Controls.RoundedPanel();
             this.lblMessageName = new System.Windows.Forms.Label();
             this.pnlMessage = new ASProj.Controls.PillPanel();
-            this.lblMessageText = new System.Windows.Forms.Label();
-            this.tmrArnyAnim1 = new System.Windows.Forms.Timer(this.components);
-            this.pnlAnswer = new ASProj.Controls.PillPanel();
-            this.ansOne = new ASProj.Controls.RoundedPanel();
-            this.lblAnsOne = new System.Windows.Forms.Label();
-            this.lblAnsTwo = new System.Windows.Forms.Label();
-            this.ansTwo = new ASProj.Controls.RoundedPanel();
-            this.ansThree = new ASProj.Controls.RoundedPanel();
-            this.lblAnsThree = new System.Windows.Forms.Label();
-            this.ansFour = new ASProj.Controls.RoundedPanel();
-            this.lblAnsFour = new System.Windows.Forms.Label();
-            this.ansFive = new ASProj.Controls.RoundedPanel();
-            this.lblAnsFive = new System.Windows.Forms.Label();
-            this.ansSix = new ASProj.Controls.RoundedPanel();
-            this.lblAnsSix = new System.Windows.Forms.Label();
-            this.pbxAttack = new System.Windows.Forms.PictureBox();
-            this.tmrGameplay = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbxUsrHealth1)).BeginInit();
             this.pnlHUD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxOppHealth1)).BeginInit();
@@ -70,14 +70,14 @@ namespace ASProj.Games
             ((System.ComponentModel.ISupportInitialize)(this.pbxUsrHealth2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCharacter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArny)).BeginInit();
-            this.pnlName.SuspendLayout();
-            this.ansOne.SuspendLayout();
-            this.ansTwo.SuspendLayout();
-            this.ansThree.SuspendLayout();
-            this.ansFour.SuspendLayout();
-            this.ansFive.SuspendLayout();
-            this.ansSix.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAttack)).BeginInit();
+            this.ansSix.SuspendLayout();
+            this.ansFive.SuspendLayout();
+            this.ansFour.SuspendLayout();
+            this.ansThree.SuspendLayout();
+            this.ansTwo.SuspendLayout();
+            this.ansOne.SuspendLayout();
+            this.pnlName.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbxUsrHealth1
@@ -203,6 +203,203 @@ namespace ASProj.Games
             this.pbxArny.TabIndex = 3;
             this.pbxArny.TabStop = false;
             // 
+            // lblMessageText
+            // 
+            this.lblMessageText.AutoSize = true;
+            this.lblMessageText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(219)))), ((int)(((byte)(203)))));
+            this.lblMessageText.Font = new System.Drawing.Font("Pokemon GB", 16F);
+            this.lblMessageText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
+            this.lblMessageText.Location = new System.Drawing.Point(374, 875);
+            this.lblMessageText.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblMessageText.Name = "lblMessageText";
+            this.lblMessageText.Size = new System.Drawing.Size(1181, 132);
+            this.lblMessageText.TabIndex = 7;
+            this.lblMessageText.Text = "Hello, PM Theresa May.\r\nI would like to beat you\r\nover the head. Let\'s fight!";
+            this.lblMessageText.Click += new System.EventHandler(this.lblMessageText_Click);
+            // 
+            // tmrArnyAnim1
+            // 
+            this.tmrArnyAnim1.Interval = 2;
+            this.tmrArnyAnim1.Tick += new System.EventHandler(this.tmrArnyAnim1_Tick);
+            // 
+            // pbxAttack
+            // 
+            this.pbxAttack.BackColor = System.Drawing.Color.Transparent;
+            this.pbxAttack.Image = global::ASProj.Properties.Resources.FireBall;
+            this.pbxAttack.Location = new System.Drawing.Point(417, 320);
+            this.pbxAttack.Margin = new System.Windows.Forms.Padding(5);
+            this.pbxAttack.Name = "pbxAttack";
+            this.pbxAttack.Size = new System.Drawing.Size(895, 455);
+            this.pbxAttack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxAttack.TabIndex = 12;
+            this.pbxAttack.TabStop = false;
+            this.pbxAttack.Visible = false;
+            // 
+            // tmrGameplay
+            // 
+            this.tmrGameplay.Interval = 1000;
+            this.tmrGameplay.Tick += new System.EventHandler(this.tmrGameplay_Tick);
+            // 
+            // ansSix
+            // 
+            this.ansSix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
+            this.ansSix.Controls.Add(this.lblAnsSix);
+            this.ansSix.Location = new System.Drawing.Point(732, 653);
+            this.ansSix.Margin = new System.Windows.Forms.Padding(5);
+            this.ansSix.Name = "ansSix";
+            this.ansSix.Size = new System.Drawing.Size(382, 57);
+            this.ansSix.TabIndex = 11;
+            this.ansSix.Click += new System.EventHandler(this.ansSix_Click);
+            // 
+            // lblAnsSix
+            // 
+            this.lblAnsSix.AutoSize = true;
+            this.lblAnsSix.BackColor = System.Drawing.Color.Transparent;
+            this.lblAnsSix.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
+            this.lblAnsSix.ForeColor = System.Drawing.Color.White;
+            this.lblAnsSix.Location = new System.Drawing.Point(69, 17);
+            this.lblAnsSix.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblAnsSix.Name = "lblAnsSix";
+            this.lblAnsSix.Size = new System.Drawing.Size(264, 28);
+            this.lblAnsSix.TabIndex = 0;
+            this.lblAnsSix.Text = "AnswerSix";
+            this.lblAnsSix.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ansFive
+            // 
+            this.ansFive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
+            this.ansFive.Controls.Add(this.lblAnsFive);
+            this.ansFive.Location = new System.Drawing.Point(732, 587);
+            this.ansFive.Margin = new System.Windows.Forms.Padding(5);
+            this.ansFive.Name = "ansFive";
+            this.ansFive.Size = new System.Drawing.Size(382, 57);
+            this.ansFive.TabIndex = 10;
+            this.ansFive.Click += new System.EventHandler(this.ansFive_Click);
+            // 
+            // lblAnsFive
+            // 
+            this.lblAnsFive.AutoSize = true;
+            this.lblAnsFive.BackColor = System.Drawing.Color.Transparent;
+            this.lblAnsFive.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
+            this.lblAnsFive.ForeColor = System.Drawing.Color.White;
+            this.lblAnsFive.Location = new System.Drawing.Point(69, 17);
+            this.lblAnsFive.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblAnsFive.Name = "lblAnsFive";
+            this.lblAnsFive.Size = new System.Drawing.Size(292, 28);
+            this.lblAnsFive.TabIndex = 0;
+            this.lblAnsFive.Text = "AnswerFive";
+            this.lblAnsFive.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ansFour
+            // 
+            this.ansFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
+            this.ansFour.Controls.Add(this.lblAnsFour);
+            this.ansFour.Location = new System.Drawing.Point(732, 520);
+            this.ansFour.Margin = new System.Windows.Forms.Padding(5);
+            this.ansFour.Name = "ansFour";
+            this.ansFour.Size = new System.Drawing.Size(382, 57);
+            this.ansFour.TabIndex = 9;
+            this.ansFour.Click += new System.EventHandler(this.ansFour_Click);
+            // 
+            // lblAnsFour
+            // 
+            this.lblAnsFour.AutoSize = true;
+            this.lblAnsFour.BackColor = System.Drawing.Color.Transparent;
+            this.lblAnsFour.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
+            this.lblAnsFour.ForeColor = System.Drawing.Color.White;
+            this.lblAnsFour.Location = new System.Drawing.Point(69, 17);
+            this.lblAnsFour.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblAnsFour.Name = "lblAnsFour";
+            this.lblAnsFour.Size = new System.Drawing.Size(292, 28);
+            this.lblAnsFour.TabIndex = 0;
+            this.lblAnsFour.Text = "AnswerFour";
+            this.lblAnsFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ansThree
+            // 
+            this.ansThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
+            this.ansThree.Controls.Add(this.lblAnsThree);
+            this.ansThree.Location = new System.Drawing.Point(732, 453);
+            this.ansThree.Margin = new System.Windows.Forms.Padding(5);
+            this.ansThree.Name = "ansThree";
+            this.ansThree.Size = new System.Drawing.Size(382, 57);
+            this.ansThree.TabIndex = 8;
+            this.ansThree.Click += new System.EventHandler(this.ansThree_Click);
+            // 
+            // lblAnsThree
+            // 
+            this.lblAnsThree.AutoSize = true;
+            this.lblAnsThree.BackColor = System.Drawing.Color.Transparent;
+            this.lblAnsThree.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
+            this.lblAnsThree.ForeColor = System.Drawing.Color.White;
+            this.lblAnsThree.Location = new System.Drawing.Point(69, 17);
+            this.lblAnsThree.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblAnsThree.Name = "lblAnsThree";
+            this.lblAnsThree.Size = new System.Drawing.Size(320, 28);
+            this.lblAnsThree.TabIndex = 0;
+            this.lblAnsThree.Text = "AnswerThree";
+            this.lblAnsThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ansTwo
+            // 
+            this.ansTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
+            this.ansTwo.Controls.Add(this.lblAnsTwo);
+            this.ansTwo.Location = new System.Drawing.Point(732, 387);
+            this.ansTwo.Margin = new System.Windows.Forms.Padding(5);
+            this.ansTwo.Name = "ansTwo";
+            this.ansTwo.Size = new System.Drawing.Size(382, 57);
+            this.ansTwo.TabIndex = 7;
+            this.ansTwo.Click += new System.EventHandler(this.ansTwo_Click);
+            // 
+            // lblAnsTwo
+            // 
+            this.lblAnsTwo.AutoSize = true;
+            this.lblAnsTwo.BackColor = System.Drawing.Color.Transparent;
+            this.lblAnsTwo.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
+            this.lblAnsTwo.ForeColor = System.Drawing.Color.White;
+            this.lblAnsTwo.Location = new System.Drawing.Point(69, 17);
+            this.lblAnsTwo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblAnsTwo.Name = "lblAnsTwo";
+            this.lblAnsTwo.Size = new System.Drawing.Size(264, 28);
+            this.lblAnsTwo.TabIndex = 0;
+            this.lblAnsTwo.Text = "AnswerTwo";
+            this.lblAnsTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ansOne
+            // 
+            this.ansOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
+            this.ansOne.Controls.Add(this.lblAnsOne);
+            this.ansOne.Location = new System.Drawing.Point(732, 320);
+            this.ansOne.Margin = new System.Windows.Forms.Padding(5);
+            this.ansOne.Name = "ansOne";
+            this.ansOne.Size = new System.Drawing.Size(382, 57);
+            this.ansOne.TabIndex = 6;
+            this.ansOne.Click += new System.EventHandler(this.ansOne_Click);
+            this.ansOne.Paint += new System.Windows.Forms.PaintEventHandler(this.ansOne_Paint);
+            // 
+            // lblAnsOne
+            // 
+            this.lblAnsOne.AutoSize = true;
+            this.lblAnsOne.BackColor = System.Drawing.Color.Transparent;
+            this.lblAnsOne.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
+            this.lblAnsOne.ForeColor = System.Drawing.Color.White;
+            this.lblAnsOne.Location = new System.Drawing.Point(69, 17);
+            this.lblAnsOne.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblAnsOne.Name = "lblAnsOne";
+            this.lblAnsOne.Size = new System.Drawing.Size(264, 28);
+            this.lblAnsOne.TabIndex = 0;
+            this.lblAnsOne.Text = "AnswerOne";
+            this.lblAnsOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlAnswer
+            // 
+            this.pnlAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(219)))), ((int)(((byte)(203)))));
+            this.pnlAnswer.Location = new System.Drawing.Point(708, 275);
+            this.pnlAnswer.Margin = new System.Windows.Forms.Padding(5);
+            this.pnlAnswer.Name = "pnlAnswer";
+            this.pnlAnswer.Size = new System.Drawing.Size(432, 470);
+            this.pnlAnswer.TabIndex = 8;
+            // 
             // pnlName
             // 
             this.pnlName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
@@ -236,202 +433,6 @@ namespace ASProj.Games
             this.pnlMessage.TabIndex = 6;
             this.pnlMessage.Click += new System.EventHandler(this.pnlMessage_Click);
             // 
-            // lblMessageText
-            // 
-            this.lblMessageText.AutoSize = true;
-            this.lblMessageText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(219)))), ((int)(((byte)(203)))));
-            this.lblMessageText.Font = new System.Drawing.Font("Pokemon GB", 16F);
-            this.lblMessageText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
-            this.lblMessageText.Location = new System.Drawing.Point(374, 875);
-            this.lblMessageText.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblMessageText.Name = "lblMessageText";
-            this.lblMessageText.Size = new System.Drawing.Size(1181, 132);
-            this.lblMessageText.TabIndex = 7;
-            this.lblMessageText.Text = "Hello, PM Theresa May.\r\nI would like to beat you\r\nover the head. Let\'s fight!";
-            this.lblMessageText.Click += new System.EventHandler(this.lblMessageText_Click);
-            // 
-            // tmrArnyAnim1
-            // 
-            this.tmrArnyAnim1.Interval = 2;
-            this.tmrArnyAnim1.Tick += new System.EventHandler(this.tmrArnyAnim1_Tick);
-            // 
-            // pnlAnswer
-            // 
-            this.pnlAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(219)))), ((int)(((byte)(203)))));
-            this.pnlAnswer.Location = new System.Drawing.Point(708, 275);
-            this.pnlAnswer.Margin = new System.Windows.Forms.Padding(5);
-            this.pnlAnswer.Name = "pnlAnswer";
-            this.pnlAnswer.Size = new System.Drawing.Size(432, 470);
-            this.pnlAnswer.TabIndex = 8;
-            // 
-            // ansOne
-            // 
-            this.ansOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
-            this.ansOne.Controls.Add(this.lblAnsOne);
-            this.ansOne.Location = new System.Drawing.Point(732, 320);
-            this.ansOne.Margin = new System.Windows.Forms.Padding(5);
-            this.ansOne.Name = "ansOne";
-            this.ansOne.Size = new System.Drawing.Size(382, 57);
-            this.ansOne.TabIndex = 6;
-            this.ansOne.Click += new System.EventHandler(this.ansOne_Click);
-            // 
-            // lblAnsOne
-            // 
-            this.lblAnsOne.AutoSize = true;
-            this.lblAnsOne.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnsOne.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
-            this.lblAnsOne.ForeColor = System.Drawing.Color.White;
-            this.lblAnsOne.Location = new System.Drawing.Point(69, 17);
-            this.lblAnsOne.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblAnsOne.Name = "lblAnsOne";
-            this.lblAnsOne.Size = new System.Drawing.Size(264, 28);
-            this.lblAnsOne.TabIndex = 0;
-            this.lblAnsOne.Text = "AnswerOne";
-            this.lblAnsOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblAnsTwo
-            // 
-            this.lblAnsTwo.AutoSize = true;
-            this.lblAnsTwo.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnsTwo.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
-            this.lblAnsTwo.ForeColor = System.Drawing.Color.White;
-            this.lblAnsTwo.Location = new System.Drawing.Point(69, 17);
-            this.lblAnsTwo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblAnsTwo.Name = "lblAnsTwo";
-            this.lblAnsTwo.Size = new System.Drawing.Size(264, 28);
-            this.lblAnsTwo.TabIndex = 0;
-            this.lblAnsTwo.Text = "AnswerTwo";
-            this.lblAnsTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ansTwo
-            // 
-            this.ansTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
-            this.ansTwo.Controls.Add(this.lblAnsTwo);
-            this.ansTwo.Location = new System.Drawing.Point(732, 387);
-            this.ansTwo.Margin = new System.Windows.Forms.Padding(5);
-            this.ansTwo.Name = "ansTwo";
-            this.ansTwo.Size = new System.Drawing.Size(382, 57);
-            this.ansTwo.TabIndex = 7;
-            this.ansTwo.Click += new System.EventHandler(this.ansTwo_Click);
-            // 
-            // ansThree
-            // 
-            this.ansThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
-            this.ansThree.Controls.Add(this.lblAnsThree);
-            this.ansThree.Location = new System.Drawing.Point(732, 453);
-            this.ansThree.Margin = new System.Windows.Forms.Padding(5);
-            this.ansThree.Name = "ansThree";
-            this.ansThree.Size = new System.Drawing.Size(382, 57);
-            this.ansThree.TabIndex = 8;
-            this.ansThree.Click += new System.EventHandler(this.ansThree_Click);
-            // 
-            // lblAnsThree
-            // 
-            this.lblAnsThree.AutoSize = true;
-            this.lblAnsThree.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnsThree.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
-            this.lblAnsThree.ForeColor = System.Drawing.Color.White;
-            this.lblAnsThree.Location = new System.Drawing.Point(69, 17);
-            this.lblAnsThree.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblAnsThree.Name = "lblAnsThree";
-            this.lblAnsThree.Size = new System.Drawing.Size(320, 28);
-            this.lblAnsThree.TabIndex = 0;
-            this.lblAnsThree.Text = "AnswerThree";
-            this.lblAnsThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ansFour
-            // 
-            this.ansFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
-            this.ansFour.Controls.Add(this.lblAnsFour);
-            this.ansFour.Location = new System.Drawing.Point(732, 520);
-            this.ansFour.Margin = new System.Windows.Forms.Padding(5);
-            this.ansFour.Name = "ansFour";
-            this.ansFour.Size = new System.Drawing.Size(382, 57);
-            this.ansFour.TabIndex = 9;
-            this.ansFour.Click += new System.EventHandler(this.ansFour_Click);
-            // 
-            // lblAnsFour
-            // 
-            this.lblAnsFour.AutoSize = true;
-            this.lblAnsFour.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnsFour.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
-            this.lblAnsFour.ForeColor = System.Drawing.Color.White;
-            this.lblAnsFour.Location = new System.Drawing.Point(69, 17);
-            this.lblAnsFour.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblAnsFour.Name = "lblAnsFour";
-            this.lblAnsFour.Size = new System.Drawing.Size(292, 28);
-            this.lblAnsFour.TabIndex = 0;
-            this.lblAnsFour.Text = "AnswerFour";
-            this.lblAnsFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ansFive
-            // 
-            this.ansFive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
-            this.ansFive.Controls.Add(this.lblAnsFive);
-            this.ansFive.Location = new System.Drawing.Point(732, 587);
-            this.ansFive.Margin = new System.Windows.Forms.Padding(5);
-            this.ansFive.Name = "ansFive";
-            this.ansFive.Size = new System.Drawing.Size(382, 57);
-            this.ansFive.TabIndex = 10;
-            this.ansFive.Click += new System.EventHandler(this.ansFive_Click);
-            // 
-            // lblAnsFive
-            // 
-            this.lblAnsFive.AutoSize = true;
-            this.lblAnsFive.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnsFive.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
-            this.lblAnsFive.ForeColor = System.Drawing.Color.White;
-            this.lblAnsFive.Location = new System.Drawing.Point(69, 17);
-            this.lblAnsFive.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblAnsFive.Name = "lblAnsFive";
-            this.lblAnsFive.Size = new System.Drawing.Size(292, 28);
-            this.lblAnsFive.TabIndex = 0;
-            this.lblAnsFive.Text = "AnswerFive";
-            this.lblAnsFive.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ansSix
-            // 
-            this.ansSix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(66)))), ((int)(((byte)(90)))));
-            this.ansSix.Controls.Add(this.lblAnsSix);
-            this.ansSix.Location = new System.Drawing.Point(732, 653);
-            this.ansSix.Margin = new System.Windows.Forms.Padding(5);
-            this.ansSix.Name = "ansSix";
-            this.ansSix.Size = new System.Drawing.Size(382, 57);
-            this.ansSix.TabIndex = 11;
-            this.ansSix.Click += new System.EventHandler(this.ansSix_Click);
-            // 
-            // lblAnsSix
-            // 
-            this.lblAnsSix.AutoSize = true;
-            this.lblAnsSix.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnsSix.Font = new System.Drawing.Font("Pokemon GB", 10F, System.Drawing.FontStyle.Bold);
-            this.lblAnsSix.ForeColor = System.Drawing.Color.White;
-            this.lblAnsSix.Location = new System.Drawing.Point(69, 17);
-            this.lblAnsSix.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblAnsSix.Name = "lblAnsSix";
-            this.lblAnsSix.Size = new System.Drawing.Size(264, 28);
-            this.lblAnsSix.TabIndex = 0;
-            this.lblAnsSix.Text = "AnswerSix";
-            this.lblAnsSix.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pbxAttack
-            // 
-            this.pbxAttack.BackColor = System.Drawing.Color.Transparent;
-            this.pbxAttack.Image = global::ASProj.Properties.Resources.FireBall;
-            this.pbxAttack.Location = new System.Drawing.Point(417, 320);
-            this.pbxAttack.Margin = new System.Windows.Forms.Padding(5);
-            this.pbxAttack.Name = "pbxAttack";
-            this.pbxAttack.Size = new System.Drawing.Size(895, 455);
-            this.pbxAttack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxAttack.TabIndex = 12;
-            this.pbxAttack.TabStop = false;
-            this.pbxAttack.Visible = false;
-            // 
-            // tmrGameplay
-            // 
-            this.tmrGameplay.Interval = 1000;
-            this.tmrGameplay.Tick += new System.EventHandler(this.tmrGameplay_Tick);
-            // 
             // gfrmConversation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -455,6 +456,7 @@ namespace ASProj.Games
             this.Controls.Add(this.pbxArny);
             this.Controls.Add(this.pbxCharacter);
             this.Controls.Add(this.pnlHUD);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximumSize = new System.Drawing.Size(1824, 1118);
@@ -474,21 +476,21 @@ namespace ASProj.Games
             ((System.ComponentModel.ISupportInitialize)(this.pbxUsrHealth2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCharacter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArny)).EndInit();
-            this.pnlName.ResumeLayout(false);
-            this.pnlName.PerformLayout();
-            this.ansOne.ResumeLayout(false);
-            this.ansOne.PerformLayout();
-            this.ansTwo.ResumeLayout(false);
-            this.ansTwo.PerformLayout();
-            this.ansThree.ResumeLayout(false);
-            this.ansThree.PerformLayout();
-            this.ansFour.ResumeLayout(false);
-            this.ansFour.PerformLayout();
-            this.ansFive.ResumeLayout(false);
-            this.ansFive.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAttack)).EndInit();
             this.ansSix.ResumeLayout(false);
             this.ansSix.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxAttack)).EndInit();
+            this.ansFive.ResumeLayout(false);
+            this.ansFive.PerformLayout();
+            this.ansFour.ResumeLayout(false);
+            this.ansFour.PerformLayout();
+            this.ansThree.ResumeLayout(false);
+            this.ansThree.PerformLayout();
+            this.ansTwo.ResumeLayout(false);
+            this.ansTwo.PerformLayout();
+            this.ansOne.ResumeLayout(false);
+            this.ansOne.PerformLayout();
+            this.pnlName.ResumeLayout(false);
+            this.pnlName.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

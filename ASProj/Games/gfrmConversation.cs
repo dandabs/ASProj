@@ -431,5 +431,10 @@ namespace ASProj.Games
         {
 
         }
+
+        private void ansOne_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
