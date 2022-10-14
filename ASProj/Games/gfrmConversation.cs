@@ -107,6 +107,8 @@ namespace ASProj.Games
 
             pbxArny.Left = -300;
             tmrArnyAnim1.Enabled = true;
+
+            pnlEndGame.Visible = false;
         }
 
         private void tmrArnyAnim1_Tick(object sender, EventArgs e)
@@ -199,12 +201,22 @@ namespace ASProj.Games
                 Program.CurrentSession.Records.Add(record);
                 Program.CurrentSession.Save();
 
-                MusicPlayer.stopResource();
 
-                Form frmDashboard = new frmDashboard();
-                frmDashboard.Show();
-                frmDashboard.SetDesktopLocation(Location.X, Location.Y);
-                Close();
+                pnlEndGame.Visible = true;
+                lblGameName2.Text = Program.CurrentGame.Name;
+                lblPoints.Text = "You scored " + record.Points + " points.";
+
+                int correct = 0;
+                int incorrect = 0;
+
+                foreach (GivenAnswer a in record.Answers) if (a.IsCorrect) { correct++; } else incorrect++;
+
+                lblCorrect.Text = "You answered " + correct + " questions correctly.";
+                lblIncorrect.Text = "You answered " + incorrect + " questions incorrectly.";
+
+                lblTotalTime.Text = "It took you " + record.CompletionTime + " seconds in total.";
+                lblAverageTime.Text = "An average of " + (record.CompletionTime / record.Answers.Count) + " seconds per question.";
+
 
             }
         }
@@ -435,6 +447,16 @@ namespace ASProj.Games
         private void ansOne_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pnlEndGame_Click(object sender, EventArgs e)
+        {
+            MusicPlayer.stopResource();
+
+            Form frmDashboard = new frmDashboard();
+            frmDashboard.Show();
+            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+            Close();
         }
     }
 }

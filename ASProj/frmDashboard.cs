@@ -644,7 +644,7 @@ namespace ASProj
                     Program.CurrentGame = game;
 
                     Hide();
-                    Form gfrmGame = new Games.gfrmSwim();
+                    Form gfrmGame = new Games.gfrmMaze();
                     gfrmGame.Show();
                     gfrmGame.SetDesktopLocation(Location.X, Location.Y);
                 }

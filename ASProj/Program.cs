@@ -33,6 +33,10 @@ namespace ASProj
 
             } else Application.Run(new frmLogin());*/
 
+            // DA 14/10/22 Adding the default banner values to the database
+            //UserImage i = new UserImage(@"\\Mac\Home\Documents\Skóla\Hugbúnaðarþróun\ASProj\ASProj\Resources\animesher.com_bird-fantasy-anime-nature-1145927.gif");
+            //i.Save();
+
             FontManager.initialize();
 
             if (!Directory.Exists(FileHandler.dir)) Directory.CreateDirectory(FileHandler.dir);

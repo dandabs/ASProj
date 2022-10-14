@@ -417,8 +417,8 @@ namespace ASProj.Games
             this.BackgroundImage = global::ASProj.Properties.Resources._8b40d0ff8c8592393ceffcbb0e9654d3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1824, 1118);
-            this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlEndGame);
+            this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.lblA5);
             this.Controls.Add(this.lblA4);
             this.Controls.Add(this.lblA3);

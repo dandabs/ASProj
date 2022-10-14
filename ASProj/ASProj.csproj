@@ -333,6 +333,9 @@
     <Content Include="Resources\brown-toned-brick-wall-repeating-pattern-brown-toned-brick-wall-repeating-pattern-161622734.jpg" />
     <Content Include="Resources\brown-toned-brick-wall-repeating-pattern-brown-toned-brick-wall-repeating-pattern-1616227341.jpg" />
     <None Include="Resources\controls platformer.png" />
+    <None Include="Resources\controls swim.png" />
+    <None Include="Resources\controls maze.png" />
+    <None Include="Resources\controls feed.png" />
     <Content Include="Resources\dark-blue-gradient-background-9562-1024x616.jpg" />
     <Content Include="Resources\ezgif.com-gif-maker.jpg" />
     <Content Include="Resources\face %281%29.png" />

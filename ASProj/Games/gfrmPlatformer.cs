@@ -34,6 +34,12 @@ namespace ASProj.Games
 
         private void gfrmPlatformer_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Escape)
+            {
+                pnlMenu.Visible = true;
+                tmrGameplay.Enabled = false;
+            }
+
             if (e.KeyCode == Keys.B)
             {
                 foreach (Control c in Controls)

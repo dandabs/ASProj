@@ -50,6 +50,9 @@ namespace ASProj.Games
             MusicPlayer.playResource(Properties.Resources.The_Days_In_Swordcraft_Academy2, 0.5f);
             pbxCharacter.Image = Program.CurrentSession.Character.GetBitmap();
             askQuestion(_currentgame.Questions[0]);
+
+            pnlMenu.Visible = true;
+            pnlEndGame.Visible = false;
         }
 
         private void tmrGameplay_Tick(object sender, EventArgs e)
@@ -136,12 +139,20 @@ namespace ASProj.Games
 
             Program.CurrentSession.Save();
 
-            MusicPlayer.stopResource();
+            pnlEndGame.Visible = true;
+            lblGameName2.Text = Program.CurrentGame.Name;
+            lblPoints.Text = "You scored " + _record.Points + " points.";
 
-            Form frmDashboard = new frmDashboard();
-            frmDashboard.Show();
-            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
-            Close();
+            int correct = 0;
+            int incorrect = 0;
+
+            foreach (GivenAnswer a in _record.Answers) if (a.IsCorrect) { correct++; } else incorrect++;
+
+            lblCorrect.Text = "You answered " + correct + " questions correctly.";
+            lblIncorrect.Text = "You answered " + incorrect + " questions incorrectly.";
+
+            lblTotalTime.Text = "It took you " + _record.CompletionTime + " seconds in total.";
+            lblAverageTime.Text = "An average of " + (_record.CompletionTime / _record.Answers.Count) + " seconds per question.";
         }
 
         private void lblAnswer2_MouseMove(object sender, MouseEventArgs e)
@@ -265,6 +276,36 @@ namespace ASProj.Games
             {
                 handleAnswer(5);
             }
+        }
+
+        private void pnlMenu_Click(object sender, EventArgs e)
+        {
+            tmrGameplay.Enabled = true;
+            pnlMenu.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pnlMenu_Click(sender, e);
+        }
+
+        private void gfrmFeed_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                tmrGameplay.Enabled = false;
+                pnlMenu.Visible = true;
+            }
+        }
+
+        private void pnlEndGame_Click(object sender, EventArgs e)
+        {
+            MusicPlayer.stopResource();
+
+            Form frmDashboard = new frmDashboard();
+            frmDashboard.Show();
+            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+            Close();
         }
     }
 }

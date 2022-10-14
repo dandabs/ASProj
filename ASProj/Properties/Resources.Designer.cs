@@ -203,9 +203,39 @@ namespace ASProj.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap controls_feed {
+            get {
+                object obj = ResourceManager.GetObject("controls feed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap controls_maze {
+            get {
+                object obj = ResourceManager.GetObject("controls maze", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap controls_platformer {
             get {
                 object obj = ResourceManager.GetObject("controls platformer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap controls_swim {
+            get {
+                object obj = ResourceManager.GetObject("controls swim", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

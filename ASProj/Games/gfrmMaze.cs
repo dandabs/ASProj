@@ -35,6 +35,7 @@ namespace ASProj.Games
         {
             lblQuestion.Text = q.Description;
             pbxCharacter.Location = _initlocation;
+            pnlMenu.Visible = true;
 
             lblA1.Visible = true;
             lblA2.Visible = true;
@@ -90,10 +91,20 @@ namespace ASProj.Games
 
             Program.CurrentSession.Save();
 
-            Form frmDashboard = new frmDashboard();
-            frmDashboard.Show();
-            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
-            Close();
+            pnlEndGame.Visible = true;
+            lblGameName2.Text = Program.CurrentGame.Name;
+            lblPoints.Text = "You scored " + _record.Points + " points.";
+
+            int correct = 0;
+            int incorrect = 0;
+
+            foreach (GivenAnswer a in _record.Answers) if (a.IsCorrect) { correct++; } else incorrect++;
+
+            lblCorrect.Text = "You answered " + correct + " questions correctly.";
+            lblIncorrect.Text = "You answered " + incorrect + " questions incorrectly.";
+
+            lblTotalTime.Text = "It took you " + _record.CompletionTime + " seconds in total.";
+            lblAverageTime.Text = "An average of " + (_record.CompletionTime / _record.Answers.Count) + " seconds per question.";
         }
 
         private void panel23_Paint(object sender, PaintEventArgs e)
@@ -105,6 +116,12 @@ namespace ASProj.Games
 
         private void gfrmMaze_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Escape)
+            {
+                tmrGameplay.Enabled = false;
+                pnlMenu.Visible = true;
+            }
+
             if (e.KeyCode == Keys.B)
             {
                 if (_selected != null)
@@ -189,6 +206,30 @@ namespace ASProj.Games
             _initlocation = pbxCharacter.Location;
             pbxCharacter.Image = Program.CurrentSession.Character.GetBitmap();
             askQuestion(_currentgame.Questions[0]);
+            pnlMenu.Visible = true;
+            pnlEndGame.Visible = false;
+            lblGameName.Text = _currentgame.Name;
+            lblGameName2.Text = _currentgame.Name;
+            lblGoal.Text = _currentgame.Goal;
+        }
+
+        private void pnlEndGame_Click(object sender, EventArgs e)
+        {
+            Form frmDashboard = new frmDashboard();
+            frmDashboard.Show();
+            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+            Close();
+        }
+
+        private void pnlMenu_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Visible = false;
+            tmrGameplay.Enabled = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pnlMenu_Click(sender, e);
         }
     }
 }

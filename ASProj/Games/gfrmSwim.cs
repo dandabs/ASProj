@@ -17,7 +17,6 @@ namespace ASProj.Games
         public gfrmSwim()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, Width, Height, 5, 5));
         }
 
         private int _downtime = 0;
@@ -55,6 +54,7 @@ namespace ASProj.Games
         private void askQuestion(Question q)
         {
             lblQuestion.Text = q.Description;
+            pnlMenu.Visible = true;
 
             for (int i = 0; i < q.Answers.Length; i++)
             {
@@ -71,12 +71,12 @@ namespace ASProj.Games
                 Controls.Add(lbl);
             }
             _downtime = 0;
-            tmrMoveDown.Enabled = true;
+            //tmrMoveDown.Enabled = true;
 
             _currentquestion = q;
             _questionindex++;
 
-            tmrGameplay.Enabled = true;
+            //tmrGameplay.Enabled = true;
         }
 
         private void tmrMoveDown_Tick(object sender, EventArgs e)
@@ -139,14 +139,31 @@ namespace ASProj.Games
 
             Program.CurrentSession.Save();
 
-            Form frmDashboard = new frmDashboard();
-            frmDashboard.Show();
-            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
-            Close();
+            pnlEndGame.Visible = true;
+            lblGameName2.Text = Program.CurrentGame.Name;
+            lblPoints.Text = "You scored " + _record.Points + " points.";
+
+            int correct = 0;
+            int incorrect = 0;
+
+            foreach (GivenAnswer a in _record.Answers) if (a.IsCorrect) { correct++; } else incorrect++;
+
+            lblCorrect.Text = "You answered " + correct + " questions correctly.";
+            lblIncorrect.Text = "You answered " + incorrect + " questions incorrectly.";
+
+            lblTotalTime.Text = "It took you " + _record.CompletionTime + " seconds in total.";
+            lblAverageTime.Text = "An average of " + (_record.CompletionTime / _record.Answers.Count) + " seconds per question.";
         }
 
         private void frmSwim_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Escape)
+            {
+                pnlMenu.Visible = true;
+                tmrGameplay.Enabled = false;
+                tmrMoveDown.Enabled = false;
+            }
+
             foreach (Control c in Controls)
             {
                 if (c.Name.StartsWith("albl_" + _currentquestion.Id) && c.Bounds.IntersectsWith(pbxCharacter.Bounds))
@@ -182,6 +199,36 @@ namespace ASProj.Games
             pbxCharacter.Image = Program.CurrentSession.Character.GetBitmap();
             _pbxCharacterDefault = pbxCharacter.Location;
             askQuestion(_currentgame.Questions[0]);
+            lblGameName.Text = _currentgame.Name;
+            lblGoal.Text = _currentgame.Goal;
+            pnlMenu.Visible = true;
+            pnlEndGame.Visible = false;
+            Region = Region.FromHrgn(GenericUtils.CreateRoundRectRgn(0, 0, 1824, 1118, 25, 25));
+        }
+
+        private void pnlMenu_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Visible = false;
+            tmrGameplay.Enabled = true;
+            tmrMoveDown.Enabled = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pnlMenu_Click(sender, e);
+        }
+
+        private void gfrmSwim_Resize(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pnlEndGame_Click(object sender, EventArgs e)
+        {
+            Form frmDashboard = new frmDashboard();
+            frmDashboard.Show();
+            frmDashboard.SetDesktopLocation(Location.X, Location.Y);
+            Close();
         }
     }
 }
