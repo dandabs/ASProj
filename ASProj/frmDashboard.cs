@@ -679,6 +679,7 @@ namespace ASProj
                     lblProfileUsername.Text = u.Username + "#" + u.Discriminator;
                     lblProfileId.Text = u.Id.ToString();
                     pbxProfilePhoto.Image = UserImage.Search(u.GetAvatar()).ToBitmap();
+                    pbxBanner.Image = UserImage.Search(u.GetBanner()).ToBitmap();
                     lblProfilePoints.Text = u.Points.ToString();
 
                     int highest = 0;

@@ -82,7 +82,7 @@ namespace ASProj
 
         // DA 8/7/22 TODO update these values once the file saving system has been implemented
         public static readonly Guid DefaultUserAvatar = Guid.Parse("618e90d6-1516-4149-ab34-c82955667396");
-        public static readonly Guid DefaultUserBanner = Guid.Empty;
+        public static readonly Guid DefaultUserBanner = Guid.Parse("e107234c-8bd7-4681-b3de-0103e55c0968");
 
         public static readonly Guid DefaultUserTheme = Guid.Empty;
 
